@@ -1,5 +1,5 @@
 {#-
-  Custom header override to compact layout and show search in header
+  Header override: keep default Material structure, only add compact class and inline search usage.
 -#}
 {% set class = "md-header header--compact" %}
 {% if "navigation.tabs.sticky" in features %}
@@ -43,11 +43,9 @@
     {% if config.extra.alternate %}
       {% include "partials/alternate.html" %}
     {% endif %}
-    {# Hide the search toggle button and embed search inline #}
     {% if "material/search" in config.plugins %}
       {% set search = config.plugins["material/search"] | attr("config") %}
       {% if search.enabled %}
-        {# Hidden icon button remains for a11y but not displayed via CSS #}
         <label class="md-header__button md-icon md-header__search-toggle" for="__search">
           {% set icon = config.theme.icon.search or "material/magnify" %}
           {% include ".icons/" ~ icon ~ ".svg" %}
@@ -67,4 +65,3 @@
     {% endif %}
   {% endif %}
 </header>
-

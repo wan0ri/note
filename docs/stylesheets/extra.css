@@ -26,9 +26,8 @@
 /* デスクトップ時にタイトルを右上へ寄せ、検索の左隣に配置 */
 @media screen and (min-width: 60em) {
   .md-header__inner { gap: .5rem; display: flex !important; }
-  .md-header__title { margin-left: auto !important; }
-  .md-search { order: 2 !important; margin-left: .4rem !important; }
-  .md-header__source { order: 3 !important; margin-left: .4rem; }
+  .md-header__title { margin-right: auto !important; }
+  .md-search { margin-left: .6rem; }
 }
 
 /* ヘッダーとタブの縦スペースを少し圧縮 */
