@@ -16,7 +16,6 @@ theme:
     - navigation.path
     - navigation.expand
     - navigation.top
-    - navigation.footer
     - content.code.copy
     - content.code.annotate
     - content.action.edit
@@ -96,7 +95,10 @@ nav:
       - k8s: platform/k8s.md
       - コンテナ:
           - 概要: platform/containers.md
-          - Docker: infra/docker.md
+          - 基本コマンド: platform/containers/docker-commands.md
+          - Dockerfile: platform/containers/image-build.md
+          - Docker Compose: platform/containers/compose.md
+          - Docker（旧まとめ）: infra/docker.md
       - 仮想化: platform/virtualization.md
   - インフラ基盤:
       - infra-base/index.md
@@ -120,3 +122,7 @@ nav:
   - 言語:
       - language/index.md
       - Python: language/python.md
+  - エラー:
+      - errors/index.md
+      - Terraform: errors/terraform.md
+      - その他CLI: errors/cli.md
