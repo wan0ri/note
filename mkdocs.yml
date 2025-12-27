@@ -8,7 +8,6 @@ theme:
   language: ja
   custom_dir: overrides
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.sections
     - navigation.indexes
