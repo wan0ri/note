@@ -1,0 +1,11 @@
+/* 読みやすさと編集時の見通し改善用の軽量カスタム */
+
+/* 本文幅を少し広げる */
+.md-grid { max-width: 1200px; }
+
+/* コードブロックの行間を少し詰める */
+.md-typeset pre > code { line-height: 1.4; }
+
+/* カード風レイアウト補助（index.md で .grid .cards を使う場合） */
+.grid.cards > ul { margin-top: 0.8rem; }
+
