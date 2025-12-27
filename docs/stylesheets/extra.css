@@ -37,3 +37,11 @@
   .md-tabs { padding-top: 0; padding-bottom: 0; }
   .md-tabs__link { padding: .35rem .6rem; }
 }
+
+/* 常時表示の検索フィールド（デスクトップ） */
+@media screen and (min-width: 76.25em) {
+  .md-search { max-width: 28rem; flex: 0 1 28rem; }
+  .md-search__form { width: 100% !important; }
+  .md-search__input { width: 100% !important; opacity: 1 !important; }
+  .md-search__overlay { display: none !important; }
+}
