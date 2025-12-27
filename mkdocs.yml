@@ -1,0 +1,56 @@
+site_name: Tech Notebook
+site_description: 個人用テックノート
+site_url: https://wan0ri.github.io/note/
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモード
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      locale: ja
+
+nav:
+  - Home: index.md
+  - Language:
+      - language/index.md
+      - Python: language/python.md
+  - Infra:
+      - infra/index.md
+      - Docker: infra/docker.md
+  - Tools:
+      - tools/index.md
+      - Git: tools/git.md
