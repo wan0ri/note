@@ -1,0 +1,27 @@
+# --- Build artifacts (MkDocs)
+site/
+
+# --- Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.*
+htmlcov/
+
+# --- OS/Tools
+.DS_Store
+.cache/
+*.log
+.env
+.env.*
+.python-version
+
+# --- IDE/Editor
+.vscode/
+.idea/
