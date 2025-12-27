@@ -68,6 +68,11 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
       locale: ja
+  - social:
+      cards_color:
+        fill: "#1565c0"   # primary blue
+        text: "#ffffff"
+      cards_font: Roboto
 
 extra:
   generator: false
