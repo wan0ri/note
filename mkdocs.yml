@@ -90,7 +90,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
   - Language:
       - language/index.md
       - Python: language/python.md
