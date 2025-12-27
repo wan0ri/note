@@ -90,12 +90,33 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Language:
+  - Getting Started: getting-started.md
+  - プラットフォーム:
+      - platform/index.md
+      - k8s: platform/k8s.md
+      - コンテナ:
+          - 概要: platform/containers.md
+          - Docker: infra/docker.md
+      - 仮想化: platform/virtualization.md
+  - インフラ基盤:
+      - infra-base/index.md
+      - OS: infra-base/os.md
+      - ネットワーク: infra-base/network.md
+      - セキュリティ: infra-base/security.md
+      - ハードウェア: infra-base/hardware.md
+  - クラウド:
+      - cloud/index.md
+      - 3大クラウド: cloud/three-clouds.md
+      - IaC: cloud/iac.md
+      - 可観測性: cloud/observability.md
+  - DevOps:
+      - devops/index.md
+      - CI/CD: devops/cicd.md
+      - 開発手法: devops/methodology.md
+      - ツール: tools/index.md
+      - Git: tools/git.md
+  - ミドルウェア:
+      - middleware/index.md
+  - 言語:
       - language/index.md
       - Python: language/python.md
-  - Infra:
-      - infra/index.md
-      - Docker: infra/docker.md
-  - Tools:
-      - tools/index.md
-      - Git: tools/git.md
