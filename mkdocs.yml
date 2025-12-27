@@ -11,6 +11,8 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.path
     - navigation.expand
     - navigation.top
@@ -25,12 +27,15 @@ theme:
     - scheme: default
       primary: blue
       accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモード
     - scheme: slate
       primary: blue
       accent: indigo
       toggle:
-        icon: material/weather-night
-        name: ダークモード
+        icon: material/weather-sunny
+        name: ライトモード
   icon:
     logo: material/notebook
     repo: fontawesome/brands/github
