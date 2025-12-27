@@ -8,7 +8,6 @@ title: クラウド
 
 ## セクション
 
-- [3大クラウド](three-clouds.md)
+- [3 大クラウド](three-clouds.md)
 - [IaC](iac.md)
 - [可観測性](observability.md)
-
