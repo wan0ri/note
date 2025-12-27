@@ -36,24 +36,23 @@ docs/
 
 ```markdown
 !!! tip "ヒント"
-    ここに内容。
+ここに内容。
 ```
 
 ### タブ
 
 ```markdown
 === "Python"
-    ```py
+`py
     print("hello")
-    ```
+    `
 
 === "Bash"
-    ```bash
+`bash
     echo hello
-    ```
+    `
 ```
 
 ### 絵文字（Twemoji + SVG）
 
 `:material-rocket-launch:` などのアイコン短縮表記が使えます。
-
