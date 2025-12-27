@@ -6,7 +6,6 @@ site_author: wan0ri
 theme:
   name: material
   language: ja
-  custom_dir: overrides
   features:
     - navigation.tracking
     - navigation.sections

@@ -20,38 +20,4 @@
 }
 .hero__buttons .md-button { margin-right: .4rem; }
 
-/* ------------------------- */
-/* Header compact + re-order (強制適用) */
-/* ------------------------- */
-/* デスクトップ時にタイトルを右上へ寄せ、検索の左隣に配置 */
-@media screen and (min-width: 64em) {
-  .md-header__inner { gap: .5rem; display: flex !important; }
-  .md-header__title { margin-right: auto !important; }
-  /* 検索欄を常時表示（右側） */
-  .header--compact .md-header__search-toggle { display: none !important; }
-  .header--compact .md-search {
-    position: static !important;
-    display: block !important;
-    transform: none !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    margin-left: .5rem !important;
-    max-width: 24rem !important;
-    flex: 0 1 24rem !important;
-  }
-  .header--compact .md-search__inner { box-shadow: none !important; background: transparent !important; }
-  .header--compact .md-search__overlay { display: none !important; }
-  .header--compact .md-search__form { width: 100% !important; }
-  .header--compact .md-search__input { width: 100% !important; }
-}
-
-/* ヘッダーとタブの縦スペースを少し圧縮 */
-@media screen and (min-width: 64em) {
-  .md-header__inner { padding-top: .25rem; padding-bottom: .25rem; }
-  .md-tabs { padding-top: 0; padding-bottom: 0; }
-  .md-tabs__link { padding: .35rem .6rem; }
-}
-
-/* 常時表示の検索フィールド（テンプレートオーバーライド版） */
-/* 旧指定は上記64emに統合 */
+/* （ヘッダー関連カスタマイズは撤回済み） */
