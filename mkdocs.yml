@@ -89,7 +89,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
   - プラットフォーム:
       - platform/index.md
       - k8s: platform/k8s.md
