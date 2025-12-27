@@ -24,11 +24,9 @@
 /* Header compact + re-order */
 /* ------------------------- */
 /* デスクトップ時にタイトルを右上へ寄せ、検索の左隣に配置 */
-@media screen and (min-width: 76.25em) {
-  .md-header__inner { gap: .4rem; }
-  .md-header__title { order: 10; margin-left: auto; }
-  .md-search { order: 11; }
-  .md-header__source { order: 12; }
+@media screen and (min-width: 60em) {
+  .md-header__inner { gap: .5rem; }
+  .md-header__title { margin-left: auto; }
 }
 
 /* ヘッダーとタブの縦スペースを少し圧縮 */
@@ -38,10 +36,12 @@
   .md-tabs__link { padding: .35rem .6rem; }
 }
 
-/* 常時表示の検索フィールド（デスクトップ） */
-@media screen and (min-width: 76.25em) {
-  .md-search { max-width: 28rem; flex: 0 1 28rem; }
-  .md-search__form { width: 100% !important; }
-  .md-search__input { width: 100% !important; opacity: 1 !important; }
-  .md-search__overlay { display: none !important; }
+/* 常時表示の検索フィールド（テンプレートオーバーライド版） */
+@media screen and (min-width: 60em) {
+  .header--compact .md-header__search-toggle { display: none; }
+  .header--compact .md-search { position: static; margin-left: .25rem; max-width: 28rem; }
+  .header--compact .md-search__inner { box-shadow: none; background: transparent; }
+  .header--compact .md-search__overlay { display: none; }
+  .header--compact .md-search__form { width: 100%; }
+  .header--compact .md-search__input { width: 100%; }
 }
