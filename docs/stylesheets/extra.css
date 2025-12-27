@@ -20,3 +20,20 @@
 }
 .hero__buttons .md-button { margin-right: .4rem; }
 
+/* ------------------------- */
+/* Header compact + re-order */
+/* ------------------------- */
+/* デスクトップ時にタイトルを右上へ寄せ、検索の左隣に配置 */
+@media screen and (min-width: 76.25em) {
+  .md-header__inner { gap: .4rem; }
+  .md-header__title { order: 10; margin-left: auto; }
+  .md-search { order: 11; }
+  .md-header__source { order: 12; }
+}
+
+/* ヘッダーとタブの縦スペースを少し圧縮 */
+@media screen and (min-width: 60em) {
+  .md-header__inner { padding-top: .25rem; padding-bottom: .25rem; }
+  .md-tabs { padding-top: 0; padding-bottom: 0; }
+  .md-tabs__link { padding: .35rem .6rem; }
+}
