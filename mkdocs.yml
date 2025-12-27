@@ -1,6 +1,7 @@
 site_name: wan0ri Note
 site_description: 個人用テックノート
 site_url: https://wan0ri.github.io/note/
+site_author: wan0ri
 
 theme:
   name: material
@@ -29,6 +30,9 @@ theme:
       toggle:
         icon: material/weather-night
         name: ダークモード
+  icon:
+    logo: material/notebook
+    repo: fontawesome/brands/github
 
 repo_url: https://github.com/wan0ri/note
 repo_name: wan0ri/note
@@ -69,6 +73,11 @@ extra:
     - icon: material/github
       link: https://github.com/wan0ri
       name: GitHub
+  consent:
+    actions:
+      - accept
+      - manage
+    description: 本サイトでは利便性向上のため設定を保存します。
 
 extra_css:
   - stylesheets/extra.css

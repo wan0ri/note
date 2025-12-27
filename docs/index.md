@@ -1,5 +1,14 @@
 # はじめに
 
+<div class="grid cards" markdown>
+- :material-language-python: **Language** — 言語ノート  
+  [:material-arrow-right: 開く](language/index.md)
+- :material-docker: **Infra** — インフラ / Docker  
+  [:material-arrow-right: 開く](infra/index.md)
+- :material-git: **Tools** — ツール / Git  
+  [:material-arrow-right: 開く](tools/index.md)
+</div>
+
 ## wan0ri Note とは？
 
 私が業務や学習から得た技術的な知見を、カンニングペーパー形式で記録した技術ノートです。
