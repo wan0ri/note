@@ -69,10 +69,12 @@ plugins:
       fallback_to_build_date: true
       locale: ja
   - social:
-      cards_color:
-        fill: "#1565c0"   # primary blue
-        text: "#ffffff"
-      cards_font: Roboto
+      cards: true
+      cards_layout: default
+      cards_layout_options:
+        background_color: "#1565c0"
+        color: "#ffffff"
+        font_family: Roboto
 
 extra:
   generator: false
