@@ -1,6 +1,24 @@
-# はじめに
+---
+title: Home
+hide:
+  - toc
+---
+
+# wan0ri Note
+
+<div class="hero" markdown>
+  <p class="hero__subtitle">個人用テックノート — 素早く探せて、すぐ使える知見集</p>
+  <p class="hero__buttons">
+    <a class="md-button md-button--primary" href="getting-started/">クイックスタート</a>
+    <a class="md-button" href="language/">Language</a>
+    <a class="md-button" href="infra/">Infra</a>
+    <a class="md-button" href="tools/">Tools</a>
+  </p>
+</div>
 
 <div class="grid cards" markdown>
+- :material-rocket-launch: **Getting Started** — 最短で使いはじめる  
+  [:material-arrow-right: 開く](getting-started.md)
 - :material-language-python: **Language** — 言語ノート  
   [:material-arrow-right: 開く](language/index.md)
 - :material-docker: **Infra** — インフラ / Docker  

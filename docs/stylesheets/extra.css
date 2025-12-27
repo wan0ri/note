@@ -9,3 +9,14 @@
 /* カード風レイアウト補助（index.md で .grid .cards を使う場合） */
 .grid.cards > ul { margin-top: 0.8rem; }
 
+/* Hero セクション（kOps 風の簡易ヒーロー） */
+.hero {
+  padding: 1.2rem 0 0.8rem;
+}
+.hero__subtitle {
+  font-size: 1.1rem;
+  margin: 0.2rem 0 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+.hero__buttons .md-button { margin-right: .4rem; }
+
