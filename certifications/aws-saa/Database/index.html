@@ -101,6 +101,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#dynamodb" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1639,6 +1644,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS-SAA(データベース)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1655,6 +1678,305 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dynamodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DynamoDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DynamoDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 キーバリューストアとドキュメントストア
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 スケーラビリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 高い可用性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 グローバルテーブル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-acid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 ACID トランザクション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 統合性と拡張性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 キーバリューストアとドキュメントストア
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 スケーラビリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 高い可用性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2523,6 +2845,296 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dynamodb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DynamoDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DynamoDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 キーバリューストアとドキュメントストア
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 スケーラビリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 高い可用性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 グローバルテーブル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-acid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 ACID トランザクション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 統合性と拡張性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 キーバリューストアとドキュメントストア
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 スケーラビリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 高い可用性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2589,8 +3201,144 @@
   
 
 
-<h1 id="aws-saa">データベース（AWS SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>TBD</p>
+  <h1>AWS-SAA(データベース)</h1>
+
+<h2 id="dynamodb">DynamoDB<a class="headerlink" href="#dynamodb" title="Permanent link">¶</a></h2>
+<h3 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
+<p><strong>Amazon DynamoDB</strong> は、高速かつ柔軟な NoSQL データベースサービス。<br>
+ユーザーは、任意の規模でデータを保存、検索でき、高いスループットと低いレイテンシーを実現できる。<br>
+DynamoDB は、フルマネージドサービスであり、ユーザーはデータベースのプロビジョニングや管理を行う必要はない。<br>
+キーバリューストアとドキュメントストアの両方の機能を持ち、様々なデータモデルに対応できる。</p>
+<p>主なユースケースとして、</p>
+<ul>
+<li>Web アプリケーション</li>
+<li>モバイルアプリケーション</li>
+<li>ゲームアプリケーション</li>
+<li>IoT アプリケーション</li>
+<li>広告テクノロジー</li>
+<li>e コマース</li>
+</ul>
+<p>などが挙げられる。<br>
+Amazon DynamoDB は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
+<h3 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
+<h3 id="2_1">2. 主な特徴と機能<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h3>
+<h4 id="21">2.1 キーバリューストアとドキュメントストア<a class="headerlink" href="#21" title="Permanent link">¶</a></h4>
+<p>DynamoDB は、キーバリューストアとドキュメントストアの両方の機能をサポートしている。<br>
+キーバリューストアでは、キーと値のペアでデータを保存し、高速に読み書きできる。<br>
+ドキュメントストアでは、JSON のような半構造化データを保存し、柔軟なデータモデルをサポートできる。</p>
+<h4 id="22">2.2 フルマネージドサービス<a class="headerlink" href="#22" title="Permanent link">¶</a></h4>
+<p>DynamoDB は、フルマネージドサービスであるため、ユーザーはデータベースのプロビジョニング、スケーリング、パッチ適用などの管理を行う必要はない。<br>
+AWS が、これらの管理作業を自動的に行う。</p>
+<h4 id="23">2.3 スケーラビリティ<a class="headerlink" href="#23" title="Permanent link">¶</a></h4>
+<p>DynamoDB は、ストレージ容量とスループットを自動的にスケーリングできる。<br>
+これにより、トラフィックの変動に対応し、安定したパフォーマンスを提供できる。</p>
+<h4 id="24">2.4 高い可用性<a class="headerlink" href="#24" title="Permanent link">¶</a></h4>
+<p>DynamoDB は、複数のアベイラビリティゾーンにデータを複製することで、高い可用性を実現している。<br>
+これにより、ハードウェア障害やゾーン障害が発生した場合でも、アプリケーションの可用性を維持できる。</p>
+<h4 id="25">2.5 グローバルテーブル<a class="headerlink" href="#25" title="Permanent link">¶</a></h4>
+<p>複数の AWS リージョン間でデータをレプリケーションし、グローバルに分散されたアプリケーションをサポートできる。<br>
+これにより、リージョン障害が発生した場合でも、別のリージョンでアプリケーションを継続して利用できる。</p>
+<h4 id="26-acid">2.6 ACID トランザクション<a class="headerlink" href="#26-acid" title="Permanent link">¶</a></h4>
+<p>複数のアイテムに対して、ACID（Atomicity, Consistency, Isolation, Durability）トランザクションをサポートしている。<br>
+これにより、データの整合性を維持できる。</p>
+<h4 id="27">2.7 統合性と拡張性<a class="headerlink" href="#27" title="Permanent link">¶</a></h4>
+<p>Amazon DynamoDB は、AWS Lambda, Amazon S3, Amazon Kinesis, AWS AppSync など、AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、データの読み書きやテーブルの管理を自動化することもできる。</p>
+<h3 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
+<ol>
+<li>ユーザーは、DynamoDB テーブルを作成し、プライマリーキーを定義。</li>
+<li>アプリケーションは、DynamoDB API を使って、データの読み書き。</li>
+<li>DynamoDB は、データを複数のストレージノードに分散し、自動的にスケーリング。</li>
+<li>必要に応じて、グローバルテーブルを有効にし、複数のリージョン間でデータレプリケーション。</li>
+<li>DynamoDB は、データの耐久性と可用性を確保。</li>
+</ol>
+<p>Amazon DynamoDB は、AWS のインフラ上に構築されており、高い可用性、スケーラビリティ、パフォーマンスを提供する。<br>
+データベースのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
+<h3 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
+<p>Amazon DynamoDB は、データのセキュリティを確保するために、以下の機能を提供する:</p>
+<ul>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、DynamoDB へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から DynamoDB にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、DynamoDB テーブルの操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、DynamoDB の利用状況を監査できる。</li>
+</ul>
+<p>これらのセキュリティ対策により、データの不正アクセスを防止し、機密情報を保護できる。</p>
+<h3 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h3>
+<p>Amazon DynamoDB の料金は主に以下に基づく:</p>
+<ul>
+<li><strong>ストレージ</strong>: テーブルで使用されたストレージ容量に応じて課金。</li>
+<li><strong>読み込み/書き込みキャパシティユニット (RCU/WCU)</strong>: データ読み書きに必要なキャパシティユニットに応じて課金。</li>
+<li><strong>データ転送</strong>: データ転送量に応じて課金。</li>
+<li><strong>バックアップと復元</strong>: バックアップデータの保存容量とデータ復元量に応じて課金。</li>
+</ul>
+<h3 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h3>
+<p>Amazon DynamoDB は、様々なアプリケーションに利用できます。一般的なパターンは以下の通り:</p>
+<ul>
+<li><strong>Web アプリケーション</strong>: Web アプリケーションのセッションデータ、ユーザーデータ、コンテンツなどを保存。</li>
+<li><strong>モバイルアプリケーション</strong>: モバイルアプリケーションのユーザーデータ、ゲームデータ、セッションデータなどを保存。</li>
+<li><strong>ゲームアプリケーション</strong>: ゲームのユーザーデータ、ゲーム状態、ランキングデータなどを保存。</li>
+<li><strong>IoT アプリケーション</strong>: IoT デバイスから送信されたデータを保存し、リアルタイムで分析。</li>
+<li><strong>広告テクノロジー</strong>: 広告表示に必要なデータやクリックデータなどを高速に保存、検索。</li>
+<li><strong>e コマース</strong>: e コマースサイトの商品情報、顧客データ、注文履歴などを保存。</li>
+</ul>
+<h3 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS マネジメントコンソールから Amazon DynamoDB を開き、新しいテーブルを作成。</li>
+<li>プライマリキーを定義し、テーブルの設定を構成。</li>
+<li>DynamoDB コンソールまたは AWS CLI を使って、テーブルにデータを挿入。</li>
+<li>API を使って、データを読み書き。</li>
+<li>必要に応じて、グローバルテーブルを有効にし、リージョン間のデータレプリケーションを設定。</li>
+</ol>
+<h3 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h3>
+<h4 id="81">8.1 キーバリューストアとドキュメントストア<a class="headerlink" href="#81" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: キーと値のペアでデータを保存（キーバリューストア）、JSON のような半構造化データを保存（ドキュメントストア）。</li>
+<li><strong>利点</strong>: 柔軟なデータモデルに対応。</li>
+<li><strong>試験対策</strong>: 各ストレージ形式の特徴、利用ケースが問われる。</li>
+</ul>
+<h4 id="82">8.2 フルマネージドサービス<a class="headerlink" href="#82" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>管理</strong>: データベースのプロビジョニング、スケーリング、パッチ適用などを AWS が担当。</li>
+<li><strong>利点</strong>: ユーザーはインフラの管理が不要。</li>
+<li><strong>試験対策</strong>: フルマネージドのメリット、管理範囲が問われる。</li>
+</ul>
+<h4 id="83">8.3 スケーラビリティ<a class="headerlink" href="#83" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: ストレージ容量とスループットを自動的にスケーリング。</li>
+<li><strong>目的</strong>: トラフィックの変動に対応し、安定したパフォーマンスを提供。</li>
+<li><strong>試験対策</strong>: 自動スケーリングの仕組み、重要性が問われる。</li>
+</ul>
+<h4 id="84">8.4 高い可用性<a class="headerlink" href="#84" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>実現方法</strong>: 複数のアベイラビリティゾーンにデータを複製。</li>
+<li><strong>目的</strong>: 障害発生時でもアプリケーションの可用性を維持。</li>
+<li><strong>試験対策</strong>: 高可用性の仕組み、耐障害性が問われる。</li>
+</ul>
+<h4 id="85">8.5 料金体系<a class="headerlink" href="#85" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>課金対象</strong>: ストレージ、読み込み/書き込みキャパシティユニット (RCU/WCU)、データ転送量、バックアップと復元。</li>
+<li><strong>最適化</strong>: キャパシティユニットの適切な設定、不要なデータの削除がコスト削減に有効。</li>
+<li><strong>試験対策</strong>: 料金体系、課金要素が問われる。</li>
+</ul>
+<h4 id="86">8.6 類似・関連サービスとの比較<a class="headerlink" href="#86" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Amazon RDS</strong>: リレーショナルデータベースサービス。DynamoDB は NoSQL データベース。</li>
+<li><strong>Amazon ElastiCache</strong>: インメモリキャッシュサービス。DynamoDB は永続的なストレージサービス。</li>
+</ul>
+<h4 id="87">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon DynamoDB は何を提供するサービス？</li>
+<li>A: 高速かつ柔軟な NoSQL データベースサービスを提供。</li>
+<li>Q: Amazon DynamoDB は、どのようなデータモデルをサポートしているか？</li>
+<li>A: キーバリューストアとドキュメントストアの両方の機能をサポートしている。</li>
+<li>Q: Amazon DynamoDB は、どのようにスケーリングするか？</li>
+<li>A: ストレージ容量とスループットを自動的にスケーリングする。</li>
+<li>Q: Amazon DynamoDB は、どのように可用性を確保しているか？</li>
+<li>A: 複数のアベイラビリティゾーンにデータを複製することで、高い可用性を実現している。</li>
+<li>Q: Amazon DynamoDB の料金はどのように計算されるか？</li>
+<li>A: ストレージ、読み込み/書き込みキャパシティユニット (RCU/WCU)、データ転送量、バックアップと復元などに基づいて計算される。</li>
+</ul>
 
 
 
@@ -2611,7 +3359,7 @@
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年12月28日 01:13:56 UTC">2025年12月28日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年12月28日 02:15:01 UTC">2025年12月28日</span>
   </span>
 
     
