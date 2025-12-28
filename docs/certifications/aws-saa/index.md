@@ -1,5 +1,5 @@
 ---
-title: AWS SAA 範囲
+title: AWS SAA 試験領域
 ---
 
 # AWS ソリューションアーキテクト – アソシエイト（SAA）
