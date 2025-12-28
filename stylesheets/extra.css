@@ -35,8 +35,17 @@
   }
 }
 
-/* 目次（右サイド）の項目が多い場合でも全量表示できるようにスクロール可能にする */
-.md-sidebar--secondary {
-  overflow: auto;
-  max-height: calc(100vh - 64px);
+/* 目次（右サイド）をフルハイトでスクロール可能にする */
+@media screen and (min-width: 960px) {
+  :root { --md-sidebar-width: 18rem; }
+  .md-sidebar--secondary {
+    position: sticky;
+    top: var(--md-header-height, 64px);
+    height: calc(100vh - var(--md-header-height, 64px));
+    width: var(--md-sidebar-width);
+  }
+  .md-nav--secondary {
+    height: 100%;
+    overflow: auto;
+  }
 }
