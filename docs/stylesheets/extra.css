@@ -34,3 +34,9 @@
     margin-right: auto;
   }
 }
+
+/* 目次（右サイド）の項目が多い場合でも全量表示できるようにスクロール可能にする */
+.md-sidebar--secondary {
+  overflow: auto;
+  max-height: calc(100vh - 64px);
+}
