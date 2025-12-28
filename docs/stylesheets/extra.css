@@ -21,3 +21,15 @@
 .hero__buttons .md-button { margin-right: .4rem; }
 
 /* （ヘッダー関連カスタマイズは撤回済み） */
+
+/* ===== グローバルで左ナビ（プライマリサイドバー）を非表示 ===== */
+.md-sidebar--primary {
+  display: none;
+}
+
+/* 左ナビ非表示時に余白を詰めて本文を広げる */
+@media screen and (min-width: 960px) {
+  .md-main__inner {
+    margin-left: 0;
+  }
+}
