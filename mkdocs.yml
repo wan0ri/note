@@ -103,6 +103,7 @@ nav:
           - Docker Compose: platform/containers/compose.md
           - Docker（旧まとめ）: infra/docker.md
       - 仮想化: platform/virtualization.md
+      - インフラ(旧): infra/index.md
   - インフラ基盤:
       - infra-base/index.md
       - OS: infra-base/os.md
@@ -116,6 +117,7 @@ nav:
       - 可観測性: cloud/observability.md
   - Certifications:
       - certifications/index.md
+      - AWS-SAA(範囲): certifications/aws-saa/index.md
       - AWS-SAA(アプリケーション統合): certifications/aws-saa/ApplicationIntegration.md
       - AWS-SAA(アーキテクチャ戦略): certifications/aws-saa/ArchitectureStrategy.md
       - AWS-SAA(ウェブとモバイルのフロントエンド): certifications/aws-saa/WebAndMobileFrontEnd.md
@@ -125,7 +127,6 @@ nav:
       - AWS-SAA(ストレージ): certifications/aws-saa/Storage.md
       - AWS-SAA(セキュリティ、アイデンティティ、コンプライアンス): certifications/aws-saa/SecurityIdentityAndCompliance.md
       - AWS-SAA(デベロッパーツール): certifications/aws-saa/DeveloperTools.md
-      - AWS-SAA(デベロッパー用ツール): certifications/aws-saa/DeveloperTools.md
       - AWS-SAA(データベース): certifications/aws-saa/Database.md
       - AWS-SAA(ネットワーキングとコンテンツ配信): certifications/aws-saa/NetworkingAndContentDelivery.md
       - AWS-SAA(ブロックチェーン): certifications/aws-saa/Blockchain.md
@@ -149,3 +150,5 @@ nav:
       - errors/index.md
       - Terraform: errors/terraform.md
       - その他CLI: errors/cli.md
+  - その他:
+      - 404: 404.md

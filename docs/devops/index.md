@@ -10,4 +10,4 @@ title: DevOps
 
 - [CI/CD](cicd.md)
 - [開発手法](methodology.md)
-- [ツール](/tools/index.md)
+- [ツール](../tools/index.md)

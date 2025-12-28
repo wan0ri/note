@@ -8,6 +8,6 @@ Docker だけでなく、OCI 仕様、コンテナランタイム（containerd�
 
 関連ノート:
 
-- [Docker](/infra/docker.md)
+- [Docker](../infra/docker.md)
 
 > 構成案: 基礎概念 / イメージ設計 / セキュアなビルド / Compose / レジストリ / ランタイム / k8s との関係。
