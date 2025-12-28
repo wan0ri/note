@@ -27,9 +27,10 @@
   display: none;
 }
 
-/* 左ナビ非表示時に余白を詰めて本文を広げる */
+/* 左ナビ非表示時でも本文コンテナを中央寄せに保つ */
 @media screen and (min-width: 960px) {
   .md-main__inner {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
