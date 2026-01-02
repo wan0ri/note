@@ -7055,9 +7055,9 @@
 
 <h2 id="elastic-block-store-ebs">Elastic Block Store (EBS)<a class="headerlink" href="#elastic-block-store-ebs" title="Permanent link">¶</a></h2>
 <h3 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
-<p>Amazon Elastic Block Store (EBS) は、Amazon EC2 インスタンスで使用するための、スケーラブルで高性能なブロックストレージサービスです。<br>
-ユーザーは、EC2 インスタンスにアタッチできる仮想ハードディスク（EBS ボリューム）を作成し、データの永続的な保存、高速な I/O、データのバックアップ、復元などを行うことができます。<br>
-EBS は、様々なアプリケーションのニーズに対応するための多様なボリュームタイプと、高い可用性、耐久性、セキュリティを提供します。</p>
+<p>Amazon Elastic Block Store (EBS) は、Amazon EC2 インスタンスで使用するための、スケーラブルで高性能なブロックストレージサービスである。<br>
+ユーザーは、EC2 インスタンスにアタッチできる仮想ハードディスク（EBS ボリューム）を作成し、データの永続的な保存、高速な I/O、データのバックアップ、復元などを行うことができる。<br>
+EBS は、様々なアプリケーションのニーズに対応するための多様なボリュームタイプと、高い可用性、耐久性、セキュリティを提供する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>オペレーティングシステムとアプリケーションの保存</li>
@@ -7067,30 +7067,30 @@ EBS は、様々なアプリケーションのニーズに対応するための�
 <li>コンテナワークロード</li>
 <li>エンタープライズアプリケーション</li>
 </ul>
-<p>などが挙げられます。<br>
-Amazon EBS は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+Amazon EBS は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
 <h4 id="21">2.1 ブロックストレージ<a class="headerlink" href="#21" title="Permanent link">¶</a></h4>
-<p>EBS は、EC2 インスタンスにアタッチできるブロックストレージを提供します。<br>
-ブロックストレージは、ファイルシステムのようにデータを管理するのではなく、ブロック単位でデータを管理します。 これにより、OS レベルで直接アクセスでき、高いパフォーマンスを発揮できます。</p>
+<p>EBS は、EC2 インスタンスにアタッチできるブロックストレージを提供する。<br>
+ブロックストレージは、ファイルシステムのようにデータを管理するのではなく、ブロック単位でデータを管理する。 これにより、OS レベルで直接アクセスでき、高いパフォーマンスを発揮できる。</p>
 <h4 id="22">2.2 多様なボリュームタイプ<a class="headerlink" href="#22" title="Permanent link">¶</a></h4>
-<p>EBS は、汎用 SSD（gp2, gp3）、プロビジョンド IOPS SSD（io1, io2）、スループット最適化 HDD（st1）、コールド HDD（sc1）など、様々なニーズに対応したボリュームタイプを提供しています。<br>
-これにより、アプリケーションの要件に合わせて、適切なボリュームタイプを選択できます。</p>
+<p>EBS は、汎用 SSD（gp2, gp3）、プロビジョンド IOPS SSD（io1, io2）、スループット最適化 HDD（st1）、コールド HDD（sc1）など、様々なニーズに対応したボリュームタイプを提供している。<br>
+これにより、アプリケーションの要件に合わせて、適切なボリュームタイプを選択できる。</p>
 <h4 id="23">2.3 スナップショット<a class="headerlink" href="#23" title="Permanent link">¶</a></h4>
-<p>EBS ボリュームのスナップショットを作成できます。 スナップショットは、特定の時点におけるボリュームのバックアップであり、ボリュームの復元や、新しいボリュームの作成に使用できます。<br>
-スナップショットは、増分バックアップであり、変更されたデータのみを保存します。</p>
+<p>EBS ボリュームのスナップショットを作成できる。 スナップショットは、特定の時点におけるボリュームのバックアップであり、ボリュームの復元や、新しいボリュームの作成に使用できる。<br>
+スナップショットは、増分バックアップであり、変更されたデータのみを保存する。</p>
 <h3 id="24">2.4 暗号化<a class="headerlink" href="#24" title="Permanent link">¶</a></h3>
-<p>EBS ボリュームを暗号化して、保存データを保護できます。<br>
-EBS ボリュームの暗号化は、作成時または既存のボリュームのスナップショットから作成する際に設定できます。</p>
+<p>EBS ボリュームを暗号化して、保存データを保護できる。<br>
+EBS ボリュームの暗号化は、作成時または既存のボリュームのスナップショットから作成する際に設定できる。</p>
 <h4 id="25">2.5 ボリュームのサイズ変更<a class="headerlink" href="#25" title="Permanent link">¶</a></h4>
-<p>EBS ボリュームのサイズを、オンラインで変更できます。<br>
-これにより、アプリケーションの需要に応じて、ストレージ容量を柔軟に調整できます。</p>
+<p>EBS ボリュームのサイズを、オンラインで変更できる。<br>
+これにより、アプリケーションの需要に応じて、ストレージ容量を柔軟に調整できる。</p>
 <h4 id="26">2.6 アタッチ/デタッチ<a class="headerlink" href="#26" title="Permanent link">¶</a></h4>
-<p>EBS ボリュームを、EC2 インスタンスにアタッチ/デタッチできます。<br>
-複数のインスタンス間でボリュームを共有することはできませんが、インスタンスの停止や再起動をせずにボリュームをアタッチ/デタッチできます。</p>
+<p>EBS ボリュームを、EC2 インスタンスにアタッチ/デタッチできる。<br>
+複数のインスタンス間でボリュームを共有することはできませんが、インスタンスの停止や再起動をせずにボリュームをアタッチ/デタッチできる。</p>
 <h4 id="27">2.7 統合性と拡張性<a class="headerlink" href="#27" title="Permanent link">¶</a></h4>
-<p>Amazon EBS は、Amazon EC2、AWS Backup、AWS Data Lifecycle Manager、AWS CloudFormation などの AWS の他のサービスと密接に統合されています。<br>
-また、API を利用して、EBS ボリュームの管理を自動化することもできます。</p>
+<p>Amazon EBS は、Amazon EC2、AWS Backup、AWS Data Lifecycle Manager、AWS CloudFormation などの AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、EBS ボリュームの管理を自動化することもできる。</p>
 <h4 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h4>
 <ol>
 <li>ユーザーは、EBS ボリュームを作成し、EC2 インスタンスにアタッチ。</li>
@@ -7099,17 +7099,17 @@ EBS ボリュームの暗号化は、作成時または既存のボリューム�
 <li>スナップショットを基に、新しい EBS ボリュームを作成したり、既存のボリュームを復元。</li>
 <li>必要に応じて、EBS ボリュームのサイズを変更。</li>
 </ol>
-<p>Amazon EBS は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供します。<br>
-ボリュームの作成、管理、バックアップなどは AWS が行うため、ユーザーはインフラの管理を意識する必要はありません。</p>
+<p>Amazon EBS は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供する。<br>
+ボリュームの作成、管理、バックアップなどは AWS が行うため、ユーザーはインフラの管理を意識する必要はない。</p>
 <h3 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
 <p>Amazon EBS は、ストレージのセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、EBS ボリュームへのアクセスを制御します。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、EBS ボリュームへのアクセスを制御する。</li>
 <li><strong>VPC 内での実行</strong>: EBS ボリュームは Virtual Private Cloud (VPC) 内で実行され、ネットワーク隔離を実現。</li>
-<li><strong>データ暗号化</strong>: EBS ボリュームおよびスナップショットは、転送中および保存時に暗号化できます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、EBS ボリュームの操作権限を詳細に制御できます。</li>
+<li><strong>データ暗号化</strong>: EBS ボリュームおよびスナップショットは、転送中および保存時に暗号化できる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、EBS ボリュームの操作権限を詳細に制御できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、EBS ボリュームとそのデータを安全に保護します。</p>
+<p>これらのセキュリティ対策により、EBS ボリュームとそのデータを安全に保護する。</p>
 <h3 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h3>
 <p>Amazon EBS の料金は主に以下に基づきます:</p>
 <ul>
@@ -7119,7 +7119,7 @@ EBS ボリュームの暗号化は、作成時または既存のボリューム�
 <li><strong>IOPS</strong>: プロビジョンド IOPS SSD (io1, io2) の場合、プロビジョニングされた IOPS 数に応じて課金。</li>
 </ul>
 <h3 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h3>
-<p>Amazon EBS は、様々なアプリケーションのストレージとして利用できます。<br>
+<p>Amazon EBS は、様々なアプリケーションのストレージとして利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>オペレーティングシステムとアプリケーションの保存</strong>: EC2 インスタンスのルートボリュームとして、オペレーティングシステムやアプリケーションを保存。</li>
@@ -7183,22 +7183,22 @@ EBS ボリュームの暗号化は、作成時または既存のボリューム�
 <h4 id="88">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon EBS は何を提供するサービスですか？</li>
-<li>A: Amazon EC2 インスタンスで使用するための、スケーラブルで高性能なブロックストレージサービスです。</li>
+<li>A: Amazon EC2 インスタンスで使用するための、スケーラブルで高性能なブロックストレージサービスである。</li>
 <li>Q: Amazon EBS で利用できるボリュームタイプは何ですか？</li>
-<li>A: 汎用 SSD (gp2, gp3), プロビジョンド IOPS SSD (io1, io2), スループット最適化 HDD (st1), コールド HDD (sc1)などがあります。</li>
+<li>A: 汎用 SSD (gp2, gp3), プロビジョンド IOPS SSD (io1, io2), スループット最適化 HDD (st1), コールド HDD (sc1)などがある。</li>
 <li>Q: Amazon EBS のスナップショットは何に使用できますか？</li>
-<li>A: 特定の時点におけるボリュームのバックアップとして、ボリュームの復元や、新しいボリュームの作成に使用できます。</li>
+<li>A: 特定の時点におけるボリュームのバックアップとして、ボリュームの復元や、新しいボリュームの作成に使用できる。</li>
 <li>Q: Amazon EBS のボリュームはどのように暗号化できますか？</li>
-<li>A: EBS ボリュームの暗号化は、作成時または既存のボリュームのスナップショットから作成する際に設定できます。</li>
+<li>A: EBS ボリュームの暗号化は、作成時または既存のボリュームのスナップショットから作成する際に設定できる。</li>
 <li>Q: Amazon EBS の料金はどのように計算されますか？</li>
-<li>A: EBS ボリュームのプロビジョニングされたストレージ容量、スナップショットの保存容量、データ転送量、プロビジョンド IOPS などに基づいて計算されます。</li>
+<li>A: EBS ボリュームのプロビジョニングされたストレージ容量、スナップショットの保存容量、データ転送量、プロビジョンド IOPS などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="elastic-file-system-efs">Elastic File System (EFS)<a class="headerlink" href="#elastic-file-system-efs" title="Permanent link">¶</a></h2>
 <h3 id="1_1">1. サービス概要<a class="headerlink" href="#1_1" title="Permanent link">¶</a></h3>
-<p>Amazon Elastic File System (EFS) は、複数の Amazon EC2 インスタンスから同時にアクセスできる、シンプルでスケーラブルなフルマネージドのネットワークファイルシステムです。<br>
-ユーザーは、サーバーレスアプリケーション、コンテナ、ビッグデータ分析、Web サーバーなど、様々なワークロードで利用できる共有ファイルシステムを作成し、データを共有できます。<br>
-EFS は、ファイルストレージの管理を簡素化し、複数の EC2 インスタンス間でデータの整合性を維持します。</p>
+<p>Amazon Elastic File System (EFS) は、複数の Amazon EC2 インスタンスから同時にアクセスできる、シンプルでスケーラブルなフルマネージドのネットワークファイルシステムである。<br>
+ユーザーは、サーバーレスアプリケーション、コンテナ、ビッグデータ分析、Web サーバーなど、様々なワークロードで利用できる共有ファイルシステムを作成し、データを共有できる。<br>
+EFS は、ファイルストレージの管理を簡素化し、複数の EC2 インスタンス間でデータの整合性を維持する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>Web アプリケーションのコンテンツ共有</li>
@@ -7208,30 +7208,30 @@ EFS は、ファイルストレージの管理を簡素化し、複数の EC2 �
 <li>機械学習のワークロード</li>
 <li>コンテンツ管理システム</li>
 </ul>
-<p>などが挙げられます。<br>
-Amazon EFS は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+Amazon EFS は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_1">2. 主な特徴と機能<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h3>
 <h4 id="21_1">2.1 ネットワークファイルシステム<a class="headerlink" href="#21_1" title="Permanent link">¶</a></h4>
-<p>EFS は、複数の EC2 インスタンスから同時にアクセスできるネットワークファイルシステムを提供します。<br>
-これにより、複数のサーバー間でデータを共有し、アプリケーションの可用性と拡張性を高めることができます。</p>
+<p>EFS は、複数の EC2 インスタンスから同時にアクセスできるネットワークファイルシステムを提供する。<br>
+これにより、複数のサーバー間でデータを共有し、アプリケーションの可用性と拡張性を高めることができる。</p>
 <h4 id="22_1">2.2 フルマネージドサービス<a class="headerlink" href="#22_1" title="Permanent link">¶</a></h4>
-<p>EFS は、ファイルシステムのプロビジョニング、バックアップ、スケーリングなどの管理を AWS に任せることができます。<br>
-ユーザーは、ファイルシステムの管理に煩わされることなく、アプリケーション開発に集中できます。</p>
+<p>EFS は、ファイルシステムのプロビジョニング、バックアップ、スケーリングなどの管理を AWS に任せることができる。<br>
+ユーザーは、ファイルシステムの管理に煩わされることなく、アプリケーション開発に集中できる。</p>
 <h4 id="23_1">2.3 スケーラビリティ<a class="headerlink" href="#23_1" title="Permanent link">¶</a></h4>
-<p>EFS は、需要に応じてストレージ容量とパフォーマンスを自動的にスケーリングします。<br>
-これにより、アプリケーションのデータ量やトラフィックの変動に対応できます。</p>
+<p>EFS は、需要に応じてストレージ容量とパフォーマンスを自動的にスケーリングする。<br>
+これにより、アプリケーションのデータ量やトラフィックの変動に対応できる。</p>
 <h4 id="24_1">2.4 パフォーマンスモード<a class="headerlink" href="#24_1" title="Permanent link">¶</a></h4>
-<p>EFS には、汎用と最大 I/O という 2 つのパフォーマンスモードがあります。<br>
-汎用モードは、幅広いワークロードに適しており、最大 I/O モードは、高いスループットと IOPS を必要とするワークロードに適しています。</p>
+<p>EFS には、汎用と最大 I/O という 2 つのパフォーマンスモードがある。<br>
+汎用モードは、幅広いワークロードに適しており、最大 I/O モードは、高いスループットと IOPS を必要とするワークロードに適している。</p>
 <h4 id="25_1">2.5 ストレージクラス<a class="headerlink" href="#25_1" title="Permanent link">¶</a></h4>
-<p>EFS は、標準と低頻度アクセスという 2 つのストレージクラスを提供しています。<br>
-標準クラスは、頻繁にアクセスされるデータに適しており、低頻度アクセス（IA）クラスは、あまりアクセスされないデータに適しています。</p>
+<p>EFS は、標準と低頻度アクセスという 2 つのストレージクラスを提供している。<br>
+標準クラスは、頻繁にアクセスされるデータに適しており、低頻度アクセス（IA）クラスは、あまりアクセスされないデータに適している。</p>
 <h4 id="26_1">2.6 暗号化<a class="headerlink" href="#26_1" title="Permanent link">¶</a></h4>
-<p>EFS ファイルシステムを暗号化して、保存データを保護できます。<br>
-EFS の暗号化は、作成時または既存のファイルシステムの設定変更時に設定できます。</p>
+<p>EFS ファイルシステムを暗号化して、保存データを保護できる。<br>
+EFS の暗号化は、作成時または既存のファイルシステムの設定変更時に設定できる。</p>
 <h4 id="27_1">2.7 統合性と拡張性<a class="headerlink" href="#27_1" title="Permanent link">¶</a></h4>
-<p>Amazon EFS は、Amazon EC2, AWS Lambda, AWS Fargate, AWS Backup, AWS DataSync などの AWS の他のサービスと密接に統合されています。<br>
-また、API を利用して、EFS ファイルシステムの管理を自動化することもできます。</p>
+<p>Amazon EFS は、Amazon EC2, AWS Lambda, AWS Fargate, AWS Backup, AWS DataSync などの AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、EFS ファイルシステムの管理を自動化することもできる。</p>
 <h3 id="3_1">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_1" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、Amazon EFS ファイルシステムを作成し、EC2 インスタンスからマウント。</li>
@@ -7240,28 +7240,28 @@ EFS の暗号化は、作成時または既存のファイルシステムの設�
 <li>必要に応じて、異なる可用性ゾーンにある EC2 インスタンスから EFS ファイルシステムにアクセス。</li>
 <li>データは、EFS ファイルシステムに保存され、スケーラビリティと耐久性が確保。</li>
 </ol>
-<p>Amazon EFS は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供します。<br>
-ファイルシステムのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を意識する必要はありません。</p>
+<p>Amazon EFS は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供する。<br>
+ファイルシステムのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を意識する必要はない。</p>
 <h3 id="4_1">4. セキュリティと認証・認可<a class="headerlink" href="#4_1" title="Permanent link">¶</a></h3>
 <p>Amazon EFS は、ファイルシステムのセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、EFS へのアクセスを制御します。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、EFS へのアクセスを制御する。</li>
 <li><strong>VPC 内での実行</strong>: EFS は Virtual Private Cloud (VPC) 内で実行され、ネットワーク隔離を実現。</li>
-<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化されます。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
 <li><strong>NFS アクセス制御</strong>: Network File System (NFS) のアクセス制御リスト (ACL) を利用して、ファイルシステムへのアクセスを制御。</li>
 <li><strong>セキュリティグループ</strong>: ネットワークアクセスをセキュリティグループで制御。</li>
 </ul>
-<p>これらのセキュリティ対策により、ファイルシステムとそのデータを安全に保護します。</p>
+<p>これらのセキュリティ対策により、ファイルシステムとそのデータを安全に保護する。</p>
 <h3 id="5_1">5. 料金形態<a class="headerlink" href="#5_1" title="Permanent link">¶</a></h3>
 <p>Amazon EFS の料金は主に以下に基づきます:</p>
 <ul>
 <li><strong>ストレージ使用量</strong>: ファイルシステムで使用されたストレージ容量に応じて課金。</li>
 <li><strong>データ転送</strong>: データ転送量に応じて課金。</li>
-<li><strong>ストレージクラス</strong>: 標準クラスと低頻度アクセス（IA）クラスで料金が異なります。</li>
+<li><strong>ストレージクラス</strong>: 標準クラスと低頻度アクセス（IA）クラスで料金が異なる。</li>
 <li><strong>スループット</strong>: プロビジョニングされたスループット容量に応じて課金。</li>
 </ul>
 <h3 id="6_1">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_1" title="Permanent link">¶</a></h3>
-<p>Amazon EFS は、様々なワークロードに利用できます。一般的なパターンは以下の通りです:</p>
+<p>Amazon EFS は、様々なワークロードに利用できる。一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>Web アプリケーションのコンテンツ共有</strong>: Web アプリケーションの静的コンテンツやアップロードファイルを、複数の EC2 インスタンスで共有。</li>
 <li><strong>ビッグデータ分析</strong>: ビッグデータ分析のために、複数の EC2 インスタンスで共通のデータセットを共有。</li>
@@ -7323,22 +7323,22 @@ EFS の暗号化は、作成時または既存のファイルシステムの設�
 <h4 id="88_1">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon EFS は何を提供するサービスですか？</li>
-<li>A: 複数の Amazon EC2 インスタンスから同時にアクセスできる、シンプルでスケーラブルなフルマネージドのネットワークファイルシステムです。</li>
+<li>A: 複数の Amazon EC2 インスタンスから同時にアクセスできる、シンプルでスケーラブルなフルマネージドのネットワークファイルシステムである。</li>
 <li>Q: Amazon EFS では、どのようなパフォーマンスモードが利用できますか？</li>
-<li>A: 汎用と最大 I/O の 2 つのパフォーマンスモードが利用できます。</li>
+<li>A: 汎用と最大 I/O の 2 つのパフォーマンスモードが利用できる。</li>
 <li>Q: Amazon EFS のストレージクラスは何ですか？</li>
-<li>A: 標準と低頻度アクセス（IA）の 2 つのストレージクラスがあります。</li>
+<li>A: 標準と低頻度アクセス（IA）の 2 つのストレージクラスがある。</li>
 <li>Q: Amazon EFS のファイルシステムへのアクセスはどのように制御しますか？</li>
-<li>A: IAM ポリシー、NFS アクセス制御リスト (ACL)、セキュリティグループを使用して制御します。</li>
+<li>A: IAM ポリシー、NFS アクセス制御リスト (ACL)、セキュリティグループを使用して制御する。</li>
 <li>Q: Amazon EFS の料金はどのように計算されますか？</li>
-<li>A: ストレージ使用量、データ転送量、ストレージクラス、プロビジョニングされたスループット容量などに基づいて計算されます。</li>
+<li>A: ストレージ使用量、データ転送量、ストレージクラス、プロビジョニングされたスループット容量などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="fsx">FSx<a class="headerlink" href="#fsx" title="Permanent link">¶</a></h2>
 <h3 id="1_2">1. サービス概要<a class="headerlink" href="#1_2" title="Permanent link">¶</a></h3>
-<p>Amazon FSx は、Windows ファイルサーバー、高性能な Lustre ファイルシステム、および NetApp ONTAP ベースのファイルシステムを簡単に起動、実行できるフルマネージドサービスです。<br>
-ユーザーは、既存のファイルシステムをクラウドに移行したり、新しいファイルシステムを AWS で作成し、様々なワークロードに対応できます。<br>
-FSx は、高性能、スケーラビリティ、セキュリティを提供し、エンタープライズレベルのファイルストレージを容易に利用できるようにします。</p>
+<p>Amazon FSx は、Windows ファイルサーバー、高性能な Lustre ファイルシステム、および NetApp ONTAP ベースのファイルシステムを簡単に起動、実行できるフルマネージドサービスである。<br>
+ユーザーは、既存のファイルシステムをクラウドに移行したり、新しいファイルシステムを AWS で作成し、様々なワークロードに対応できる。<br>
+FSx は、高性能、スケーラビリティ、セキュリティを提供し、エンタープライズレベルのファイルストレージを容易に利用できるようにする。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>Windows ベースのアプリケーション</li>
@@ -7348,30 +7348,30 @@ FSx は、高性能、スケーラビリティ、セキュリティを提供し�
 <li>コンテンツリポジトリ</li>
 <li>エンタープライズアプリケーション</li>
 </ul>
-<p>などが挙げられます。<br>
-Amazon FSx は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+Amazon FSx は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_2">2. 主な特徴と機能<a class="headerlink" href="#2_2" title="Permanent link">¶</a></h3>
 <h4 id="21-windows-amazon-fsx-for-windows-file-server">2.1 Windows ファイルサーバー (Amazon FSx for Windows File Server)<a class="headerlink" href="#21-windows-amazon-fsx-for-windows-file-server" title="Permanent link">¶</a></h4>
-<p>Windows ファイルサーバーをフルマネージドで提供します。<br>
-ユーザーは、Active Directory と統合し、SMB プロトコルを使用して、Windows アプリケーションからファイルシステムにアクセスできます。</p>
+<p>Windows ファイルサーバーをフルマネージドで提供する。<br>
+ユーザーは、Active Directory と統合し、SMB プロトコルを使用して、Windows アプリケーションからファイルシステムにアクセスできる。</p>
 <h4 id="22-amazon-fsx-for-lustre">2.2 高性能ファイルシステム (Amazon FSx for Lustre)<a class="headerlink" href="#22-amazon-fsx-for-lustre" title="Permanent link">¶</a></h4>
-<p>高性能コンピューティング（HPC）、機械学習、メディア処理などのワークロードに最適な、高性能な Lustre ファイルシステムを提供します。<br>
-高いスループットと低いレイテンシーを実現し、データ集約型のワークロードを高速に処理できます。</p>
+<p>高性能コンピューティング（HPC）、機械学習、メディア処理などのワークロードに最適な、高性能な Lustre ファイルシステムを提供する。<br>
+高いスループットと低いレイテンシーを実現し、データ集約型のワークロードを高速に処理できる。</p>
 <h4 id="23-netapp-ontap-amazon-fsx-for-netapp-ontap">2.3 NetApp ONTAP ベースのファイルシステム (Amazon FSx for NetApp ONTAP)<a class="headerlink" href="#23-netapp-ontap-amazon-fsx-for-netapp-ontap" title="Permanent link">¶</a></h4>
-<p>業界で広く利用されている NetApp ONTAP をベースにした、エンタープライズレベルのファイルシステムを提供します。<br>
-NetApp ONTAP の機能や API を利用して、ファイルシステムの高度な管理が可能です。</p>
+<p>業界で広く利用されている NetApp ONTAP をベースにした、エンタープライズレベルのファイルシステムを提供する。<br>
+NetApp ONTAP の機能や API を利用して、ファイルシステムの高度な管理が可能である。</p>
 <h4 id="24_2">2.4 フルマネージドサービス<a class="headerlink" href="#24_2" title="Permanent link">¶</a></h4>
-<p>FSx は、ファイルシステムのプロビジョニング、バックアップ、スケーリング、パッチ適用などの管理を AWS に任せることができます。<br>
-ユーザーは、ファイルシステムの管理に煩わされることなく、アプリケーション開発に集中できます。</p>
+<p>FSx は、ファイルシステムのプロビジョニング、バックアップ、スケーリング、パッチ適用などの管理を AWS に任せることができる。<br>
+ユーザーは、ファイルシステムの管理に煩わされることなく、アプリケーション開発に集中できる。</p>
 <h4 id="25_2">2.5 スケーラビリティ<a class="headerlink" href="#25_2" title="Permanent link">¶</a></h4>
-<p>FSx は、ストレージ容量とパフォーマンスを自動的にスケーリングできます。<br>
-これにより、ワークロードの変動に対応し、安定したパフォーマンスを提供できます。</p>
+<p>FSx は、ストレージ容量とパフォーマンスを自動的にスケーリングできる。<br>
+これにより、ワークロードの変動に対応し、安定したパフォーマンスを提供できる。</p>
 <h4 id="26_2">2.6 データ暗号化<a class="headerlink" href="#26_2" title="Permanent link">¶</a></h4>
-<p>ファイルシステムを暗号化して、保存データを保護できます。<br>
-データは転送中および保存時に暗号化され、セキュリティが確保されます。</p>
+<p>ファイルシステムを暗号化して、保存データを保護できる。<br>
+データは転送中および保存時に暗号化され、セキュリティが確保される。</p>
 <h4 id="27_2">2.7 統合性と拡張性<a class="headerlink" href="#27_2" title="Permanent link">¶</a></h4>
-<p>Amazon FSx は、Amazon EC2, AWS Lambda, AWS Backup, AWS DataSync などの AWS の他のサービスと密接に統合されています。<br>
-また、API を利用して、ファイルシステムの管理を自動化することもできます。</p>
+<p>Amazon FSx は、Amazon EC2, AWS Lambda, AWS Backup, AWS DataSync などの AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、ファイルシステムの管理を自動化することもできる。</p>
 <h3 id="3_2">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_2" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS マネジメントコンソールまたは API を通じて、FSx ファイルシステムを作成。</li>
@@ -7380,18 +7380,18 @@ NetApp ONTAP の機能や API を利用して、ファイルシステムの高�
 <li>必要に応じて、ファイルシステムのスナップショットを作成。</li>
 <li>必要に応じて、オンプレミス環境と FSx ファイルシステムを接続。</li>
 </ol>
-<p>Amazon FSx は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供します。<br>
-ファイルシステムのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
+<p>Amazon FSx は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供する。<br>
+ファイルシステムのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
 <h3 id="4_2">4. セキュリティと認証・認可<a class="headerlink" href="#4_2" title="Permanent link">¶</a></h3>
 <p>Amazon FSx は、ファイルシステムのセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、FSx へのアクセスを制御します。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、FSx へのアクセスを制御する。</li>
 <li><strong>VPC 内での実行</strong>: FSx ファイルシステムは Virtual Private Cloud (VPC) 内で実行され、ネットワーク隔離を実現。</li>
-<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化されます。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
 <li><strong>アクセス制御</strong>: Active Directory と連携して、ユーザー認証とアクセス制御を集中管理（FSx for Windows File Server)。</li>
 <li><strong>セキュリティグループ</strong>: ネットワークアクセスをセキュリティグループで制御。</li>
 </ul>
-<p>これらのセキュリティ対策により、ファイルシステムとそのデータを安全に保護します。</p>
+<p>これらのセキュリティ対策により、ファイルシステムとそのデータを安全に保護する。</p>
 <h3 id="5_2">5. 料金形態<a class="headerlink" href="#5_2" title="Permanent link">¶</a></h3>
 <p>Amazon FSx の料金は主に以下に基づきます:</p>
 <ul>
@@ -7401,7 +7401,7 @@ NetApp ONTAP の機能や API を利用して、ファイルシステムの高�
 <li><strong>データ転送</strong>: データ転送量に応じて課金。</li>
 </ul>
 <h3 id="6_2">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_2" title="Permanent link">¶</a></h3>
-<p>Amazon FSx は、様々なワークロードに利用できます。一般的なパターンは以下の通りです:</p>
+<p>Amazon FSx は、様々なワークロードに利用できる。一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>Windows ベースのアプリケーション</strong>: Windows ファイルサーバー（Amazon FSx for Windows File Server）を利用し、Windows ベースのアプリケーションのファイル共有。</li>
 <li><strong>高性能コンピューティング (HPC)</strong>: 大量のデータを高速に処理するために、Lustre ファイルシステム（Amazon FSx for Lustre）を利用。</li>
@@ -7464,22 +7464,22 @@ NetApp ONTAP の機能や API を利用して、ファイルシステムの高�
 <h4 id="88_2">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_2" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon FSx は何を提供するサービスですか？</li>
-<li>A: Windows ファイルサーバー、高性能な Lustre ファイルシステム、および NetApp ONTAP ベースのファイルシステムを簡単に起動、実行できるフルマネージドサービスです。</li>
+<li>A: Windows ファイルサーバー、高性能な Lustre ファイルシステム、および NetApp ONTAP ベースのファイルシステムを簡単に起動、実行できるフルマネージドサービスである。</li>
 <li>Q: Amazon FSx for Windows File Server は、どのような用途に適していますか？</li>
-<li>A: Windows ベースのアプリケーションのファイル共有に適しています。</li>
+<li>A: Windows ベースのアプリケーションのファイル共有に適している。</li>
 <li>Q: Amazon FSx for Lustre は、どのようなワークロードに適していますか？</li>
-<li>A: 高性能コンピューティング（HPC）、機械学習、メディア処理などのワークロードに適しています。</li>
+<li>A: 高性能コンピューティング（HPC）、機械学習、メディア処理などのワークロードに適している。</li>
 <li>Q: Amazon FSx for NetApp ONTAP は、どのような特徴を持っていますか？</li>
-<li>A: 業界で広く利用されている NetApp ONTAP をベースにした、エンタープライズレベルのファイルシステムを提供します。</li>
+<li>A: 業界で広く利用されている NetApp ONTAP をベースにした、エンタープライズレベルのファイルシステムを提供する。</li>
 <li>Q: Amazon FSx の料金はどのように計算されますか？</li>
-<li>A: ストレージ使用量、スループット、バックアップ、データ転送量などに基づいて計算されます。</li>
+<li>A: ストレージ使用量、スループット、バックアップ、データ転送量などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="s3-glacier">S3 Glacier<a class="headerlink" href="#s3-glacier" title="Permanent link">¶</a></h2>
 <h3 id="1_3">1. サービス概要<a class="headerlink" href="#1_3" title="Permanent link">¶</a></h3>
-<p>Amazon S3 Glacier は、あまりアクセスされないデータを長期的に、安全かつ低コストでアーカイブするためのストレージサービスです。<br>
-ユーザーは、バックアップ、コンプライアンス、災害対策などの目的で、大量のデータを S3 Glacier に保存できます。<br>
-S3 Glacier は、データの耐久性、セキュリティ、スケーラビリティを提供し、長期データアーカイブのニーズに対応します。</p>
+<p>Amazon S3 Glacier は、あまりアクセスされないデータを長期的に、安全かつ低コストでアーカイブするためのストレージサービスである。<br>
+ユーザーは、バックアップ、コンプライアンス、災害対策などの目的で、大量のデータを S3 Glacier に保存できる。<br>
+S3 Glacier は、データの耐久性、セキュリティ、スケーラビリティを提供し、長期データアーカイブのニーズに対応する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>バックアップデータのアーカイブ</li>
@@ -7488,30 +7488,30 @@ S3 Glacier は、データの耐久性、セキュリティ、スケーラビリ
 <li>長期的なログデータの保存</li>
 <li>メディアコンテンツのアーカイブ</li>
 </ul>
-<p>などが挙げられます。<br>
-Amazon S3 Glacier は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+Amazon S3 Glacier は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="1_4">1. 主な特徴と機能<a class="headerlink" href="#1_4" title="Permanent link">¶</a></h3>
 <h4 id="21_2">2.1 長期アーカイブストレージ<a class="headerlink" href="#21_2" title="Permanent link">¶</a></h4>
-<p>S3 Glacier は、あまりアクセスされないデータを長期的に保存するためのストレージサービスです。<br>
-これにより、コストを抑えながら、データの長期保存を実現できます。</p>
+<p>S3 Glacier は、あまりアクセスされないデータを長期的に保存するためのストレージサービスである。<br>
+これにより、コストを抑えながら、データの長期保存を実現できる。</p>
 <h4 id="22_2">2.2 低コストストレージ<a class="headerlink" href="#22_2" title="Permanent link">¶</a></h4>
-<p>S3 Glacier は、他のストレージサービスと比較して、非常に低いストレージ料金を提供します。<br>
-これにより、大量のデータを低コストでアーカイブできます。</p>
+<p>S3 Glacier は、他のストレージサービスと比較して、非常に低いストレージ料金を提供する。<br>
+これにより、大量のデータを低コストでアーカイブできる。</p>
 <h4 id="23_2">2.3 データ検索オプション<a class="headerlink" href="#23_2" title="Permanent link">¶</a></h4>
-<p>S3 Glacier には、柔軟な取り出しと大容量取り出しという 2 つのデータ検索オプションがあります。<br>
-柔軟な取り出しは、数分から数時間でデータを取り出すことができ、大容量取り出しは、より低コストで大量のデータを取り出すことができます。</p>
+<p>S3 Glacier には、柔軟な取り出しと大容量取り出しという 2 つのデータ検索オプションがある。<br>
+柔軟な取り出しは、数分から数時間でデータを取り出すことができ、大容量取り出しは、より低コストで大量のデータを取り出すことができる。</p>
 <h4 id="24_3">2.4 ストレージクラス<a class="headerlink" href="#24_3" title="Permanent link">¶</a></h4>
-<p>S3 Glacier には、Glacier Flexible Retrieval と Glacier Deep Archive の 2 つのストレージクラスがあります。<br>
-Glacier Flexible Retrieval は、比較的頻繁にアクセスされるアーカイブデータに適しており、Glacier Deep Archive は、年に数回しかアクセスされない、最も低コストなアーカイブストレージです。</p>
+<p>S3 Glacier には、Glacier Flexible Retrieval と Glacier Deep Archive の 2 つのストレージクラスがある。<br>
+Glacier Flexible Retrieval は、比較的頻繁にアクセスされるアーカイブデータに適しており、Glacier Deep Archive は、年に数回しかアクセスされない、最も低コストなアーカイブストレージである。</p>
 <h4 id="25_3">2.5 データの耐久性<a class="headerlink" href="#25_3" title="Permanent link">¶</a></h4>
-<p>S3 Glacier は、99.999999999%のデータの耐久性を提供します。<br>
-これにより、データ損失のリスクを最小限に抑え、安心してデータを長期保存できます。</p>
+<p>S3 Glacier は、99.999999999%のデータの耐久性を提供する。<br>
+これにより、データ損失のリスクを最小限に抑え、安心してデータを長期保存できる。</p>
 <h4 id="26_3">2.6 データセキュリティ<a class="headerlink" href="#26_3" title="Permanent link">¶</a></h4>
-<p>データは転送中および保存時に暗号化され、アクセス制御リスト (ACL)や IAM ポリシーを使用して、アクセス権限を制御できます。<br>
-これにより、データを安全に保護できます。</p>
+<p>データは転送中および保存時に暗号化され、アクセス制御リスト (ACL)や IAM ポリシーを使用して、アクセス権限を制御できる。<br>
+これにより、データを安全に保護できる。</p>
 <h4 id="27_3">2.7 統合性と拡張性<a class="headerlink" href="#27_3" title="Permanent link">¶</a></h4>
-<p>Amazon S3 Glacier は、S3、AWS Backup、AWS Data Lifecycle Manager, AWS Storage Gateway などの AWS の他のサービスと密接に統合されており、様々なワークフローに対応できます。<br>
-また、API を利用して、データ管理を自動化することもできます。</p>
+<p>Amazon S3 Glacier は、S3、AWS Backup、AWS Data Lifecycle Manager, AWS Storage Gateway などの AWS の他のサービスと密接に統合されており、様々なワークフローに対応できる。<br>
+また、API を利用して、データ管理を自動化することもできる。</p>
 <h3 id="3_3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_3" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、S3 バケットから S3 Glacier ボールトにデータをアーカイブ。</li>
@@ -7520,18 +7520,18 @@ Glacier Flexible Retrieval は、比較的頻繁にアクセスされるアー�
 <li>S3 Glacier は、リクエストに応じて、データを取り出し、一時的な S3 バケットに保存。</li>
 <li>ユーザーは、S3 バケットからデータを取り出し。</li>
 </ol>
-<p>Amazon S3 Glacier は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供します。<br>
-データアーカイブ、管理、取り出しは AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
+<p>Amazon S3 Glacier は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供する。<br>
+データアーカイブ、管理、取り出しは AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
 <h3 id="4_3">4. セキュリティと認証・認可<a class="headerlink" href="#4_3" title="Permanent link">¶</a></h3>
 <p>Amazon S3 Glacier は、データのセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、S3 Glacier へのアクセスを制御します。</li>
-<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化されます。</li>
-<li><strong>アクセス制御リスト (ACL)</strong>: ACL を使用して、オブジェクトごとのアクセス権限を制御できます。</li>
-<li><strong>VPC エンドポイント</strong>: VPC 内から S3 Glacier にアクセスする際に、インターネットを経由せずにアクセスできます。</li>
-<li><strong>バージョニング</strong>: S3 のバージョニング機能を有効にすることで、データを誤って削除した場合でも復元できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、S3 Glacier へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
+<li><strong>アクセス制御リスト (ACL)</strong>: ACL を使用して、オブジェクトごとのアクセス権限を制御できる。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から S3 Glacier にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>バージョニング</strong>: S3 のバージョニング機能を有効にすることで、データを誤って削除した場合でも復元できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、アーカイブデータへの不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、アーカイブデータへの不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_3">5. 料金形態<a class="headerlink" href="#5_3" title="Permanent link">¶</a></h3>
 <p>Amazon S3 Glacier の料金は主に以下に基づきます:</p>
 <ul>
@@ -7539,10 +7539,10 @@ Glacier Flexible Retrieval は、比較的頻繁にアクセスされるアー�
 <li><strong>データ検索</strong>: データを取り出す際に料金が発生。</li>
 <li><strong>データ転送</strong>: データ転送量に応じて課金。</li>
 <li><strong>リクエスト</strong>: リクエスト数に応じて課金。</li>
-<li><strong>ストレージクラス</strong>: Glacier Flexible Retrieval と Glacier Deep Archive で料金が異なります。</li>
+<li><strong>ストレージクラス</strong>: Glacier Flexible Retrieval と Glacier Deep Archive で料金が異なる。</li>
 </ul>
 <h3 id="6_3">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_3" title="Permanent link">¶</a></h3>
-<p>Amazon S3 Glacier は、様々なデータアーカイブに利用できます。一般的なパターンは以下の通りです:</p>
+<p>Amazon S3 Glacier は、様々なデータアーカイブに利用できる。一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>バックアップデータのアーカイブ</strong>: 定期的なバックアップデータを S3 Glacier にアーカイブし、災害対策やデータ復旧に備える。</li>
 <li><strong>コンプライアンス要件を満たすためのデータ保持</strong>: 法規制や業界規制に従って、データを長期的に S3 Glacier に保存。</li>
@@ -7604,15 +7604,15 @@ Glacier Flexible Retrieval は、比較的頻繁にアクセスされるアー�
 <h4 id="88_3">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_3" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon S3 Glacier は何を目的としたサービスですか？</li>
-<li>A: あまりアクセスされないデータを長期的に、安全かつ低コストでアーカイブするためのストレージサービスです。</li>
+<li>A: あまりアクセスされないデータを長期的に、安全かつ低コストでアーカイブするためのストレージサービスである。</li>
 <li>Q: Amazon S3 Glacier のデータ検索オプションは何ですか？</li>
-<li>A: 柔軟な取り出しと大容量取り出しの 2 つのオプションがあります。</li>
+<li>A: 柔軟な取り出しと大容量取り出しの 2 つのオプションがある。</li>
 <li>Q: Amazon S3 Glacier のストレージクラスは何ですか？</li>
-<li>A: Glacier Flexible Retrieval と Glacier Deep Archive の 2 つのストレージクラスがあります。</li>
+<li>A: Glacier Flexible Retrieval と Glacier Deep Archive の 2 つのストレージクラスがある。</li>
 <li>Q: Amazon S3 Glacier のデータ耐久性はどのくらいですか？</li>
-<li>A: 99.999999999%のデータの耐久性を提供します。</li>
+<li>A: 99.999999999%のデータの耐久性を提供する。</li>
 <li>Q: Amazon S3 Glacier の料金はどのように計算されますか？</li>
-<li>A: ストレージ、データ検索、データ転送、リクエスト、ストレージクラスに基づいて計算されます。</li>
+<li>A: ストレージ、データ検索、データ転送、リクエスト、ストレージクラスに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="simple-storage-service-s3">Simple Storage Service (S3)<a class="headerlink" href="#simple-storage-service-s3" title="Permanent link">¶</a></h2>
@@ -7749,9 +7749,9 @@ Glacier Flexible Retrieval は、比較的頻繁にアクセスされるアー�
 <hr>
 <h2 id="backup">Backup<a class="headerlink" href="#backup" title="Permanent link">¶</a></h2>
 <h3 id="1_6">1. サービス概要<a class="headerlink" href="#1_6" title="Permanent link">¶</a></h3>
-<p>AWS Backup は、AWS クラウドおよびオンプレミス環境における様々なワークロードのバックアップを集中管理し、自動化するためのフルマネージドサービスです。<br>
-ユーザーは、バックアップポリシーを設定するだけで、EC2 インスタンス、EBS ボリューム、RDS データベース、DynamoDB テーブル、EFS ファイルシステム、Storage Gateway ボリュームなど、様々な AWS リソースのバックアップを自動的に作成、管理できます。<br>
-AWS Backup は、データの保護、コンプライアンス遵守、災害復旧戦略の強化に役立ちます。</p>
+<p>AWS Backup は、AWS クラウドおよびオンプレミス環境における様々なワークロードのバックアップを集中管理し、自動化するためのフルマネージドサービスである。<br>
+ユーザーは、バックアップポリシーを設定するだけで、EC2 インスタンス、EBS ボリューム、RDS データベース、DynamoDB テーブル、EFS ファイルシステム、Storage Gateway ボリュームなど、様々な AWS リソースのバックアップを自動的に作成、管理できる。<br>
+AWS Backup は、データの保護、コンプライアンス遵守、災害復旧戦略の強化に役立つ。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>AWS リソースのバックアップ</li>
@@ -7760,30 +7760,30 @@ AWS Backup は、データの保護、コンプライアンス遵守、災害復
 <li>コンプライアンス要件を満たすためのデータ保持</li>
 <li>アプリケーションの一貫性バックアップ</li>
 </ul>
-<p>などが挙げられます。<br>
-AWS Backup は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+AWS Backup は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_4">2. 主な特徴と機能<a class="headerlink" href="#2_4" title="Permanent link">¶</a></h3>
 <h4 id="21_4">2.1 バックアップの集中管理<a class="headerlink" href="#21_4" title="Permanent link">¶</a></h4>
-<p>AWS Backup は、AWS リソースのバックアップを集中管理するための単一のインターフェースを提供します。<br>
-これにより、複数の AWS サービスにまたがるバックアップポリシーを簡単に設定し、管理できます。</p>
+<p>AWS Backup は、AWS リソースのバックアップを集中管理するための単一のインターフェースを提供する。<br>
+これにより、複数の AWS サービスにまたがるバックアップポリシーを簡単に設定し、管理できる。</p>
 <h4 id="22_4">2.2 バックアップポリシー<a class="headerlink" href="#22_4" title="Permanent link">¶</a></h4>
-<p>バックアップスケジュール、バックアップ保持期間、バックアップ頻度などを定義したバックアップポリシーを作成できます。<br>
-これらのポリシーは、特定のリソースやリソースタグに適用できます。</p>
+<p>バックアップスケジュール、バックアップ保持期間、バックアップ頻度などを定義したバックアップポリシーを作成できる。<br>
+これらのポリシーは、特定のリソースやリソースタグに適用できる。</p>
 <h4 id="23_4">2.3 バックアップの自動化<a class="headerlink" href="#23_4" title="Permanent link">¶</a></h4>
-<p>AWS Backup は、設定されたバックアップポリシーに基づいて、バックアップを自動的に作成します。<br>
-これにより、手動でのバックアップ操作を減らし、人的ミスを防止できます。</p>
+<p>AWS Backup は、設定されたバックアップポリシーに基づいて、バックアップを自動的に作成する。<br>
+これにより、手動でのバックアップ操作を減らし、人的ミスを防止できる。</p>
 <h4 id="24_5">2.4 ライフサイクル管理<a class="headerlink" href="#24_5" title="Permanent link">¶</a></h4>
-<p>バックアップの保持期間を管理できます。<br>
-古いバックアップは、自動的に削除またはアーカイブされ、ストレージコストを最適化できます。</p>
+<p>バックアップの保持期間を管理できる。<br>
+古いバックアップは、自動的に削除またはアーカイブされ、ストレージコストを最適化できる。</p>
 <h4 id="25_5">2.5 リカバリ<a class="headerlink" href="#25_5" title="Permanent link">¶</a></h4>
-<p>バックアップしたデータを、元のリソースまたは新しいリソースに簡単に復元できます。<br>
-これにより、災害発生時やデータ損失時に、迅速に復旧できます。</p>
+<p>バックアップしたデータを、元のリソースまたは新しいリソースに簡単に復元できる。<br>
+これにより、災害発生時やデータ損失時に、迅速に復旧できる。</p>
 <h4 id="26_4">2.6 アプリケーション整合性バックアップ<a class="headerlink" href="#26_4" title="Permanent link">¶</a></h4>
-<p>特定のアプリケーション（例：Amazon RDS）のバックアップを作成する際に、アプリケーションの整合性を確保できます。<br>
-これにより、復元後のアプリケーションの正常な動作を保証できます。</p>
+<p>特定のアプリケーション（例：Amazon RDS）のバックアップを作成する際に、アプリケーションの整合性を確保できる。<br>
+これにより、復元後のアプリケーションの正常な動作を保証できる。</p>
 <h4 id="27_4">2.7 統合性と拡張性<a class="headerlink" href="#27_4" title="Permanent link">¶</a></h4>
-<p>AWS Backup は、Amazon EC2, Amazon EBS, Amazon RDS, Amazon DynamoDB, Amazon EFS, AWS Storage Gateway など、様々な AWS サービスと統合されています。<br>
-また、API を利用して、バックアップ管理を自動化することもできます。</p>
+<p>AWS Backup は、Amazon EC2, Amazon EBS, Amazon RDS, Amazon DynamoDB, Amazon EFS, AWS Storage Gateway など、様々な AWS サービスと統合されている。<br>
+また、API を利用して、バックアップ管理を自動化することもできる。</p>
 <h3 id="3_5">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_5" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS Backup でバックアップポリシーを作成し、保護対象のリソースを選択。</li>
@@ -7792,18 +7792,18 @@ AWS Backup は、これらのユースケースに対応するための様々な
 <li>必要に応じて、AWS Backup Vault からデータをリストア。</li>
 <li>バックアップのライフサイクル管理を自動的に適用。</li>
 </ol>
-<p>AWS Backup は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供します。<br>
-バックアップの作成や管理は AWS が行うため、ユーザーはインフラの管理を意識する必要はありません。</p>
+<p>AWS Backup は、AWS のインフラ上に構築されており、高い可用性と耐久性を提供する。<br>
+バックアップの作成や管理は AWS が行うため、ユーザーはインフラの管理を意識する必要はない。</p>
 <h3 id="4_5">4. セキュリティと認証・認可<a class="headerlink" href="#4_5" title="Permanent link">¶</a></h3>
 <p>AWS Backup は、バックアップデータのセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS Backup へのアクセスを制御します。</li>
-<li><strong>データ暗号化</strong>: バックアップデータは転送中および保存時に暗号化されます。</li>
-<li><strong>VPC エンドポイント</strong>: VPC 内から AWS Backup にアクセスする際に、インターネットを経由せずにアクセスできます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、AWS Backup の操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、AWS Backup の利用状況を監査できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS Backup へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: バックアップデータは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から AWS Backup にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、AWS Backup の操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、AWS Backup の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、バックアップデータへの不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、バックアップデータへの不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_5">5. 料金形態<a class="headerlink" href="#5_5" title="Permanent link">¶</a></h3>
 <p>AWS Backup の料金は主に以下に基づきます:</p>
 <ul>
@@ -7812,7 +7812,7 @@ AWS Backup は、これらのユースケースに対応するための様々な
 <li><strong>データ転送</strong>: データ転送量に応じて課金。</li>
 </ul>
 <h3 id="6_5">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_5" title="Permanent link">¶</a></h3>
-<p>AWS Backup は、様々なワークロードのバックアップに利用できます。<br>
+<p>AWS Backup は、様々なワークロードのバックアップに利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>AWS リソースのバックアップ</strong>: EC2 インスタンス、EBS ボリューム、RDS データベース、DynamoDB テーブル、EFS ファイルシステムなどの AWS リソースを定期的にバックアップ。</li>
@@ -7874,78 +7874,78 @@ AWS Backup は、これらのユースケースに対応するための様々な
 <h4 id="88_5">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_5" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Backup は何を提供するサービスですか？</li>
-<li>A: AWS クラウドおよびオンプレミス環境における様々なワークロードのバックアップを集中管理し、自動化するためのフルマネージドサービスです。</li>
+<li>A: AWS クラウドおよびオンプレミス環境における様々なワークロードのバックアップを集中管理し、自動化するためのフルマネージドサービスである。</li>
 <li>Q: AWS Backup で設定できるバックアップポリシーには、どのような設定項目がありますか？</li>
-<li>A: バックアップスケジュール、バックアップ保持期間、バックアップ頻度などを設定できます。</li>
+<li>A: バックアップスケジュール、バックアップ保持期間、バックアップ頻度などを設定できる。</li>
 <li>Q: AWS Backup はどのようにバックアップを自動化しますか？</li>
-<li>A: 設定されたバックアップポリシーに基づいて、バックアップを自動的に作成します。</li>
+<li>A: 設定されたバックアップポリシーに基づいて、バックアップを自動的に作成する。</li>
 <li>Q: AWS Backup のデータはどのように保護されますか？</li>
-<li>A: データは転送中および保存時に暗号化されます。また、アクセス制御リスト（ACL）や IAM ポリシーを使用して、アクセス権限を制御できます。</li>
+<li>A: データは転送中および保存時に暗号化される。また、アクセス制御リスト（ACL）や IAM ポリシーを使用して、アクセス権限を制御できる。</li>
 <li>Q: AWS Backup の料金はどのように計算されますか？</li>
-<li>A: バックアップデータの保存容量、データ復元、データ転送量などに基づいて計算されます。</li>
+<li>A: バックアップデータの保存容量、データ復元、データ転送量などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="snow-family">Snow Family<a class="headerlink" href="#snow-family" title="Permanent link">¶</a></h2>
 <h3 id="1_7">1. サービス概要<a class="headerlink" href="#1_7" title="Permanent link">¶</a></h3>
-<p>AWS Snow Family は、AWS クラウドへのデータ移行、エッジでのデータ処理、ストレージ拡張を目的とした一連の物理デバイスとサービスです。<br>
-ネットワーク接続が不安定または低帯域幅な環境でも、大規模なデータ移動やエッジコンピューティングを安全かつ効率的に行うことができます。</p>
+<p>AWS Snow Family は、AWS クラウドへのデータ移行、エッジでのデータ処理、ストレージ拡張を目的とした一連の物理デバイスとサービスである。<br>
+ネットワーク接続が不安定または低帯域幅な環境でも、大規模なデータ移動やエッジコンピューティングを安全かつ効率的に行うことができる。</p>
 <p>主なデバイスとして、</p>
 <ul>
 <li>AWS Snowcone</li>
 <li>AWS Snowball（Snowball Edge Compute Optimized、Snowball Edge Storage Optimized）</li>
 <li>AWS Snowmobile</li>
 </ul>
-<p>があります。</p>
-<p>それぞれのデバイスは異なるユースケースに対応しており、小型で持ち運び可能なものから、ペタバイト級のデータに対応するものまで幅広く提供されます。</p>
+<p>がある。</p>
+<p>それぞれのデバイスは異なるユースケースに対応しており、小型で持ち運び可能なものから、ペタバイト級のデータに対応するものまで幅広く提供される。</p>
 <h3 id="2_5">2. 主な特徴と機能<a class="headerlink" href="#2_5" title="Permanent link">¶</a></h3>
 <h4 id="21-aws-snowcone">2.1 AWS Snowcone<a class="headerlink" href="#21-aws-snowcone" title="Permanent link">¶</a></h4>
-<p>Snowcone は、小型で堅牢なデバイスで、エッジでのデータ収集、処理、データ転送に適しています。<br>
-バッテリー駆動可能で、過酷な環境下でも利用できます。</p>
+<p>Snowcone は、小型で堅牢なデバイスで、エッジでのデータ収集、処理、データ転送に適している。<br>
+バッテリー駆動可能で、過酷な環境下でも利用できる。</p>
 <ul>
 <li><strong>特徴</strong>: 小型、軽量、ポータブル、耐衝撃性</li>
 <li><strong>用途</strong>: エッジでのデータ収集・処理、過酷な環境での利用、IoT デバイスとの連携</li>
 <li><strong>機能</strong>: ローカルストレージ、コンピューティングリソース、AWS とのデータ転送</li>
 </ul>
 <h4 id="22-aws-snowball-edge">2.2 AWS Snowball Edge<a class="headerlink" href="#22-aws-snowball-edge" title="Permanent link">¶</a></h4>
-<p>Snowball Edge は、大規模なデータ移行やエッジでのコンピューティング処理に最適化されたデバイスです。<br>
-Compute Optimized と Storage Optimized の 2 つのタイプがあります。</p>
+<p>Snowball Edge は、大規模なデータ移行やエッジでのコンピューティング処理に最適化されたデバイスである。<br>
+Compute Optimized と Storage Optimized の 2 つのタイプがある。</p>
 <ul>
-<li><strong>Snowball Edge Compute Optimized</strong>: 大量の演算処理に特化しており、機械学習推論、メディア処理などに使用できます。GPU オプションも選択可能。</li>
-<li><strong>Snowball Edge Storage Optimized</strong>: 大規模なデータストレージに特化しており、ペタバイト級のデータ移行や長期保存に利用できます。</li>
+<li><strong>Snowball Edge Compute Optimized</strong>: 大量の演算処理に特化しており、機械学習推論、メディア処理などに使用できる。GPU オプションも選択可能。</li>
+<li><strong>Snowball Edge Storage Optimized</strong>: 大規模なデータストレージに特化しており、ペタバイト級のデータ移行や長期保存に利用できる。</li>
 </ul>
 <h4 id="23-aws-snowmobile">2.3 AWS Snowmobile<a class="headerlink" href="#23-aws-snowmobile" title="Permanent link">¶</a></h4>
-<p>Snowmobile は、エクサバイト級のデータを移動させるための輸送可能なデータ転送サービスです。<br>
-輸送可能なコンテナ型データセンターであり、大規模なデータセンターから AWS へのデータ移行を効率的に行います。</p>
+<p>Snowmobile は、エクサバイト級のデータを移動させるための輸送可能なデータ転送サービスである。<br>
+輸送可能なコンテナ型データセンターであり、大規模なデータセンターから AWS へのデータ移行を効率的に行う。</p>
 <h4 id="24_6">2.4 セキュリティと管理<a class="headerlink" href="#24_6" title="Permanent link">¶</a></h4>
-<p>Snow Family デバイスは、データ転送中および保管中のセキュリティを確保するために、暗号化機能と改ざん防止機能が組み込まれています。<br>
-AWS Key Management Service (KMS) を利用した暗号化や、物理的な改ざん防止対策が含まれます。</p>
+<p>Snow Family デバイスは、データ転送中および保管中のセキュリティを確保するために、暗号化機能と改ざん防止機能が組み込まれている。<br>
+AWS Key Management Service (KMS) を利用した暗号化や、物理的な改ざん防止対策が含まれる。</p>
 <h4 id="25_6">2.5 統合性と拡張性<a class="headerlink" href="#25_6" title="Permanent link">¶</a></h4>
-<p>Snow Family デバイスは AWS の他のサービスと連携して動作します。<br>
-例えば、Snowball Edge は S3 バケットへのデータ移行、Snowcone は IoT Core とのデータ連携が可能です。<br>
-また、AWS Management Console や AWS CLI を通じて、デバイスの管理やデータ転送ジョブの作成が可能です。</p>
+<p>Snow Family デバイスは AWS の他のサービスと連携して動作する。<br>
+例えば、Snowball Edge は S3 バケットへのデータ移行、Snowcone は IoT Core とのデータ連携が可能である。<br>
+また、AWS Management Console や AWS CLI を通じて、デバイスの管理やデータ転送ジョブの作成が可能である。</p>
 <h3 id="3_6">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_6" title="Permanent link">¶</a></h3>
 <ol>
-<li>ユーザーは AWS Management Console または AWS CLI でデータ転送ジョブを作成し、Snow Family デバイスを注文します。</li>
-<li>AWS はデバイスをユーザーの指定した場所に発送します。</li>
-<li>ユーザーはデバイスをデータセンターまたはエッジ環境に設置し、データをデバイスにコピーします。</li>
-<li>データコピー後、デバイスを AWS に返送します。</li>
-<li>AWS はデバイス内のデータを S3 バケットにインポートし、データ移行を完了します。</li>
+<li>ユーザーは AWS Management Console または AWS CLI でデータ転送ジョブを作成し、Snow Family デバイスを注文する。</li>
+<li>AWS はデバイスをユーザーの指定した場所に発送する。</li>
+<li>ユーザーはデバイスをデータセンターまたはエッジ環境に設置し、データをデバイスにコピーする。</li>
+<li>データコピー後、デバイスを AWS に返送する。</li>
+<li>AWS はデバイス内のデータを S3 バケットにインポートし、データ移行を完了する。</li>
 </ol>
-<p>Snow Family デバイスは、AWS との連携を容易にするために、AWS SDK や API をサポートしています。</p>
+<p>Snow Family デバイスは、AWS との連携を容易にするために、AWS SDK や API をサポートしている。</p>
 <h3 id="4_6">4. セキュリティと認証・認可<a class="headerlink" href="#4_6" title="Permanent link">¶</a></h3>
 <p>セキュリティは Snow Family の中核コンポーネントです:</p>
 <ul>
-<li><strong>デバイス暗号化</strong>: デバイスに保存されるデータは、AWS KMS で管理されるキーを使用して暗号化されます。</li>
-<li><strong>改ざん防止</strong>: デバイスは物理的な改ざんを検知する機能があり、不正なアクセスを防ぎます。</li>
-<li><strong>アクセス制御</strong>: IAM を利用して、デバイスへのアクセス権限を管理します。</li>
+<li><strong>デバイス暗号化</strong>: デバイスに保存されるデータは、AWS KMS で管理されるキーを使用して暗号化される。</li>
+<li><strong>改ざん防止</strong>: デバイスは物理的な改ざんを検知する機能があり、不正なアクセスを防ぐ。</li>
+<li><strong>アクセス制御</strong>: IAM を利用して、デバイスへのアクセス権限を管理する。</li>
 </ul>
-<p>これらのセキュリティ機能により、データの機密性と整合性を確保し、安全なデータ転送を実現します。</p>
+<p>これらのセキュリティ機能により、データの機密性と整合性を確保し、安全なデータ転送を実現する。</p>
 <h3 id="5_6">5. 料金形態<a class="headerlink" href="#5_6" title="Permanent link">¶</a></h3>
 <p>AWS Snow Family の料金は主に以下に基づきます:</p>
 <ul>
-<li><strong>デバイス利用料金</strong>: デバイスのレンタル期間に応じて課金されます。デバイスの種類や構成によって料金が異なります。</li>
-<li><strong>データ転送料金</strong>: AWS へのデータインポートに際して料金が発生する場合があります。</li>
-<li><strong>ジョブ作成料金</strong>: データ転送ジョブの作成には、ジョブごとに料金が発生します。</li>
+<li><strong>デバイス利用料金</strong>: デバイスのレンタル期間に応じて課金される。デバイスの種類や構成によって料金が異なる。</li>
+<li><strong>データ転送料金</strong>: AWS へのデータインポートに際して料金が発生する場合がある。</li>
+<li><strong>ジョブ作成料金</strong>: データ転送ジョブの作成には、ジョブごとに料金が発生する。</li>
 </ul>
 <h3 id="6_6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_6" title="Permanent link">¶</a></h3>
 <p>一般的なパターンは以下の通りです:</p>
@@ -8024,9 +8024,9 @@ AWS Key Management Service (KMS) を利用した暗号化や、物理的な改�
 <hr>
 <h2 id="storage-gateway">Storage Gateway<a class="headerlink" href="#storage-gateway" title="Permanent link">¶</a></h2>
 <h3 id="1_8">1. サービス概要<a class="headerlink" href="#1_8" title="Permanent link">¶</a></h3>
-<p>AWS Storage Gateway は、オンプレミス環境と AWS クラウドの間でストレージを連携させるハイブリッドストレージサービスです。<br>
-ユーザーは、オンプレミス環境から AWS のストレージサービス（S3、EBS、Glacier）にアクセスし、データを移行したり、クラウドストレージをローカルストレージとして利用したりできます。<br>
-Storage Gateway は、多様なユースケースに対応するための柔軟性と、オンプレミス環境と AWS クラウド間のデータ連携を簡素化します。</p>
+<p>AWS Storage Gateway は、オンプレミス環境と AWS クラウドの間でストレージを連携させるハイブリッドストレージサービスである。<br>
+ユーザーは、オンプレミス環境から AWS のストレージサービス（S3、EBS、Glacier）にアクセスし、データを移行したり、クラウドストレージをローカルストレージとして利用したりできる。<br>
+Storage Gateway は、多様なユースケースに対応するための柔軟性と、オンプレミス環境と AWS クラウド間のデータ連携を簡素化する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>オンプレミスデータの AWS クラウドへの移行</li>
@@ -8035,30 +8035,30 @@ Storage Gateway は、多様なユースケースに対応するための柔軟�
 <li>データアーカイブ</li>
 <li>ファイル共有</li>
 </ul>
-<p>などが挙げられます。<br>
-AWS Storage Gateway は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+AWS Storage Gateway は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_6">2. 主な特徴と機能<a class="headerlink" href="#2_6" title="Permanent link">¶</a></h3>
 <h4 id="21_5">2.1 ハイブリッドストレージ<a class="headerlink" href="#21_5" title="Permanent link">¶</a></h4>
-<p>Storage Gateway は、オンプレミス環境と AWS クラウドの間でストレージを連携させるハイブリッドストレージソリューションを提供します。<br>
-これにより、クラウドストレージをオンプレミス環境からシームレスに利用できます。</p>
+<p>Storage Gateway は、オンプレミス環境と AWS クラウドの間でストレージを連携させるハイブリッドストレージソリューションを提供する。<br>
+これにより、クラウドストレージをオンプレミス環境からシームレスに利用できる。</p>
 <h4 id="22_5">2.2 ゲートウェイタイプ<a class="headerlink" href="#22_5" title="Permanent link">¶</a></h4>
-<p>Storage Gateway には、ファイルゲートウェイ、ボリュームゲートウェイ、テープゲートウェイという 3 つのゲートウェイタイプがあります。<br>
-各ゲートウェイタイプは、異なるユースケースに対応しています。</p>
+<p>Storage Gateway には、ファイルゲートウェイ、ボリュームゲートウェイ、テープゲートウェイという 3 つのゲートウェイタイプがある。<br>
+各ゲートウェイタイプは、異なるユースケースに対応している。</p>
 <h4 id="23_5">2.3 ファイルゲートウェイ<a class="headerlink" href="#23_5" title="Permanent link">¶</a></h4>
-<p>NFS または SMB プロトコルを使用して、オンプレミスアプリケーションから Amazon S3 にアクセスできるようにします。<br>
-これにより、ファイル共有やコンテンツ配信などのユースケースに対応できます。</p>
+<p>NFS または SMB プロトコルを使用して、オンプレミスアプリケーションから Amazon S3 にアクセスできるようにする。<br>
+これにより、ファイル共有やコンテンツ配信などのユースケースに対応できる。</p>
 <h4 id="24_7">2.4 ボリュームゲートウェイ<a class="headerlink" href="#24_7" title="Permanent link">¶</a></h4>
-<p>iSCSI プロトコルを使用して、オンプレミス環境から AWS にブロックストレージを提供します。<br>
-これにより、オンプレミスアプリケーションでクラウドストレージをローカルストレージとして利用できます。</p>
+<p>iSCSI プロトコルを使用して、オンプレミス環境から AWS にブロックストレージを提供する。<br>
+これにより、オンプレミスアプリケーションでクラウドストレージをローカルストレージとして利用できる。</p>
 <h4 id="25_7">2.5 テープゲートウェイ<a class="headerlink" href="#25_7" title="Permanent link">¶</a></h4>
-<p>物理的なテープライブラリを仮想テープライブラリ（VTL）に置き換え、バックアップデータを S3 Glacier にアーカイブできます。<br>
-これにより、テープストレージのコスト削減と管理の簡素化を実現できます。</p>
+<p>物理的なテープライブラリを仮想テープライブラリ（VTL）に置き換え、バックアップデータを S3 Glacier にアーカイブできる。<br>
+これにより、テープストレージのコスト削減と管理の簡素化を実現できる。</p>
 <h4 id="26_5">2.6 ローカルキャッシュ<a class="headerlink" href="#26_5" title="Permanent link">¶</a></h4>
-<p>よくアクセスされるデータをローカルにキャッシュし、データアクセスを高速化できます。<br>
-これにより、クラウドストレージへのアクセスレイテンシーを低減し、パフォーマンスを向上させることができます。</p>
+<p>よくアクセスされるデータをローカルにキャッシュし、データアクセスを高速化できる。<br>
+これにより、クラウドストレージへのアクセスレイテンシーを低減し、パフォーマンスを向上させることができる。</p>
 <h4 id="27_5">2.7 統合性と拡張性<a class="headerlink" href="#27_5" title="Permanent link">¶</a></h4>
-<p>AWS Storage Gateway は、Amazon S3, Amazon EBS, Amazon Glacier, AWS Backup, AWS Direct Connect などの AWS の他のサービスと密接に統合されており、様々なワークフローに対応できます。<br>
-また、API を利用して、Storage Gateway の管理を自動化することもできます。</p>
+<p>AWS Storage Gateway は、Amazon S3, Amazon EBS, Amazon Glacier, AWS Backup, AWS Direct Connect などの AWS の他のサービスと密接に統合されており、様々なワークフローに対応できる。<br>
+また、API を利用して、Storage Gateway の管理を自動化することもできる。</p>
 <h3 id="3_7">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_7" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、オンプレミス環境に Storage Gateway のアプライアンス（仮想またはハードウェア）を展開。</li>
@@ -8067,17 +8067,17 @@ AWS Storage Gateway は、これらのユースケースに対応するための
 <li>データは、転送中および保存時に暗号化。</li>
 <li>よくアクセスされるデータは、ローカルキャッシュに保存し、高速アクセスを実現。</li>
 </ol>
-<p>AWS Storage Gateway は、オンプレミス環境と AWS クラウドをシームレスに連携させ、ハイブリッドストレージソリューションを提供します。<br>
-データの転送やストレージの管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
+<p>AWS Storage Gateway は、オンプレミス環境と AWS クラウドをシームレスに連携させ、ハイブリッドストレージソリューションを提供する。<br>
+データの転送やストレージの管理は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
 <h3 id="4_7">4. セキュリティと認証・認可<a class="headerlink" href="#4_7" title="Permanent link">¶</a></h3>
 <p>AWS Storage Gateway は、データセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Storage Gateway へのアクセスを制御します。</li>
-<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化されます。</li>
-<li><strong>VPC エンドポイント</strong>: VPC 内から Storage Gateway にアクセスする際に、インターネットを経由せずにアクセスできます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Storage Gateway の操作権限を詳細に制御できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Storage Gateway へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から Storage Gateway にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Storage Gateway の操作権限を詳細に制御できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、オンプレミス環境と AWS クラウド間のデータ転送を安全に保護します。</p>
+<p>これらのセキュリティ対策により、オンプレミス環境と AWS クラウド間のデータ転送を安全に保護する。</p>
 <h3 id="5_7">5. 料金形態<a class="headerlink" href="#5_7" title="Permanent link">¶</a></h3>
 <p>AWS Storage Gateway の料金は主に以下に基づきます:</p>
 <ul>
@@ -8087,7 +8087,7 @@ AWS Storage Gateway は、これらのユースケースに対応するための
 <li><strong>キャッシュ</strong>: ローカルキャッシュで使用するストレージ容量に応じて課金。</li>
 </ul>
 <h3 id="6_7">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_7" title="Permanent link">¶</a></h3>
-<p>AWS Storage Gateway は、様々なハイブリッドストレージ環境で利用できます。<br>
+<p>AWS Storage Gateway は、様々なハイブリッドストレージ環境で利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>オンプレミスデータの AWS クラウドへの移行</strong>: 大量のデータを AWS に移行するために、Storage Gateway を利用。</li>
@@ -8156,15 +8156,15 @@ AWS Storage Gateway は、これらのユースケースに対応するための
 <h4 id="89">8.9 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#89" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Storage Gateway は何を提供するサービスですか？</li>
-<li>A: オンプレミス環境と AWS クラウドの間でストレージを連携させるハイブリッドストレージサービスです。</li>
+<li>A: オンプレミス環境と AWS クラウドの間でストレージを連携させるハイブリッドストレージサービスである。</li>
 <li>Q: AWS Storage Gateway には、どのようなゲートウェイタイプがありますか？</li>
-<li>A: ファイルゲートウェイ、ボリュームゲートウェイ、テープゲートウェイの 3 つのゲートウェイタイプがあります。</li>
+<li>A: ファイルゲートウェイ、ボリュームゲートウェイ、テープゲートウェイの 3 つのゲートウェイタイプがある。</li>
 <li>Q: AWS Storage Gateway のファイルゲートウェイは、どのようなプロトコルをサポートしていますか？</li>
-<li>A: NFS または SMB プロトコルをサポートしています。</li>
+<li>A: NFS または SMB プロトコルをサポートしている。</li>
 <li>Q: AWS Storage Gateway のテープゲートウェイは、どのような役割を果たしますか？</li>
-<li>A: 物理的なテープライブラリを仮想テープライブラリ（VTL）に置き換え、バックアップデータを S3 Glacier にアーカイブできます。</li>
+<li>A: 物理的なテープライブラリを仮想テープライブラリ（VTL）に置き換え、バックアップデータを S3 Glacier にアーカイブできる。</li>
 <li>Q: AWS Storage Gateway の料金はどのように計算されますか？</li>
-<li>A: ゲートウェイの利用、クラウドストレージの利用、データ転送量、キャッシュストレージなどに基づいて計算されます。</li>
+<li>A: ゲートウェイの利用、クラウドストレージの利用、データ転送量、キャッシュストレージなどに基づいて計算される。</li>
 </ul>
 
 
@@ -8186,7 +8186,7 @@ AWS Storage Gateway は、これらのユースケースに対応するための
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月2日 06:34:41 UTC">2026年1月2日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月2日 07:40:17 UTC">2026年1月2日</span>
   </span>
 
     

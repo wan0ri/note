@@ -7055,32 +7055,32 @@
 
 <h2 id="aurora">Aurora<a class="headerlink" href="#aurora" title="Permanent link">¶</a></h2>
 <h3 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
-<p>Amazon Aurora は、高いパフォーマンスと可用性を兼ね備えた RDB（リレーショナルデータベース）サービスです。<br>
-AWS によるフルマネージドである点や、MySQL/PostgreSQL 互換のエンジンを選択できる点などが特徴で、従来の商用データベースに比べて優れたコストパフォーマンスとスケーラビリティを提供します。</p>
+<p>Amazon Aurora は、高いパフォーマンスと可用性を兼ね備えた RDB（リレーショナルデータベース）サービスである。<br>
+AWS によるフルマネージドである点や、MySQL/PostgreSQL 互換のエンジンを選択できる点などが特徴で、従来の商用データベースに比べて優れたコストパフォーマンスとスケーラビリティを提供する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>大規模アプリケーションのオンライン処理</li>
 <li>急激にアクセスが増加する EC サイト</li>
 <li>金融システムなどミッションクリティカルな業務</li>
 </ul>
-<p>が挙げられます。
-レイテンシの低い読み取り負荷にも対応可能で、OLTP と OLAP のハイブリッド環境として活用されるケースもあります。</p>
+<p>が挙げられる。
+レイテンシの低い読み取り負荷にも対応可能で、OLTP と OLAP のハイブリッド環境として活用されるケースもある。</p>
 <h3 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
 <h4 id="21-mysqlpostgresql">2.1 MySQL/PostgreSQL 互換エンジン<a class="headerlink" href="#21-mysqlpostgresql" title="Permanent link">¶</a></h4>
-<p>Aurora では、MySQL 互換エンジンと PostgreSQL 互換エンジンから選択可能です。<br>
-アプリケーション側のドライバや SQL 文を大きく修正することなく、Aurora に移行できる点が魅力です。</p>
+<p>Aurora では、MySQL 互換エンジンと PostgreSQL 互換エンジンから選択可能である。<br>
+アプリケーション側のドライバや SQL 文を大きく修正することなく、Aurora に移行できる点が魅力である。</p>
 <h4 id="22">2.2 高速で信頼性の高いストレージ<a class="headerlink" href="#22" title="Permanent link">¶</a></h4>
-<p>Aurora はストレージ層を分散・自動スケーリングする仕組みを持ち、最大 64TB まで拡張可能です。<br>
-6 つのコピーを 3 つの AZ に分散配置することで、障害に対する耐久性とスケーラビリティを両立します。</p>
+<p>Aurora はストレージ層を分散・自動スケーリングする仕組みを持ち、最大 64TB まで拡張可能である。<br>
+6 つのコピーを 3 つの AZ に分散配置することで、障害に対する耐久性とスケーラビリティを両立する。</p>
 <h4 id="23-aurora-replica">2.3 セミスレーブ機能 (Aurora Replica)<a class="headerlink" href="#23-aurora-replica" title="Permanent link">¶</a></h4>
-<p>Aurora Replica を利用することで、読み取り専用インスタンスを増設し、読み取り負荷を分散可能です。<br>
-最大 15 個のレプリカを作成でき、プライマリインスタンスの障害時には自動フェイルオーバー機能により数秒でレプリカが昇格します。</p>
+<p>Aurora Replica を利用することで、読み取り専用インスタンスを増設し、読み取り負荷を分散可能である。<br>
+最大 15 個のレプリカを作成でき、プライマリインスタンスの障害時には自動フェイルオーバー機能により数秒でレプリカが昇格する。</p>
 <h4 id="24-aurora-serverless">2.4 Aurora Serverless<a class="headerlink" href="#24-aurora-serverless" title="Permanent link">¶</a></h4>
-<p>Aurora Serverless を利用すると、使用状況に応じて自動的にキャパシティをスケールし、アイドル時にはコストを最小限に抑えることが可能です。<br>
-突発的なアクセス増加があるアプリケーションや、ピーク時以外は負荷が少ないワークロードに適しています。</p>
+<p>Aurora Serverless を利用すると、使用状況に応じて自動的にキャパシティをスケールし、アイドル時にはコストを最小限に抑えることが可能である。<br>
+突発的なアクセス増加があるアプリケーションや、ピーク時以外は負荷が少ないワークロードに適している。</p>
 <h4 id="25">2.5 高い可用性とバックアップ<a class="headerlink" href="#25" title="Permanent link">¶</a></h4>
-<p>Aurora はスナップショットや Point-in-Time リカバリをサポートし、継続的バックアップも実現します。<br>
-また、マルチ AZ 構成が標準機能として組み込まれており、高い耐障害性を持ちながら運用が可能です。</p>
+<p>Aurora はスナップショットや Point-in-Time リカバリをサポートし、継続的バックアップも実現する。<br>
+また、マルチ AZ 構成が標準機能として組み込まれており、高い耐障害性を持ちながら運用が可能である。</p>
 <h4 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h4>
 <ol>
 <li>クラスター概念を中心に、プライマリインスタンス（ライト/リード）＋ Aurora レプリカ（リード専用）を構成</li>
@@ -7088,7 +7088,7 @@ AWS によるフルマネージドである点や、MySQL/PostgreSQL 互換の�
 <li>障害が発生した場合は、Aurora レプリカがプライマリにフェイルオーバーし、サービス継続</li>
 <li>Aurora Serverless を選択することで、負荷に応じた自動スケーリングを行いコストと運用負荷を最適化</li>
 </ol>
-<p>Aurora のストレージレイヤーが独立しており、コンピュートレイヤー（DB インスタンス）を追加・削除しても、一貫したデータビューを保てる設計になっています。</p>
+<p>Aurora のストレージレイヤーが独立しており、コンピュートレイヤー（DB インスタンス）を追加・削除しても、一貫したデータビューを保てる設計になっている。</p>
 <h3 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
 <p>Aurora は他の RDS 系サービス同様、強固なセキュリティを提供します:</p>
 <ul>
@@ -7169,10 +7169,10 @@ AWS によるフルマネージドである点や、MySQL/PostgreSQL 互換の�
 <hr>
 <h2 id="documentdb">DocumentDB<a class="headerlink" href="#documentdb" title="Permanent link">¶</a></h2>
 <h3 id="1_1">1. サービス概要<a class="headerlink" href="#1_1" title="Permanent link">¶</a></h3>
-<p>Amazon DocumentDB (with MongoDB compatibility) は、スケーラブルで可用性の高い、フルマネージドのドキュメントデータベースサービスです。<br>
-MongoDB との互換性があり、既存の MongoDB アプリケーションを容易に移行できます。<br>
-DocumentDB は、JSON 形式のドキュメントデータを柔軟に格納・管理でき、高いパフォーマンス、可用性、耐久性を提供します。<br>
-開発者は、インフラの管理に煩わされることなく、アプリケーションの開発に集中できます。</p>
+<p>Amazon DocumentDB (with MongoDB compatibility) は、スケーラブルで可用性の高い、フルマネージドのドキュメントデータベースサービスである。<br>
+MongoDB との互換性があり、既存の MongoDB アプリケーションを容易に移行できる。<br>
+DocumentDB は、JSON 形式のドキュメントデータを柔軟に格納・管理でき、高いパフォーマンス、可用性、耐久性を提供する。<br>
+開発者は、インフラの管理に煩わされることなく、アプリケーションの開発に集中できる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>コンテンツ管理システム</li>
@@ -7181,37 +7181,37 @@ DocumentDB は、JSON 形式のドキュメントデータを柔軟に格納・�
 <li>IoT データの格納</li>
 <li>パーソナライズされたレコメンデーション</li>
 </ul>
-<p>などが挙げられます。</p>
+<p>などが挙げられる。</p>
 <h3 id="2_1">2. 主な特徴と機能<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h3>
 <h4 id="21-mongodb">2.1 MongoDB 互換性<a class="headerlink" href="#21-mongodb" title="Permanent link">¶</a></h4>
-<p>Amazon DocumentDB は、MongoDB のワイヤプロトコル、API、ドライバーをサポートしており、既存の MongoDB アプリケーションを大幅な変更なしに移行できます。<br>
-これにより、開発者は既存の知識やツールをそのまま活用できます。</p>
+<p>Amazon DocumentDB は、MongoDB のワイヤプロトコル、API、ドライバーをサポートしており、既存の MongoDB アプリケーションを大幅な変更なしに移行できる。<br>
+これにより、開発者は既存の知識やツールをそのまま活用できる。</p>
 <h4 id="22_1">2.2 フルマネージドサービス<a class="headerlink" href="#22_1" title="Permanent link">¶</a></h4>
-<p>インフラのプロビジョニング、スケーリング、パッチ適用、バックアップなどの運用管理は AWS が自動で行います。<br>
-これにより、開発者はデータベースの運用管理に煩わされることなく、アプリケーションの開発に集中できます。</p>
+<p>インフラのプロビジョニング、スケーリング、パッチ適用、バックアップなどの運用管理は AWS が自動で行う。<br>
+これにより、開発者はデータベースの運用管理に煩わされることなく、アプリケーションの開発に集中できる。</p>
 <h4 id="23">2.3 スケーラビリティとパフォーマンス<a class="headerlink" href="#23" title="Permanent link">¶</a></h4>
-<p>DocumentDB は、ストレージとコンピューティングリソースを個別にスケールできるため、アプリケーションの需要に合わせて柔軟にリソースを調整できます。<br>
-高いスループットと低いレイテンシを実現し、大規模なアプリケーションにも対応できます。</p>
+<p>DocumentDB は、ストレージとコンピューティングリソースを個別にスケールできるため、アプリケーションの需要に合わせて柔軟にリソースを調整できる。<br>
+高いスループットと低いレイテンシを実現し、大規模なアプリケーションにも対応できる。</p>
 <h4 id="24">2.4 高い可用性と耐久性<a class="headerlink" href="#24" title="Permanent link">¶</a></h4>
-<p>DocumentDB は、複数のアベイラビリティーゾーンにデータを分散して保存し、自動的にフェイルオーバーを処理します。<br>
-これにより、高い可用性と耐久性を実現し、データの損失を防ぎます。</p>
+<p>DocumentDB は、複数のアベイラビリティーゾーンにデータを分散して保存し、自動的にフェイルオーバーを処理する。<br>
+これにより、高い可用性と耐久性を実現し、データの損失を防ぐ。</p>
 <h4 id="25-json">2.5 JSON ドキュメントのサポート<a class="headerlink" href="#25-json" title="Permanent link">¶</a></h4>
-<p>DocumentDB は、JSON 形式のドキュメントデータを柔軟に格納・管理できます。<br>
-スキーマレスであるため、データ構造の変更に柔軟に対応できます。</p>
+<p>DocumentDB は、JSON 形式のドキュメントデータを柔軟に格納・管理できる。<br>
+スキーマレスであるため、データ構造の変更に柔軟に対応できる。</p>
 <h4 id="26">2.6 柔軟なクエリ<a class="headerlink" href="#26" title="Permanent link">¶</a></h4>
-<p>DocumentDB は、豊富なクエリ機能を提供し、JSON ドキュメントに対して効率的な検索や集計を行うことができます。<br>
-インデックスを活用して高速な検索を実現できます。</p>
+<p>DocumentDB は、豊富なクエリ機能を提供し、JSON ドキュメントに対して効率的な検索や集計を行うことができる。<br>
+インデックスを活用して高速な検索を実現できる。</p>
 <h4 id="27">2.7 セキュリティ<a class="headerlink" href="#27" title="Permanent link">¶</a></h4>
-<p>DocumentDB は、データの暗号化、アクセス制御、ネットワーク分離などのセキュリティ機能を提供します。<br>
-IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化、VPC 内でのプライベート接続をサポートしています。</p>
+<p>DocumentDB は、データの暗号化、アクセス制御、ネットワーク分離などのセキュリティ機能を提供する。<br>
+IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化、VPC 内でのプライベート接続をサポートしている。</p>
 <ul>
 <li><strong>IAM 連携</strong>: AWS IAM を使用してアクセス制御と権限管理。</li>
 <li><strong>データ暗号化</strong>: 転送中および保存中のデータを暗号化。</li>
 <li><strong>VPC サポート</strong>: Amazon VPC 内でのプライベート接続。</li>
 </ul>
 <h4 id="28">2.8 統合性<a class="headerlink" href="#28" title="Permanent link">¶</a></h4>
-<p>DocumentDB は、AWS の他のサービス（AWS Lambda、Amazon EC2、Amazon ECS など）と統合されており、様々なアプリケーションアーキテクチャに対応できます。<br>
-AWS Glue と連携してデータの ETL 処理を行うことができます。</p>
+<p>DocumentDB は、AWS の他のサービス（AWS Lambda、Amazon EC2、Amazon ECS など）と統合されており、様々なアプリケーションアーキテクチャに対応できる。<br>
+AWS Glue と連携してデータの ETL 処理を行うことができる。</p>
 <h3 id="3_1">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_1" title="Permanent link">¶</a></h3>
 <ol>
 <li>クライアントアプリケーションは、MongoDB 互換のドライバーを使用して DocumentDB に接続。</li>
@@ -7220,8 +7220,8 @@ AWS Glue と連携してデータの ETL 処理を行うことができます。
 <li>ストレージとコンピューティングリソースは、必要に応じて個別にスケーリング。</li>
 <li>自動バックアップ機能により、データを安全に保護。</li>
 </ol>
-<p>DocumentDB は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、耐久性を内包しています。<br>
-MongoDB の互換性により、既存の MongoDB アプリケーションを容易に移行できます。</p>
+<p>DocumentDB は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、耐久性を内包している。<br>
+MongoDB の互換性により、既存の MongoDB アプリケーションを容易に移行できる。</p>
 <h3 id="4_1">4. セキュリティと認証・認可<a class="headerlink" href="#4_1" title="Permanent link">¶</a></h3>
 <p>セキュリティは DocumentDB の重要な要素です:</p>
 <ul>
@@ -7230,7 +7230,7 @@ MongoDB の互換性により、既存の MongoDB アプリケーションを容
 <li><strong>VPC サポート</strong>: Amazon VPC 内で DocumentDB を使用する場合、プライベート接続を確立。</li>
 <li><strong>監査ログ</strong>: AWS CloudTrail を利用して、API 呼び出しやリソース変更を記録。</li>
 </ul>
-<p>これにより、データの安全性とコンプライアンスを確保できます。</p>
+<p>これにより、データの安全性とコンプライアンスを確保できる。</p>
 <h3 id="5_1">5. 料金形態<a class="headerlink" href="#5_1" title="Permanent link">¶</a></h3>
 <p>Amazon DocumentDB の料金は主に以下に基づきます:</p>
 <ul>
@@ -7394,7 +7394,7 @@ AWS が、これらの管理作業を自動的に行う。</p>
 <li><strong>バックアップと復元</strong>: バックアップデータの保存容量とデータ復元量に応じて課金。</li>
 </ul>
 <h3 id="6_2">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_2" title="Permanent link">¶</a></h3>
-<p>Amazon DynamoDB は、様々なアプリケーションに利用できます。一般的なパターンは以下の通り:</p>
+<p>Amazon DynamoDB は、様々なアプリケーションに利用できる。一般的なパターンは以下の通り:</p>
 <ul>
 <li><strong>Web アプリケーション</strong>: Web アプリケーションのセッションデータ、ユーザーデータ、コンテンツなどを保存。</li>
 <li><strong>モバイルアプリケーション</strong>: モバイルアプリケーションのユーザーデータ、ゲームデータ、セッションデータなどを保存。</li>
@@ -7463,9 +7463,9 @@ AWS が、これらの管理作業を自動的に行う。</p>
 <hr>
 <h2 id="elasticache">ElastiCache<a class="headerlink" href="#elasticache" title="Permanent link">¶</a></h2>
 <h3 id="1_3">1. サービス概要<a class="headerlink" href="#1_3" title="Permanent link">¶</a></h3>
-<p>Amazon ElastiCache は、AWS が提供するフルマネージドのインメモリデータストアサービスです。<br>
-このサービスを利用することで、頻繁にアクセスされるデータをメモリにキャッシュすることで、アプリケーションの応答速度を向上させ、データベースへの負荷を軽減できます。<br>
-ElastiCache は、Redis と Memcached の 2 つのエンジンをサポートしています。</p>
+<p>Amazon ElastiCache は、AWS が提供するフルマネージドのインメモリデータストアサービスである。<br>
+このサービスを利用することで、頻繁にアクセスされるデータをメモリにキャッシュすることで、アプリケーションの応答速度を向上させ、データベースへの負荷を軽減できる。<br>
+ElastiCache は、Redis と Memcached の 2 つのエンジンをサポートしている。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>ウェブアプリケーションのセッション管理</li>
@@ -7474,38 +7474,38 @@ ElastiCache は、Redis と Memcached の 2 つのエンジンをサポートし
 <li>API キャッシュ</li>
 <li>データベースのホットデータキャッシュ</li>
 </ul>
-<p>などが挙げられます。</p>
+<p>などが挙げられる。</p>
 <h3 id="2_4">2. 主な特徴と機能<a class="headerlink" href="#2_4" title="Permanent link">¶</a></h3>
 <h4 id="21-redis-memcached">2.1 Redis と Memcached のサポート<a class="headerlink" href="#21-redis-memcached" title="Permanent link">¶</a></h4>
-<p>ElastiCache は、Redis と Memcached の 2 つの人気のあるインメモリデータストアエンジンをサポートしています。<br>
-これにより、アプリケーションの要件に応じて最適なエンジンを選択できます。</p>
+<p>ElastiCache は、Redis と Memcached の 2 つの人気のあるインメモリデータストアエンジンをサポートしている。<br>
+これにより、アプリケーションの要件に応じて最適なエンジンを選択できる。</p>
 <ul>
 <li><strong>Redis</strong>: 複雑なデータ構造（リスト、セット、ハッシュなど）や Pub/Sub 機能をサポート。</li>
 <li><strong>Memcached</strong>: シンプルなキーバリューストアで、高スループットなキャッシュに最適。</li>
 </ul>
 <h4 id="22_3">2.2 フルマネージドサービス<a class="headerlink" href="#22_3" title="Permanent link">¶</a></h4>
-<p>インフラのプロビジョニング、スケーリング、パッチ適用、バックアップなどの運用管理は AWS が自動で行います。<br>
-これにより、開発者はデータベースの運用管理に煩わされることなく、アプリケーション開発に集中できます。</p>
+<p>インフラのプロビジョニング、スケーリング、パッチ適用、バックアップなどの運用管理は AWS が自動で行う。<br>
+これにより、開発者はデータベースの運用管理に煩わされることなく、アプリケーション開発に集中できる。</p>
 <h4 id="23_2">2.3 スケーラビリティ<a class="headerlink" href="#23_2" title="Permanent link">¶</a></h4>
-<p>ElastiCache は、ストレージとコンピューティングリソースを個別にスケールできるため、アプリケーションの需要に合わせて柔軟にリソースを調整できます。<br>
-水平スケーリング（ノード数の増減）と垂直スケーリング（インスタンスタイプの変更）をサポートしています。</p>
+<p>ElastiCache は、ストレージとコンピューティングリソースを個別にスケールできるため、アプリケーションの需要に合わせて柔軟にリソースを調整できる。<br>
+水平スケーリング（ノード数の増減）と垂直スケーリング（インスタンスタイプの変更）をサポートしている。</p>
 <h4 id="24_2">2.4 高い可用性<a class="headerlink" href="#24_2" title="Permanent link">¶</a></h4>
-<p>ElastiCache は、複数のアベイラビリティーゾーンにデータを分散して保存し、自動的にフェイルオーバーを処理します。<br>
-これにより、高い可用性を実現し、システムのダウンタイムを最小限に抑えます。</p>
+<p>ElastiCache は、複数のアベイラビリティーゾーンにデータを分散して保存し、自動的にフェイルオーバーを処理する。<br>
+これにより、高い可用性を実現し、システムのダウンタイムを最小限に抑える。</p>
 <h4 id="25_2">2.5 セキュリティ<a class="headerlink" href="#25_2" title="Permanent link">¶</a></h4>
-<p>ElastiCache は、データの暗号化、アクセス制御、ネットワーク分離などのセキュリティ機能を提供します。<br>
-IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化、VPC 内でのプライベート接続をサポートしています。</p>
+<p>ElastiCache は、データの暗号化、アクセス制御、ネットワーク分離などのセキュリティ機能を提供する。<br>
+IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化、VPC 内でのプライベート接続をサポートしている。</p>
 <ul>
 <li><strong>IAM 連携</strong>: AWS IAM を使用してアクセス制御と権限管理。</li>
 <li><strong>データ暗号化</strong>: 転送中および保存中のデータを暗号化。</li>
 <li><strong>VPC サポート</strong>: Amazon VPC 内でのプライベート接続。</li>
 </ul>
 <h4 id="26_1">2.6 バックアップと復元<a class="headerlink" href="#26_1" title="Permanent link">¶</a></h4>
-<p>ElastiCache は、自動バックアップ機能を提供しており、データを定期的にバックアップできます。<br>
-必要に応じて、バックアップからデータを復元できます。</p>
+<p>ElastiCache は、自動バックアップ機能を提供しており、データを定期的にバックアップできる。<br>
+必要に応じて、バックアップからデータを復元できる。</p>
 <h4 id="27_2">2.7 統合性<a class="headerlink" href="#27_2" title="Permanent link">¶</a></h4>
-<p>ElastiCache は、AWS の他のサービス（Amazon EC2, Amazon ECS, AWS Lambda など）と統合されており、様々なアプリケーションアーキテクチャに対応できます。<br>
-AWS CloudWatch と連携してモニタリングを行うことができます。</p>
+<p>ElastiCache は、AWS の他のサービス（Amazon EC2, Amazon ECS, AWS Lambda など）と統合されており、様々なアプリケーションアーキテクチャに対応できる。<br>
+AWS CloudWatch と連携してモニタリングを行うことができる。</p>
 <h3 id="3_3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_3" title="Permanent link">¶</a></h3>
 <ol>
 <li>クライアントアプリケーションは、ElastiCache に接続し、データの読み書きを行う。</li>
@@ -7514,8 +7514,8 @@ AWS CloudWatch と連携してモニタリングを行うことができます�
 <li>読み取りリクエストは、キャッシュから応答。</li>
 <li>書き込みリクエストは、キャッシュにデータを保存。</li>
 </ol>
-<p>ElastiCache は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、セキュリティを内包しています。<br>
-アプリケーションのパフォーマンスを向上させ、データベースへの負荷を軽減します。</p>
+<p>ElastiCache は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、セキュリティを内包している。<br>
+アプリケーションのパフォーマンスを向上させ、データベースへの負荷を軽減する。</p>
 <h3 id="4_3">4. セキュリティと認証・認可<a class="headerlink" href="#4_3" title="Permanent link">¶</a></h3>
 <p>セキュリティは ElastiCache の重要な要素です:</p>
 <ul>
@@ -7525,7 +7525,7 @@ AWS CloudWatch と連携してモニタリングを行うことができます�
 <li><strong>認証</strong>: Redis の AUTH コマンドや Memcached の認証メカニズムを利用して、アクセスを制御。</li>
 <li><strong>監査ログ</strong>: AWS CloudTrail を利用して、API 呼び出しやリソース変更を記録。</li>
 </ul>
-<p>これにより、データの安全性とコンプライアンスを確保できます。</p>
+<p>これにより、データの安全性とコンプライアンスを確保できる。</p>
 <h3 id="5_3">5. 料金形態<a class="headerlink" href="#5_3" title="Permanent link">¶</a></h3>
 <p>Amazon ElastiCache の料金は主に以下に基づきます:</p>
 <ul>
@@ -7611,9 +7611,9 @@ AWS CloudWatch と連携してモニタリングを行うことができます�
 <hr>
 <h2 id="keyspaces">Keyspaces<a class="headerlink" href="#keyspaces" title="Permanent link">¶</a></h2>
 <h3 id="1_4">1. サービス概要<a class="headerlink" href="#1_4" title="Permanent link">¶</a></h3>
-<p>Amazon Keyspaces (for Apache Cassandra) は、AWS が提供するフルマネージドのデータベースサービスで、Apache Cassandra との互換性があります。<br>
-このサービスを利用することで、Cassandra のデータモデルと CQL（Cassandra Query Language）をそのまま利用でき、スケーラブルで可用性の高いデータベースを容易に構築できます。<br>
-Keyspaces は、インフラの管理に煩わされることなく、アプリケーションの開発に集中できる環境を提供します。</p>
+<p>Amazon Keyspaces (for Apache Cassandra) は、AWS が提供するフルマネージドのデータベースサービスで、Apache Cassandra との互換性がある。<br>
+このサービスを利用することで、Cassandra のデータモデルと CQL（Cassandra Query Language）をそのまま利用でき、スケーラブルで可用性の高いデータベースを容易に構築できる。<br>
+Keyspaces は、インフラの管理に煩わされることなく、アプリケーションの開発に集中できる環境を提供する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>IoT データの格納</li>
@@ -7621,37 +7621,37 @@ Keyspaces は、インフラの管理に煩わされることなく、アプリ�
 <li>モバイルアプリケーションのバックエンド</li>
 <li>大規模な分散アプリケーションのデータストア</li>
 </ul>
-<p>などが挙げられます。</p>
+<p>などが挙げられる。</p>
 <h3 id="2_5">2. 主な特徴と機能<a class="headerlink" href="#2_5" title="Permanent link">¶</a></h3>
 <h4 id="21-apache-cassandra">2.1 Apache Cassandra 互換性<a class="headerlink" href="#21-apache-cassandra" title="Permanent link">¶</a></h4>
-<p>Amazon Keyspaces は、Apache Cassandra のワイヤプロトコル、API、ドライバーをサポートしており、既存の Cassandra アプリケーションを大幅な変更なしに移行できます。<br>
-これにより、開発者は Cassandra の知識をそのまま活用できます。</p>
+<p>Amazon Keyspaces は、Apache Cassandra のワイヤプロトコル、API、ドライバーをサポートしており、既存の Cassandra アプリケーションを大幅な変更なしに移行できる。<br>
+これにより、開発者は Cassandra の知識をそのまま活用できる。</p>
 <h4 id="22_4">2.2 フルマネージドサービス<a class="headerlink" href="#22_4" title="Permanent link">¶</a></h4>
-<p>インフラのプロビジョニング、スケーリング、パッチ適用、バックアップなどの運用管理は AWS が自動で行います。<br>
-これにより、開発者はデータベースの運用管理に煩わされることなく、アプリケーション開発に集中できます。</p>
+<p>インフラのプロビジョニング、スケーリング、パッチ適用、バックアップなどの運用管理は AWS が自動で行う。<br>
+これにより、開発者はデータベースの運用管理に煩わされることなく、アプリケーション開発に集中できる。</p>
 <h4 id="23_3">2.3 スケーラビリティとパフォーマンス<a class="headerlink" href="#23_3" title="Permanent link">¶</a></h4>
-<p>Keyspaces は、ストレージとコンピューティングリソースを個別にスケールできるため、アプリケーションの需要に合わせて柔軟にリソースを調整できます。<br>
-高いスループットと低いレイテンシを実現し、大規模なアプリケーションにも対応できます。</p>
+<p>Keyspaces は、ストレージとコンピューティングリソースを個別にスケールできるため、アプリケーションの需要に合わせて柔軟にリソースを調整できる。<br>
+高いスループットと低いレイテンシを実現し、大規模なアプリケーションにも対応できる。</p>
 <h4 id="24_3">2.4 高い可用性と耐久性<a class="headerlink" href="#24_3" title="Permanent link">¶</a></h4>
-<p>Keyspaces は、複数のアベイラビリティーゾーンにデータを分散して保存し、自動的にフェイルオーバーを処理します。<br>
-これにより、高い可用性と耐久性を実現し、データの損失を防ぎます。</p>
+<p>Keyspaces は、複数のアベイラビリティーゾーンにデータを分散して保存し、自動的にフェイルオーバーを処理する。<br>
+これにより、高い可用性と耐久性を実現し、データの損失を防ぐ。</p>
 <h4 id="25_3">2.5 スキーマレスデータモデル<a class="headerlink" href="#25_3" title="Permanent link">¶</a></h4>
-<p>Keyspaces は、柔軟なスキーマレスデータモデルをサポートしており、データの変更に柔軟に対応できます。<br>
-テーブル定義を変更せずに、新しいカラムを追加できます。</p>
+<p>Keyspaces は、柔軟なスキーマレスデータモデルをサポートしており、データの変更に柔軟に対応できる。<br>
+テーブル定義を変更せずに、新しいカラムを追加できる。</p>
 <h4 id="26-cql-cassandra-query-language">2.6 CQL (Cassandra Query Language) サポート<a class="headerlink" href="#26-cql-cassandra-query-language" title="Permanent link">¶</a></h4>
-<p>Keyspaces は、Apache Cassandra で使用される CQL をサポートしています。<br>
-これにより、既存の Cassandra アプリケーションのクエリをそのまま実行できます。</p>
+<p>Keyspaces は、Apache Cassandra で使用される CQL をサポートしている。<br>
+これにより、既存の Cassandra アプリケーションのクエリをそのまま実行できる。</p>
 <h4 id="27_3">2.7 セキュリティ<a class="headerlink" href="#27_3" title="Permanent link">¶</a></h4>
-<p>Keyspaces は、データの暗号化、アクセス制御、ネットワーク分離などのセキュリティ機能を提供します。<br>
-IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化、VPC 内でのプライベート接続をサポートしています。</p>
+<p>Keyspaces は、データの暗号化、アクセス制御、ネットワーク分離などのセキュリティ機能を提供する。<br>
+IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化、VPC 内でのプライベート接続をサポートしている。</p>
 <ul>
 <li><strong>IAM 連携</strong>: AWS IAM を使用してアクセス制御と権限管理。</li>
 <li><strong>データ暗号化</strong>: 転送中および保存中のデータを暗号化。</li>
 <li><strong>VPC サポート</strong>: Amazon VPC 内でのプライベート接続。</li>
 </ul>
 <h4 id="28_1">2.8 統合性<a class="headerlink" href="#28_1" title="Permanent link">¶</a></h4>
-<p>Keyspaces は、AWS の他のサービス（Amazon S3, AWS Lambda, Amazon Kinesis など）と統合されており、様々なアプリケーションアーキテクチャに対応できます。<br>
-AWS Glue と連携してデータの ETL 処理を行うことができます。</p>
+<p>Keyspaces は、AWS の他のサービス（Amazon S3, AWS Lambda, Amazon Kinesis など）と統合されており、様々なアプリケーションアーキテクチャに対応できる。<br>
+AWS Glue と連携してデータの ETL 処理を行うことができる。</p>
 <h3 id="3_4">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_4" title="Permanent link">¶</a></h3>
 <ol>
 <li>クライアントアプリケーションは、Apache Cassandra 互換のドライバーを使用して Keyspaces に接続。</li>
@@ -7660,8 +7660,8 @@ AWS Glue と連携してデータの ETL 処理を行うことができます。
 <li>ストレージとコンピューティングリソースは、必要に応じて個別にスケーリング。</li>
 <li>自動バックアップ機能により、データを安全に保護。</li>
 </ol>
-<p>Keyspaces は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、耐久性を内包しています。<br>
-Apache Cassandra の互換性により、既存の Cassandra アプリケーションを容易に移行できます。</p>
+<p>Keyspaces は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、耐久性を内包している。<br>
+Apache Cassandra の互換性により、既存の Cassandra アプリケーションを容易に移行できる。</p>
 <h3 id="4_4">4. セキュリティと認証・認可<a class="headerlink" href="#4_4" title="Permanent link">¶</a></h3>
 <p>セキュリティは Keyspaces の重要な要素です:</p>
 <ul>
@@ -7670,7 +7670,7 @@ Apache Cassandra の互換性により、既存の Cassandra アプリケーシ�
 <li><strong>VPC サポート</strong>: Amazon VPC 内で Keyspaces を使用する場合、プライベート接続を確立。</li>
 <li><strong>監査ログ</strong>: AWS CloudTrail を利用して、API 呼び出しやリソース変更を記録。</li>
 </ul>
-<p>これにより、データの安全性とコンプライアンスを確保できます。</p>
+<p>これにより、データの安全性とコンプライアンスを確保できる。</p>
 <h3 id="5_4">5. 料金形態<a class="headerlink" href="#5_4" title="Permanent link">¶</a></h3>
 <p>Amazon Keyspaces の料金は主に以下に基づきます:</p>
 <ul>
@@ -7764,9 +7764,9 @@ Apache Cassandra の互換性により、既存の Cassandra アプリケーシ�
 <hr>
 <h2 id="neptune">Neptune<a class="headerlink" href="#neptune" title="Permanent link">¶</a></h2>
 <h3 id="1_5">1. サービス概要<a class="headerlink" href="#1_5" title="Permanent link">¶</a></h3>
-<p>Amazon Neptune は、高速かつ信頼性の高いグラフデータベースサービスです。<br>
-ユーザーは、高度に接続されたデータを保存、管理、クエリでき、ソーシャルネットワーク、レコメンデーションエンジン、ナレッジグラフなどのアプリケーションに適しています。<br>
-Neptune は、フルマネージドサービスであり、スケーラブルなグラフデータベース環境を構築し、複雑なデータ関係を効率的に処理できます。</p>
+<p>Amazon Neptune は、高速かつ信頼性の高いグラフデータベースサービスである。<br>
+ユーザーは、高度に接続されたデータを保存、管理、クエリでき、ソーシャルネットワーク、レコメンデーションエンジン、ナレッジグラフなどのアプリケーションに適している。<br>
+Neptune は、フルマネージドサービスであり、スケーラブルなグラフデータベース環境を構築し、複雑なデータ関係を効率的に処理できる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>ソーシャルネットワーク</li>
@@ -7776,30 +7776,30 @@ Neptune は、フルマネージドサービスであり、スケーラブルな
 <li>ID とアクセス管理</li>
 <li>ライフサイエンス</li>
 </ul>
-<p>などが挙げられます。<br>
-Amazon Neptune は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+Amazon Neptune は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_6">2. 主な特徴と機能<a class="headerlink" href="#2_6" title="Permanent link">¶</a></h3>
 <h4 id="21_1">2.1 グラフデータベース<a class="headerlink" href="#21_1" title="Permanent link">¶</a></h4>
-<p>Neptune は、グラフデータベースを提供し、ノード（頂点）とエッジ（辺）で構成されるグラフ構造でデータを表現します。<br>
-これにより、関係性が強いデータを効率的に管理し、複雑なクエリを高速に実行できます。</p>
+<p>Neptune は、グラフデータベースを提供し、ノード（頂点）とエッジ（辺）で構成されるグラフ構造でデータを表現する。<br>
+これにより、関係性が強いデータを効率的に管理し、複雑なクエリを高速に実行できる。</p>
 <h4 id="22_5">2.2 フルマネージドサービス<a class="headerlink" href="#22_5" title="Permanent link">¶</a></h4>
-<p>Neptune は、フルマネージドサービスであるため、ユーザーはデータベースのプロビジョニング、スケーリング、パッチ適用などの管理を行う必要はありません。<br>
-AWS が、これらの管理作業を自動的に行います。</p>
+<p>Neptune は、フルマネージドサービスであるため、ユーザーはデータベースのプロビジョニング、スケーリング、パッチ適用などの管理を行う必要はない。<br>
+AWS が、これらの管理作業を自動的に行う。</p>
 <h4 id="23_4">2.3 スケーラビリティ<a class="headerlink" href="#23_4" title="Permanent link">¶</a></h4>
-<p>Neptune は、ストレージ容量とスループットを自動的にスケーリングできます。<br>
-これにより、データ量の増加やトラフィックの変動に対応し、安定したパフォーマンスを提供できます。</p>
+<p>Neptune は、ストレージ容量とスループットを自動的にスケーリングできる。<br>
+これにより、データ量の増加やトラフィックの変動に対応し、安定したパフォーマンスを提供できる。</p>
 <h4 id="24_4">2.4 高い可用性<a class="headerlink" href="#24_4" title="Permanent link">¶</a></h4>
-<p>Neptune は、複数のアベイラビリティゾーンにデータを複製することで、高い可用性を実現しています。<br>
-これにより、ハードウェア障害やゾーン障害が発生した場合でも、アプリケーションの可用性を維持できます。</p>
+<p>Neptune は、複数のアベイラビリティゾーンにデータを複製することで、高い可用性を実現している。<br>
+これにより、ハードウェア障害やゾーン障害が発生した場合でも、アプリケーションの可用性を維持できる。</p>
 <h4 id="25-gremlin-sparql">2.5 Gremlin と SPARQL<a class="headerlink" href="#25-gremlin-sparql" title="Permanent link">¶</a></h4>
-<p>Apache TinkerPop Gremlin と SPARQL という、グラフデータベースの標準的なクエリ言語をサポートしています。<br>
-これにより、柔軟なクエリでデータを検索できます。</p>
+<p>Apache TinkerPop Gremlin と SPARQL という、グラフデータベースの標準的なクエリ言語をサポートしている。<br>
+これにより、柔軟なクエリでデータを検索できる。</p>
 <h4 id="26-acid_1">2.6 ACID トランザクション<a class="headerlink" href="#26-acid_1" title="Permanent link">¶</a></h4>
-<p>Neptune は、ACID（Atomicity, Consistency, Isolation, Durability）トランザクションをサポートしています。<br>
-これにより、データの整合性を維持できます。</p>
+<p>Neptune は、ACID（Atomicity, Consistency, Isolation, Durability）トランザクションをサポートしている。<br>
+これにより、データの整合性を維持できる。</p>
 <h4 id="27_4">2.7 統合性と拡張性<a class="headerlink" href="#27_4" title="Permanent link">¶</a></h4>
-<p>Amazon Neptune は、Amazon SageMaker, AWS Lambda, Amazon S3 などの AWS の他のサービスと密接に統合されています。<br>
-また、API を利用して、グラフデータの読み書きやデータベースの管理を自動化することもできます。</p>
+<p>Amazon Neptune は、Amazon SageMaker, AWS Lambda, Amazon S3 などの AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、グラフデータの読み書きやデータベースの管理を自動化することもできる。</p>
 <h3 id="3_5">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_5" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、Neptune データベースインスタンスを作成。</li>
@@ -7808,18 +7808,18 @@ AWS が、これらの管理作業を自動的に行います。</p>
 <li>必要に応じて、リードレプリカを作成し、読み込みのスケーラビリティを向上。</li>
 <li>Neptune は、データの耐久性と可用性を確保。</li>
 </ol>
-<p>Amazon Neptune は、AWS のインフラ上に構築されており、高い可用性、スケーラビリティ、パフォーマンスを提供します。<br>
-データベースのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
+<p>Amazon Neptune は、AWS のインフラ上に構築されており、高い可用性、スケーラビリティ、パフォーマンスを提供する。<br>
+データベースのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
 <h3 id="4_5">4. セキュリティと認証・認可<a class="headerlink" href="#4_5" title="Permanent link">¶</a></h3>
 <p>Amazon Neptune は、データのセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Neptune へのアクセスを制御します。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Neptune へのアクセスを制御する。</li>
 <li><strong>VPC 内での実行</strong>: Neptune データベースインスタンスは Virtual Private Cloud (VPC) 内で実行され、ネットワーク隔離を実現。</li>
-<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化されます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Neptune データベースの操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、Neptune の利用状況を監査できます。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Neptune データベースの操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、Neptune の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、グラフデータへの不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、グラフデータへの不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_5">5. 料金形態<a class="headerlink" href="#5_5" title="Permanent link">¶</a></h3>
 <p>Amazon Neptune の料金は主に以下に基づきます:</p>
 <ul>
@@ -7830,7 +7830,7 @@ AWS が、これらの管理作業を自動的に行います。</p>
 <li><strong>データ転送</strong>: データ転送量に応じて課金。</li>
 </ul>
 <h3 id="6_5">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_5" title="Permanent link">¶</a></h3>
-<p>Amazon Neptune は、様々なグラフデータを利用するアプリケーションに利用できます。<br>
+<p>Amazon Neptune は、様々なグラフデータを利用するアプリケーションに利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>ソーシャルネットワーク</strong>: ソーシャルネットワークのユーザー、関係性、アクティビティなどをグラフ構造で表現し、友人関係の発見やコミュニティ分析に利用。</li>
@@ -7893,44 +7893,44 @@ AWS が、これらの管理作業を自動的に行います。</p>
 <h4 id="88_3">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_3" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon Neptune は何を提供するサービスですか？</li>
-<li>A: 高速かつ信頼性の高いグラフデータベースサービスを提供します。</li>
+<li>A: 高速かつ信頼性の高いグラフデータベースサービスを提供する。</li>
 <li>Q: Amazon Neptune は、どのようなデータモデルでデータを表現しますか？</li>
-<li>A: ノード（頂点）とエッジ（辺）で構成されるグラフ構造でデータを表現します。</li>
+<li>A: ノード（頂点）とエッジ（辺）で構成されるグラフ構造でデータを表現する。</li>
 <li>Q: Amazon Neptune は、どのようなクエリ言語をサポートしていますか？</li>
-<li>A: Apache TinkerPop Gremlin と SPARQL というグラフデータベースの標準的なクエリ言語をサポートしています。</li>
+<li>A: Apache TinkerPop Gremlin と SPARQL というグラフデータベースの標準的なクエリ言語をサポートしている。</li>
 <li>Q: Amazon Neptune は、どのように可用性を確保していますか？</li>
-<li>A: 複数のアベイラビリティゾーンにデータを複製することで、高い可用性を実現しています。</li>
+<li>A: 複数のアベイラビリティゾーンにデータを複製することで、高い可用性を実現している。</li>
 <li>Q: Amazon Neptune の料金はどのように計算されますか？</li>
-<li>A: データベースインスタンスの利用時間、ストレージ容量、I/O リクエスト数、バックアップストレージ、データ転送量などに基づいて計算されます。</li>
+<li>A: データベースインスタンスの利用時間、ストレージ容量、I/O リクエスト数、バックアップストレージ、データ転送量などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="rds">RDS<a class="headerlink" href="#rds" title="Permanent link">¶</a></h2>
 <h3 id="1_6">1. サービス概要<a class="headerlink" href="#1_6" title="Permanent link">¶</a></h3>
-<p>Amazon RDS（Relational Database Service）は、AWS が提供するフルマネージドなリレーショナルデータベースサービスです。<br>
-MySQL、PostgreSQL、MariaDB、Oracle、Microsoft SQL Server、Amazon Aurora など、複数のデータベースエンジンを選択でき、データベースのセットアップ・管理・スケーリングを簡素化します。</p>
+<p>Amazon RDS（Relational Database Service）は、AWS が提供するフルマネージドなリレーショナルデータベースサービスである。<br>
+MySQL、PostgreSQL、MariaDB、Oracle、Microsoft SQL Server、Amazon Aurora など、複数のデータベースエンジンを選択でき、データベースのセットアップ・管理・スケーリングを簡素化する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>Web アプリケーションのメインデータベース</li>
 <li>社内システムのリフト＆シフト（オンプレからの移行）</li>
 <li>開発/テスト環境</li>
 </ul>
-<p>などが挙げられます。<br>
-インフラ管理を AWS に任せることで、開発チームはアプリケーションロジックに集中できます。</p>
+<p>などが挙げられる。<br>
+インフラ管理を AWS に任せることで、開発チームはアプリケーションロジックに集中できる。</p>
 <h3 id="2_7">2. 主な特徴と機能<a class="headerlink" href="#2_7" title="Permanent link">¶</a></h3>
 <h4 id="21_2">2.1 マネージドで簡易的な運用<a class="headerlink" href="#21_2" title="Permanent link">¶</a></h4>
-<p>RDS は OS や DB ソフトウェアのインストール、パッチ適用、バックアップ、自動フェイルオーバーなどを AWS が自動化して管理します。<br>
-手動でのアップデート作業や冗長化構成の構築が不要になるため、運用負荷を大幅に削減できます。</p>
+<p>RDS は OS や DB ソフトウェアのインストール、パッチ適用、バックアップ、自動フェイルオーバーなどを AWS が自動化して管理する。<br>
+手動でのアップデート作業や冗長化構成の構築が不要になるため、運用負荷を大幅に削減できる。</p>
 <h4 id="22_6">2.2 バックアップとリカバリ<a class="headerlink" href="#22_6" title="Permanent link">¶</a></h4>
-<p>スナップショットおよびポイントインタイムリカバリをサポートし、バックアップウィンドウを自動スケジュールできます。<br>
-自動スナップショットの保持期間を設定し、過去の任意時点までデータベースを巻き戻せるため、障害時のリカバリが容易です。</p>
+<p>スナップショットおよびポイントインタイムリカバリをサポートし、バックアップウィンドウを自動スケジュールできる。<br>
+自動スナップショットの保持期間を設定し、過去の任意時点までデータベースを巻き戻せるため、障害時のリカバリが容易である。</p>
 <h4 id="23-az">2.3 マルチ AZ 配置とレプリケーション<a class="headerlink" href="#23-az" title="Permanent link">¶</a></h4>
-<p>マルチ AZ オプションを有効にすると、プライマリ DB の変更が同期的に別 AZ のスタンバイ DB へレプリケーションされ、障害時には自動的にスタンバイが昇格してフェイルオーバーします。<br>
-また、リードレプリカを作成し、読み込み負荷を分散する構成も可能です（エンジンによって異なる）。</p>
+<p>マルチ AZ オプションを有効にすると、プライマリ DB の変更が同期的に別 AZ のスタンバイ DB へレプリケーションされ、障害時には自動的にスタンバイが昇格してフェイルオーバーする。<br>
+また、リードレプリカを作成し、読み込み負荷を分散する構成も可能である（エンジンによって異なる）。</p>
 <h4 id="24_5">2.4 スケーラビリティ<a class="headerlink" href="#24_5" title="Permanent link">¶</a></h4>
-<p>需要の増減に合わせて、DB インスタンスタイプやストレージ容量を変更できます。<br>
-手動スケールアップ/ダウンはコンソールや CLI から行い、自動ストレージスケーリング機能をサポートするエンジン（Aurora など）も存在します。</p>
+<p>需要の増減に合わせて、DB インスタンスタイプやストレージ容量を変更できる。<br>
+手動スケールアップ/ダウンはコンソールや CLI から行い、自動ストレージスケーリング機能をサポートするエンジン（Aurora など）も存在する。</p>
 <h4 id="25_4">2.5 多彩なエンジンサポート<a class="headerlink" href="#25_4" title="Permanent link">¶</a></h4>
-<p>RDS は多様な RDB エンジンを提供し、既存の SQL 知識やツールを活かした移行が容易です。<br>
+<p>RDS は多様な RDB エンジンを提供し、既存の SQL 知識やツールを活かした移行が容易である。<br>
 例: MySQL、MariaDB、PostgreSQL、Oracle Database、SQL Server、Aurora など。</p>
 <h3 id="3_6">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_6" title="Permanent link">¶</a></h3>
 <ol>
@@ -7940,7 +7940,7 @@ MySQL、PostgreSQL、MariaDB、Oracle、Microsoft SQL Server、Amazon Aurora な
 <li>自動バックアップやスナップショットが定期的に取得され、障害時には Point-in-Time リカバリ</li>
 <li>フェイルオーバーやメンテナンスは AWS によってマネージドされる</li>
 </ol>
-<p>このように、オンプレミスで必要だった多くの運用作業（ハードウェア調達、OS 管理、ソフトウェアパッチ等）を AWS に任せつつ、高可用性とスケーラブルな RDB を利用できます。</p>
+<p>このように、オンプレミスで必要だった多くの運用作業（ハードウェア調達、OS 管理、ソフトウェアパッチ等）を AWS に任せつつ、高可用性とスケーラブルな RDB を利用できる。</p>
 <h3 id="4_6">4. セキュリティと認証・認可<a class="headerlink" href="#4_6" title="Permanent link">¶</a></h3>
 <p>RDS では以下のセキュリティモデルを利用できます:</p>
 <ul>
@@ -8020,9 +8020,9 @@ MySQL、PostgreSQL、MariaDB、Oracle、Microsoft SQL Server、Amazon Aurora な
 <hr>
 <h2 id="redshift">Redshift<a class="headerlink" href="#redshift" title="Permanent link">¶</a></h2>
 <h3 id="1_7">1. サービス概要<a class="headerlink" href="#1_7" title="Permanent link">¶</a></h3>
-<p>Amazon Redshift は、大規模なデータウェアハウスを構築し、分析クエリを実行するためのフルマネージドのクラウドサービスです。<br>
-ユーザーは、ペタバイト規模の構造化データを保存し、複雑な分析クエリを高速に実行できます。<br>
-Redshift は、ビジネスインテリジェンス（BI）、データ分析、レポート作成などのユースケースに対応するための、スケーラビリティ、パフォーマンス、セキュリティを提供します。</p>
+<p>Amazon Redshift は、大規模なデータウェアハウスを構築し、分析クエリを実行するためのフルマネージドのクラウドサービスである。<br>
+ユーザーは、ペタバイト規模の構造化データを保存し、複雑な分析クエリを高速に実行できる。<br>
+Redshift は、ビジネスインテリジェンス（BI）、データ分析、レポート作成などのユースケースに対応するための、スケーラビリティ、パフォーマンス、セキュリティを提供する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>データウェアハウスの構築</li>
@@ -8032,30 +8032,30 @@ Redshift は、ビジネスインテリジェンス（BI）、データ分析、
 <li>レポート作成</li>
 <li>ダッシュボード作成</li>
 </ul>
-<p>などが挙げられます。<br>
-Amazon Redshift は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+<p>などが挙げられる。<br>
+Amazon Redshift は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_8">2. 主な特徴と機能<a class="headerlink" href="#2_8" title="Permanent link">¶</a></h3>
 <h4 id="21_3">2.1 ペタバイト規模のデータウェアハウス<a class="headerlink" href="#21_3" title="Permanent link">¶</a></h4>
-<p>Redshift は、ペタバイト規模の構造化データを保存できるデータウェアハウスを提供します。<br>
-これにより、大量のデータを効率的に管理し、分析できます。</p>
+<p>Redshift は、ペタバイト規模の構造化データを保存できるデータウェアハウスを提供する。<br>
+これにより、大量のデータを効率的に管理し、分析できる。</p>
 <h4 id="22_7">2.2 列指向ストレージ<a class="headerlink" href="#22_7" title="Permanent link">¶</a></h4>
-<p>データを列形式で保存することで、分析クエリのパフォーマンスを向上させます。<br>
-列指向ストレージは、特定の列のみを読み取る場合に、ディスク I/O を削減し、高速なクエリ処理を可能にします。</p>
+<p>データを列形式で保存することで、分析クエリのパフォーマンスを向上させる。<br>
+列指向ストレージは、特定の列のみを読み取る場合に、ディスク I/O を削減し、高速なクエリ処理を可能にする。</p>
 <h4 id="23-mpp">2.3 大規模並列処理 (MPP)<a class="headerlink" href="#23-mpp" title="Permanent link">¶</a></h4>
-<p>Redshift は、MPP アーキテクチャを採用しており、複数のコンピューティングノードでクエリを並列処理します。<br>
-これにより、大規模なデータセットに対する複雑なクエリを高速に実行できます。</p>
+<p>Redshift は、MPP アーキテクチャを採用しており、複数のコンピューティングノードでクエリを並列処理する。<br>
+これにより、大規模なデータセットに対する複雑なクエリを高速に実行できる。</p>
 <h4 id="24-sql">2.4 SQL ベースのクエリ<a class="headerlink" href="#24-sql" title="Permanent link">¶</a></h4>
-<p>Redshift は、ANSI SQL をサポートしており、ユーザーは使い慣れた SQL クエリを使用してデータを分析できます。<br>
-これにより、既存の SQL スキルを活かし、データ分析を効率化できます。</p>
+<p>Redshift は、ANSI SQL をサポートしており、ユーザーは使い慣れた SQL クエリを使用してデータを分析できる。<br>
+これにより、既存の SQL スキルを活かし、データ分析を効率化できる。</p>
 <h4 id="25-bi">2.5 BI ツールとの連携<a class="headerlink" href="#25-bi" title="Permanent link">¶</a></h4>
-<p>Tableau, Power BI, QuickSight などの様々なビジネスインテリジェンス（BI）ツールと連携できます。<br>
-これにより、データを可視化し、インタラクティブなダッシュボードを作成できます。</p>
+<p>Tableau, Power BI, QuickSight などの様々なビジネスインテリジェンス（BI）ツールと連携できる。<br>
+これにより、データを可視化し、インタラクティブなダッシュボードを作成できる。</p>
 <h4 id="26_2">2.6 スケーラビリティ<a class="headerlink" href="#26_2" title="Permanent link">¶</a></h4>
-<p>Redshift は、ストレージ容量とコンピューティングリソースを柔軟にスケーリングできます。<br>
-これにより、データ量の増加やクエリ負荷の変動に対応できます。</p>
+<p>Redshift は、ストレージ容量とコンピューティングリソースを柔軟にスケーリングできる。<br>
+これにより、データ量の増加やクエリ負荷の変動に対応できる。</p>
 <h4 id="27_5">2.7 統合性と拡張性<a class="headerlink" href="#27_5" title="Permanent link">¶</a></h4>
-<p>Amazon Redshift は、Amazon S3, AWS Glue, Amazon Kinesis, AWS Lambda などの AWS の他のサービスと密接に統合されています。<br>
-また、API を利用して、データベースの管理やデータ分析を自動化することもできます。</p>
+<p>Amazon Redshift は、Amazon S3, AWS Glue, Amazon Kinesis, AWS Lambda などの AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、データベースの管理やデータ分析を自動化することもできる。</p>
 <h3 id="3_7">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_7" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS マネジメントコンソールまたは API を通じて、Redshift クラスターを作成。</li>
@@ -8064,18 +8064,18 @@ Amazon Redshift は、これらのユースケースに対応するための様�
 <li>Redshift は、クエリを並列処理し、結果を返却。</li>
 <li>必要に応じて、クラスターのスケーリングやバックアップを実行。</li>
 </ol>
-<p>Amazon Redshift は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供します。<br>
-データベースのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
+<p>Amazon Redshift は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
+データベースのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
 <h3 id="4_7">4. セキュリティと認証・認可<a class="headerlink" href="#4_7" title="Permanent link">¶</a></h3>
 <p>Amazon Redshift は、データセキュリティを確保するために、以下の機能を提供します:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Redshift へのアクセスを制御します。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Redshift へのアクセスを制御する。</li>
 <li><strong>VPC 内での実行</strong>: Redshift クラスターは Virtual Private Cloud (VPC) 内で実行され、ネットワーク隔離を実現。</li>
-<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化されます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Redshift データベースの操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、Redshift の利用状況を監査できます。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Redshift データベースの操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、Redshift の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、データベースとそのデータを安全に保護します。</p>
+<p>これらのセキュリティ対策により、データベースとそのデータを安全に保護する。</p>
 <h3 id="5_7">5. 料金形態<a class="headerlink" href="#5_7" title="Permanent link">¶</a></h3>
 <p>Amazon Redshift の料金は主に以下に基づきます:</p>
 <ul>
@@ -8085,7 +8085,7 @@ Amazon Redshift は、これらのユースケースに対応するための様�
 <li><strong>データ転送</strong>: データ転送量に応じて課金。</li>
 </ul>
 <h3 id="6_7">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_7" title="Permanent link">¶</a></h3>
-<p>Amazon Redshift は、様々なデータ分析に利用できます。<br>
+<p>Amazon Redshift は、様々なデータ分析に利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>データウェアハウスの構築</strong>: 様々なソースからのデータを集約し、Redshift に保存。</li>
@@ -8143,15 +8143,15 @@ Amazon Redshift は、これらのユースケースに対応するための様�
 <h4 id="87_5">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_5" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon Redshift は何を提供するサービスですか？</li>
-<li>A: 大規模なデータウェアハウスを構築し、分析クエリを実行するためのフルマネージドのクラウドサービスです。</li>
+<li>A: 大規模なデータウェアハウスを構築し、分析クエリを実行するためのフルマネージドのクラウドサービスである。</li>
 <li>Q: Amazon Redshift は、どのようにデータを保存しますか？</li>
-<li>A: 列形式でデータを保存します。</li>
+<li>A: 列形式でデータを保存する。</li>
 <li>Q: Amazon Redshift は、どのようにクエリを高速化しますか？</li>
-<li>A: 大規模並列処理（MPP）アーキテクチャを採用し、複数のコンピューティングノードでクエリを並列処理します。</li>
+<li>A: 大規模並列処理（MPP）アーキテクチャを採用し、複数のコンピューティングノードでクエリを並列処理する。</li>
 <li>Q: Amazon Redshift は、どのようなクエリ言語をサポートしていますか？</li>
-<li>A: ANSI SQL をサポートしています。</li>
+<li>A: ANSI SQL をサポートしている。</li>
 <li>Q: Amazon Redshift の料金はどのように計算されますか？</li>
-<li>A: コンピューティングノードの利用時間、ストレージ、バックアップ、データ転送量などに基づいて計算されます。</li>
+<li>A: コンピューティングノードの利用時間、ストレージ、バックアップ、データ転送量などに基づいて計算される。</li>
 </ul>
 
 
@@ -8173,7 +8173,7 @@ Amazon Redshift は、これらのユースケースに対応するための様�
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月2日 07:36:36 UTC">2026年1月2日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月2日 07:40:17 UTC">2026年1月2日</span>
   </span>
 
     
