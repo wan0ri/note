@@ -11,8 +11,8 @@ title: アプリケーション統合
 
 主なユースケースとして、
 
-- SaaS アプリケーションのデータバックアップ（Salesforce のデータを S3 に保存）、
-- データレイクへのデータ投入（Marketo のデータを Amazon Redshift にロード）、
+- SaaS アプリケーションのデータバックアップ（Salesforce のデータを S3 に保存）
+- データレイクへのデータ投入（Marketo のデータを Amazon Redshift にロード）
 - データ同期（Google Analytics のデータを Amazon S3 に同期）
 - ビジネスアプリケーション統合（Zendesk のデータを Salesforce に同期）
 
