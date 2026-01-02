@@ -1,4 +1,6 @@
-title: ApplicationIntegration
+---
+title: アプリケーション統合
+---
 
 ## AppFlow
 
