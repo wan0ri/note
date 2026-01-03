@@ -117,24 +117,24 @@ nav:
       - 可観測性: cloud/observability.md
   - Certifications:
       - certifications/index.md
-      - AWS-SAA(範囲): certifications/aws-saa/index.md
-      - AWS-SAA(アプリケーション統合): certifications/aws-saa/ApplicationIntegration.md
-      - AWS-SAA(アーキテクチャ戦略): certifications/aws-saa/ArchitectureStrategy.md
-      - AWS-SAA(ウェブとモバイルのフロントエンド): certifications/aws-saa/WebAndMobileFrontEnd.md
-      - AWS-SAA(クラウド財務管理): certifications/aws-saa/CloudFinancialManagement.md
-      - AWS-SAA(コンテナ): certifications/aws-saa/Containers.md
-      - AWS-SAA(コンピューティング): certifications/aws-saa/Compute.md
-      - AWS-SAA(ストレージ): certifications/aws-saa/Storage.md
-      - AWS-SAA(セキュリティ、アイデンティティ、コンプライアンス): certifications/aws-saa/SecurityIdentityAndCompliance.md
-      - AWS-SAA(デベロッパーツール): certifications/aws-saa/DeveloperTools.md
-      - AWS-SAA(データベース): certifications/aws-saa/Database.md
-      - AWS-SAA(ネットワーキングとコンテンツ配信): certifications/aws-saa/NetworkingAndContentDelivery.md
-      - AWS-SAA(ブロックチェーン): certifications/aws-saa/Blockchain.md
-      - AWS-SAA(メディアサービス): certifications/aws-saa/MediaServices.md
-      - AWS-SAA(分析): certifications/aws-saa/Analytics.md
-      - AWS-SAA(機械学習): certifications/aws-saa/MachineLearning.md
-      - AWS-SAA(移行): certifications/aws-saa/MigrationAndTransfer.md
-      - AWS-SAA(管理とガバナンス): certifications/aws-saa/ManagementAndGovernance.md
+      - AWS-SAA 項目一覧: certifications/aws-saa/index.md
+      - アプリケーション統合: certifications/aws-saa/ApplicationIntegration.md
+      - アーキテクチャ戦略: certifications/aws-saa/ArchitectureStrategy.md
+      - ウェブとモバイルのフロントエンド: certifications/aws-saa/WebAndMobileFrontEnd.md
+      - クラウド財務管理: certifications/aws-saa/CloudFinancialManagement.md
+      - コンテナ: certifications/aws-saa/Containers.md
+      - コンピューティング: certifications/aws-saa/Compute.md
+      - ストレージ: certifications/aws-saa/Storage.md
+      - セキュリティ、アイデンティティ、コンプライアンス: certifications/aws-saa/SecurityIdentityAndCompliance.md
+      - デベロッパーツール: certifications/aws-saa/DeveloperTools.md
+      - データベース: certifications/aws-saa/Database.md
+      - ネットワーキングとコンテンツ配信: certifications/aws-saa/NetworkingAndContentDelivery.md
+      - ブロックチェーン: certifications/aws-saa/Blockchain.md
+      - メディアサービス: certifications/aws-saa/MediaServices.md
+      - 分析: certifications/aws-saa/Analytics.md
+      - 機械学習: certifications/aws-saa/MachineLearning.md
+      - 移行: certifications/aws-saa/MigrationAndTransfer.md
+      - 管理とガバナンス: certifications/aws-saa/ManagementAndGovernance.md
   - DevOps:
       - devops/index.md
       - CI/CD: devops/cicd.md

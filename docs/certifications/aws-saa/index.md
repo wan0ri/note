@@ -25,5 +25,3 @@ title: AWS SAA 試験領域
 - [機械学習](MachineLearning.md)
 - [移行と転送](MigrationAndTransfer.md)
 - [管理とガバナンス](ManagementAndGovernance.md)
-
-> メモ: 各ページは順次追記予定のプレースホルダです。
