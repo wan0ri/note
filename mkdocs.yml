@@ -116,7 +116,6 @@ nav:
       - IaC: cloud/iac.md
       - 可観測性: cloud/observability.md
   - Certifications:
-      - certifications/index.md
       - AWS-SAA 項目一覧: certifications/aws-saa/index.md
   - DevOps:
       - devops/index.md
