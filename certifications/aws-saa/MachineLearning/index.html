@@ -97,6 +97,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#amazon-comprehend" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -2030,6 +2035,2885 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-comprehend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Comprehend
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Comprehend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-sentiment-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 感情分析（Sentiment Analysis）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 エンティティ抽出（Entities）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-key-phrases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 キーフレーズ抽出（Key Phrases）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 文章分類・トピックモデリング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 カスタム辞書・カスタムモデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 感情分析・エンティティ解析の仕組み
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 カスタムモデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 トピックモデリング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 バッチ処理とリアルタイム処理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 コスト管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-forecast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Forecast
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Forecast">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 機械学習による予測
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 時系列データ対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 豊富なデータ入力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 予測の可視化と分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 カスタマイズ可能なモデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 自動モデル選択
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 統合性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 機械学習による予測
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 時系列データ対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 豊富なデータ入力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 予測の可視化と分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-fraud-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Fraud Detector
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Fraud Detector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 機械学習による不正検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 リアルタイム不正検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 事前構築されたモデルとカスタムモデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 柔軟なルールベースの検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 意思決定の自動化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-ab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 A/B テストのサポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 統合性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 機械学習による不正検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 フルマネージドサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 リアルタイム不正検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 事前構築モデルとカスタムモデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 柔軟なルールベースの検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-kendra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Kendra
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Kendra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 機械学習ベースの検索
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 コネクタ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 検索エクスペリエンス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 自然言語処理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 アクセス制御
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 カスタマイズ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 統合性と拡張性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 機械学習ベースの検索
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 コネクタ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 検索エクスペリエンス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 自然言語処理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-lex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Lex
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Lex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 インテントとスロットの設計
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 多言語対応と会話フロー制御
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 高精度の音声認識・自然言語理解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Lambda との連携（バックエンドロジック）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 チャット/音声のマルチチャネル展開
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 インテントとスロットの仕組み
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 音声とテキストのハンドリング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Lambda との連携
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 セキュリティとポリシー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 料金構造
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-polly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Polly
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Polly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 テキスト読み上げ (TTS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 多様な言語と音声
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-ntts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 ニューラルテキスト読み上げ (NTTS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 音声のカスタマイズ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-ssml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 SSML サポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 ストリーミングオーディオ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 統合性と拡張性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 テキスト読み上げ (TTS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 多様な言語と音声
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-ntts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 ニューラルテキスト読み上げ (NTTS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 音声のカスタマイズ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-rekognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Rekognition
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Rekognition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-label-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 物体・シーン検出 (Label Detection)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-face-detection-compare-faces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 顔認識と顔比較 (Face Detection / Compare Faces)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-face-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 顔検索 (Face Search)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-text-in-imagevideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 テキスト検出 (Text in Image/Video)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-content-moderation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 コンテンツモデレーション (Content Moderation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 ラベル検出と信頼度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 顔検出と顔コレクション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-ocr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 テキスト検出 (OCR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 非同期ビデオ解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-content-moderation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 モデレーション (Content Moderation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-sagemaker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon SageMaker
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon SageMaker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 機械学習モデルの構築
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 フルマネージドなトレーニング環境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 機械学習アルゴリズムの提供
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 モデルのデプロイ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 モデルの監視と管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-ml-sagemaker-autopilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 オート ML (SageMaker Autopilot)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 統合性と拡張性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 機械学習モデルの構築
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 フルマネージドなトレーニング環境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 機械学習アルゴリズムの提供
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 モデルのデプロイ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-ml-sagemaker-autopilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 オート ML (SageMaker Autopilot)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-textract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Textract
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Textract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 テキスト検出とレイアウト解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 テーブル認識
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-key-value-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 フォーム抽出 (Key-Value Pairs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 手書き文字への対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-amazon-a2i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 機密情報抽出 (Amazon A2I 連携)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-ocr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 OCR とフォーム/テーブル抽出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 非同期ジョブとリアルタイム API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 セキュリティと IAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-a2i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 カスタムワークフロー (A2I)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 コスト管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-transcribe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Transcribe
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Transcribe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-asr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 自動音声認識 (ASR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 バッチ処理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 リアルタイム処理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 話者分離
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 言語識別
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 カスタマイズ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 統合性と拡張性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-asr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 自動音声認識 (ASR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 バッチ処理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 リアルタイム処理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 話者分離
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-translate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Translate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Translate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. サービス概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 リアルタイム翻訳とバッチ翻訳
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-custom-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 カスタム用語 (Custom Terminology)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 高精度ニューラルネットワークと継続的学習
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-custom-domain-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 翻訳メモリやコンテキスト反映 (Custom Domain Adaptation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-aws-aiml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 多様なサービス連携 (AWS AI/ML スタック)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-translate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Translate の翻訳モデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-api_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 API とバッチジョブ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-custom-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 カスタム用語 (Custom Terminology)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 セキュリティと IAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2056,8 +4940,1360 @@
   
 
 
-<h1 id="aws-saa">機械学習（AWS SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>TBD</p>
+  <h1>機械学習</h1>
+
+<h2 id="amazon-comprehend">Amazon Comprehend<a class="headerlink" href="#amazon-comprehend" title="Permanent link">¶</a></h2>
+<h3 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
+<p>Amazon Comprehend は、AWS が提供する自然言語処理（NLP）サービスである。<br>
+テキストから感情分析、キーフレーズ抽出、エンティティ認識など多様なインサイトを得ることが可能で、機械学習やサーバ管理の知識がなくても、大規模テキスト分析を簡単に行えるのが特徴である。</p>
+<p>主なユースケースとして、顧客フィードバック分析（SNS 投稿、レビューコメントなど）、サポートコールやチャットのログ解析、文書の自動分類・キーワード抽出、企業内ドキュメントのナレッジマネジメントなどが挙げられる。</p>
+<h3 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
+<h4 id="21-sentiment-analysis">2.1 感情分析（Sentiment Analysis）<a class="headerlink" href="#21-sentiment-analysis" title="Permanent link">¶</a></h4>
+<p>テキストがポジティブかネガティブかなど、4 段階の感情判定（Positive / Negative / Neutral / Mixed）を返してくれる。<br>
+SNS のつぶやきや商品レビュー、顧客アンケートなどの好感度を自動でスコア化し、トレンドを素早く把握できる。</p>
+<h4 id="22-entities">2.2 エンティティ抽出（Entities）<a class="headerlink" href="#22-entities" title="Permanent link">¶</a></h4>
+<p>テキストから人名、組織名、場所、商標、イベントなど、固有表現を検出し、該当部分・タイプ・スコアを返する。<br>
+大量の文章から人名と企業名を抽出してリレーションを可視化するなど、データ連携に有効である。</p>
+<h4 id="23-key-phrases">2.3 キーフレーズ抽出（Key Phrases）<a class="headerlink" href="#23-key-phrases" title="Permanent link">¶</a></h4>
+<p>文章の中で「重要なフレーズや単語」を特定し、エッセンスだけを抽出する。<br>
+要約やタグ付けの第一ステップとして活用することで、ドキュメント検索やメタデータ生成の効率化が図れる。</p>
+<h4 id="24">2.4 文章分類・トピックモデリング<a class="headerlink" href="#24" title="Permanent link">¶</a></h4>
+<p>特定のカテゴリに文章を仕分けするカスタム分類機能や、大規模テキストを自動的にグルーピングするトピックモデリング（LDA ベース）もサポート。<br>
+これにより、ドキュメントのクラスター分析や自動タグ付けが容易になる。</p>
+<h4 id="25">2.5 カスタム辞書・カスタムモデル<a class="headerlink" href="#25" title="Permanent link">¶</a></h4>
+<p>Comprehend Medical をはじめ、専門分野の固有表現に対応するオプションも存在。<br>
+また、カスタムエンティティ認識やカスタム分類のモデルを学習させることで、独自の業界用語や社内用語を認識させることが可能である。</p>
+<h3 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
+<ol>
+<li>Amazon Comprehend の API にテキストを送信（同期的なエンドポイント / バッチ処理のいずれか）</li>
+<li>Comprehend は内部の機械学習モデルを用いて、感情・エンティティ・キーフレーズなどを解析</li>
+<li>結果が JSON 形式で返され、各情報（スコア、タグ付けなど）を取得</li>
+<li>必要に応じて S3 上の大量テキストをバッチジョブで処理し、結果をファイル出力</li>
+<li>ダッシュボードや BI ツール（QuickSight など）で可視化・分析を行い、洞察を得る</li>
+</ol>
+<p>Comprehend の強みは、AWS マネージドの高精度 NLP エンジンを手軽に利用できる点。<br>
+オンプレやクラウド環境を問わず、アプリケーションや分析パイプラインに統合可能である。</p>
+<h3 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
+<p>Comprehend でのセキュリティ上の考慮事項は以下の通りである:</p>
+<ul>
+<li><strong>IAM ポリシー</strong>: Comprehend の API 呼び出し権限を付与するロールやユーザーを最小限に抑える</li>
+<li><strong>S3 暗号化</strong>: バッチジョブで処理するテキストや出力ファイルを S3 で暗号化</li>
+<li><strong>VPC エンドポイント</strong>: Comprehend へのアクセスをプライベートネットワークで行い、インターネット経由を避ける</li>
+<li><strong>CloudTrail 監査ログ</strong>: 誰がいつ API を呼び出したか監視し、不正利用を検知</li>
+</ul>
+<h3 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h3>
+<p>Amazon Comprehend の料金は以下に基づきる:</p>
+<ul>
+<li><strong>テキスト解析料金</strong>: 処理する文字数に対する従量課金</li>
+<li><strong>カスタム分類/エンティティ学習</strong>: モデル学習ジョブの時間当たり料金＋推論時の従量課金</li>
+<li><strong>トピックモデリング</strong>: 分析ジョブごとの時間課金と、データ量による費用</li>
+</ul>
+<h3 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h3>
+<p>Amazon Comprehend を活用する代表的なパターンは次の通りである:</p>
+<ul>
+<li><strong>カスタマーサポート分析</strong>: 通話ログやチャット履歴を Comprehend で感情分析し、問題の深刻度や CS 改善を可視化</li>
+<li><strong>SNS・レビュー解析</strong>: Twitter や製品レビューなどからブランドへの好感度を定量化し、マーケティング指標とする</li>
+<li><strong>ドキュメント仕分け</strong>・検索性向上: 大量文書を自動分類・タグ付けし、検索システムを高効率化</li>
+<li><strong>カスタム辞書でのエンティティ抽出</strong>: 医療・法律・金融など特殊用語を識別し、独自の情報抽出を可能に</li>
+</ul>
+<h3 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS コンソールで「Amazon Comprehend」を検索し、「Analyze text」を選択（シンプルなデモ解析が可能）</li>
+<li>対象テキストを入力し、エンティティや感情などの結果を GUI で確認</li>
+<li>「Custom classification」や「Custom entity recognition」を利用する場合は、学習用データを S3 へアップロードし、ジョブを作成</li>
+<li>ジョブ完了後、モデルが生成されるので、API やコンソールから推論を実行して結果を検証</li>
+<li>本番運用で使う際は、CLI や SDK で Comprehend API を組み込み、処理スクリプトや Lambda 関数などと連携</li>
+</ol>
+<h3 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h3>
+<h4 id="81">8.1 感情分析・エンティティ解析の仕組み<a class="headerlink" href="#81" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>感情</strong>: Positive / Negative / Neutral / Mixed の分類とスコア</li>
+<li><strong>エンティティ</strong>: PERSON, ORGANIZATION, LOCATION などのカテゴリーを識別</li>
+<li><strong>キーフレーズ</strong>: テキストの重要表現を抽出</li>
+</ul>
+<h4 id="82">8.2 カスタムモデル<a class="headerlink" href="#82" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>カスタムエンティティ認識</strong>: 特殊用語や業界固有用語を識別させる</li>
+<li><strong>カスタム文書分類</strong>: 独自のカテゴリーに文章を分類、学習データが必要</li>
+<li><strong>精度向上</strong>: 十分な量と品質の教師データがモデル性能を左右</li>
+</ul>
+<h4 id="83">8.3 トピックモデリング<a class="headerlink" href="#83" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>LDA アルゴリズム</strong>: 文書コーパスを複数のトピックに分割</li>
+<li><strong>ジョブ設定</strong>: 入力データ（S3）の場所や出力場所、トピック数を指定</li>
+<li><strong>分析結果</strong>: 文書がどのトピックにどの程度関係するかの出力</li>
+</ul>
+<h4 id="84">8.4 バッチ処理とリアルタイム処理<a class="headerlink" href="#84" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Sync/Async API</strong>: 同期 API（テキスト 1 回呼び出し） or バッチジョブ（S3 入力を一括処理）</li>
+<li><strong>リアルタイム通知</strong>: SNS などでジョブ完了を受け取り、次のステップへ自動連携</li>
+</ul>
+<h4 id="85">8.5 コスト管理<a class="headerlink" href="#85" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>文字数ベース料金</strong>: 1 文字あたりの従量課金、感情・キーフレーズ・エンティティごとに異なるレート</li>
+<li><strong>トピックモデリング</strong>: 処理ジョブ時間に応じた課金</li>
+<li><strong>カスタムモデル学習</strong>: トレーニング時間の従量課金と推論時の文字数課金</li>
+</ul>
+<h4 id="86">8.6 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#86" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Comprehend で可能な分析手法は？</li>
+<li>A: 感情分析、エンティティ抽出、キーフレーズ抽出、言語検出、カスタム分類、トピックモデリングなど。</li>
+<li>Q: データをまとめて解析したい場合は？</li>
+<li>A: バッチジョブを使用し、S3 入力を指定して大量の文書を一括処理。ジョブ完了時に結果を S3 に出力。</li>
+<li>Q: 独自用語（業界の専門用語など）を認識させたい場合は？</li>
+<li>A: カスタムエンティティ認識機能を使い、学習用データを用いて独自モデルをトレーニングする。</li>
+<li>Q: セキュリティ面で気をつける点は？</li>
+<li>A: IAM ポリシーによる API アクセス制限、S3 の暗号化、CloudTrail で操作ログを監査など。</li>
+<li>Q: 感情分析の結果を数値化するには？</li>
+<li>A: Positive/Negative/Neutral/Mixed に対するスコアが返されるので、それをメトリクス化や可視化で活用する。</li>
+</ul>
+<hr>
+<h2 id="amazon-forecast">Amazon Forecast<a class="headerlink" href="#amazon-forecast" title="Permanent link">¶</a></h2>
+<h3 id="1_1">1. サービス概要<a class="headerlink" href="#1_1" title="Permanent link">¶</a></h3>
+<p>Amazon Forecast は、AWS が提供するフルマネージドの時系列予測サービスである。<br>
+機械学習を使用して、過去のデータに基づき、将来の需要や売上などを高精度に予測することができる。<br>
+Forecast は、複雑な機械学習の専門知識を必要とせずに、正確な予測モデルを構築し、ビジネスの意思決定を支援する。</p>
+<p>主なユースケースとして、</p>
+<ul>
+<li>需要予測（小売業での製品需要予測、サプライチェーン最適化）</li>
+<li>在庫管理</li>
+<li>リソース計画</li>
+<li>エネルギー消費予測</li>
+<li>ウェブトラフィック予測</li>
+</ul>
+<p>などが挙げられる。</p>
+<h3 id="2_1">2. 主な特徴と機能<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h3>
+<h4 id="21">2.1 機械学習による予測<a class="headerlink" href="#21" title="Permanent link">¶</a></h4>
+<p>Amazon Forecast は、ディープラーニングなどの高度な機械学習アルゴリズムを活用して、時系列データを分析し、高精度な予測モデルを構築する。<br>
+これにより、複雑なパターンや季節性を考慮した予測が可能になる。</p>
+<h4 id="22">2.2 フルマネージドサービス<a class="headerlink" href="#22" title="Permanent link">¶</a></h4>
+<p>インフラのプロビジョニング、スケーリング、モデルのトレーニング、デプロイは AWS が自動で行いる。<br>
+これにより、ユーザーは予測モデルの構築に集中でき、機械学習の専門知識は不要である。</p>
+<h4 id="23">2.3 時系列データ対応<a class="headerlink" href="#23" title="Permanent link">¶</a></h4>
+<p>Amazon Forecast は、時系列データ（日付と値のペア）を扱えるように設計されている。<br>
+時間ベースのパターン、トレンド、季節性などの要素を考慮した予測モデルを構築できる。</p>
+<h4 id="24_1">2.4 豊富なデータ入力<a class="headerlink" href="#24_1" title="Permanent link">¶</a></h4>
+<p>Forecast は、様々な形式のデータを入力できる。<br>
+CSV ファイル、S3 バケット、Amazon Redshift などのデータソースに対応している。</p>
+<h4 id="25_1">2.5 予測の可視化と分析<a class="headerlink" href="#25_1" title="Permanent link">¶</a></h4>
+<p>Forecast は、予測結果をグラフやテーブルで可視化するツールを提供している。<br>
+これにより、予測の傾向や精度を容易に把握し、分析を行うことができる。</p>
+<h4 id="26">2.6 カスタマイズ可能なモデル<a class="headerlink" href="#26" title="Permanent link">¶</a></h4>
+<p>Forecast は、デフォルトの機械学習モデルに加えて、独自のデータに基づいてモデルをカスタマイズすることもできる。<br>
+これにより、特定のビジネスニーズに合わせた予測モデルを構築できる。</p>
+<h4 id="27">2.7 自動モデル選択<a class="headerlink" href="#27" title="Permanent link">¶</a></h4>
+<p>Forecast は、入力されたデータに基づいて最適な機械学習モデルを自動的に選択する。<br>
+これにより、ユーザーは適切なモデルを選択する手間を省ける。</p>
+<h4 id="28">2.8 統合性<a class="headerlink" href="#28" title="Permanent link">¶</a></h4>
+<p>Forecast は、AWS の他のサービス（Amazon S3, Amazon SageMaker, AWS Lambda など）と統合されており、データ分析、機械学習ワークフローに組み込むことができる。<br>
+AWS Glue と連携してデータの準備を行うことができる。</p>
+<h3 id="3_1">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_1" title="Permanent link">¶</a></h3>
+<ol>
+<li>ユーザーは、Amazon Forecast コンソールまたは API を使用して、時系列データをアップロード。</li>
+<li>Forecast は、アップロードされたデータを分析し、機械学習モデルをトレーニング。</li>
+<li>Forecast は、トレーニングされたモデルを使用して将来の値を予測。</li>
+<li>予測結果を可視化ツールで確認。</li>
+<li>必要に応じて、予測結果を他の AWS サービス（S3 など）にエクスポート。</li>
+</ol>
+<p>Amazon Forecast は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティを内包している。<br>
+機械学習の複雑さを抽象化し、ユーザーは予測モデルの構築と活用に集中できる。</p>
+<h3 id="4_1">4. セキュリティと認証・認可<a class="headerlink" href="#4_1" title="Permanent link">¶</a></h3>
+<p>セキュリティは Forecast の重要な要素である:</p>
+<ul>
+<li><strong>IAM によるアクセス制御</strong>: AWS IAM を利用して、Forecast リソースへのアクセスを制御し、権限を管理。</li>
+<li><strong>データ暗号化</strong>: 転送中および保存中のデータを暗号化し、データの機密性を保護。</li>
+<li><strong>VPC サポート</strong>: Amazon VPC 内で Forecast を使用する場合、プライベート接続を確立。</li>
+<li><strong>監査ログ</strong>: AWS CloudTrail を利用して、API 呼び出しやリソース変更を記録。</li>
+</ul>
+<p>これにより、データの安全性とコンプライアンスを確保できる。</p>
+<h3 id="5_1">5. 料金形態<a class="headerlink" href="#5_1" title="Permanent link">¶</a></h3>
+<p>Amazon Forecast の料金は主に以下に基づきる:</p>
+<ul>
+<li><strong>データ処理</strong>: モデルトレーニング、予測生成に使用されるデータ量に応じた課金。</li>
+<li><strong>トレーニング時間</strong>: モデルのトレーニングにかかる時間に応じた課金。</li>
+<li><strong>予測時間</strong>: 予測の生成にかかる時間に応じた課金。</li>
+</ul>
+<h3 id="6_1">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_1" title="Permanent link">¶</a></h3>
+<p>一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>需要予測</strong>: 小売業で過去の売上データに基づいて、将来の製品需要を予測し、在庫を最適化。</li>
+<li><strong>在庫管理</strong>: 予測結果に基づいて在庫を管理し、過剰在庫や品切れを防ぐ。</li>
+<li><strong>リソース計画</strong>: 従業員やリソースの需要を予測し、効率的なリソース配分を計画。</li>
+<li><strong>エネルギー消費予測</strong>: 過去のエネルギー消費データに基づいて、将来のエネルギー消費を予測し、コストを削減。</li>
+<li><strong>ウェブトラフィック予測</strong>: ウェブサイトの過去のトラフィックデータに基づいて、将来のトラフィックを予測し、サーバーリソースを最適化。</li>
+</ul>
+<h3 id="7_1">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_1" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS コンソールで Forecast を有効化。</li>
+<li>S3 バケットに時系列データをアップロード。</li>
+<li>Forecast でデータセットを作成し、S3 バケットからデータをインポート。</li>
+<li>Forecast で予測モデルを作成し、トレーニングを実行。</li>
+<li>予測結果を可視化ツールで確認。</li>
+</ol>
+<h3 id="8_1">8. 試験で問われやすいポイント<a class="headerlink" href="#8_1" title="Permanent link">¶</a></h3>
+<h4 id="81_1">8.1 機械学習による予測<a class="headerlink" href="#81_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機械学習アルゴリズム</strong>: ディープラーニングなどの高度な機械学習アルゴリズムを活用していることを理解。</li>
+<li><strong>時系列分析</strong>: 時系列データに基づいた予測モデルを構築できることを理解。</li>
+</ul>
+<h4 id="82_1">8.2 フルマネージドサービス<a class="headerlink" href="#82_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>インフラ管理</strong>: AWS がインフラ、トレーニング、デプロイを自動で管理することを理解。</li>
+<li><strong>機械学習の専門知識</strong>: 機械学習の専門知識がなくても利用できることを理解。</li>
+</ul>
+<h4 id="83_1">8.3 時系列データ対応<a class="headerlink" href="#83_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>時系列データ</strong>: 時間ベースのデータに対応していることを理解。</li>
+<li><strong>パターンと季節性</strong>: トレンド、季節性などを考慮した予測ができることを理解。</li>
+</ul>
+<h4 id="84_1">8.4 豊富なデータ入力<a class="headerlink" href="#84_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>データ形式</strong>: CSV ファイル、S3 バケット、Amazon Redshift など、対応するデータソースを理解。</li>
+</ul>
+<h4 id="85_1">8.5 予測の可視化と分析<a class="headerlink" href="#85_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>可視化ツール</strong>: 予測結果をグラフやテーブルで可視化できることを理解。</li>
+<li><strong>分析</strong>: 予測の傾向や精度を把握し、分析できることを理解。</li>
+</ul>
+<h4 id="86_1">8.6 料金体系<a class="headerlink" href="#86_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>データ処理</strong>: モデルトレーニング、予測生成に使用されるデータ量による課金を理解。</li>
+<li><strong>トレーニング時間</strong>: モデルのトレーニング時間による課金を理解。</li>
+<li><strong>予測時間</strong>: 予測の生成時間による課金を理解。</li>
+</ul>
+<h4 id="87">8.7 類似・関連サービスとの比較<a class="headerlink" href="#87" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Amazon SageMaker</strong>: 機械学習モデルの構築、トレーニング、デプロイをフルにサポート。Forecast は時系列予測に特化。</li>
+<li><strong>Amazon QuickSight</strong>: ビジネスインテリジェンスツール。Forecast は予測に特化。</li>
+</ul>
+<h4 id="88">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Forecast の主な用途は？</li>
+<li>A: 過去のデータに基づいた将来の時系列データの予測。</li>
+<li>Q: Forecast の予測モデル構築に利用される技術は？</li>
+<li>A: 機械学習（ディープラーニングなど）。</li>
+<li>Q: Forecast が対応するデータ形式の例は？</li>
+<li>A: CSV ファイル、S3 バケット、Amazon Redshift など。</li>
+<li>Q: Forecast で予測結果を分析するために使用できるツールは？</li>
+<li>A: 可視化ツール（グラフ、テーブル）。</li>
+<li>Q: Forecast のフルマネージドとは？</li>
+<li>A: インフラ管理、モデルのトレーニング、デプロイが AWS に自動化されていること。</li>
+<li>Q: Forecast の料金体系は？</li>
+<li>A: データ処理量、トレーニング時間、予測時間に応じた課金。</li>
+<li>Q: Forecast と SageMaker の違いは？</li>
+<li>A: SageMaker は汎用的な機械学習、Forecast は時系列予測に特化。</li>
+</ul>
+<hr>
+<h2 id="amazon-fraud-detector">Amazon Fraud Detector<a class="headerlink" href="#amazon-fraud-detector" title="Permanent link">¶</a></h2>
+<h3 id="1_2">1. サービス概要<a class="headerlink" href="#1_2" title="Permanent link">¶</a></h3>
+<p>Amazon Fraud Detector は、AWS が提供するフルマネージドの不正検出サービスである。<br>
+機械学習を活用して、オンラインでの不正行為をリアルタイムで検出することができる。<br>
+Fraud Detector は、過去の不正データと正常なデータに基づいてモデルをトレーニングし、新しい取引や行動が不正である可能性をスコアリングする。<br>
+これにより、企業は不正行為を早期に発見し、損失を減らすことができる。</p>
+<p>主なユースケースとして、</p>
+<ul>
+<li>オンライン決済における不正検知</li>
+<li>アカウント乗っ取り検知</li>
+<li>新規アカウント登録時の不正検知</li>
+<li>オンラインレビューにおける不正検知</li>
+</ul>
+<p>などが挙げられる。</p>
+<h3 id="2_2">2. 主な特徴と機能<a class="headerlink" href="#2_2" title="Permanent link">¶</a></h3>
+<h4 id="21_1">2.1 機械学習による不正検出<a class="headerlink" href="#21_1" title="Permanent link">¶</a></h4>
+<p>Amazon Fraud Detector は、様々な機械学習アルゴリズムを利用して、不正パターンを学習し、高精度な不正検出モデルを構築する。<br>
+これにより、複雑な不正行為を自動的に検出できる。</p>
+<h4 id="22_1">2.2 フルマネージドサービス<a class="headerlink" href="#22_1" title="Permanent link">¶</a></h4>
+<p>インフラのプロビジョニング、スケーリング、モデルのトレーニング、デプロイは AWS が自動で行いる。<br>
+これにより、ユーザーは不正検出モデルの構築に集中でき、機械学習の専門知識は不要である。</p>
+<h4 id="23_1">2.3 リアルタイム不正検出<a class="headerlink" href="#23_1" title="Permanent link">¶</a></h4>
+<p>Fraud Detector は、API を通じてリアルタイムで不正スコアを生成する。<br>
+これにより、オンライン取引や行動が発生した瞬間に不正リスクを評価できる。</p>
+<h4 id="24_2">2.4 事前構築されたモデルとカスタムモデル<a class="headerlink" href="#24_2" title="Permanent link">¶</a></h4>
+<p>Fraud Detector は、一般的な不正検出シナリオに対応した事前構築されたモデルを提供している。<br>
+また、独自のデータセットに基づいてカスタムモデルをトレーニングすることもできる。</p>
+<ul>
+<li><strong>事前構築モデル</strong>: 一般的な不正検出シナリオに対応。</li>
+<li><strong>カスタムモデル</strong>: 独自のデータと要件に合わせてトレーニング。</li>
+</ul>
+<h4 id="25_2">2.5 柔軟なルールベースの検出<a class="headerlink" href="#25_2" title="Permanent link">¶</a></h4>
+<p>機械学習モデルに加えて、ルールベースの検出もサポートしている。<br>
+これにより、特定のビジネスルールや閾値に基づいた不正検出を定義できる。</p>
+<h4 id="26_1">2.6 意思決定の自動化<a class="headerlink" href="#26_1" title="Permanent link">¶</a></h4>
+<p>Fraud Detector は、検出された不正リスクに基づいて自動的にアクションを実行できる。<br>
+例えば、不正と判断された取引を自動的にキャンセルしたり、疑わしいアカウントを一時的にブロックしたりできる。</p>
+<h4 id="27-ab">2.7 A/B テストのサポート<a class="headerlink" href="#27-ab" title="Permanent link">¶</a></h4>
+<p>Fraud Detector は、複数のモデルやルールを A/B テストできる。<br>
+これにより、最適な不正検出戦略を特定できる。</p>
+<h4 id="28_1">2.8 統合性<a class="headerlink" href="#28_1" title="Permanent link">¶</a></h4>
+<p>Fraud Detector は、AWS の他のサービス（Amazon S3, AWS Lambda, Amazon CloudWatch など）と統合されており、データ分析やアプリケーションワークフローに組み込むことができる。<br>
+Amazon Kinesis Data Streams からリアルタイムデータを取り込むことができる。</p>
+<h3 id="3_2">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_2" title="Permanent link">¶</a></h3>
+<ol>
+<li>ユーザーは、Amazon Fraud Detector コンソールまたは API を使用して、学習データと不正検出ルールを定義。</li>
+<li>Fraud Detector は、定義されたデータに基づいて機械学習モデルをトレーニング。</li>
+<li>ユーザーは、API を使用してリアルタイムで不正スコアをリクエスト。</li>
+<li>Fraud Detector は、トレーニングされたモデルとルールに基づいて不正スコアを生成。</li>
+<li>必要に応じて、自動アクションを実行。</li>
+</ol>
+<p>Amazon Fraud Detector は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、セキュリティを内包している。<br>
+機械学習の複雑さを抽象化し、ユーザーは不正検出モデルの構築と活用に集中できる。</p>
+<h3 id="4_2">4. セキュリティと認証・認可<a class="headerlink" href="#4_2" title="Permanent link">¶</a></h3>
+<p>セキュリティは Fraud Detector の重要な要素である:</p>
+<ul>
+<li><strong>IAM によるアクセス制御</strong>: AWS IAM を利用して、Fraud Detector リソースへのアクセスを制御し、権限を管理。</li>
+<li><strong>データ暗号化</strong>: 転送中および保存中のデータを暗号化し、データの機密性を保護。</li>
+<li><strong>VPC サポート</strong>: Amazon VPC 内で Fraud Detector を使用する場合、プライベート接続を確立。</li>
+<li><strong>監査ログ</strong>: AWS CloudTrail を利用して、API 呼び出しやリソース変更を記録。</li>
+</ul>
+<p>これにより、データの安全性とコンプライアンスを確保できる。</p>
+<h3 id="5_2">5. 料金形態<a class="headerlink" href="#5_2" title="Permanent link">¶</a></h3>
+<p>Amazon Fraud Detector の料金は主に以下に基づきる:</p>
+<ul>
+<li><strong>モデルトレーニング</strong>: モデルのトレーニングにかかる時間に応じた課金。</li>
+<li><strong>リアルタイム推論</strong>: リアルタイムでの不正スコア生成リクエスト数に応じた課金。</li>
+<li><strong>ルール評価</strong>: ルールベースの検出ルールの評価数に応じた課金。</li>
+</ul>
+<h3 id="6_2">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_2" title="Permanent link">¶</a></h3>
+<p>一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>オンライン決済の不正検知</strong>: オンライン決済時に不正スコアをリアルタイムで生成し、不正な取引を自動的にキャンセル。</li>
+<li><strong>アカウント乗っ取り検知</strong>: ログイン行動を分析し、アカウント乗っ取りの可能性が高い場合に警告またはアカウントをロック。</li>
+<li><strong>新規アカウント登録時の不正検知</strong>: 新規アカウント登録時に不正スコアを生成し、不正なアカウント登録を検出。</li>
+<li><strong>オンラインレビューの不正検知</strong>: オンラインレビューを分析し、不正なレビューを検出。</li>
+<li><strong>保険金請求の不正検知</strong>: 保険金請求データを分析し、不正な請求を検出。</li>
+</ul>
+<h3 id="7_2">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_2" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS コンソールで Fraud Detector を有効化。</li>
+<li>S3 バケットに学習データをアップロード。</li>
+<li>Fraud Detector でデータセットを作成し、S3 バケットからデータをインポート。</li>
+<li>Fraud Detector で機械学習モデルを作成し、トレーニングを実行。</li>
+<li>ルールベースの検出ルールを設定。</li>
+<li>Fraud Detector API を使用して、リアルタイムで不正スコアを生成。</li>
+</ol>
+<h3 id="8_2">8. 試験で問われやすいポイント<a class="headerlink" href="#8_2" title="Permanent link">¶</a></h3>
+<h4 id="81_2">8.1 機械学習による不正検出<a class="headerlink" href="#81_2" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機械学習アルゴリズム</strong>: 様々な機械学習アルゴリズムを利用して不正パターンを学習していることを理解。</li>
+<li><strong>高精度な検出</strong>: 複雑な不正行為を自動的に検出できることを理解。</li>
+</ul>
+<h4 id="82_2">8.2 フルマネージドサービス<a class="headerlink" href="#82_2" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>インフラ管理</strong>: AWS がインフラ、トレーニング、デプロイを自動で管理することを理解。</li>
+<li><strong>機械学習の専門知識</strong>: 機械学習の専門知識がなくても利用できることを理解。</li>
+</ul>
+<h4 id="83_2">8.3 リアルタイム不正検出<a class="headerlink" href="#83_2" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>API</strong>: API を通じてリアルタイムで不正スコアを生成できることを理解。</li>
+<li><strong>不正リスク評価</strong>: オンライン取引や行動が発生した瞬間に不正リスクを評価できることを理解。</li>
+</ul>
+<h4 id="84_2">8.4 事前構築モデルとカスタムモデル<a class="headerlink" href="#84_2" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>事前構築モデル</strong>: 一般的な不正検出シナリオに対応するモデルがあることを理解。</li>
+<li><strong>カスタムモデル</strong>: 独自のデータでモデルをトレーニングできることを理解。</li>
+</ul>
+<h4 id="85_2">8.5 柔軟なルールベースの検出<a class="headerlink" href="#85_2" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>ルールベース検出</strong>: 機械学習モデルに加えて、ルールベースの検出も可能であることを理解。</li>
+<li><strong>ビジネスルール</strong>: 特定のビジネスルールや閾値に基づいた不正検出を定義できることを理解。</li>
+</ul>
+<h4 id="86_2">8.6 料金体系<a class="headerlink" href="#86_2" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>モデルトレーニング</strong>: モデルトレーニング時間による課金を理解。</li>
+<li><strong>リアルタイム推論</strong>: リアルタイムでの不正スコア生成リクエスト数による課金を理解。</li>
+<li><strong>ルール評価</strong>: ルールベース検出ルールの評価数による課金を理解。</li>
+</ul>
+<h4 id="87_1">8.7 類似・関連サービスとの比較<a class="headerlink" href="#87_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Amazon GuardDuty</strong>: AWS 環境全体の脅威を検出。Fraud Detector はアプリケーションレベルでの不正検出に特化。</li>
+<li><strong>AWS WAF</strong>: ウェブアプリケーションの保護に特化。Fraud Detector は不正検出に特化。</li>
+</ul>
+<h4 id="88_1">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_1" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Fraud Detector の主な用途は？</li>
+<li>A: オンラインでの不正行為をリアルタイムで検出すること。</li>
+<li>Q: Fraud Detector の不正検出に利用される技術は？</li>
+<li>A: 機械学習。</li>
+<li>Q: Fraud Detector で利用できるモデルの種類は？</li>
+<li>A: 事前構築モデルとカスタムモデル。</li>
+<li>Q: Fraud Detector のリアルタイム不正検出の方法は？</li>
+<li>A: API を使用。</li>
+<li>Q: Fraud Detector でルールベースの検出は何ができる？</li>
+<li>A: 特定のビジネスルールや閾値に基づいた検出。</li>
+<li>Q: Fraud Detector の料金体系は？</li>
+<li>A: モデルトレーニング時間、リアルタイム推論リクエスト数、ルール評価数に基づく課金。</li>
+<li>Q: Fraud Detector と GuardDuty の違いは？</li>
+<li>A: GuardDuty は AWS 環境全体の脅威検出、Fraud Detector はアプリケーションレベルの不正検出。</li>
+</ul>
+<hr>
+<h2 id="amazon-kendra">Amazon Kendra<a class="headerlink" href="#amazon-kendra" title="Permanent link">¶</a></h2>
+<h3 id="1_3">1. サービス概要<a class="headerlink" href="#1_3" title="Permanent link">¶</a></h3>
+<p>Amazon Kendra は、機械学習を活用したエンタープライズ検索サービスである。<br>
+ユーザーは、Web サイト、ドキュメント、データベース、SaaS アプリケーションなど、様々なデータソースからコンテンツをインデックス化し、自然言語による検索クエリを通じて、関連性の高い情報を迅速に検索できる。<br>
+Kendra は、複雑な検索クエリを理解し、最も関連性の高い結果を返すように設計されており、従業員の知識発見と意思決定を支援する。</p>
+<p>主なユースケースとして、社内ドキュメント検索、Web サイト検索、FAQ 検索、カスタマーサポートの効率化、知識ベースの構築、コンテンツ発見などが挙げられる。<br>
+Amazon Kendra は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
+<h3 id="2_3">2. 主な特徴と機能<a class="headerlink" href="#2_3" title="Permanent link">¶</a></h3>
+<h4 id="21_2">2.1 機械学習ベースの検索<a class="headerlink" href="#21_2" title="Permanent link">¶</a></h4>
+<p>Kendra は、機械学習を利用して、検索クエリの意図を理解し、最も関連性の高い結果を返する。<br>
+これにより、ユーザーはキーワードだけでなく、自然言語で検索できる。</p>
+<h4 id="22_2">2.2 コネクタ<a class="headerlink" href="#22_2" title="Permanent link">¶</a></h4>
+<p>Amazon S3, SharePoint, Salesforce, Confluence, ServiceNow などの様々なデータソースに接続するためのコネクタを提供している。<br>
+これにより、複数のデータソースを統合的に検索できる。</p>
+<h4 id="23_2">2.3 検索エクスペリエンス<a class="headerlink" href="#23_2" title="Permanent link">¶</a></h4>
+<p>検索結果をランキングし、関連性の高い順に表示する。<br>
+また、ファセット検索、フィルタリング、スペルチェックなどの機能を提供し、ユーザーの検索エクスペリエンスを向上させる。</p>
+<h4 id="24_3">2.4 自然言語処理<a class="headerlink" href="#24_3" title="Permanent link">¶</a></h4>
+<p>自然言語処理（NLP）技術を利用して、テキストデータから重要な情報を抽出する。<br>
+これにより、ドキュメント内のキーフレーズ、エンティティ、感情などを分析できる。</p>
+<h4 id="25_3">2.5 アクセス制御<a class="headerlink" href="#25_3" title="Permanent link">¶</a></h4>
+<p>IAM ポリシーを使用して、ユーザーが検索できるドキュメントへのアクセスを制御できる。<br>
+これにより、機密性の高い情報を保護できる。</p>
+<h4 id="26_2">2.6 カスタマイズ<a class="headerlink" href="#26_2" title="Permanent link">¶</a></h4>
+<p>検索結果のランキングや表示方法をカスタマイズできる。<br>
+これにより、特定のニーズに合わせて検索エクスペリエンスを調整できる。</p>
+<h4 id="27_1">2.7 統合性と拡張性<a class="headerlink" href="#27_1" title="Permanent link">¶</a></h4>
+<p>Amazon Kendra は、AWS Lambda, Amazon S3, Amazon CloudWatch などの AWS の他のサービスと統合できる。<br>
+また、API を利用して、検索機能のカスタマイズや自動化を行うこともできる。</p>
+<h3 id="3_3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_3" title="Permanent link">¶</a></h3>
+<ol>
+<li>ユーザーは、データソースに接続するためのコネクタを設定。</li>
+<li>Kendra は、コネクタを通じて、データをインデックス化。</li>
+<li>ユーザーは、検索クエリを Kendra に送信。</li>
+<li>Kendra は、機械学習を利用してクエリを理解し、インデックス化されたデータから最も関連性の高い結果を検索。</li>
+<li>検索結果は、ユーザーに返却。</li>
+</ol>
+<p>Amazon Kendra は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
+データのインデックス化や検索は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
+<h3 id="4_3">4. セキュリティと認証・認可<a class="headerlink" href="#4_3" title="Permanent link">¶</a></h3>
+<p>Amazon Kendra は、データのセキュリティを確保するために、以下の機能を提供する:</p>
+<ul>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Kendra へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
+<li><strong>VPC 内での実行</strong>: Kendra は Virtual Private Cloud (VPC) 内で実行でき、ネットワーク隔離を実現。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Kendra の操作権限を詳細に制御できる。</li>
+</ul>
+<p>これらのセキュリティ対策により、インデックス化されたデータへの不正アクセスを防止し、機密情報を保護できる。</p>
+<h3 id="5_3">5. 料金形態<a class="headerlink" href="#5_3" title="Permanent link">¶</a></h3>
+<p>Amazon Kendra の料金は主に以下に基づきる:</p>
+<ul>
+<li><strong>インデックス</strong>: インデックスされたドキュメントの量に応じて課金。</li>
+<li><strong>検索クエリ</strong>: 検索クエリの実行回数に応じて課金。</li>
+<li><strong>コネクタ</strong>: コネクタを利用した場合、利用時間に応じて課金。</li>
+<li><strong>機械学習機能</strong>: 機械学習機能の利用量に応じて課金。</li>
+</ul>
+<h3 id="6_3">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_3" title="Permanent link">¶</a></h3>
+<p>Amazon Kendra は、様々な検索ユースケースに利用できる。一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>社内ドキュメント検索</strong>: 社内ドキュメントを Kendra でインデックス化し、従業員が情報を容易に検索できる環境を提供。</li>
+<li><strong>Web サイト検索</strong>: Web サイトのコンテンツを Kendra でインデックス化し、サイト内検索機能を提供。</li>
+<li><strong>FAQ 検索</strong>: FAQ ドキュメントを Kendra でインデックス化し、顧客サポートを効率化。</li>
+<li><strong>カスタマーサポートの効率化</strong>: 顧客からの問い合わせを分析し、関連性の高いドキュメントを提示。</li>
+<li><strong>知識ベースの構築</strong>: 企業の知識を Kendra で管理し、従業員が知識にアクセスしやすくする。</li>
+<li><strong>コンテンツ発見</strong>: 大量のドキュメントから、関連性の高いコンテンツを迅速に発見。</li>
+</ul>
+<h3 id="7_3">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_3" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS マネジメントコンソールから Amazon Kendra を開き、新しいインデックスを作成。</li>
+<li>データソース（S3, SharePoint など）を選択し、コネクタを設定。</li>
+<li>インデックスの設定（スキャン頻度など）を構成。</li>
+<li>検索クエリを実行し、検索結果を確認。</li>
+<li>検索結果のランキングや表示方法をカスタマイズ。</li>
+</ol>
+<h3 id="8_3">8. 試験で問われやすいポイント<a class="headerlink" href="#8_3" title="Permanent link">¶</a></h3>
+<h4 id="81_3">8.1 機械学習ベースの検索<a class="headerlink" href="#81_3" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: 機械学習を利用して、クエリの意図を理解し、関連性の高い結果を返す。</li>
+<li><strong>利用</strong>: キーワードだけでなく、自然言語で検索可能。</li>
+<li><strong>試験対策</strong>: 機械学習の役割、自然言語検索が問われる。</li>
+</ul>
+<h4 id="82_3">8.2 コネクタ<a class="headerlink" href="#82_3" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>サポート</strong>: S3, SharePoint, Salesforce, Confluence, ServiceNow など。</li>
+<li><strong>利用</strong>: 複数のデータソースを統合的に検索。</li>
+<li><strong>試験対策</strong>: 対応コネクタの種類、利用方法が問われる。</li>
+</ul>
+<h4 id="83_3">8.3 検索エクスペリエンス<a class="headerlink" href="#83_3" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: 検索結果のランキング、ファセット検索、フィルタリング、スペルチェック。</li>
+<li><strong>目的</strong>: ユーザーの検索体験を向上。</li>
+<li><strong>試験対策</strong>: 各機能の役割、利用方法が問われる。</li>
+</ul>
+<h4 id="84_3">8.4 自然言語処理<a class="headerlink" href="#84_3" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>利用技術</strong>: 自然言語処理（NLP）。</li>
+<li><strong>利用</strong>: テキストデータから重要な情報を抽出。</li>
+<li><strong>試験対策</strong>: NLP の利用方法、分析対象が問われる。</li>
+</ul>
+<h4 id="85_3">8.5 料金体系<a class="headerlink" href="#85_3" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>課金対象</strong>: インデックスされたドキュメントの量、検索クエリの実行回数、コネクタの利用時間、機械学習機能の利用量。</li>
+<li><strong>最適化</strong>: 不要なデータのインデックス化を避ける、検索クエリの最適化がコスト削減に有効。</li>
+<li><strong>試験対策</strong>: 料金体系、課金対象が問われる。</li>
+</ul>
+<h4 id="86_3">8.6 類似・関連サービスとの比較<a class="headerlink" href="#86_3" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Amazon Elasticsearch Service</strong>: 検索・分析エンジンサービス。Kendra は機械学習を利用したエンタープライズ検索に特化。</li>
+<li><strong>Amazon OpenSearch Service</strong>: 検索・分析エンジンサービス。Kendra はエンタープライズ検索に特化。</li>
+</ul>
+<h4 id="87_2">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_2" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Kendra は何を提供するサービスか？</li>
+<li>A: 機械学習を活用したエンタープライズ検索サービスである。</li>
+<li>Q: Amazon Kendra は、どのようなデータソースをサポートしているか？</li>
+<li>A: Amazon S3, SharePoint, Salesforce, Confluence, ServiceNow などの様々なデータソースに接続できる。</li>
+<li>Q: Amazon Kendra では、どのような検索方法が利用できるか？</li>
+<li>A: 自然言語による検索クエリを使用できる。</li>
+<li>Q: Amazon Kendra は、どのような技術を利用して検索結果の関連性を高めるか？</li>
+<li>A: 機械学習を利用して、検索クエリの意図を理解し、最も関連性の高い結果を返する。</li>
+<li>Q: Amazon Kendra の料金はどのように計算されるか？</li>
+<li>A: インデックスされたドキュメントの量、検索クエリの実行回数、コネクタの利用時間、機械学習機能の利用量などに基づいて計算される。</li>
+</ul>
+<hr>
+<h2 id="amazon-lex">Amazon Lex<a class="headerlink" href="#amazon-lex" title="Permanent link">¶</a></h2>
+<h3 id="1_4">1. サービス概要<a class="headerlink" href="#1_4" title="Permanent link">¶</a></h3>
+<p>Amazon Lex は、会話型インターフェース（チャットボット、音声ボット）を簡単に構築・デプロイできる AWS の AI サービスである。<br>
+音声およびテキストベースの会話を自然言語で理解し、Amazon Alexa と同じディープラーニング技術を利用しているため、高い言語理解精度を実現する。</p>
+<p>主なユースケースとしては、</p>
+<ul>
+<li>カスタマーサポートの自動応答チャットボット</li>
+<li>社内ヘルプデスク</li>
+<li>音声 IVR システムへの組み込み</li>
+<li>IoT デバイスやモバイルアプリへの会話型インターフェース</li>
+</ul>
+<p>などが挙げられる。</p>
+<h3 id="2_4">2. 主な特徴と機能<a class="headerlink" href="#2_4" title="Permanent link">¶</a></h3>
+<h4 id="21_3">2.1 インテントとスロットの設計<a class="headerlink" href="#21_3" title="Permanent link">¶</a></h4>
+<p>Lex では、ユーザーの意図（Intent）を定義し、必要な情報（Slot）を収集するコンセプトでチャットボットを設計する。</p>
+<p>例：レストラン予約ボットなら「予約の Intent」、「日時」「人数」などの Slot を設定し、会話フローを自動化する。</p>
+<h4 id="22_3">2.2 多言語対応と会話フロー制御<a class="headerlink" href="#22_3" title="Permanent link">¶</a></h4>
+<p>日本語を含む複数言語で Bot を作成でき、発話のバリエーション（Utterances）を登録することで、様々な言い回しに柔軟に対応。 Branching や Loop といった会話フローの制御も GUI やコンソール上で視覚的に設定できる。</p>
+<h4 id="23_3">2.3 高精度の音声認識・自然言語理解<a class="headerlink" href="#23_3" title="Permanent link">¶</a></h4>
+<p>Amazon Alexa と同じテクノロジーが組み込まれており、自動音声認識 (ASR) と 自然言語理解 (NLU)が強力である。<br>
+音声 IVR に連携したり、ポリ音声（Amazon Polly）と組み合わせて音声の応答まで実現できる。</p>
+<h4 id="24-lambda">2.4 Lambda との連携（バックエンドロジック）<a class="headerlink" href="#24-lambda" title="Permanent link">¶</a></h4>
+<p>Bot がユーザーのインテントを特定したら、AWS Lambda 関数を呼び出して必要なバックエンド処理（DB 操作、API 呼び出しなど）を実行。<br>
+結果を再度 Lex に返すことで、ユーザーへの応答を会話の中で行うことが可能である。</p>
+<h4 id="25_4">2.5 チャット/音声のマルチチャネル展開<a class="headerlink" href="#25_4" title="Permanent link">¶</a></h4>
+<p>Amazon Connect（コンタクトセンターサービス）や Slack、Facebook Messenger などと連携し、マルチチャネル・マルチデバイス対応の会話型 UI を構築できる。<br>
+Web アプリへの埋め込みウィジェットも用意されており、実装ハードルが低い点も特徴である。</p>
+<h3 id="3_4">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_4" title="Permanent link">¶</a></h3>
+<ol>
+<li>Lex コンソールまたは CLI で Bot を作成し、インテント・スロットを定義</li>
+<li>ユーザーからの入力（音声/テキスト）は Lex に送られ、インテントを解析</li>
+<li>必要であれば Lambda 関数を呼び出してビジネスロジックを実行</li>
+<li>Lex は応答テキスト/音声を生成し、ユーザーに返答</li>
+<li>複数チャネル（Web、Amazon Connect、SNS メッセージング等）で Bot を利用可能</li>
+</ol>
+<p>この構成により、高度な NLP と音声認識を活用しながら、スケーラブルかつ柔軟に会話型インターフェースを提供できる。</p>
+<h3 id="4_4">4. セキュリティと認証・認可<a class="headerlink" href="#4_4" title="Permanent link">¶</a></h3>
+<p>Amazon Lex 導入時におけるセキュリティポイントは以下の通りである:</p>
+<ul>
+<li><strong>IAM ロール</strong>: Lex が Lambda など他サービスを呼ぶ場合、最小権限のロールを付与</li>
+<li><strong>SSL/TLS</strong>: Web チャットの場合は HTTPS 通信で暗号化</li>
+<li><strong>ストレージ暗号化</strong>: Bot 定義やログの保存先（CloudWatch Logs など）を暗号化できる</li>
+<li><strong>Lambda セキュリティ</strong>: バックエンドロジック内で機密情報を扱う際は Secrets Manager や KMS との連携を考慮</li>
+</ul>
+<h3 id="5_4">5. 料金形態<a class="headerlink" href="#5_4" title="Permanent link">¶</a></h3>
+<p>Amazon Lex の料金は次の要素で構成される:</p>
+<ul>
+<li><strong>音声リクエスト</strong>: 1 回の音声リクエストあたり従量課金</li>
+<li><strong>テキストリクエスト</strong>: 1 回のテキストリクエストあたり従量課金</li>
+</ul>
+<h3 id="6_4">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_4" title="Permanent link">¶</a></h3>
+<p>Amazon Lex を導入するパターンは以下の通りである:</p>
+<ul>
+<li><strong>カスタマーサポートチャットボット</strong>: インテントを「注文状況確認」「返品処理」などに分け、Lambda で在庫 DB を参照</li>
+<li><strong>Amazon Connect IVR</strong>: 音声問い合わせを Lex で解析し、オペレーターへの転送を最適化</li>
+<li><strong>社内 IT ヘルプデスク</strong>: パスワードリセットや PC トラブルの一次対応を自動化</li>
+<li><strong>Web 埋め込みチャット</strong>: Web サイトへ JavaScript ウィジェットを仕込み、リアルタイムに接客サポート</li>
+</ul>
+<h3 id="7_4">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_4" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS コンソールで「Amazon Lex」を検索し、「Create bot」をクリック</li>
+<li>Bot 名、言語（例: Japanese）、音声やセキュリティ設定を指定</li>
+<li>インテントを追加し、ユーザーが言いそうなフレーズ（Utterances）を登録、Slot を設定（例: 日付や場所の入力）</li>
+<li>Fulfillment で「AWS Lambda 関数を呼び出す」を選択し、ビジネスロジックを紐づけ</li>
+<li>ビルド → テストで会話フローを確認。問題がなければ Publish し、各種チャネルから利用</li>
+<li>Web チャットや Amazon Connect などに接続し、本番環境で稼働させる</li>
+</ol>
+<h3 id="8_4">8. 試験で問われやすいポイント<a class="headerlink" href="#8_4" title="Permanent link">¶</a></h3>
+<h4 id="81_4">8.1 インテントとスロットの仕組み<a class="headerlink" href="#81_4" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>インテント</strong>: ユーザーが行いたいアクションの定義</li>
+<li><strong>スロット</strong>: インテント実行に必要な変数（日時、場所、数量など）</li>
+<li><strong>Utterances</strong>: インテントをトリガーするための自然言語パターン集</li>
+</ul>
+<h4 id="82_4">8.2 音声とテキストのハンドリング<a class="headerlink" href="#82_4" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>音声 → テキスト変換</strong>: Lex が ASR を実行し、テキスト化してインテント解析</li>
+<li><strong>音声応答</strong>: Amazon Polly と連携して合成音声で返信</li>
+<li><strong>テキストチャット</strong>: Web や SNS、メッセンジャーなどテキスト入力でインテント処理</li>
+</ul>
+<h4 id="83-lambda">8.3 Lambda との連携<a class="headerlink" href="#83-lambda" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Fulfillment</strong>: インテントが確定したら Lambda 関数でバックエンド処理（DB アクセス、API 呼び出し）</li>
+<li><strong>Validation</strong>: Slot 入力のバリデーションを Lambda で行い、エラー時に再入力を促す</li>
+</ul>
+<h4 id="84_4">8.4 セキュリティとポリシー<a class="headerlink" href="#84_4" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>IAM ロール</strong>: Lex が Lambda を呼ぶロールを最小権限で付与</li>
+<li><strong>ログ</strong>: Amazon CloudWatch Logs に会話ログを保存可能。機密情報の取り扱いには注意</li>
+</ul>
+<h4 id="85_4">8.5 料金構造<a class="headerlink" href="#85_4" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>無料利用枠</strong>: 月 3 万回のテキストリクエストと音声リクエスト各 1 万回が 12 ヶ月</li>
+<li><strong>超過従量課金</strong>: 音声/テキストそれぞれ 1 リクエストあたりの料金</li>
+</ul>
+<h4 id="86_4">8.6 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#86_4" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Lex で意図（Intent）を検出する仕組みは？</li>
+<li>A: ユーザーの発話（Utterances）を自然言語処理で解析し、最も適合するインテントを推定。</li>
+<li>Q: インテントに必要な変数を取得する方法は？</li>
+<li>A: Slot を定義して「日付」や「場所」などをユーザーに尋ね、回答を格納する。</li>
+<li>Q: バックエンド処理を行うための設定は？</li>
+<li>A: Fulfillment 部分に Lambda 関数を紐づけ、インテント確定時にロジックを実行。</li>
+<li>Q: 音声 IVR システムに Lex を組み込む典型例は？</li>
+<li>A: Amazon Connect の呼び出しフローで Lex Bot を呼び出し、自然言語によるメニュー案内を実装。</li>
+<li>Q: 料金の注意点は？</li>
+<li>A: 音声/テキストリクエスト数に従量課金。無料枠や連携先（Polly、Lambda）のコストも考慮。</li>
+</ul>
+<hr>
+<h2 id="amazon-polly">Amazon Polly<a class="headerlink" href="#amazon-polly" title="Permanent link">¶</a></h2>
+<h3 id="1_5">1. サービス概要<a class="headerlink" href="#1_5" title="Permanent link">¶</a></h3>
+<p>Amazon Polly は、テキストを自然な音声に変換するクラウドベースのテキスト読み上げ（TTS）サービスである。<br>
+ユーザーは、アプリケーションやサービスに音声機能を追加し、テキストコンテンツを音声で提供できる。<br>
+Polly は、多様な言語と音声を提供し、ユーザーのニーズに合わせて、カスタマイズ可能な音声を作成できる。</p>
+<p>主なユースケースとして、</p>
+<ul>
+<li>オーディオブックの作成</li>
+<li>音声アシスタント</li>
+<li>テキストベースのコンテンツの読み上げ</li>
+<li>ナレーション</li>
+<li>e ラーニング教材の作成</li>
+<li>アクセシビリティ対応</li>
+</ul>
+<p>などが挙げられる。<br>
+Amazon Polly は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
+<h3 id="2_5">2. 主な特徴と機能<a class="headerlink" href="#2_5" title="Permanent link">¶</a></h3>
+<h4 id="21-tts">2.1 テキスト読み上げ (TTS)<a class="headerlink" href="#21-tts" title="Permanent link">¶</a></h4>
+<p>Polly は、テキストを自然で高品質な音声に変換する。<br>
+ユーザーは、テキストを入力するだけで、音声ファイルを生成できる。</p>
+<h4 id="22_4">2.2 多様な言語と音声<a class="headerlink" href="#22_4" title="Permanent link">¶</a></h4>
+<p>様々な言語と、男性、女性の音声を提供している。<br>
+ユーザーは、アプリケーションの対象ユーザーに合わせて、最適な言語と音声を選択できる。</p>
+<h4 id="23-ntts">2.3 ニューラルテキスト読み上げ (NTTS)<a class="headerlink" href="#23-ntts" title="Permanent link">¶</a></h4>
+<p>ニューラルテキスト読み上げ（NTTS）は、機械学習を利用して、より自然で人間らしい音声を生成する。<br>
+これにより、高品質な音声コンテンツを作成できる。</p>
+<h4 id="24_4">2.4 音声のカスタマイズ<a class="headerlink" href="#24_4" title="Permanent link">¶</a></h4>
+<p>発音、イントネーション、速度、音量などを調整することで、音声をカスタマイズできる。<br>
+これにより、特定のニーズに合わせた音声を作成できる。</p>
+<h4 id="25-ssml">2.5 SSML サポート<a class="headerlink" href="#25-ssml" title="Permanent link">¶</a></h4>
+<p>Speech Synthesis Markup Language (SSML) をサポートしており、テキスト内の特定の部分の発音、休止、強調などを制御できる。<br>
+これにより、より複雑な音声表現を実現できる。</p>
+<h4 id="26_3">2.6 ストリーミングオーディオ<a class="headerlink" href="#26_3" title="Permanent link">¶</a></h4>
+<p>リアルタイムで音声データをストリーミングできる。<br>
+これにより、インタラクティブなアプリケーションやサービスで、音声データを動的に利用できる。</p>
+<h4 id="27_2">2.7 統合性と拡張性<a class="headerlink" href="#27_2" title="Permanent link">¶</a></h4>
+<p>Amazon Polly は、AWS Lambda, Amazon S3, Amazon CloudFront, Amazon Connect などの AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、テキスト読み上げを自動化することもできる。</p>
+<h3 id="3_5">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_5" title="Permanent link">¶</a></h3>
+<ol>
+<li>ユーザーは、テキストを Amazon Polly API に送信。</li>
+<li>Polly は、テキストを解析し、音声ファイルを生成。</li>
+<li>ユーザーは、生成された音声ファイルまたはストリーミングオーディオをアプリケーションで使用。</li>
+</ol>
+<p>Amazon Polly は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
+テキストから音声への変換は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
+<h3 id="4_5">4. セキュリティと認証・認可<a class="headerlink" href="#4_5" title="Permanent link">¶</a></h3>
+<p>Amazon Polly は、テキストと音声データのセキュリティを確保するために、以下の機能を提供する:</p>
+<ul>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Polly へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: テキストと音声データは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から Polly にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Polly の操作権限を詳細に制御できる。</li>
+</ul>
+<p>これらのセキュリティ対策により、テキストと音声データへの不正アクセスを防止し、機密情報を保護できる。</p>
+<h3 id="5_5">5. 料金形態<a class="headerlink" href="#5_5" title="Permanent link">¶</a></h3>
+<p>Amazon Polly の料金は主に以下に基づきる:</p>
+<ul>
+<li><strong>文字数</strong>: 変換された文字数に応じて課金。</li>
+<li><strong>ニューラルエンジン</strong>: ニューラルテキスト読み上げ（NTTS）エンジンを使用した場合、追加料金が発生。</li>
+</ul>
+<h3 id="6_5">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_5" title="Permanent link">¶</a></h3>
+<p>Amazon Polly は、様々なアプリケーションで利用できる。<br>
+一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>オーディオブックの作成</strong>: 電子書籍などのテキストコンテンツを音声化し、オーディオブックを作成。</li>
+<li><strong>音声アシスタント</strong>: 音声アシスタントの応答やナレーションを Polly で生成。</li>
+<li><strong>テキストベースのコンテンツの読み上げ</strong>: Web サイトやモバイルアプリケーションでテキストコンテンツを音声で読み上げ。</li>
+<li><strong>ナレーション</strong>: 動画コンテンツやプレゼンテーション資料にナレーションを追加。</li>
+<li><strong>e ラーニング教材の作成</strong>: e ラーニング教材のテキストを音声化し、学習効果を向上。</li>
+<li><strong>アクセシビリティ対応</strong>: スクリーンリーダーなどのアクセシビリティツールで利用可能な音声コンテンツを作成。</li>
+</ul>
+<h3 id="7_5">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_5" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS マネジメントコンソールから Amazon Polly を開き、テキストを入力。</li>
+<li>言語と音声を選択し、必要に応じて発音、イントネーションをカスタマイズ。</li>
+<li>テキストを音声に変換し、音声ファイルを生成。</li>
+<li>必要に応じて、SSML を使用して、音声表現を調整。</li>
+<li>生成した音声ファイルをアプリケーションに統合。</li>
+</ol>
+<h3 id="8_5">8. 試験で問われやすいポイント<a class="headerlink" href="#8_5" title="Permanent link">¶</a></h3>
+<h4 id="81-tts">8.1 テキスト読み上げ (TTS)<a class="headerlink" href="#81-tts" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: テキストを自然で高品質な音声に変換。</li>
+<li><strong>利用</strong>: アプリケーションに音声機能を追加。</li>
+<li><strong>試験対策</strong>: TTS の仕組み、利用シーンが問われる。</li>
+</ul>
+<h4 id="82_5">8.2 多様な言語と音声<a class="headerlink" href="#82_5" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>提供</strong>: 様々な言語、男性、女性の音声。</li>
+<li><strong>目的</strong>: アプリケーションの対象ユーザーに合わせて最適な音声を選択。</li>
+<li><strong>試験対策</strong>: 対応言語の種類、選択基準が問われる。</li>
+</ul>
+<h4 id="83-ntts">8.3 ニューラルテキスト読み上げ (NTTS)<a class="headerlink" href="#83-ntts" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>利用技術</strong>: 機械学習。</li>
+<li><strong>特徴</strong>: より自然で人間らしい音声を生成。</li>
+<li><strong>試験対策</strong>: NTTS の仕組み、メリットが問われる。</li>
+</ul>
+<h4 id="84_5">8.4 音声のカスタマイズ<a class="headerlink" href="#84_5" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>設定項目</strong>: 発音、イントネーション、速度、音量など。</li>
+<li><strong>目的</strong>: 特定のニーズに合わせた音声を作成。</li>
+<li><strong>試験対策</strong>: 音声のカスタマイズ項目、利用シーンが問われる。</li>
+</ul>
+<h4 id="85_5">8.5 料金体系<a class="headerlink" href="#85_5" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>課金対象</strong>: 変換された文字数、ニューラルエンジン利用料。</li>
+<li><strong>最適化</strong>: 不要なテキスト変換を避け、コストを最適化。</li>
+<li><strong>試験対策</strong>: 料金体系、課金対象が問われる。</li>
+</ul>
+<h4 id="86_5">8.6 類似・関連サービスとの比較<a class="headerlink" href="#86_5" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Amazon Transcribe</strong>: 音声をテキストに変換するサービス。Polly はテキストを音声に変換。</li>
+<li><strong>Amazon Lex</strong>: 会話型インターフェースを構築するサービス。Polly はテキスト読み上げに特化。</li>
+</ul>
+<h4 id="87_3">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_3" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Polly は何を提供するサービスか？</li>
+<li>A: テキストを自然な音声に変換するクラウドベースのテキスト読み上げ（TTS）サービスである。</li>
+<li>Q: Amazon Polly で利用できる音声の種類は？</li>
+<li>A: 様々な言語と、男性、女性の音声を提供している。</li>
+<li>Q: Amazon Polly のニューラルテキスト読み上げ（NTTS）とは何か？</li>
+<li>A: 機械学習を利用して、より自然で人間らしい音声を生成する機能である。</li>
+<li>Q: Amazon Polly で音声のカスタマイズには、どのような設定項目があるか？</li>
+<li>A: 発音、イントネーション、速度、音量などを調整できる。</li>
+<li>Q: Amazon Polly の料金はどのように計算されるか？</li>
+<li>A: 変換された文字数と、ニューラルテキスト読み上げ（NTTS）エンジンを使用した場合の追加料金に基づいて計算される。</li>
+</ul>
+<hr>
+<h2 id="amazon-rekognition">Amazon Rekognition<a class="headerlink" href="#amazon-rekognition" title="Permanent link">¶</a></h2>
+<h3 id="1_6">1. サービス概要<a class="headerlink" href="#1_6" title="Permanent link">¶</a></h3>
+<p>Amazon Rekognition は、AWS が提供する画像・動画解析のマネージド AI サービスである。<br>
+画像や動画の中に含まれるオブジェクトやシーンの検出、顔認識、テキスト抽出などを機械学習モデルによって自動化し、プログラミング不要で高度なビジョン処理を行える。</p>
+<p>主なユースケースとしては、</p>
+<ul>
+<li>カスタマーサポートにおける画像分類</li>
+<li>写真投稿サイトのコンテンツモデレーション（不適切画像の自動検出）</li>
+<li>リテール店舗の顔認証チェックインシステム</li>
+<li>動画解析を用いたメディアのタグ付け</li>
+</ul>
+<p>などが挙げられる。</p>
+<h3 id="2_6">2. 主な特徴と機能<a class="headerlink" href="#2_6" title="Permanent link">¶</a></h3>
+<h4 id="21-label-detection">2.1 物体・シーン検出 (Label Detection)<a class="headerlink" href="#21-label-detection" title="Permanent link">¶</a></h4>
+<p>画像/動画に含まれるラベル（猫、車、建物、木など）を自動抽出し、それぞれに確信度スコアを付与する。<br>
+シーン（屋内、屋外、自然風景など）も検出可能で、写真や映像をメタデータ化する用途に便利である。</p>
+<h4 id="22-face-detection-compare-faces">2.2 顔認識と顔比較 (Face Detection / Compare Faces)<a class="headerlink" href="#22-face-detection-compare-faces" title="Permanent link">¶</a></h4>
+<p>画像内の顔を検出し、年齢推定や感情分析、姿勢などのアトリビュートを取得できる。<br>
+更に、人物が同一かどうかを比較（Compare Faces）できるため、本人確認やセキュリティ用途にも活用される。</p>
+<h4 id="23-face-search">2.3 顔検索 (Face Search)<a class="headerlink" href="#23-face-search" title="Permanent link">¶</a></h4>
+<p>独自のコレクションを作成し、顔を登録（インデックス）しておくと、リアルタイムに人物を特定できる顔検索が可能である。<br>
+大量の登録顔画像からの高速検索が実現し、監視や入退室管理、CRM システムとの統合などにも役立ちる。</p>
+<h4 id="24-text-in-imagevideo">2.4 テキスト検出 (Text in Image/Video)<a class="headerlink" href="#24-text-in-imagevideo" title="Permanent link">¶</a></h4>
+<p>写真や動画の中に含まれるテキストを読み取り、OCR（光学文字認識）機能を提供。<br>
+交通標識、看板、書類の文字などをデジタルデータ化し、分析や検索に転用できる。</p>
+<h4 id="25-content-moderation">2.5 コンテンツモデレーション (Content Moderation)<a class="headerlink" href="#25-content-moderation" title="Permanent link">¶</a></h4>
+<p>アダルトコンテンツや暴力表現など、不適切な画像や動画を検知して安全なプラットフォーム運営をサポート。<br>
+SNS 投稿やユーザー生成コンテンツ（UGC）のレビューを自動化し、リスクを低減できる。</p>
+<h3 id="3_6">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_6" title="Permanent link">¶</a></h3>
+<ol>
+<li>Rekognition API に対象の画像や動画を入力（S3 の URL または Base64 などで送信）</li>
+<li>Rekognition が内部のディープラーニングモデルで解析し、ラベルや顔情報、テキストなどを JSON で返却</li>
+<li>必要に応じて顔コレクションを作成し、登録顔画像とのマッチング（Face Search）を実施</li>
+<li>データ量が大きい場合はビデオ解析用の非同期ジョブを使用し、SNS や Lambda で完了通知を受けて結果を取得</li>
+<li>分析結果を保存し、ダッシュボードや BI ツールで可視化、あるいはリアルタイムにユーザーへフィードバック</li>
+</ol>
+<p>このように、Rekognition は画像/動画解析を即座に利用可能にし、スケーラブルなビジョン処理パイプラインを AWS 上で構築できる。</p>
+<h3 id="4_6">4. セキュリティと認証・認可<a class="headerlink" href="#4_6" title="Permanent link">¶</a></h3>
+<p>Rekognition におけるセキュリティ上の考慮点は以下の通りである:</p>
+<ul>
+<li><strong>IAM ポリシー</strong>: Rekognition API やコレクション操作（CreateCollection、IndexFaces など）に対する最小権限を設定</li>
+<li><strong>データ暗号化</strong>: S3 に格納する画像・動画を KMS 暗号化し、機密性を保持</li>
+<li><strong>リージョン制限</strong>: 顔コレクションはリージョンごとに分割管理。データ越境リスクに注意</li>
+<li><strong>プライバシー</strong>: 顔認識・追跡が含まれる場合は、適切な利用許諾や法令準拠を徹底</li>
+</ul>
+<h3 id="5_6">5. 料金形態<a class="headerlink" href="#5_6" title="Permanent link">¶</a></h3>
+<p>Amazon Rekognition の費用は以下の要素に基づきる:</p>
+<ul>
+<li><strong>画像解析</strong>: 1,000 枚（Units）あたりの従量課金</li>
+<li><strong>動画解析</strong>: 1 分あたりの処理料金</li>
+<li><strong>顔コレクション</strong>: インデックス作成や検索リクエストごとの料金</li>
+<li><strong>テキスト検出</strong>: 1,000 枚/1 分の動画単位などで追加コスト</li>
+</ul>
+<h3 id="6_6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_6" title="Permanent link">¶</a></h3>
+<p>Rekognition の利用例としては、以下が代表的である:</p>
+<ul>
+<li><strong>写真共有サイトのタグ付け</strong>: ユーザーがアップロードした画像を自動でラベリングし、検索性やおすすめ精度を向上</li>
+<li><strong>コンテンツモデレーション</strong>: SNS や UGC プラットフォームで不適切画像を自動検知し、ブロックや要レビューに振り分け</li>
+<li><strong>防犯・セキュリティ</strong>: 店舗や施設の監視カメラ映像を分析し、特定人物の検知や異常行動監視に活用</li>
+<li><strong>営業支援（名刺処理）</strong>: 名刺画像から文字を抽出して顧客情報 DB に格納し、セールス効率を高める</li>
+</ul>
+<h3 id="7_6">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_6" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS コンソールで「Amazon Rekognition」を検索し、「Try demo」をクリックして簡易動作を確認</li>
+<li>格的に使う場合、S3 に画像をアップロードし、Rekognition API (DetectLabels, DetectFaces など)を呼び出す</li>
+<li>顔認識用には CreateCollection を実行し、IndexFaces で顔を登録</li>
+<li>SearchFacesByImage などを使って、類似度スコアとともに人物特定結果を取得</li>
+<li>動画解析の場合は、Start/Stop API でジョブを発行し、SNS または Lambda で完了通知を受け取り結果を取得</li>
+<li>結果のメタデータやラベル情報をデータベースや検索システムへ連携し、アプリケーションの機能を拡張</li>
+</ol>
+<h3 id="8_6">8. 試験で問われやすいポイント<a class="headerlink" href="#8_6" title="Permanent link">¶</a></h3>
+<h4 id="81_5">8.1 ラベル検出と信頼度<a class="headerlink" href="#81_5" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Label Detection</strong>: 画像/動画内のオブジェクトやシーンを検出</li>
+<li><strong>Confidence スコア</strong>: 0 ～ 100%で確信度を示す、しきい値を設定して必要な結果のみ採用</li>
+</ul>
+<h4 id="82_6">8.2 顔検出と顔コレクション<a class="headerlink" href="#82_6" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>DetectFaces</strong>: 画像内の顔領域を検出し、年齢層や表情などの属性を返す</li>
+<li><strong>Face Collection</strong>: 顔の特徴量をインデックス化し、SearchFaces で人物同定が可能</li>
+</ul>
+<h4 id="83-ocr">8.3 テキスト検出 (OCR)<a class="headerlink" href="#83-ocr" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>DetectText</strong>: 看板や印刷文字を抽出、位置情報も取得</li>
+<li><strong>動画</strong>: Video Rekognition で動的に文字を認識</li>
+</ul>
+<h4 id="84_6">8.4 非同期ビデオ解析<a class="headerlink" href="#84_6" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>StartLabelDetection など</strong>: ビデオファイル（S3）を処理し、SNS や Lambda で完了通知を受け取る</li>
+<li><strong>長尺動画</strong>: 非同期ジョブで大容量コンテンツをスケーラブルに分析</li>
+</ul>
+<h4 id="85-content-moderation">8.5 モデレーション (Content Moderation)<a class="headerlink" href="#85-content-moderation" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>不適切ラベル</strong>: アダルト、暴力シーンなどを検出</li>
+<li><strong>コミュニティガイドライン</strong>: SNS や UGC プラットフォームでの利用を支援</li>
+</ul>
+<h4 id="86_6">8.6 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#86_6" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Rekognition で顔を識別（同一人物か判定）するには？</li>
+<li>A: CompareFaces API を使用、または顔コレクションを作り SearchFaces でマッチング。</li>
+<li>Q: 大量動画のラベル付けをしたい場合は？</li>
+<li>A: Video Rekognition の非同期ジョブ（StartLabelDetection など）を使い、SNS 通知で完了を受け取る。</li>
+<li>Q: コンテンツモデレーションで何が検出できる？</li>
+<li>A: アダルトや暴力表現など、不適切な画像・動画要素を検出し、ラベルとスコアを返す。</li>
+<li>Q: OCR 的な機能は Rekognition で扱える？</li>
+<li>A: Yes. DetectText API で画像や動画フレーム内の文字を抽出可能。</li>
+<li>Q: Rekognition の料金ポイントは？</li>
+<li>A: 画像ラベル検出は 1,000 イメージ単位、ビデオは 1 分単位で従量課金。顔コレクションの検索や IndexFaces にもコストが発生。</li>
+</ul>
+<hr>
+<h2 id="amazon-sagemaker">Amazon SageMaker<a class="headerlink" href="#amazon-sagemaker" title="Permanent link">¶</a></h2>
+<h3 id="1_7">1. サービス概要<a class="headerlink" href="#1_7" title="Permanent link">¶</a></h3>
+<p>Amazon SageMaker は、機械学習（ML）モデルの構築、トレーニング、デプロイを容易にするフルマネージドサービスである。<br>
+データサイエンティストや機械学習エンジニアは、SageMaker を利用することで、機械学習ライフサイクル全体を効率的に管理し、高品質なモデルを迅速に開発できる。<br>
+SageMaker は、様々な機械学習フレームワーク、アルゴリズム、ツールを提供し、初心者から専門家まで、幅広いユーザーに対応する。</p>
+<p>主なユースケースとして、</p>
+<ul>
+<li>画像認識</li>
+<li>自然言語処理</li>
+<li>予測分析</li>
+<li>レコメンデーションシステム</li>
+<li>異常検知</li>
+<li>時系列分析</li>
+</ul>
+<p>などが挙げられる。<br>
+Amazon SageMaker は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
+<h3 id="2_7">2. 主な特徴と機能<a class="headerlink" href="#2_7" title="Permanent link">¶</a></h3>
+<h4 id="21_4">2.1 機械学習モデルの構築<a class="headerlink" href="#21_4" title="Permanent link">¶</a></h4>
+<p>SageMaker Studio は、機械学習モデルの構築、トレーニング、デプロイに必要なすべてのツールを提供する統合開発環境（IDE）である。<br>
+ユーザーは、Jupyter ノートブック、コードエディタ、デバッガーなどを使用して、モデルを開発できる。</p>
+<h4 id="22_5">2.2 フルマネージドなトレーニング環境<a class="headerlink" href="#22_5" title="Permanent link">¶</a></h4>
+<p>SageMaker は、様々なインスタンスタイプと分散トレーニングオプションを提供し、機械学習モデルのトレーニングを効率化する。<br>
+ユーザーは、モデルのトレーニングに必要なインフラストラクチャを気にすることなく、トレーニングプロセスに集中できる。</p>
+<h4 id="23_4">2.3 機械学習アルゴリズムの提供<a class="headerlink" href="#23_4" title="Permanent link">¶</a></h4>
+<p>SageMaker は、組み込みの機械学習アルゴリズムを提供しており、ユーザーはこれらのアルゴリズムを簡単に利用できる。<br>
+また、カスタムアルゴリズムを Bring Your Own Algorithm（BYOA）として利用することも可能である。</p>
+<h4 id="24_5">2.4 モデルのデプロイ<a class="headerlink" href="#24_5" title="Permanent link">¶</a></h4>
+<p>トレーニングされたモデルを、API エンドポイントとして簡単にデプロイできる。<br>
+デプロイされたモデルは、リアルタイム推論やバッチ推論に使用できる。</p>
+<h4 id="25_5">2.5 モデルの監視と管理<a class="headerlink" href="#25_5" title="Permanent link">¶</a></h4>
+<p>デプロイされたモデルのパフォーマンスを監視し、必要に応じてモデルを再トレーニングしたり、新しいバージョンに更新できる。<br>
+これにより、モデルの精度を維持し、時間の経過とともにパフォーマンスを向上させることができる。</p>
+<h4 id="26-ml-sagemaker-autopilot">2.6 オート ML (SageMaker Autopilot)<a class="headerlink" href="#26-ml-sagemaker-autopilot" title="Permanent link">¶</a></h4>
+<p>機械学習の経験が少ないユーザーでも、簡単に機械学習モデルを作成できるように、自動機械学習（AutoML）機能を提供する。<br>
+AutoML は、最適なアルゴリズムやハイパーパラメータを自動的に選択し、モデルのトレーニングとデプロイメントを行いる。</p>
+<h4 id="27_3">2.7 統合性と拡張性<a class="headerlink" href="#27_3" title="Permanent link">¶</a></h4>
+<p>Amazon SageMaker は、Amazon S3, Amazon ECR, AWS Lambda, Amazon DynamoDB などの AWS の他のサービスと密接に統合されている。<br>
+また、API を利用して、機械学習パイプラインの自動化やカスタマイズを行うこともできる。</p>
+<h3 id="3_7">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_7" title="Permanent link">¶</a></h3>
+<ol>
+<li>ユーザーは、SageMaker Studio を使用して、機械学習モデルを構築。</li>
+<li>SageMaker は、トレーニングデータを S3 から読み込み、モデルをトレーニング。</li>
+<li>トレーニングされたモデルは、SageMaker に保存。</li>
+<li>ユーザーは、SageMaker エンドポイントを作成し、モデルをデプロイ。</li>
+<li>アプリケーションは、SageMaker エンドポイントにリクエストを送信し、推論結果を取得。</li>
+<li>必要に応じて、モデルを監視し、再トレーニング。</li>
+</ol>
+<p>Amazon SageMaker は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
+モデルのトレーニングやデプロイに必要なインフラストラクチャは AWS が管理するため、ユーザーはインフラの管理を行う必要はない。</p>
+<h3 id="4_7">4. セキュリティと認証・認可<a class="headerlink" href="#4_7" title="Permanent link">¶</a></h3>
+<p>Amazon SageMaker は、機械学習モデルとデータのセキュリティを確保するために、以下の機能を提供する:</p>
+<ul>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、SageMaker へのアクセスを制御する。</li>
+<li><strong>VPC 内での実行</strong>: SageMaker リソースは Virtual Private Cloud (VPC) 内で実行でき、ネットワーク隔離を実現。</li>
+<li><strong>データ暗号化</strong>: トレーニングデータ、モデルデータ、エンドポイントデータは転送中および保存時に暗号化される。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、SageMaker の操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、SageMaker の利用状況を監査できる。</li>
+</ul>
+<p>これらのセキュリティ対策により、機械学習モデルとデータを安全に保護する。</p>
+<h3 id="5_7">5. 料金形態<a class="headerlink" href="#5_7" title="Permanent link">¶</a></h3>
+<p>Amazon SageMaker の料金は主に以下に基づきる:</p>
+<ul>
+<li><strong>トレーニング</strong>: モデルのトレーニングに使用するインスタンスのタイプ、時間に応じて課金。</li>
+<li><strong>推論</strong>: デプロイされたエンドポイントの利用時間とデータ処理量に応じて課金。</li>
+<li><strong>ストレージ</strong>: モデルデータやトレーニングデータの保存容量に応じて課金。</li>
+<li><strong>データ処理</strong>: データの前処理や特徴量エンジニアリングに使用するリソースに応じて課金。</li>
+</ul>
+<h3 id="6_7">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_7" title="Permanent link">¶</a></h3>
+<p>Amazon SageMaker は、様々な機械学習のユースケースに対応できる。<br>
+一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>画像認識</strong>: 画像データからオブジェクトを認識し、分類するモデルを構築。</li>
+<li><strong>自然言語処理</strong>: テキストデータから情報を抽出したり、感情分析などのタスクを実行。</li>
+<li><strong>予測分析</strong>: 時系列データやイベントデータから将来の傾向や値を予測。</li>
+<li><strong>レコメンデーションシステム</strong>: ユーザーの行動履歴や嗜好に基づいて、商品やコンテンツを推奨。</li>
+<li><strong>異常検知</strong>: 正常なデータパターンから逸脱する異常なデータポイントを検出。</li>
+<li><strong>時系列分析</strong>: 時系列データの傾向やパターンを分析し、将来の予測や異常検知を行う。</li>
+</ul>
+<h3 id="7_7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_7" title="Permanent link">¶</a></h3>
+<ol>
+<li>マネジメントコンソールから Amazon SageMaker を開き、SageMaker Studio を起動。</li>
+<li>Jupyter ノートブックを作成し、機械学習モデルを構築。</li>
+<li>トレーニングジョブを実行し、モデルをトレーニング。</li>
+<li>モデルをデプロイし、API エンドポイントを作成。</li>
+<li>エンドポイントにリクエストを送信し、推論結果を取得。</li>
+<li>必要に応じて、AutoML (SageMaker Autopilot) を試す。</li>
+</ol>
+<h3 id="8_7">8. 試験で問われやすいポイント<a class="headerlink" href="#8_7" title="Permanent link">¶</a></h3>
+<h4 id="81_6">8.1 機械学習モデルの構築<a class="headerlink" href="#81_6" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>利用ツール</strong>: SageMaker Studio (IDE)。</li>
+<li><strong>機能</strong>: モデルの構築、トレーニング、デプロイに必要なツールを提供。</li>
+<li><strong>試験対策</strong>: SageMaker Studio の役割、利用ケースが問われる。</li>
+</ul>
+<h4 id="82_7">8.2 フルマネージドなトレーニング環境<a class="headerlink" href="#82_7" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>提供</strong>: 様々なインスタンスタイプ、分散トレーニングオプション。</li>
+<li><strong>目的</strong>: 機械学習モデルのトレーニングを効率化。</li>
+<li><strong>試験対策</strong>: トレーニング環境の特徴、メリットが問われる。</li>
+</ul>
+<h4 id="83_4">8.3 機械学習アルゴリズムの提供<a class="headerlink" href="#83_4" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>提供</strong>: 組み込みアルゴリズム、BYOA。</li>
+<li><strong>利用</strong>: モデル構築を効率化。</li>
+<li><strong>試験対策</strong>: 組み込みアルゴリズム、BYOA の利用方法が問われる。</li>
+</ul>
+<h4 id="84_7">8.4 モデルのデプロイ<a class="headerlink" href="#84_7" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: トレーニングされたモデルを API エンドポイントとしてデプロイ。</li>
+<li><strong>利用</strong>: リアルタイム推論やバッチ推論。</li>
+<li><strong>試験対策</strong>: モデルのデプロイ方法、利用ケースが問われる。</li>
+</ul>
+<h4 id="85-ml-sagemaker-autopilot">8.5 オート ML (SageMaker Autopilot)<a class="headerlink" href="#85-ml-sagemaker-autopilot" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: モデルの自動構築、トレーニング、デプロイ。</li>
+<li><strong>利用</strong>: 機械学習の経験が少ないユーザーでも簡単に利用可能。</li>
+<li><strong>試験対策</strong>: AutoML の仕組み、利用ケースが問われる。</li>
+</ul>
+<h4 id="86_7">8.6 料金体系<a class="headerlink" href="#86_7" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>課金対象</strong>: トレーニングに使用するインスタンス、エンドポイントの利用時間、ストレージ、データ処理。</li>
+<li><strong>最適化</strong>: 不要なリソースの削減、適切なインスタンスタイプ選択がコスト削減に有効。</li>
+<li><strong>試験対策</strong>: 料金体系、課金対象が問われる。</li>
+</ul>
+<h4 id="87_4">8.7 類似・関連サービスとの比較<a class="headerlink" href="#87_4" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>AWS SageMaker Studio Notebooks</strong>: Jupyter ノートブック環境を提供するサービス。SageMaker は機械学習ライフサイクル全体をサポート。</li>
+<li><strong>AWS Machine Learning</strong>: 機械学習モデルの構築とトレーニングサービス。SageMaker はより高度な機能を提供。</li>
+</ul>
+<h4 id="88_2">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_2" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon SageMaker は何を提供するサービスか？</li>
+<li>A: 機械学習（ML）モデルの構築、トレーニング、デプロイを容易にするフルマネージドサービスである。</li>
+<li>Q: Amazon SageMaker Studio とは何か？</li>
+<li>A: 機械学習モデルの開発に必要なすべてのツールを提供する統合開発環境（IDE）である。</li>
+<li>Q: Amazon SageMaker で利用できるトレーニング環境の特徴は何か？</li>
+<li>A: 様々なインスタンスタイプと分散トレーニングオプションを利用できる。</li>
+<li>Q: Amazon SageMaker のオート ML（SageMaker Autopilot）は何をする機能か？</li>
+<li>A: 機械学習の経験が少ないユーザーでも、簡単に機械学習モデルを作成できるように、自動的に最適なアルゴリズムやハイパーパラメータを選択し、モデルのトレーニングとデプロイメントを行いる。</li>
+<li>Q: Amazon SageMaker の料金はどのように計算されるか？</li>
+<li>A: モデルのトレーニングに使用するインスタンスのタイプと時間、デプロイされたエンドポイントの利用時間とデータ処理量、ストレージ、データ処理量などに基づいて計算される。</li>
+</ul>
+<hr>
+<h2 id="amazon-textract">Amazon Textract<a class="headerlink" href="#amazon-textract" title="Permanent link">¶</a></h2>
+<h3 id="1_8">1. サービス概要<a class="headerlink" href="#1_8" title="Permanent link">¶</a></h3>
+<p>Amazon Textract は、スキャンした書類や画像に含まれるテキストとその構造（レイアウト）を、高精度に検出するマネージド型 OCR（Optical Character Recognition）サービスである。<br>
+単なる文字起こしだけでなく、フォームや表の構造を理解し、キーと値の関係や表データとして出力する点が特徴である。</p>
+<p>主なユースケースとして、</p>
+<ul>
+<li>文書の電子化・アーカイブや帳票処理の自動化</li>
+<li>手書き書類のデータ化</li>
+<li>金融・保険業界での請求書や契約書解析</li>
+</ul>
+<p>などが挙げられる。<br>
+従来の OCR エンジンに比べて、レイアウト認識と機械学習による高い正確性を実現する。</p>
+<h3 id="2_8">2. 主な特徴と機能<a class="headerlink" href="#2_8" title="Permanent link">¶</a></h3>
+<h4 id="21_5">2.1 テキスト検出とレイアウト解析<a class="headerlink" href="#21_5" title="Permanent link">¶</a></h4>
+<p>画像や PDF ドキュメントからテキストを抽出するだけでなく、段組みやフォームのフィールドなどのレイアウトを把握。<br>
+Block という概念で段落・表・セル・キー・値を細かく分割して出力し、文書構造を再現しやすい点が強みである。</p>
+<h4 id="22_6">2.2 テーブル認識<a class="headerlink" href="#22_6" title="Permanent link">¶</a></h4>
+<p>複雑な表も自動検出し、セルごとの文字列を行列構造にマッピングする。<br>
+行や列の番号を特定して CSV 形式のように扱えるため、表形式データの解析・保存が容易になる。</p>
+<h4 id="23-key-value-pairs">2.3 フォーム抽出 (Key-Value Pairs)<a class="headerlink" href="#23-key-value-pairs" title="Permanent link">¶</a></h4>
+<p>キーと値の関係を識別し、「Name: John Doe」などの項目と値を自動的にペアとして抽出。<br>
+フォーム入力の自動処理（例: 顧客情報やアンケート結果の取り込み）を大幅に効率化する。</p>
+<h4 id="24_6">2.4 手書き文字への対応<a class="headerlink" href="#24_6" title="Permanent link">¶</a></h4>
+<p>スキャンした書類に含まれる活字だけでなく、手書きテキストの認識にも対応（英語の手書き対応など）。<br>
+完全なデジタル書式への変換が難しいケースでも、Textract が一定精度で手書き文字を読み取り可能である。</p>
+<h4 id="25-amazon-a2i">2.5 機密情報抽出 (Amazon A2I 連携)<a class="headerlink" href="#25-amazon-a2i" title="Permanent link">¶</a></h4>
+<p>異常値や機密度の高い項目を検出し、人間のレビューが必要な場合は Amazon A2I (Augmented AI)を組み合わせてヒューマン・イン・ザ・ループを構築可能。<br>
+これにより、重要な文書のコンプライアンス担保や精度向上を図れる。</p>
+<h3 id="3_8">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_8" title="Permanent link">¶</a></h3>
+<ol>
+<li>S3 にアップロードされた PDF/画像ファイルを Textract API に入力</li>
+<li>Textract がクラウド上で OCR とレイアウト解析を行い、各 Block（LINE、WORD、TABLE、CELL など）を検出</li>
+<li>出力結果は JSON 形式で返され、文字列と座標情報、キー-バリューペア、テーブル構造などを含む</li>
+<li>カスタムアプリケーションや Lambda が JSON をパースし、データを DB に保存したりレポートに変換</li>
+<li>A2I などを組み合わせて、人間のレビューを挟み、誤検知を補正</li>
+</ol>
+<p>これにより、文書の構造化データ化を自動化し、ワークフローの効率化やペーパーレス推進を実現する。</p>
+<h3 id="4_8">4. セキュリティと認証・認可<a class="headerlink" href="#4_8" title="Permanent link">¶</a></h3>
+<p>Textract を導入する際、以下のポイントを考慮する:</p>
+<ul>
+<li><strong>IAM ポリシー</strong>: Textract API の呼び出し権限を最小限に限定する</li>
+<li><strong>S3 暗号化</strong>: 文書が保管される S3 バケットを KMS 暗号化し、機密文書の安全性を維持</li>
+<li><strong>VPC エンドポイント</strong>: Textract への呼び出しをプライベートネットワークで行い、インターネット経由を回避</li>
+<li><strong>CloudTrail</strong>: API 呼び出しを監査ログとして記録し、不正アクセスを検知・調査</li>
+</ul>
+<h3 id="5_8">5. 料金形態<a class="headerlink" href="#5_8" title="Permanent link">¶</a></h3>
+<p>Amazon Textract の料金は以下に基づきる:</p>
+<ul>
+<li><strong>OCR 文字数</strong>: ドキュメントのページまたは画像ごとの処理料金（1,000 ページ単位など）</li>
+<li><strong>解析タイプ</strong>: 単純 OCR だけでなく、テーブル・フォーム抽出オプションで追加コスト</li>
+<li><strong>無料利用枠</strong>: 小規模利用向けに 1,000 ページ（フォーム・テーブルなし）が月間無料などのオファー</li>
+</ul>
+<h3 id="6_8">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_8" title="Permanent link">¶</a></h3>
+<p>Textract の導入シナリオは多岐にわたりるが、代表例として:</p>
+<ul>
+<li><strong>帳票処理自動化</strong>: 請求書や注文書をスキャンし、テーブル抽出で支払金額や顧客情報を取り込み、ERP に登録</li>
+<li><strong>金融機関での KYC</strong>: 顧客の本人確認書類(運転免許証等)から名前・住所・顔写真を抽出し、システムへ登録</li>
+<li><strong>医療・保険の書類管理</strong>: PDF カルテや保険申請書をテーブル・フォーム認識で自動入力し、管理データベースを更新</li>
+<li><strong>IoT 検査表解析</strong>: 手書きの検査記録を読み取り、ログシステムに登録して分析に活用</li>
+</ul>
+<h3 id="7_8">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_8" title="Permanent link">¶</a></h3>
+<ol>
+<li>S3 バケットを準備し、OCR したい PDF ファイルや画像ファイルをアップロード</li>
+<li>AWS コンソールで「Amazon Textract」を検索、「Analyze Document」を選択し、S3 オブジェクトを指定</li>
+<li>「Table/Forms 検出」オプションを有効にして実行すると、解析結果が JSON として表示される</li>
+<li>CLI や SDK で StartDocumentAnalysis や GetDocumentAnalysis を使用して非同期処理も可能</li>
+<li>解析結果を S3 へエクスポートしたり、Lambda 関数で結果をパースして DB に保存するフローを構築</li>
+<li>必須に応じて、手書き文字対応や Amazon A2I を使った人間レビューを追加</li>
+</ol>
+<h3 id="8_8">8. 試験で問われやすいポイント<a class="headerlink" href="#8_8" title="Permanent link">¶</a></h3>
+<h4 id="81-ocr">8.1 OCR とフォーム/テーブル抽出<a class="headerlink" href="#81-ocr" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Detect Document Text</strong>: シンプルな文字列抽出</li>
+<li><strong>Analyze Document</strong>: テーブルとフォーム（Key-Value）検出が有効</li>
+<li><strong>Block 構造</strong>: PAGE、LINE、WORD、TABLE、CELL などの種類</li>
+</ul>
+<h4 id="82-api">8.2 非同期ジョブとリアルタイム API<a class="headerlink" href="#82-api" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Synchronous API</strong>: 小規模な画像（5MB 以下）をリアルタイムに処理</li>
+<li><strong>Asynchronous API</strong>: PDF や多数ページを非同期ジョブで処理し、SNS 通知またはポーリングで結果を受け取る</li>
+</ul>
+<h4 id="83-iam">8.3 セキュリティと IAM<a class="headerlink" href="#83-iam" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>最小権限</strong>: Textract と S3 の操作ポリシーを必要最小限に設定</li>
+<li><strong>データ暗号化</strong>: S3 暗号化により機密文書を保護</li>
+</ul>
+<h4 id="84-a2i">8.4 カスタムワークフロー (A2I)<a class="headerlink" href="#84-a2i" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Confidence Threshold</strong>: Textract の結果が一定信頼度を下回る場合に人的レビュー</li>
+<li><strong>人間レビュー UI</strong>: Amazon A2I が提供する UI で補正</li>
+</ul>
+<h4 id="85_6">8.5 コスト管理<a class="headerlink" href="#85_6" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>ページまたは画像単位</strong>: 分析リクエストごとの費用</li>
+<li><strong>フォーム・テーブルオプション</strong>: ベース料金に追加費用が加算</li>
+</ul>
+<h4 id="86_8">8.6 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#86_8" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Textract で表のセル情報を得るには？</li>
+<li>A: AnalyzeDocument API を使用し、TABLE と CELL の Block を解析する。</li>
+<li>Q: PDF の複数ページを一度に解析したい場合は？</li>
+<li>A: StartDocumentAnalysis(Async)などの非同期ジョブを使用し、S3 へのアップロードを指定する。</li>
+<li>Q: キーと値の抽出は何のために使う？</li>
+<li>A: フォームの項目名と入力値を紐づけ、DB 登録や自動入力に活用。</li>
+<li>Q: OCR 結果に誤差がある際の対処は？</li>
+<li>A: Confidence スコアを確認し、低スコアな項目は人間レビュー(A2I)や再スキャンなどを検討。</li>
+<li>Q: テキスト抽出だけが必要な場合のコストを抑えるには？</li>
+<li>A: DetectDocumentText API を使い、フォーム・テーブル解析を行わないことで追加費用を避ける。</li>
+</ul>
+<hr>
+<h2 id="amazon-transcribe">Amazon Transcribe<a class="headerlink" href="#amazon-transcribe" title="Permanent link">¶</a></h2>
+<h3 id="1_9">1. サービス概要<a class="headerlink" href="#1_9" title="Permanent link">¶</a></h3>
+<p>Amazon Transcribe は、音声をテキストに変換する自動音声認識（ASR）サービスである。<br>
+ユーザーは、オーディオファイルやライブストリームからテキストを生成し、様々な言語や方言に対応できる。<br>
+Transcribe は、機械学習を利用して、高精度な文字起こしを提供し、オーディオコンテンツの分析、アクセス性の向上、データ変換などに役立ちる。</p>
+<p>主なユースケースとして、</p>
+<ul>
+<li>会議の議事録作成</li>
+<li>カスタマーサポートの会話分析</li>
+<li>メディアコンテンツの字幕作成</li>
+<li>音声検索</li>
+<li>音声データの分析</li>
+<li>トランスクリプトデータからのインサイト抽出</li>
+</ul>
+<p>などが挙げられる。<br>
+Amazon Transcribe は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
+<h3 id="2_9">2. 主な特徴と機能<a class="headerlink" href="#2_9" title="Permanent link">¶</a></h3>
+<h4 id="21-asr">2.1 自動音声認識 (ASR)<a class="headerlink" href="#21-asr" title="Permanent link">¶</a></h4>
+<p>Transcribe は、機械学習を利用して、音声をテキストに変換する。<br>
+高精度な文字起こしを実現し、様々な言語や方言に対応できる。</p>
+<h4 id="22_7">2.2 バッチ処理<a class="headerlink" href="#22_7" title="Permanent link">¶</a></h4>
+<p>S3 バケットに保存されたオーディオファイルをまとめてテキストに変換できる。<br>
+これにより、大量のオーディオファイルを効率的に処理できる。</p>
+<h4 id="23_5">2.3 リアルタイム処理<a class="headerlink" href="#23_5" title="Permanent link">¶</a></h4>
+<p>ライブストリームの音声をリアルタイムでテキストに変換できる。<br>
+これにより、ライブイベントの字幕作成や、リアルタイムな会話分析に利用できる。</p>
+<h4 id="24_7">2.4 話者分離<a class="headerlink" href="#24_7" title="Permanent link">¶</a></h4>
+<p>複数の話者がいるオーディオファイルから、各話者の発言を分離できる。<br>
+これにより、会話形式のデータを正確に文字起こしできる。</p>
+<h4 id="25_6">2.5 言語識別<a class="headerlink" href="#25_6" title="Permanent link">¶</a></h4>
+<p>オーディオファイルの言語を自動的に識別できる。<br>
+これにより、複数の言語が含まれるファイルでも、適切な言語モデルで文字起こしできる。</p>
+<h4 id="26_4">2.6 カスタマイズ<a class="headerlink" href="#26_4" title="Permanent link">¶</a></h4>
+<p>カスタム語彙を使用して、特定の単語やフレーズの発音を調整できる。<br>
+これにより、専門用語や固有名詞を正確に認識させることができる。</p>
+<h4 id="27_4">2.7 統合性と拡張性<a class="headerlink" href="#27_4" title="Permanent link">¶</a></h4>
+<p>Amazon Transcribe は、Amazon S3, AWS Lambda, Amazon Comprehend などの AWS の他のサービスと密接に統合されており、様々なワークフローに対応できる。<br>
+また、API を利用して、音声認識処理を自動化することもできる。</p>
+<h3 id="3_9">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_9" title="Permanent link">¶</a></h3>
+<ol>
+<li>ユーザーは、オーディオファイルを S3 バケットにアップロードするか、リアルタイムオーディオストリームを Transcribe に送信。</li>
+<li>Transcribe は、機械学習モデルを使用して、音声をテキストに変換。</li>
+<li>変換されたテキストデータは、指定された宛先（S3 バケットなど）に保存。</li>
+<li>必要に応じて、他の AWS サービスと連携し、データ分析やワークフローを構築。</li>
+</ol>
+<p>Amazon Transcribe は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
+音声からテキストへの変換は AWS が行うため、ユーザーはインフラの管理を行う必要はない。</p>
+<h3 id="4_9">4. セキュリティと認証・認可<a class="headerlink" href="#4_9" title="Permanent link">¶</a></h3>
+<p>Amazon Transcribe は、音声データとテキストデータのセキュリティを確保するために、以下の機能を提供する:</p>
+<ul>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Transcribe へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: 音声データとテキストデータは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から Transcribe にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Transcribe の操作権限を詳細に制御できる。</li>
+</ul>
+<p>これらのセキュリティ対策により、音声データとテキストデータへの不正アクセスを防止し、機密情報を保護できる。</p>
+<h3 id="5_9">5. 料金形態<a class="headerlink" href="#5_9" title="Permanent link">¶</a></h3>
+<p>Amazon Transcribe の料金は主に以下に基づきる:</p>
+<ul>
+<li><strong>音声時間</strong>: 変換された音声の秒数に応じて課金。</li>
+<li><strong>カスタム語彙</strong>: カスタム語彙機能を使用した場合、追加料金が発生。</li>
+<li><strong>機械学習モデル</strong>: カスタム機械学習モデルのトレーニングに、追加料金が発生する場合がある。</li>
+</ul>
+<h3 id="6_9">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_9" title="Permanent link">¶</a></h3>
+<p>Amazon Transcribe は、様々な音声データ処理に利用できる。<br>
+一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>会議の議事録作成</strong>: 会議の音声を録音し、Transcribe でテキスト化して議事録を作成。</li>
+<li><strong>カスタマーサポートの会話分析</strong>: コールセンターの会話を Transcribe でテキスト化し、顧客の感情や傾向を分析。</li>
+<li><strong>メディアコンテンツの字幕作成</strong>: 動画や音声コンテンツを Transcribe でテキスト化し、字幕を作成。</li>
+<li><strong>音声検索</strong>: 音声検索クエリを Transcribe でテキスト化し、検索クエリを処理。</li>
+<li><strong>音声データの分析</strong>: 音声データをテキスト化し、キーワード抽出、感情分析などを実行。</li>
+<li><strong>トランスクリプトデータからのインサイト抽出</strong>: 会話内容をテキスト化し、特定のトピックや傾向を分析。</li>
+</ul>
+<h3 id="7_9">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_9" title="Permanent link">¶</a></h3>
+<ol>
+<li>WS マネジメントコンソールから Amazon Transcribe を開き、オーディオファイルを選択。</li>
+<li>言語とリージョンを選択し、文字起こしジョブを開始。</li>
+<li>文字起こし結果を確認し、必要に応じてカスタム語彙を適用。</li>
+<li>リアルタイム文字起こしを行う場合は、API を利用してオーディオストリームを Transcribe に送信。</li>
+<li>生成されたテキストデータをアプリケーションで使用。</li>
+</ol>
+<h3 id="8_9">8. 試験で問われやすいポイント<a class="headerlink" href="#8_9" title="Permanent link">¶</a></h3>
+<h4 id="81-asr">8.1 自動音声認識 (ASR)<a class="headerlink" href="#81-asr" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: 音声をテキストに変換。</li>
+<li><strong>特徴</strong>: 機械学習を利用、高精度な文字起こし。</li>
+<li><strong>試験対策</strong>: ASR の仕組み、対応言語が問われる。</li>
+</ul>
+<h4 id="82_8">8.2 バッチ処理<a class="headerlink" href="#82_8" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>対象</strong>: S3 バケットに保存されたオーディオファイル。</li>
+<li><strong>利用</strong>: 大量のオーディオファイルをまとめてテキストに変換。</li>
+<li><strong>試験対策</strong>: バッチ処理のメリット、S3 との連携が問われる。</li>
+</ul>
+<h4 id="83_5">8.3 リアルタイム処理<a class="headerlink" href="#83_5" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>対象</strong>: ライブストリームの音声。</li>
+<li><strong>利用</strong>: リアルタイムな字幕作成や会話分析。</li>
+<li><strong>試験対策</strong>: リアルタイム処理の仕組み、利用ケースが問われる。</li>
+</ul>
+<h4 id="84_8">8.4 話者分離<a class="headerlink" href="#84_8" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>機能</strong>: 複数話者の発言を分離。</li>
+<li><strong>利用</strong>: 会話形式のデータの正確な文字起こし。</li>
+<li><strong>試験対策</strong>: 話者分離の重要性、利用シーンが問われる。</li>
+</ul>
+<h4 id="85_7">8.5 料金体系<a class="headerlink" href="#85_7" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>課金対象</strong>: 変換された音声の秒数、カスタム語彙の利用、機械学習モデルのトレーニング。</li>
+<li><strong>最適化</strong>: 不要な文字起こしの削減、適切な設定がコスト削減に有効。</li>
+<li><strong>試験対策</strong>: 料金体系、課金対象が問われる。</li>
+</ul>
+<h4 id="86_9">8.6 類似・関連サービスとの比較<a class="headerlink" href="#86_9" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Amazon Polly</strong>: テキストを音声に変換するサービス。Transcribe は音声をテキストに変換。</li>
+<li><strong>Amazon Comprehend</strong>: テキスト分析サービス。Transcribe は音声の文字起こしに特化。</li>
+</ul>
+<h4 id="87_5">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_5" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Transcribe は何を提供するサービスか？</li>
+<li>A: 音声をテキストに変換する自動音声認識（ASR）サービスである。</li>
+<li>Q: Amazon Transcribe は、バッチ処理とリアルタイム処理のどちらをサポートしているか？</li>
+<li>A: バッチ処理とリアルタイム処理の両方をサポートしている。</li>
+<li>Q: Amazon Transcribe の話者分離機能は何をするか？</li>
+<li>A: 複数の話者がいるオーディオファイルから、各話者の発言を分離する。</li>
+<li>Q: Amazon Transcribe でカスタム語彙はどのように利用するか？</li>
+<li>A: 特定の単語やフレーズの発音を調整するために利用する。</li>
+<li>Q: Amazon Transcribe の料金はどのように計算されるか？</li>
+<li>A: 変換された音声の秒数に基づいて計算される。</li>
+</ul>
+<hr>
+<h2 id="amazon-translate">Amazon Translate<a class="headerlink" href="#amazon-translate" title="Permanent link">¶</a></h2>
+<h3 id="1_10">1. サービス概要<a class="headerlink" href="#1_10" title="Permanent link">¶</a></h3>
+<p>Amazon Translate は、AWS が提供するニューラル機械翻訳サービスである。<br>
+高度なディープラーニングアルゴリズムに基づき、高品質の言語翻訳を多言語間で実行する。<br>
+従来のルールベースや統計ベースの翻訳よりも自然な文構造を保持しやすく、大規模テキストやリアルタイム翻訳のシナリオに適している。</p>
+<p>主なユースケースとしては、</p>
+<ul>
+<li>ウェブサイトやアプリの多言語対応</li>
+<li>国際ユーザー向けカスタマーサポートやドキュメント翻訳</li>
+<li>グローバルな SNS モニタリングやチャットボットの多言語サポート</li>
+</ul>
+<p>などが挙げられる。</p>
+<h3 id="2_10">2. 主な特徴と機能<a class="headerlink" href="#2_10" title="Permanent link">¶</a></h3>
+<h4 id="21_6">2.1 リアルタイム翻訳とバッチ翻訳<a class="headerlink" href="#21_6" title="Permanent link">¶</a></h4>
+<p>リアルタイム翻訳では API を呼び出して即座に文章を翻訳可能。<br>
+Web アプリやチャットシステムに組み込める。<br>
+大量のファイルを一括で処理するバッチ翻訳モードもあり、S3 との連携で大規模な翻訳ジョブを自動的に実行する。</p>
+<h4 id="22-custom-terminology">2.2 カスタム用語 (Custom Terminology)<a class="headerlink" href="#22-custom-terminology" title="Permanent link">¶</a></h4>
+<p>ユーザーが定義した辞書（ブランド名、製品名、専門用語など）をアップロードし、翻訳結果をカスタマイズ可能。<br>
+これにより、独自用語が不適切に訳されるリスクを軽減し、訳文の一貫性を高められる。</p>
+<h4 id="23_6">2.3 高精度ニューラルネットワークと継続的学習<a class="headerlink" href="#23_6" title="Permanent link">¶</a></h4>
+<p>Amazon 内部の学習データや継続的なモデル更新により、翻訳品質が時間とともに向上。<br>
+多数の言語ペアをサポートし、特にビジネスや IT ドキュメントなど比較的定型の文章で精度が高いと評価されている。</p>
+<h4 id="24-custom-domain-adaptation">2.4 翻訳メモリやコンテキスト反映 (Custom Domain Adaptation)<a class="headerlink" href="#24-custom-domain-adaptation" title="Permanent link">¶</a></h4>
+<p>より高度なカスタマイズとして、分野特化モデル（医療、法律、技術など）を選択できるオプションが強化されつつある。<br>
+システムからの学習で独自ドメイン用の語彙・表現を考慮しやすく、翻訳の文脈適合度が向上する。</p>
+<h4 id="25-aws-aiml">2.5 多様なサービス連携 (AWS AI/ML スタック)<a class="headerlink" href="#25-aws-aiml" title="Permanent link">¶</a></h4>
+<p>Amazon Comprehend や Amazon Lex、AWS Lambda などと組み合わせて、多言語チャットボットやテキスト分析+翻訳の連携をスムーズに実装可能。<br>
+特にリアルタイムのマイクロサービスアーキテクチャ内での活用が容易である。</p>
+<h3 id="3_10">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_10" title="Permanent link">¶</a></h3>
+<ol>
+<li>Amazon Translate API を呼び出し、ソース言語とターゲット言語を指定</li>
+<li>テキストを入力として送信、サーバレスでニューラル機械翻訳モデルが解析</li>
+<li>数秒以内に訳文が JSON 形式で返ってくる</li>
+<li>必要に応じて Custom Terminology を渡し、特殊用語やブランド名などの翻訳を固定化</li>
+<li>大量ファイルの場合は S3 とのバッチジョブを設定し、完了通知を受けて成果物を取得</li>
+</ol>
+<p>これにより、スケーラブルかつ高品質な翻訳を実現し、多言語対応アプリケーションを迅速に開発できる。</p>
+<h3 id="4_10">4. セキュリティと認証・認可<a class="headerlink" href="#4_10" title="Permanent link">¶</a></h3>
+<p>Amazon Translate を利用する上でのセキュリティ上の考慮点は以下の通りである:</p>
+<ul>
+<li><strong>IAM ポリシー</strong>: Translate の API 呼び出し権限を最小限にし、不要な操作を防止</li>
+<li><strong>S3 の暗号化</strong>: バッチ翻訳で使用する入力・出力ファイルを暗号化し、機密データを保護</li>
+<li><strong>VPC エンドポイント</strong>: Translate への呼び出しをプライベートネットワーク経由に限定し、インターネットアクセスを回避</li>
+<li><strong>CloudTrail 監査</strong>: 誰がいつ API を呼び出したかを監査ログとして記録</li>
+</ul>
+<h3 id="5_10">5. 料金形態<a class="headerlink" href="#5_10" title="Permanent link">¶</a></h3>
+<p>Amazon Translate の主な料金は、翻訳した文字数に応じた従量課金である。<br>
+（例えば「1 百万文字あたり〇ドル」のように設定されている）</p>
+<ul>
+<li>Custom Terminology の使用自体に追加費用は通常なく、翻訳文字数をもとに課金</li>
+<li>バッチ翻訳も同様に処理文字数ベース</li>
+<li>無料利用枠（月間 200 万文字など）が初年度存在</li>
+</ul>
+<h3 id="6_10">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_10" title="Permanent link">¶</a></h3>
+<p>Amazon Translate を活用する代表的パターンとして:</p>
+<ul>
+<li><strong>Web サイト多言語化</strong>: ダイナミックにユーザーの選択言語へ翻訳（キャッシュ考慮）</li>
+<li><strong>カスタマーサポート多言語対応</strong>: チャットや Email をリアルタイム翻訳し、サポートチームが単一言語で対応</li>
+<li><strong>SNS モニタリング</strong>: 世界中の投稿を集約し、英語化/日本語化して感情分析（Comprehend）やレポーティング</li>
+<li><strong>マルチチャネルチャットボット</strong>: Amazon Lex でユーザー入力を Translate→Bot 処理 → 出力を再翻訳</li>
+</ul>
+<h3 id="7_10">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7_10" title="Permanent link">¶</a></h3>
+<ol>
+<li>AWS コンソールで「Amazon Translate」を検索し、テキストを入力して翻訳テスト（言語ペアを指定）</li>
+<li>CLI や SDK で TranslateText API を呼び出し、ソース言語・ターゲット言語、テキストを送信</li>
+<li>応答で翻訳結果（TranslatedText）を受け取り、UI 表示や DB 保存</li>
+<li>必要に応じて「Custom Terminology」を作成し、専門用語の CSV などをアップロード</li>
+<li>「バッチ翻訳」を使う場合は、S3 のフォルダを指定して StartTextTranslationJob を呼ぶ（SNS 等で完了通知）</li>
+<li>ユーザーテストを行い、実運用へ移行（翻訳効率と精度向上を継続的にモニタリング）</li>
+</ol>
+<h3 id="8_10">8. 試験で問われやすいポイント<a class="headerlink" href="#8_10" title="Permanent link">¶</a></h3>
+<h4 id="81-translate">8.1 Translate の翻訳モデル<a class="headerlink" href="#81-translate" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>ニューラル機械翻訳</strong>: Deep Learning を活用し、高品質の翻訳を実現</li>
+<li><strong>継続学習</strong>: AWS がベースモデルを更新し続け、時間経過で精度が向上</li>
+</ul>
+<h4 id="82-api_1">8.2 API とバッチジョブ<a class="headerlink" href="#82-api_1" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>リアルタイム API</strong>: 少量のテキストを即時翻訳</li>
+<li><strong>バッチ翻訳</strong>: S3 に格納した大量ファイルをまとめて処理し、S3 に出力</li>
+</ul>
+<h4 id="83-custom-terminology">8.3 カスタム用語 (Custom Terminology)<a class="headerlink" href="#83-custom-terminology" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>ブランド名や業界用語</strong>: 標準モデルに上書きする形で翻訳を最適化</li>
+<li><strong>ファイル形式</strong>: CSV または TSV の辞書ファイルをインポート</li>
+</ul>
+<h4 id="84-iam">8.4 セキュリティと IAM<a class="headerlink" href="#84-iam" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>最小権限ポリシー</strong>: Translate API を使用する権限を限定</li>
+<li><strong>S3 暗号化</strong>: バッチ翻訳用の入出力ファイルを KMS 暗号化</li>
+</ul>
+<h4 id="85_8">8.5 料金体系<a class="headerlink" href="#85_8" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>従量課金</strong>: 翻訳文字数に応じたコスト</li>
+<li><strong>無料枠</strong>: 月 200 万文字が 12 ヶ月提供（新規アカウント）</li>
+</ul>
+<h4 id="86_10">8.6 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#86_10" title="Permanent link">¶</a></h4>
+<ul>
+<li>Q: Amazon Translate で専門用語を正しく訳すには？</li>
+<li>A: カスタム用語集（Custom Terminology）を定義し、API 呼び出し時に指定して翻訳する。</li>
+<li>Q: 大量の PDF やテキストを一括で翻訳する方法は？</li>
+<li>A: バッチジョブを使い、S3 にアップロードしたファイルを StartTextTranslationJob で翻訳。結果も S3 に出力。</li>
+<li>Q: Translate と Polly の使い分けは？</li>
+<li>A: Translate はテキスト翻訳、Polly はテキスト読み上げ（テキスト → 音声）。</li>
+<li>Q: 多言語チャットシステムを構築したい場合の典型的なアーキテクチャは？</li>
+<li>A: User Message→Translate→(Comprehend for sentiment)→Translate→Other User、などのフローで双方向翻訳。</li>
+<li>Q: 料金での注意点は？</li>
+<li>A: 翻訳文字数に応じた従量課金。無料枠を活用し、不要な翻訳リクエストを避ける実装が推奨。</li>
+</ul>
 
 
 
@@ -2078,7 +6314,7 @@
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年12月28日 01:13:56 UTC">2025年12月28日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月4日 21:40:41 UTC">2026年1月4日</span>
   </span>
 
     
