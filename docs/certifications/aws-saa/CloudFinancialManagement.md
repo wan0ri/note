@@ -2,7 +2,7 @@
 title: クラウド財務管理
 ---
 
-## Budgets
+## AWS Budgets
 
 ### 1. サービス概要
 
@@ -166,7 +166,7 @@ AWS Budgets は、様々な AWS 利用環境で利用できる。一般的なパ
 
 ---
 
-## Cost and Usage Report
+## AWS Cost and Usage Report (CUR)
 
 ### 1. サービス概要
 
@@ -336,7 +336,7 @@ AWS CUR は、様々な AWS 利用環境で利用できる。一般的なパタ�
 
 ---
 
-## Cost Explorer
+## AWS Cost Explorer
 
 ### 1. サービス概要
 
@@ -506,7 +506,7 @@ AWS Cost Explorer は、様々な AWS 利用環境で利用できる。一般的
 
 ---
 
-## Savings Plans
+## AWS Savings Planss
 
 ### 1. サービス概要
 
