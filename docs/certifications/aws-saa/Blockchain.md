@@ -2,7 +2,7 @@
 title: ブロックチェーン
 ---
 
-## Quantum Ledger Database (QLDB)
+## Amazon Quantum Ledger Database (QLDB)
 
 ### 1. サービス概要
 
