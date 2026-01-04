@@ -2,7 +2,7 @@
 title: 分析
 ---
 
-## OpenSearch Service
+## Amazon OpenSearch Service
 
 ### 1. サービス概要
 
@@ -174,7 +174,7 @@ Amazon OpenSearch Service は、様々なデータ分析に利用できる。一
 
 ---
 
-## Athena
+## Amazon Athena
 
 ### 1. サービス概要
 
@@ -338,7 +338,7 @@ Amazon Athena は、様々なデータ分析に利用できる。一般的なパ
 
 ---
 
-## Elastic MapReduce (EMR)
+## Amazon EMR (Elastic MapReduce)
 
 ### 1. サービス概要
 
@@ -484,7 +484,7 @@ Amazon EMR の費用は以下に基づく:
 
 ---
 
-## Kinesis
+## Amazon Kinesis
 
 ### 1. サービス概要
 
@@ -647,7 +647,7 @@ Amazon Kinesis は、様々なストリーミングデータ処理に利用で�
 
 ---
 
-## MSK (Managed Streaming for Apache Kafka)
+## Amazon MSK（Managed Streaming for Apache Kafka）
 
 ### 1. サービス概要
 
@@ -783,7 +783,7 @@ Amazon MSK を導入する上での代表的なパターンとしては以下が
 
 ---
 
-## QuickSight
+## Amazon QuickSight
 
 ### 1. サービス概要
 
@@ -943,7 +943,7 @@ Amazon QuickSight は、様々なデータ分析に利用できる。一般的�
 
 ---
 
-## Data Exchange
+## AWS Data Exchange
 
 ### 1. サービス概要
 
@@ -1071,7 +1071,7 @@ AWS Data Exchange を活用するシナリオには次のような例がある:
 
 ---
 
-## Data Pipeline
+## AWS Data Pipeline
 
 ### 1. サービス概要
 
@@ -1227,7 +1227,7 @@ AWS Data Pipeline の料金は主に以下に基づく:
 
 ---
 
-## Glue
+## AWS Glue
 
 ### 1. サービス概要
 
@@ -1385,7 +1385,7 @@ AWS Glue は、様々なデータ統合に利用できる。一般的なパタ�
 
 ---
 
-## Lake Formation
+## AWS Lake Formation
 
 ### 1. サービス概要
 
