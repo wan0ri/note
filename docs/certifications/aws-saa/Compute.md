@@ -2,7 +2,7 @@
 title: コンピューティング
 ---
 
-## EC2
+## Amazon EC2（Amazon Elastic Compute Cloud）
 
 ### 1. サービス概要
 
@@ -126,7 +126,7 @@ EC2 の料金は、使用時間、インスタンスタイプ、使用するラ�
 
 ---
 
-## EC2 Auto Scaling
+## Amazon EC2 Auto Scaling
 
 ### 1. サービス概要
 
@@ -301,7 +301,7 @@ Amazon EC2 Auto Scaling 自体の利用には料金はかかりない。
 
 ---
 
-## Auto Scaling
+## AWS Auto Scaling
 
 ### 1. サービス概要
 
@@ -466,7 +466,7 @@ AWS Auto Scaling は、様々なアプリケーションのスケーリングに
 
 ---
 
-## Batch
+## AWS Batch
 
 ### 1. サービス概要
 
@@ -629,7 +629,7 @@ AWS Batch は、様々なバッチ処理ワークロードに利用できる。�
 
 ---
 
-## Compute Optimizer
+## AWS Compute Optimizer
 
 ### 1. サービス概要
 
@@ -789,7 +789,7 @@ AWS Compute Optimizer は、様々な AWS 利用環境で利用できる。一�
 
 ---
 
-## Elastic Beanstalk
+## AWS Elastic Beanstalk
 
 ### 1. サービス概要
 
@@ -950,7 +950,7 @@ AWS Elastic Beanstalk は、様々な Web アプリケーションや Web サー
 
 ---
 
-## Lambda
+## AWS Lambda
 
 ### 1. サービス概要
 
@@ -1118,7 +1118,7 @@ AWS Lambda は、様々なアプリケーション開発に利用できる。
 
 ---
 
-## Outposts
+## AWS Outposts
 
 ### 1. サービス概要
 
@@ -1288,7 +1288,7 @@ AWS Outposts は、様々なオンプレミス環境でのワークロードに�
 
 ---
 
-## Serverless Application Repository
+## AWS Serverless Application Repository
 
 ### 1. サービス概要
 
@@ -1440,7 +1440,7 @@ AWS Serverless Application Repository 自体の利用に料金はかかりない
 
 ---
 
-## Wavelength
+## AWS Wavelength
 
 ### 1. サービス概要
 
