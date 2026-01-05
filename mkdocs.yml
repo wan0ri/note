@@ -3,6 +3,9 @@ site_description: 個人用テックノート
 site_url: https://wan0ri.github.io/note/
 site_author: wan0ri
 
+hooks:
+  - hooks.py
+
 theme:
   name: material
   language: ja
@@ -75,6 +78,7 @@ plugins:
         background_color: "#1565c0"
         color: "#ffffff"
         font_family: Roboto
+  - rss
 
 extra:
   generator: false

@@ -6,3 +6,4 @@ mkdocs-glightbox
 mkdocs-redirects
 Pillow
 cairosvg
+mkdocs-rss-plugin
