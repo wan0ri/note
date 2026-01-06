@@ -3596,9 +3596,9 @@
 
 <h2 id="amazon-api-gateway">Amazon API Gateway<a class="headerlink" href="#amazon-api-gateway" title="Permanent link">¶</a></h2>
 <h3 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
-<p>Amazon API Gateway は、開発者が任意の規模で API の作成、公開、保守、監視、保護を容易に行えるフルマネージドサービスです。<br>
-RESTful API や WebSocket API を構築でき、バックエンドのロジックを抽象化し、API を通じて多様なアプリケーションと連携することを可能にします。<br>
-これにより、開発者はビジネスロジックに集中でき、API インフラの構築やスケーリングの複雑さを軽減できます。</p>
+<p>Amazon API Gateway は、開発者が任意の規模で API の作成、公開、保守、監視、保護を容易に行えるフルマネージドサービスである。<br>
+RESTful API や WebSocket API を構築でき、バックエンドのロジックを抽象化し、API を通じて多様なアプリケーションと連携することを可能にする。<br>
+これにより、開発者はビジネスロジックに集中でき、API インフラの構築やスケーリングの複雑さを軽減できる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>Web アプリケーション</li>
@@ -3607,56 +3607,56 @@ RESTful API や WebSocket API を構築でき、バックエンドのロジッ�
 <li>B2B 連携</li>
 </ul>
 <p>などが挙げられます。<br>
-API Gateway は、これらの多様なクライアントとバックエンドサービスの間を取り持ち、効率的でセキュアなデータ交換を実現します。</p>
+API Gateway は、これらの多様なクライアントとバックエンドサービスの間を取り持ち、効率的でセキュアなデータ交換を実現する。</p>
 <h3 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
 <h4 id="21-api">2.1 API タイプ<a class="headerlink" href="#21-api" title="Permanent link">¶</a></h4>
-<p>API Gateway は、以下の 2 つの主要な API タイプをサポートします。</p>
+<p>API Gateway は、以下の 2 つの主要な API タイプをサポートする。</p>
 <ul>
-<li><strong>RESTful API</strong>: HTTP ベースのリクエスト/レスポンスモデルに基づいた API で、最も一般的な Web API の形式です。CRUD 操作に対応し、様々なデータ形式（JSON, XML など）を扱えます。</li>
-<li><strong>WebSocket API</strong>: 双方向のリアルタイム通信をサポートする API です。チャットアプリケーションやリアルタイムデータストリーミングなどに適しています。</li>
+<li><strong>RESTful API</strong>: HTTP ベースのリクエスト/レスポンスモデルに基づいた API で、最も一般的な Web API の形式である。CRUD 操作に対応し、様々なデータ形式（JSON, XML など）を扱えます。</li>
+<li><strong>WebSocket API</strong>: 双方向のリアルタイム通信をサポートする API である。チャットアプリケーションやリアルタイムデータストリーミングなどに適している。</li>
 </ul>
 <h4 id="22-api-gateway">2.2 API Gateway の主なコンポーネント<a class="headerlink" href="#22-api-gateway" title="Permanent link">¶</a></h4>
-<p>API Gateway の動作を理解する上で重要な要素は、以下の通りです。</p>
+<p>API Gateway の動作を理解する上で重要な要素は、以下の通りである。</p>
 <ul>
-<li><strong>リソース(Resource)</strong>: API を通してアクセス可能なデータや操作の単位です。例えば、<code>/users</code>や<code>/products/{id}</code>など、URL パスで定義されます。</li>
-<li><strong>メソッド(Method)</strong>: リソースに対して実行可能なアクションです。HTTP メソッド（GET, POST, PUT, DELETE など）で定義されます。</li>
-<li><strong>統合(Integration)</strong>: API リクエストをバックエンドサービス（Lambda 関数、HTTP エンドポイント、AWS サービスなど）に転送する設定です。</li>
-<li><strong>モデル(Model)</strong>: API のリクエストとレスポンスの構造を定義します。JSON Schema を利用してバリデーションやドキュメント生成に使用します。</li>
-<li><strong>ステージ(Stage)</strong>: API のデプロイメントの環境（例：dev, test, prod）。ステージごとに異なる設定（認証、環境変数など）を適用できます。</li>
+<li><strong>リソース(Resource)</strong>: API を通してアクセス可能なデータや操作の単位である。例えば、<code>/users</code>や<code>/products/{id}</code>など、URL パスで定義される。</li>
+<li><strong>メソッド(Method)</strong>: リソースに対して実行可能なアクションである。HTTP メソッド（GET, POST, PUT, DELETE など）で定義される。</li>
+<li><strong>統合(Integration)</strong>: API リクエストをバックエンドサービス（Lambda 関数、HTTP エンドポイント、AWS サービスなど）に転送する設定である。</li>
+<li><strong>モデル(Model)</strong>: API のリクエストとレスポンスの構造を定義する。JSON Schema を利用してバリデーションやドキュメント生成に使用する。</li>
+<li><strong>ステージ(Stage)</strong>: API のデプロイメントの環境（例：dev, test, prod）。ステージごとに異なる設定（認証、環境変数など）を適用できる。</li>
 </ul>
 <h4 id="23-custom-authorizer">2.3 カスタムオーソライザー(Custom Authorizer)<a class="headerlink" href="#23-custom-authorizer" title="Permanent link">¶</a></h4>
-<p>カスタムオーソライザー（Lambda Authorizer）を利用することで、API に対する認証・認可のロジックを Lambda 関数で実装し、API Gateway に統合できます。<br>
-これにより、トークンベースの認証（JWT、OAuth2.0 など）や、複雑な認可ルールを柔軟に適用できます。</p>
+<p>カスタムオーソライザー（Lambda Authorizer）を利用することで、API に対する認証・認可のロジックを Lambda 関数で実装し、API Gateway に統合できる。<br>
+これにより、トークンベースの認証（JWT、OAuth2.0 など）や、複雑な認可ルールを柔軟に適用できる。</p>
 <h4 id="24-api-api-caching">2.4 API キャッシング(API Caching)<a class="headerlink" href="#24-api-api-caching" title="Permanent link">¶</a></h4>
-<p>API Gateway は API レスポンスをキャッシュすることで、バックエンドへの負荷を軽減し、API パフォーマンスを向上させることが可能です。<br>
-キャッシュ TTL（有効期限）を設定でき、キャッシュされたレスポンスを返すことで、バックエンドサービスへのリクエスト数を減らすことができます。</p>
+<p>API Gateway は API レスポンスをキャッシュすることで、バックエンドへの負荷を軽減し、API パフォーマンスを向上させることが可能である。<br>
+キャッシュ TTL（有効期限）を設定でき、キャッシュされたレスポンスを返すことで、バックエンドサービスへのリクエスト数を減らすことができる。</p>
 <h4 id="25-throttling">2.5 スロットリング(Throttling)<a class="headerlink" href="#25-throttling" title="Permanent link">¶</a></h4>
-<p>API Gateway では、API へのリクエスト数を制限することで、バックエンドシステムの過負荷を防ぎ、可用性を向上させることができます。<br>
-リクエストレートとバーストレートを設定でき、API リクエストを段階的に処理できます。</p>
+<p>API Gateway では、API へのリクエスト数を制限することで、バックエンドシステムの過負荷を防ぎ、可用性を向上させることができる。<br>
+リクエストレートとバーストレートを設定でき、API リクエストを段階的に処理できる。</p>
 <h4 id="26-api">2.6 API モニタリングとロギング<a class="headerlink" href="#26-api" title="Permanent link">¶</a></h4>
-<p>CloudWatch Logs と連携して、API のアクセスログと実行ログを収集し、API のパフォーマンスやエラーを監視できます。<br>
-CloudWatch メトリクスを利用して、API のリクエスト数、レイテンシー、エラー率などの情報を可視化できます。</p>
+<p>CloudWatch Logs と連携して、API のアクセスログと実行ログを収集し、API のパフォーマンスやエラーを監視できる。<br>
+CloudWatch メトリクスを利用して、API のリクエスト数、レイテンシー、エラー率などの情報を可視化できる。</p>
 <h4 id="27">2.7 統合性と拡張性<a class="headerlink" href="#27" title="Permanent link">¶</a></h4>
-<p>API Gateway は、Lambda、EC2、S3、DynamoDB などの AWS サービスと統合でき、AWS CodeBuild や AWS CodeDeploy と連携して CI/CD パイプラインを構築できます。<br>
-また、Swagger/OpenAPI 定義をインポート/エクスポートでき、API 定義の共有や API ドキュメントの自動生成が可能です。</p>
+<p>API Gateway は、Lambda、EC2、S3、DynamoDB などの AWS サービスと統合でき、AWS CodeBuild や AWS CodeDeploy と連携して CI/CD パイプラインを構築できる。<br>
+また、Swagger/OpenAPI 定義をインポート/エクスポートでき、API 定義の共有や API ドキュメントの自動生成が可能である。</p>
 <h3 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
 <ol>
 <li>クライアントは API Gateway のエンドポイントにリクエストを送信。</li>
 <li>API Gateway はリクエストを認証・認可し、リクエストの変換やマッピングを実施。</li>
 <li>統合設定に基づき、リクエストをバックエンドサービス（Lambda 関数、HTTP エンドポイントなど）へ転送。</li>
 <li>バックエンドサービスからのレスポンスを API Gateway が受け取り、レスポンスを変換・マッピングし、クライアントへ返却。</li>
-<li>API Gateway はフルマネージドサービスであり、スケーラビリティと可用性が内包されています。API Gateway は、複数のアベイラビリティゾーンにまたがって API をデプロイすることで、高可用性を実現しています。</li>
+<li>API Gateway はフルマネージドサービスであり、スケーラビリティと可用性が内包されています。API Gateway は、複数のアベイラビリティゾーンにまたがって API をデプロイすることで、高可用性を実現している。</li>
 </ol>
 <h3 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
-<p>API Gateway は API を保護するために、以下のセキュリティ機能を提供します:</p>
+<p>API Gateway は API を保護するために、以下のセキュリティ機能を提供する:</p>
 <ul>
-<li><strong>IAM 認証</strong>: IAM ロールやユーザーを利用して API へのアクセスを制御します。</li>
-<li><strong>カスタムオーソライザー</strong>: Lambda 関数を利用して、トークンベースの認証やカスタム認証ロジックを実装します。</li>
-<li><strong>API キー</strong>: API キーを使用して、特定のユーザーやアプリケーションからのアクセスを制限します。</li>
-<li><strong>リソースポリシー</strong>: リソースポリシーを設定することで、特定の IP アドレスからのアクセスを制限できます。</li>
-<li><strong>HTTPS エンドポイント</strong>: TLS 暗号化により、API 通信を保護します。</li>
+<li><strong>IAM 認証</strong>: IAM ロールやユーザーを利用して API へのアクセスを制御する。</li>
+<li><strong>カスタムオーソライザー</strong>: Lambda 関数を利用して、トークンベースの認証やカスタム認証ロジックを実装する。</li>
+<li><strong>API キー</strong>: API キーを使用して、特定のユーザーやアプリケーションからのアクセスを制限する。</li>
+<li><strong>リソースポリシー</strong>: リソースポリシーを設定することで、特定の IP アドレスからのアクセスを制限できる。</li>
+<li><strong>HTTPS エンドポイント</strong>: TLS 暗号化により、API 通信を保護する。</li>
 </ul>
-<p>これらのセキュリティ対策により、API への不正アクセスを防止し、機密性の高いデータを保護できます。</p>
+<p>これらのセキュリティ対策により、API への不正アクセスを防止し、機密性の高いデータを保護できる。</p>
 <h3 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h3>
 <p>API Gateway の料金は主に以下に基づきます:</p>
 <ul>
@@ -3745,9 +3745,9 @@ CloudWatch メトリクスを利用して、API のリクエスト数、レイ�
 <hr>
 <h2 id="amazon-pinpoint">Amazon Pinpoint<a class="headerlink" href="#amazon-pinpoint" title="Permanent link">¶</a></h2>
 <h3 id="1_1">1. サービス概要<a class="headerlink" href="#1_1" title="Permanent link">¶</a></h3>
-<p>Amazon Pinpoint は、AWS が提供するフルマネージドの顧客エンゲージメントサービスです。<br>
-このサービスを利用することで、プッシュ通知、E メール、SMS、音声メッセージなど、様々なチャネルを通じて、顧客にパーソナライズされたメッセージを送信できます。<br>
-Pinpoint は、マーケティングキャンペーンの作成、セグメンテーション、分析を容易にし、顧客とのエンゲージメントを強化します。</p>
+<p>Amazon Pinpoint は、AWS が提供するフルマネージドの顧客エンゲージメントサービスである。<br>
+このサービスを利用することで、プッシュ通知、E メール、SMS、音声メッセージなど、様々なチャネルを通じて、顧客にパーソナライズされたメッセージを送信できる。<br>
+Pinpoint は、マーケティングキャンペーンの作成、セグメンテーション、分析を容易にし、顧客とのエンゲージメントを強化する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>モバイルアプリケーションのプッシュ通知</li>
@@ -3759,8 +3759,8 @@ Pinpoint は、マーケティングキャンペーンの作成、セグメン�
 <p>などが挙げられます。</p>
 <h3 id="2_1">2. 主な特徴と機能<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h3>
 <h4 id="21">2.1 マルチチャネルメッセージング<a class="headerlink" href="#21" title="Permanent link">¶</a></h4>
-<p>Amazon Pinpoint は、プッシュ通知、E メール、SMS、音声メッセージなど、複数のチャネルをサポートしています。<br>
-これにより、顧客に最適なチャネルでリーチできます。</p>
+<p>Amazon Pinpoint は、プッシュ通知、E メール、SMS、音声メッセージなど、複数のチャネルをサポートしている。<br>
+これにより、顧客に最適なチャネルでリーチできる。</p>
 <ul>
 <li><strong>プッシュ通知</strong>: モバイルアプリケーションへの通知。</li>
 <li><strong>E メール</strong>: メールマーケティングキャンペーンやトランザクションメール。</li>
@@ -3768,34 +3768,34 @@ Pinpoint は、マーケティングキャンペーンの作成、セグメン�
 <li><strong>音声メッセージ</strong>: 音声通話によるメッセージ。</li>
 </ul>
 <h4 id="22">2.2 フルマネージドサービス<a class="headerlink" href="#22" title="Permanent link">¶</a></h4>
-<p>メッセージ送信インフラの管理、スケーリング、メンテナンスは AWS が自動で行うため、ユーザーはメッセージの作成と管理に集中できます。<br>
-サーバーレスで可用性の高い環境でメッセージ送信が可能です。</p>
+<p>メッセージ送信インフラの管理、スケーリング、メンテナンスは AWS が自動で行うため、ユーザーはメッセージの作成と管理に集中できる。<br>
+サーバーレスで可用性の高い環境でメッセージ送信が可能である。</p>
 <h4 id="23">2.3 ユーザーセグメンテーション<a class="headerlink" href="#23" title="Permanent link">¶</a></h4>
-<p>ユーザー属性、行動履歴、イベントなどのデータに基づいて、ユーザーをセグメント化できます。<br>
+<p>ユーザー属性、行動履歴、イベントなどのデータに基づいて、ユーザーをセグメント化できる。<br>
 これにより、ターゲットを絞ったメッセージングが可能になります。</p>
 <h4 id="24">2.4 パーソナライゼーション<a class="headerlink" href="#24" title="Permanent link">¶</a></h4>
-<p>ユーザーの属性や行動履歴に基づいて、メッセージをパーソナライズできます。<br>
-これにより、顧客エンゲージメントを高めることができます。</p>
+<p>ユーザーの属性や行動履歴に基づいて、メッセージをパーソナライズできる。<br>
+これにより、顧客エンゲージメントを高めることができる。</p>
 <h4 id="25">2.5 キャンペーン管理<a class="headerlink" href="#25" title="Permanent link">¶</a></h4>
-<p>Pinpoint は、キャンペーンを作成、管理、分析するための機能を提供します。<br>
-キャンペーンのスケジュール設定、A/B テスト、パフォーマンス分析などを実行できます。</p>
+<p>Pinpoint は、キャンペーンを作成、管理、分析するための機能を提供する。<br>
+キャンペーンのスケジュール設定、A/B テスト、パフォーマンス分析などを実行できる。</p>
 <h4 id="26">2.6 リアルタイム分析<a class="headerlink" href="#26" title="Permanent link">¶</a></h4>
-<p>メッセージの開封率、クリック率、コンバージョン率などのメトリクスをリアルタイムで分析できます。<br>
-これにより、キャンペーンの効果を迅速に評価し、改善に役立てることができます。</p>
+<p>メッセージの開封率、クリック率、コンバージョン率などのメトリクスをリアルタイムで分析できる。<br>
+これにより、キャンペーンの効果を迅速に評価し、改善に役立てることができる。</p>
 <h4 id="27_1">2.7 柔軟なデータインポート<a class="headerlink" href="#27_1" title="Permanent link">¶</a></h4>
-<p>ユーザーデータ、イベントデータ、セグメントデータなどを、CSV ファイル、Amazon S3、Amazon Redshift などのデータソースからインポートできます。<br>
-これにより、既存のデータ基盤を活用できます。</p>
+<p>ユーザーデータ、イベントデータ、セグメントデータなどを、CSV ファイル、Amazon S3、Amazon Redshift などのデータソースからインポートできる。<br>
+これにより、既存のデータ基盤を活用できる。</p>
 <h4 id="28">2.8 セキュリティとコンプライアンス<a class="headerlink" href="#28" title="Permanent link">¶</a></h4>
-<p>Pinpoint は、データの暗号化、アクセス制御、コンプライアンス認証に対応し、安全なメッセージ送信を保証します。<br>
-IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化をサポートしています。</p>
+<p>Pinpoint は、データの暗号化、アクセス制御、コンプライアンス認証に対応し、安全なメッセージ送信を保証する。<br>
+IAM によるアクセス制御、転送中のデータ暗号化、保存中のデータ暗号化をサポートしている。</p>
 <ul>
 <li><strong>IAM 連携</strong>: AWS IAM を使用してアクセス制御と権限管理。</li>
 <li><strong>データ暗号化</strong>: 転送中および保存中のデータを暗号化。</li>
 <li><strong>コンプライアンス認証</strong>: SOC, PCI DSS, HIPAA などに対応。</li>
 </ul>
 <h4 id="29">2.9 統合性<a class="headerlink" href="#29" title="Permanent link">¶</a></h4>
-<p>Pinpoint は、AWS の他のサービス（AWS Lambda, Amazon SNS, Amazon SQS など）と統合されており、様々なアプリケーションアーキテクチャに対応できます。<br>
-AWS Mobile Hub を利用して、モバイルアプリケーションと統合できます。</p>
+<p>Pinpoint は、AWS の他のサービス（AWS Lambda, Amazon SNS, Amazon SQS など）と統合されており、様々なアプリケーションアーキテクチャに対応できる。<br>
+AWS Mobile Hub を利用して、モバイルアプリケーションと統合できる。</p>
 <h3 id="3_1">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_1" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、Amazon Pinpoint コンソールまたは API を使用して、キャンペーンを作成。</li>
@@ -3803,7 +3803,7 @@ AWS Mobile Hub を利用して、モバイルアプリケーションと統合�
 <li>メッセージは、選択されたチャネル（プッシュ通知、E メール、SMS、音声メッセージ）を通じて送信。</li>
 <li>ユーザーからのインタラクションデータやイベントデータは、Pinpoint に記録。</li>
 <li>Pinpoint は、リアルタイムでキャンペーンのパフォーマンスを分析。</li>
-<li>Amazon Pinpoint は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、セキュリティを内包しています。 顧客エンゲージメントに必要なインフラ管理を簡素化し、ユーザーはメッセージの作成と分析に集中できます。</li>
+<li>Amazon Pinpoint は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、セキュリティを内包している。 顧客エンゲージメントに必要なインフラ管理を簡素化し、ユーザーはメッセージの作成と分析に集中できる。</li>
 </ol>
 <h3 id="4_1">4. セキュリティと認証・認可<a class="headerlink" href="#4_1" title="Permanent link">¶</a></h3>
 <p>セキュリティは Pinpoint の重要な要素です:</p>
@@ -3813,7 +3813,7 @@ AWS Mobile Hub を利用して、モバイルアプリケーションと統合�
 <li><strong>VPC サポート</strong>: Amazon VPC 内で Pinpoint を使用する場合、プライベート接続を確立。</li>
 <li><strong>監査ログ</strong>: AWS CloudTrail を利用して、API 呼び出しやリソース変更を記録。</li>
 </ul>
-<p>これにより、顧客データの安全性とコンプライアンスを確保できます。</p>
+<p>これにより、顧客データの安全性とコンプライアンスを確保できる。</p>
 <h3 id="5_1">5. 料金形態<a class="headerlink" href="#5_1" title="Permanent link">¶</a></h3>
 <p>Amazon Pinpoint の料金は主に以下に基づきます:</p>
 <ul>
@@ -3895,10 +3895,10 @@ AWS Mobile Hub を利用して、モバイルアプリケーションと統合�
 <hr>
 <h2 id="aws-amplify">AWS Amplify<a class="headerlink" href="#aws-amplify" title="Permanent link">¶</a></h2>
 <h3 id="1_2">1. サービス概要<a class="headerlink" href="#1_2" title="Permanent link">¶</a></h3>
-<p>AWS Amplify は、Web およびモバイルアプリケーションの開発を加速するための包括的なプラットフォームです。<br>
-フロントエンド開発者向けに、アプリケーションの構築、デプロイ、ホスティングを容易にするためのツールとサービスを提供します。<br>
-バックエンドの構築や管理、認証、API の作成、データストレージなど、アプリケーション開発に必要な機能を統合的に提供します。<br>
-これにより、開発者はインフラの管理に時間を費やすことなく、アプリケーションの機能開発に集中できます。</p>
+<p>AWS Amplify は、Web およびモバイルアプリケーションの開発を加速するための包括的なプラットフォームである。<br>
+フロントエンド開発者向けに、アプリケーションの構築、デプロイ、ホスティングを容易にするためのツールとサービスを提供する。<br>
+バックエンドの構築や管理、認証、API の作成、データストレージなど、アプリケーション開発に必要な機能を統合的に提供する。<br>
+これにより、開発者はインフラの管理に時間を費やすことなく、アプリケーションの機能開発に集中できる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>Web アプリケーション</li>
@@ -3907,35 +3907,35 @@ AWS Mobile Hub を利用して、モバイルアプリケーションと統合�
 <li>React, Angular, Vue.js などのフレームワークを使用したアプリケーション開発</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS Amplify は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS Amplify は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_2">2. 主な特徴と機能<a class="headerlink" href="#2_2" title="Permanent link">¶</a></h3>
 <h4 id="21-amplify-hosting">2.1 Amplify Hosting<a class="headerlink" href="#21-amplify-hosting" title="Permanent link">¶</a></h4>
-<p>Amplify Hosting は、静的 Web サイトやシングルページアプリケーション（SPA）を、高速でスケーラブルな環境にデプロイするためのサービスです。<br>
+<p>Amplify Hosting は、静的 Web サイトやシングルページアプリケーション（SPA）を、高速でスケーラブルな環境にデプロイするためのサービスである。<br>
 GitHub、Bitbucket、GitLab などの Git リポジトリと連携して、コードが変更されるたびに自動的にデプロイを行います。</p>
 <h4 id="22-amplify-libraries">2.2 Amplify Libraries<a class="headerlink" href="#22-amplify-libraries" title="Permanent link">¶</a></h4>
-<p>Amplify Libraries は、フロントエンド開発者向けに、AWS サービスとの統合を容易にするためのライブラリ群です。<br>
-JavaScript、iOS、Android、React Native など、様々なプラットフォームに対応しており、認証、API、データストレージ、プッシュ通知などの機能を簡単に利用できます。</p>
+<p>Amplify Libraries は、フロントエンド開発者向けに、AWS サービスとの統合を容易にするためのライブラリ群である。<br>
+JavaScript、iOS、Android、React Native など、様々なプラットフォームに対応しており、認証、API、データストレージ、プッシュ通知などの機能を簡単に利用できる。</p>
 <h4 id="23-amplify-cli">2.3 Amplify CLI<a class="headerlink" href="#23-amplify-cli" title="Permanent link">¶</a></h4>
-<p>Amplify CLI は、コマンドラインインターフェース（CLI）ツールであり、アプリケーションのバックエンド環境を構築・管理するためのものです。<br>
-API、認証、ストレージ、GraphQL API などのリソースを簡単に作成し、設定を管理できます。</p>
+<p>Amplify CLI は、コマンドラインインターフェース（CLI）ツールであり、アプリケーションのバックエンド環境を構築・管理するためのものである。<br>
+API、認証、ストレージ、GraphQL API などのリソースを簡単に作成し、設定を管理できる。</p>
 <h4 id="24-amplify-ui-components">2.4 Amplify UI Components<a class="headerlink" href="#24-amplify-ui-components" title="Permanent link">¶</a></h4>
-<p>Amplify UI Components は、すぐに利用できる UI コンポーネントを提供し、認証、データ表示、フォームなどの機能を簡単に実装できます。<br>
-これらのコンポーネントは、カスタマイズ可能で、様々な UI デザインに対応できます。</p>
+<p>Amplify UI Components は、すぐに利用できる UI コンポーネントを提供し、認証、データ表示、フォームなどの機能を簡単に実装できる。<br>
+これらのコンポーネントは、カスタマイズ可能で、様々な UI デザインに対応できる。</p>
 <h4 id="25-authentication">2.5 認証機能 (Authentication)<a class="headerlink" href="#25-authentication" title="Permanent link">¶</a></h4>
-<p>Amazon Cognito との統合により、ユーザー登録、ログイン、パスワードリセットなどの認証機能を簡単に実装できます。<br>
-ソーシャルログイン（Google、Facebook、Amazon など）にも対応しています。</p>
+<p>Amazon Cognito との統合により、ユーザー登録、ログイン、パスワードリセットなどの認証機能を簡単に実装できる。<br>
+ソーシャルログイン（Google、Facebook、Amazon など）にも対応している。</p>
 <h4 id="26-api_1">2.6 API の作成と管理<a class="headerlink" href="#26-api_1" title="Permanent link">¶</a></h4>
-<p>GraphQL API や REST API を簡単に作成し、管理できます。<br>
-AWS AppSync や Amazon API Gateway と統合されており、データソースとの接続も容易です。</p>
+<p>GraphQL API や REST API を簡単に作成し、管理できる。<br>
+AWS AppSync や Amazon API Gateway と統合されており、データソースとの接続も容易である。</p>
 <h4 id="27_2">2.7 データストレージ<a class="headerlink" href="#27_2" title="Permanent link">¶</a></h4>
-<p>Amazon S3 または AWS AppSync との統合により、データの保存と取得を簡単に行えます。<br>
-オフラインでのデータアクセスやデータ同期の機能もサポートしています。</p>
+<p>Amazon S3 または AWS AppSync との統合により、データの保存と取得を簡単に行える。<br>
+オフラインでのデータアクセスやデータ同期の機能もサポートしている。</p>
 <h4 id="28-cicd">2.8 CI/CD<a class="headerlink" href="#28-cicd" title="Permanent link">¶</a></h4>
-<p>Amplify Hosting と Git リポジトリを連携させることで、CI/CD（継続的インテグレーション/継続的デリバリー）パイプラインを簡単に構築できます。<br>
+<p>Amplify Hosting と Git リポジトリを連携させることで、CI/CD（継続的インテグレーション/継続的デリバリー）パイプラインを簡単に構築できる。<br>
 コードが変更されるたびに、自動的にビルド、テスト、デプロイが行われます。</p>
 <h4 id="29_1">2.9 統合性と拡張性<a class="headerlink" href="#29_1" title="Permanent link">¶</a></h4>
-<p>AWS Amplify は、AWS の他のサービス（Lambda、DynamoDB、S3 など）と密接に統合されており、アプリケーションのスケーラビリティを向上させることができます。<br>
-また、カスタムバックエンドロジックを実装するための拡張性も提供します。</p>
+<p>AWS Amplify は、AWS の他のサービス（Lambda、DynamoDB、S3 など）と密接に統合されており、アプリケーションのスケーラビリティを向上させることができる。<br>
+また、カスタムバックエンドロジックを実装するための拡張性も提供する。</p>
 <h3 id="3_2">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_2" title="Permanent link">¶</a></h3>
 <ol>
 <li>フロントエンド開発者は、Amplify Libraries を使用して AWS サービスにアクセスするアプリケーションを開発。</li>
@@ -3943,17 +3943,17 @@ AWS AppSync や Amazon API Gateway と統合されており、データソース
 <li>Amplify Hosting を使用して、アプリケーションをデプロイし、公開。</li>
 <li>ユーザーは、Amplify Hosting でホストされたアプリケーションにアクセス。</li>
 <li>アプリケーションは、Amplify Libraries を通じて AWS サービスと連携し、データを読み書き。</li>
-<li>AWS Amplify は、サーバーレスアーキテクチャをベースにしており、可用性とスケーラビリティが保証されています。 ユーザーは、インフラの管理を AWS に任せ、アプリケーション開発に集中できます。</li>
+<li>AWS Amplify は、サーバーレスアーキテクチャをベースにしており、可用性とスケーラビリティが保証されています。 ユーザーは、インフラの管理を AWS に任せ、アプリケーション開発に集中できる。</li>
 </ol>
 <h3 id="4_2">4. セキュリティと認証・認可<a class="headerlink" href="#4_2" title="Permanent link">¶</a></h3>
-<p>AWS Amplify は、アプリケーションのセキュリティを確保するために、以下の機能を提供します:</p>
+<p>AWS Amplify は、アプリケーションのセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>Amazon Cognito との統合</strong>: ユーザーの認証、認可を管理し、セキュアなアプリケーションを実現します。</li>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS リソースへのアクセスを制御します。</li>
-<li><strong>HTTPS 暗号化</strong>: アプリケーションへのアクセスを HTTPS で保護します。</li>
-<li><strong>API 認証</strong>: API へのアクセスを認証し、不正なアクセスを防止します。</li>
+<li><strong>Amazon Cognito との統合</strong>: ユーザーの認証、認可を管理し、セキュアなアプリケーションを実現する。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS リソースへのアクセスを制御する。</li>
+<li><strong>HTTPS 暗号化</strong>: アプリケーションへのアクセスを HTTPS で保護する。</li>
+<li><strong>API 認証</strong>: API へのアクセスを認証し、不正なアクセスを防止する。</li>
 </ul>
-<p>これらのセキュリティ対策により、アプリケーションとそのデータを安全に保護します。</p>
+<p>これらのセキュリティ対策により、アプリケーションとそのデータを安全に保護する。</p>
 <h3 id="5_2">5. 料金形態<a class="headerlink" href="#5_2" title="Permanent link">¶</a></h3>
 <p>AWS Amplify の料金は主に以下に基づきます:</p>
 <ul>
@@ -3962,7 +3962,7 @@ AWS AppSync や Amazon API Gateway と統合されており、データソース
 <li><strong>関連 AWS サービス</strong>: 認証（Cognito）、API（AppSync, API Gateway）、ストレージ（S3）など、関連する AWS サービスの利用料が発生。</li>
 </ul>
 <h3 id="6_2">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_2" title="Permanent link">¶</a></h3>
-<p>AWS Amplify は、様々なアプリケーション開発に利用できます。一般的なパターンは以下の通りです:</p>
+<p>AWS Amplify は、様々なアプリケーション開発に利用できる。一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>シングルページアプリケーション（SPA）</strong>: React、Angular、Vue.js などのフレームワークを使用した SPA を開発し、Amplify Hosting でデプロイ。</li>
 <li><strong>モバイルアプリケーション</strong>: React Native、iOS、Android アプリケーションを開発し、Amplify Libraries で AWS サービスと連携。</li>
@@ -4037,23 +4037,23 @@ AWS AppSync や Amazon API Gateway と統合されており、データソース
 <h4 id="810">8.10 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#810" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Amplify は何を容易にするサービスですか？</li>
-<li>A: Web およびモバイルアプリケーションの開発、デプロイ、ホスティングを容易にするサービスです。</li>
+<li>A: Web およびモバイルアプリケーションの開発、デプロイ、ホスティングを容易にするサービスである。</li>
 <li>Q: Amplify Hosting の主な機能は何ですか？</li>
-<li>A: 静的 Web サイトや SPA の高速デプロイ、Git 連携による CI/CD です。</li>
+<li>A: 静的 Web サイトや SPA の高速デプロイ、Git 連携による CI/CD である。</li>
 <li>Q: Amplify Libraries の役割は何ですか？</li>
-<li>A: フロントエンドから AWS サービスへのアクセスを容易にするライブラリ群です。</li>
-<li>Q: Amplify CLI は何に使用しますか？</li>
-<li>A: バックエンドリソースの構築・管理を自動化するために使用します。</li>
+<li>A: フロントエンドから AWS サービスへのアクセスを容易にするライブラリ群である。</li>
+<li>Q: Amplify CLI は何に使用するか？</li>
+<li>A: バックエンドリソースの構築・管理を自動化するために使用する。</li>
 <li>Q: Amplify の料金体系は？</li>
-<li>A: Amplify Hosting のビルド時間、ストレージ、データ転送量と、関連 AWS サービスの利用料に基づいて課金されます。</li>
+<li>A: Amplify Hosting のビルド時間、ストレージ、データ転送量と、関連 AWS サービスの利用料に基づいて課金される。</li>
 </ul>
 <hr>
 <h2 id="aws-appsync">AWS AppSync<a class="headerlink" href="#aws-appsync" title="Permanent link">¶</a></h2>
 <h3 id="1_3">1. サービス概要<a class="headerlink" href="#1_3" title="Permanent link">¶</a></h3>
-<p>AWS AppSync は、GraphQL API を簡単に構築できるフルマネージドサービスです。<br>
-リアルタイムデータの同期、オフラインアクセス、データソースとの統合などを容易にし、Web アプリケーションやモバイルアプリケーションの開発を加速します。<br>
-開発者は、複雑なバックエンドロジックを記述することなく、データへのアクセスや更新を GraphQL API を通じて効率的に行うことができます。<br>
-これにより、アプリケーション開発の迅速化、保守性の向上、ユーザーエクスペリエンスの向上に貢献します。</p>
+<p>AWS AppSync は、GraphQL API を簡単に構築できるフルマネージドサービスである。<br>
+リアルタイムデータの同期、オフラインアクセス、データソースとの統合などを容易にし、Web アプリケーションやモバイルアプリケーションの開発を加速する。<br>
+開発者は、複雑なバックエンドロジックを記述することなく、データへのアクセスや更新を GraphQL API を通じて効率的に行うことができる。<br>
+これにより、アプリケーション開発の迅速化、保守性の向上、ユーザーエクスペリエンスの向上に貢献する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>リアルタイムチャットアプリケーション</li>
@@ -4063,36 +4063,36 @@ AWS AppSync や Amazon API Gateway と統合されており、データソース
 <li>オフライン対応アプリケーション</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS AppSync は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS AppSync は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_3">2. 主な特徴と機能<a class="headerlink" href="#2_3" title="Permanent link">¶</a></h3>
 <h4 id="21-graphql-api">2.1 GraphQL API<a class="headerlink" href="#21-graphql-api" title="Permanent link">¶</a></h4>
-<p>AWS AppSync は、GraphQL API を構築するためのサービスです。<br>
-GraphQL は、クライアントが必要なデータのみを取得できるクエリ言語であり、REST API と比較して、効率的なデータ取得を実現できます。<br>
-また、GraphQL スキーマを定義することで、API の構造と型を明示的に定義できます。</p>
+<p>AWS AppSync は、GraphQL API を構築するためのサービスである。<br>
+GraphQL は、クライアントが必要なデータのみを取得できるクエリ言語であり、REST API と比較して、効率的なデータ取得を実現できる。<br>
+また、GraphQL スキーマを定義することで、API の構造と型を明示的に定義できる。</p>
 <h4 id="22_1">2.2 リアルタイムデータ同期<a class="headerlink" href="#22_1" title="Permanent link">¶</a></h4>
-<p>WebSocket プロトコルをサポートしており、サブスクリプションを使用してリアルタイムデータの変更をクライアントにプッシュ通知できます。<br>
-これにより、チャットアプリケーションやコラボレーションツールなどのリアルタイムアプリケーションを簡単に構築できます。</p>
+<p>WebSocket プロトコルをサポートしており、サブスクリプションを使用してリアルタイムデータの変更をクライアントにプッシュ通知できる。<br>
+これにより、チャットアプリケーションやコラボレーションツールなどのリアルタイムアプリケーションを簡単に構築できる。</p>
 <h4 id="23_1">2.3 オフラインデータアクセス<a class="headerlink" href="#23_1" title="Permanent link">¶</a></h4>
-<p>クライアント側でデータをキャッシュし、オフライン時にデータの閲覧や変更を可能にする機能を提供します。<br>
-オンラインになった際には、変更を自動的に同期します。<br>
-これにより、モバイルアプリケーションなど、ネットワーク環境が不安定な状況でも快適なユーザーエクスペリエンスを提供できます。</p>
+<p>クライアント側でデータをキャッシュし、オフライン時にデータの閲覧や変更を可能にする機能を提供する。<br>
+オンラインになった際には、変更を自動的に同期する。<br>
+これにより、モバイルアプリケーションなど、ネットワーク環境が不安定な状況でも快適なユーザーエクスペリエンスを提供できる。</p>
 <h4 id="24_1">2.4 データソースとの統合<a class="headerlink" href="#24_1" title="Permanent link">¶</a></h4>
-<p>AWS AppSync は、様々なデータソースと統合できます。<br>
-DynamoDB、RDS、Lambda、HTTP エンドポイントなどのデータソースから、GraphQL API を通じてデータにアクセスできます。<br>
-また、データソースへのアクセスは、GraphQL リゾルバーを定義することでカスタマイズできます。</p>
+<p>AWS AppSync は、様々なデータソースと統合できる。<br>
+DynamoDB、RDS、Lambda、HTTP エンドポイントなどのデータソースから、GraphQL API を通じてデータにアクセスできる。<br>
+また、データソースへのアクセスは、GraphQL リゾルバーを定義することでカスタマイズできる。</p>
 <h4 id="25_1">2.5 認証と認可<a class="headerlink" href="#25_1" title="Permanent link">¶</a></h4>
-<p>AWS AppSync は、Amazon Cognito、IAM、API キー、カスタム認証など、様々な認証・認可方法をサポートしています。<br>
-これにより、API へのアクセスを安全に制御し、データ漏洩や不正アクセスを防止できます。</p>
+<p>AWS AppSync は、Amazon Cognito、IAM、API キー、カスタム認証など、様々な認証・認可方法をサポートしている。<br>
+これにより、API へのアクセスを安全に制御し、データ漏洩や不正アクセスを防止できる。</p>
 <h4 id="26_1">2.6 スキーマ管理<a class="headerlink" href="#26_1" title="Permanent link">¶</a></h4>
-<p>GraphQL スキーマを定義し、バージョン管理できます。<br>
-スキーマは SDL（Schema Definition Language）で記述し、API の構造やデータ型を定義します。<br>
-スキーマの変更は、API をデプロイすることなく、すぐに適用できます。</p>
+<p>GraphQL スキーマを定義し、バージョン管理できる。<br>
+スキーマは SDL（Schema Definition Language）で記述し、API の構造やデータ型を定義する。<br>
+スキーマの変更は、API をデプロイすることなく、すぐに適用できる。</p>
 <h4 id="27-api">2.7 API モニタリング<a class="headerlink" href="#27-api" title="Permanent link">¶</a></h4>
-<p>CloudWatch と連携して、API のリクエスト数、エラー率、レイテンシーなどのメトリクスを監視できます。<br>
-ログを収集して、API のパフォーマンスや問題を分析できます。</p>
+<p>CloudWatch と連携して、API のリクエスト数、エラー率、レイテンシーなどのメトリクスを監視できる。<br>
+ログを収集して、API のパフォーマンスや問題を分析できる。</p>
 <h4 id="28_1">2.8 統合性と拡張性<a class="headerlink" href="#28_1" title="Permanent link">¶</a></h4>
-<p>AWS AppSync は、AWS の他のサービスと密接に統合されており、API の機能を拡張できます。<br>
-また、AWS Lambda と連携してカスタムロジックを実装することも可能です。</p>
+<p>AWS AppSync は、AWS の他のサービスと密接に統合されており、API の機能を拡張できる。<br>
+また、AWS Lambda と連携してカスタムロジックを実装することも可能である。</p>
 <h3 id="3_3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_3" title="Permanent link">¶</a></h3>
 <ol>
 <li>クライアントアプリケーションは、GraphQL クエリを AWS AppSync のエンドポイントに送信。</li>
@@ -4104,7 +4104,7 @@ DynamoDB、RDS、Lambda、HTTP エンドポイントなどのデータソース�
 <p>AWS AppSync は、フルマネージドサービスであり、サーバーレスアーキテクチャで構築されています。<br>
 可用性、スケーラビリティは AWS が管理し、ユーザーはインフラの管理を行う必要はありません。</p>
 <h3 id="4_3">4. セキュリティと認証・認可<a class="headerlink" href="#4_3" title="Permanent link">¶</a></h3>
-<p>AWS AppSync は、API のセキュリティを確保するために、以下の機能を提供します:</p>
+<p>AWS AppSync は、API のセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
 <li><strong>Amazon Cognito 連携</strong>: ユーザー認証、認可を管理し、セキュアなアクセスを実現。</li>
 <li><strong>IAM ロール</strong>: AWS リソースへのアクセスを IAM ロールで制御。</li>
@@ -4112,7 +4112,7 @@ DynamoDB、RDS、Lambda、HTTP エンドポイントなどのデータソース�
 <li><strong>カスタム認証</strong>: Lambda 関数を利用してカスタム認証ロジックを実装。</li>
 <li><strong>HTTPS 通信</strong>: API へのアクセスを HTTPS で保護。</li>
 </ul>
-<p>これらのセキュリティ対策により、API への不正アクセスを防止し、機密データを保護します。</p>
+<p>これらのセキュリティ対策により、API への不正アクセスを防止し、機密データを保護する。</p>
 <h3 id="5_3">5. 料金形態<a class="headerlink" href="#5_3" title="Permanent link">¶</a></h3>
 <p>AWS AppSync の料金は主に以下に基づきます:</p>
 <ul>
@@ -4122,7 +4122,7 @@ DynamoDB、RDS、Lambda、HTTP エンドポイントなどのデータソース�
 <li><strong>キャッシュ利用料</strong>: API レスポンスをキャッシュした場合、追加料金が発生。</li>
 </ul>
 <h3 id="6_3">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_3" title="Permanent link">¶</a></h3>
-<p>AWS AppSync は、様々なアプリケーション開発に利用できます。<br>
+<p>AWS AppSync は、様々なアプリケーション開発に利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>リアルタイムチャットアプリケーション</strong>: WebSocket を使ったリアルタイムデータ同期により、チャットアプリケーションを構築。</li>
@@ -4192,15 +4192,15 @@ DynamoDB、RDS、Lambda、HTTP エンドポイントなどのデータソース�
 <h4 id="89_2">8.9 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#89_2" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS AppSync は何を構築するサービスですか？</li>
-<li>A: GraphQL API を構築するサービスです。</li>
-<li>Q: AWS AppSync のリアルタイムデータ同期はどのように実現されますか？</li>
-<li>A: WebSocket プロトコルを使用して、サブスクリプションによるプッシュ通知で実現されます。</li>
-<li>Q: AWS AppSync のオフラインデータアクセスはどのように機能しますか？</li>
-<li>A: クライアント側でデータをキャッシュし、オフライン時にデータの閲覧、変更を可能にします。</li>
+<li>A: GraphQL API を構築するサービスである。</li>
+<li>Q: AWS AppSync のリアルタイムデータ同期はどのように実現されるか？</li>
+<li>A: WebSocket プロトコルを使用して、サブスクリプションによるプッシュ通知で実現される。</li>
+<li>Q: AWS AppSync のオフラインデータアクセスはどのように機能するか？</li>
+<li>A: クライアント側でデータをキャッシュし、オフライン時にデータの閲覧、変更を可能にする。</li>
 <li>Q: AWS AppSync の主なデータソースは何ですか？</li>
-<li>A: DynamoDB, RDS, Lambda, HTTP エンドポイントなどです。</li>
-<li>Q: AWS AppSync の料金はどのように計算されますか？</li>
-<li>A: GraphQL クエリ数、リアルタイムデータ更新、データ転送量、キャッシュ利用料などに基づいて計算されます。</li>
+<li>A: DynamoDB, RDS, Lambda, HTTP エンドポイントなどである。</li>
+<li>Q: AWS AppSync の料金はどのように計算されるか？</li>
+<li>A: GraphQL クエリ数、リアルタイムデータ更新、データ転送量、キャッシュ利用料などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="device-farm">Device Farm<a class="headerlink" href="#device-farm" title="Permanent link">¶</a></h2>
@@ -4241,7 +4241,7 @@ AWS Device Farm は、これらのユースケースに対応するための様�
 テストレポートは、チームメンバーと共有し、テスト結果を議論し、改善につなげることができる。</p>
 <h4 id="27_3">2.7 統合性と拡張性<a class="headerlink" href="#27_3" title="Permanent link">¶</a></h4>
 <p>AWS Device Farm は、AWS CodeBuild、AWS CodePipeline などの AWS の CI/CD サービスと統合できる。<br>
-また、Jenkins や TeamCity などの CI ツールとの連携も可能です。 カスタムスクリプトを実行して、テスト環境をカスタマイズすることもできる。</p>
+また、Jenkins や TeamCity などの CI ツールとの連携も可能である。 カスタムスクリプトを実行して、テスト環境をカスタマイズすることもできる。</p>
 <h3 id="3_4">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_4" title="Permanent link">¶</a></h3>
 <ol>
 <li>開発者は、テスト対象のアプリケーション（APK、IPA）または Web アプリケーションを AWS Device Farm にアップロード。</li>
@@ -4270,7 +4270,7 @@ AWS Device Farm は、これらのユースケースに対応するための様�
 <li><strong>プレミアムデバイス</strong>: 一部のプレミアムデバイスを使用する場合、追加料金が発生。</li>
 </ul>
 <h3 id="6_4">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_4" title="Permanent link">¶</a></h3>
-<p>AWS Device Farm は、様々なアプリケーションのテストに利用できます。一般的なパターンは以下の通り:</p>
+<p>AWS Device Farm は、様々なアプリケーションのテストに利用できる。一般的なパターンは以下の通り:</p>
 <ul>
 <li><strong>モバイルアプリケーションテスト</strong>: iOS および Android アプリケーションの互換性テスト、機能テスト、パフォーマンステストを実行。</li>
 <li><strong>Web アプリケーションテスト</strong>: ブラウザ互換性テストを実施し、様々なブラウザと OS の組み合わせで動作確認。</li>
@@ -4337,15 +4337,15 @@ AWS Device Farm は、これらのユースケースに対応するための様�
 <h4 id="89_3">8.9 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#89_3" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Device Farm は何に使用するサービスですか？</li>
-<li>A: モバイルアプリケーションや Web アプリケーションを、多様な実機デバイスでテストできるクラウドベースのサービスです。</li>
+<li>A: モバイルアプリケーションや Web アプリケーションを、多様な実機デバイスでテストできるクラウドベースのサービスである。</li>
 <li>Q: AWS Device Farm で自動テストに使用できるフレームワークは何ですか？</li>
-<li>A: Appium、JUnit、XCTest、Espresso などです。</li>
-<li>Q: AWS Device Farm で手動テストを行う場合、どのようにデバイスにアクセスしますか？</li>
-<li>A: リモートで実機デバイスにアクセスし、手動でアプリケーションを操作します。</li>
-<li>Q: AWS Device Farm で Web アプリケーションをテストする場合、どのようなツールを使用しますか？</li>
-<li>A: Selenium などのツールを使用します。</li>
-<li>Q: AWS Device Farm の料金はどのように計算されますか？</li>
-<li>A: デバイス時間、並列実行、リモートアクセス、プレミアムデバイスなどに基づいて計算されます。</li>
+<li>A: Appium、JUnit、XCTest、Espresso などである。</li>
+<li>Q: AWS Device Farm で手動テストを行う場合、どのようにデバイスにアクセスするか？</li>
+<li>A: リモートで実機デバイスにアクセスし、手動でアプリケーションを操作する。</li>
+<li>Q: AWS Device Farm で Web アプリケーションをテストする場合、どのようなツールを使用するか？</li>
+<li>A: Selenium などのツールを使用する。</li>
+<li>Q: AWS Device Farm の料金はどのように計算されるか？</li>
+<li>A: デバイス時間、並列実行、リモートアクセス、プレミアムデバイスなどに基づいて計算される。</li>
 </ul>
 
 
@@ -4367,7 +4367,7 @@ AWS Device Farm は、これらのユースケースに対応するための様�
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月5日 21:01:55 UTC">2026年1月5日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月6日 11:29:16 UTC">2026年1月6日</span>
   </span>
 
     
