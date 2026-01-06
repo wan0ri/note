@@ -7326,9 +7326,9 @@
 
 <h2 id="aws-iam-identity-center-aws-single-sign-on">AWS IAM Identity Center (旧 AWS Single Sign-On)<a class="headerlink" href="#aws-iam-identity-center-aws-single-sign-on" title="Permanent link">¶</a></h2>
 <h3 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
-<p>AWS IAM Identity Center (旧 AWS Single Sign-On) は、AWS 環境全体へのアクセスを単一の場所で一元的に管理するためのサービスです。<br>
-組織内のユーザーやグループに対し、複数の AWS アカウントやアプリケーションへのシングルサインオン（SSO）を提供します。<br>
-これにより、ユーザーは AWS リソースへのアクセスを効率的に管理でき、セキュリティを向上させることができます。</p>
+<p>AWS IAM Identity Center (旧 AWS Single Sign-On) は、AWS 環境全体へのアクセスを単一の場所で一元的に管理するためのサービスである。<br>
+組織内のユーザーやグループに対し、複数の AWS アカウントやアプリケーションへのシングルサインオン（SSO）を提供する。<br>
+これにより、ユーザーは AWS リソースへのアクセスを効率的に管理でき、セキュリティを向上させることができる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>複数の AWS アカウントの統合管理</li>
@@ -7339,56 +7339,56 @@
 <p>などが挙げられます。</p>
 <h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
 <h4 id="21-sso">2.1 シングルサインオン (SSO)<a class="headerlink" href="#21-sso" title="Permanent link">¶</a></h4>
-<p>IAM Identity Center は、ユーザーが一度認証を受けると、複数の AWS アカウントやアプリケーションに再度認証することなくアクセスできるシングルサインオン機能を提供します。<br>
-これにより、ユーザーの利便性を向上させ、パスワード管理の手間を軽減できます。</p>
+<p>IAM Identity Center は、ユーザーが一度認証を受けると、複数の AWS アカウントやアプリケーションに再度認証することなくアクセスできるシングルサインオン機能を提供する。<br>
+これにより、ユーザーの利便性を向上させ、パスワード管理の手間を軽減できる。</p>
 <h4 id="22">2.2 組織との統合<a class="headerlink" href="#22" title="Permanent link">¶</a></h4>
-<p>AWS Organizations と連携し、組織内のすべての AWS アカウントに対して、IAM Identity Center で一元的にアクセスを制御できます。<br>
-これにより、アカウントが増えても管理が複雑になることを防ぎます。</p>
+<p>AWS Organizations と連携し、組織内のすべての AWS アカウントに対して、IAM Identity Center で一元的にアクセスを制御できる。<br>
+これにより、アカウントが増えても管理が複雑になることを防ぐ。</p>
 <h4 id="23-id-idp">2.3 ID プロバイダー (IdP) との連携<a class="headerlink" href="#23-id-idp" title="Permanent link">¶</a></h4>
-<p>Microsoft Active Directory、Okta、Azure AD などの外部 ID プロバイダーと連携して、既存のユーザーアカウントをそのまま使用できます。<br>
-これにより、既存の ID 管理システムとの統合が容易になり、ユーザー管理の手間を削減できます。</p>
+<p>Microsoft Active Directory、Okta、Azure AD などの外部 ID プロバイダーと連携して、既存のユーザーアカウントをそのまま使用できる。<br>
+これにより、既存の ID 管理システムとの統合が容易になり、ユーザー管理の手間を削減できる。</p>
 <ul>
 <li><strong>SAML 2.0</strong>: 主要な IdP と連携するための標準プロトコル</li>
 <li><strong>SCIM</strong>: ユーザープロビジョニングを自動化するための標準プロトコル</li>
 </ul>
 <h4 id="24">2.4 アクセス制御と権限管理<a class="headerlink" href="#24" title="Permanent link">¶</a></h4>
-<p>IAM Identity Center では、ユーザーやグループに対して、AWS アカウントやアプリケーションへのアクセス許可を付与できます。<br>
-AWS マネージドポリシーやカスタムポリシーを使用し、きめ細かいアクセス制御を実現できます。</p>
+<p>IAM Identity Center では、ユーザーやグループに対して、AWS アカウントやアプリケーションへのアクセス許可を付与できる。<br>
+AWS マネージドポリシーやカスタムポリシーを使用し、きめ細かいアクセス制御を実現できる。</p>
 <ul>
 <li><strong>Permission Sets</strong>: AWS アカウントへのアクセス権限を定義</li>
 <li><strong>AWS Managed Policies</strong>: AWS が提供する定義済みの権限ポリシー</li>
 </ul>
 <h4 id="25-mfa">2.5 多要素認証 (MFA)<a class="headerlink" href="#25-mfa" title="Permanent link">¶</a></h4>
-<p>セキュリティを強化するために、多要素認証（MFA）を適用できます。<br>
-これにより、パスワード漏洩のリスクを低減し、不正アクセスを防ぐことができます。</p>
+<p>セキュリティを強化するために、多要素認証（MFA）を適用できる。<br>
+これにより、パスワード漏洩のリスクを低減し、不正アクセスを防ぐことができる。</p>
 <ul>
 <li><strong>MFA オプション</strong>: 仮想 MFA デバイス、物理 MFA デバイス、SMS 認証</li>
 </ul>
 <h4 id="26">2.6 セルフサービスポータル<a class="headerlink" href="#26" title="Permanent link">¶</a></h4>
-<p>IAM Identity Center には、ユーザーが自分自身でアクセス可能な AWS アカウントやアプリケーションを確認できるセルフサービスポータルがあります。</p>
+<p>IAM Identity Center には、ユーザーが自分自身でアクセス可能な AWS アカウントやアプリケーションを確認できるセルフサービスポータルがある。</p>
 <h3 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
 <ol>
-<li>ユーザーは IAM Identity Center にログインします（直接または IdP 経由）。</li>
-<li>IAM Identity Center は、ユーザーの認証情報を検証します。</li>
-<li>認証に成功すると、ユーザーは割り当てられた AWS アカウントやアプリケーションへのアクセス許可を取得します。</li>
-<li>ユーザーは、シングルサインオンで AWS リソースにアクセスできます。</li>
-<li>IAM Identity Center は、AWS Organizations と密接に連携し、組織全体のアクセス制御を一元的に管理します。</li>
+<li>ユーザーは IAM Identity Center にログインする（直接または IdP 経由）。</li>
+<li>IAM Identity Center は、ユーザーの認証情報を検証する。</li>
+<li>認証に成功すると、ユーザーは割り当てられた AWS アカウントやアプリケーションへのアクセス許可を取得する。</li>
+<li>ユーザーは、シングルサインオンで AWS リソースにアクセスできる。</li>
+<li>IAM Identity Center は、AWS Organizations と密接に連携し、組織全体のアクセス制御を一元的に管理する。</li>
 </ol>
 <h3 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
 <p>セキュリティは IAM Identity Center の中核コンポーネントです:</p>
 <ul>
-<li><strong>認証と認可</strong>: IAM Identity Center は、ID プロバイダーを通じてユーザーを認証し、適切な権限を付与します。</li>
-<li>多要素認証（MFA）**: MFA を適用することで、セキュリティを強化します。</li>
-<li>暗号化通信**: ユーザー認証、アクセス許可のリクエスト、すべての通信は暗号化されます。</li>
-<li>監査ログ**: ユーザーアクティビティのログを記録し、セキュリティ監査を可能にします。</li>
+<li><strong>認証と認可</strong>: IAM Identity Center は、ID プロバイダーを通じてユーザーを認証し、適切な権限を付与する。</li>
+<li>多要素認証（MFA）**: MFA を適用することで、セキュリティを強化する。</li>
+<li>暗号化通信**: ユーザー認証、アクセス許可のリクエスト、すべての通信は暗号化される。</li>
+<li>監査ログ**: ユーザーアクティビティのログを記録し、セキュリティ監査を可能にする。</li>
 </ul>
-<p>これらのセキュリティ機能により、AWS 環境への安全なアクセスを実現します。</p>
+<p>これらのセキュリティ機能により、AWS 環境への安全なアクセスを実現する。</p>
 <h3 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h3>
 <p>AWS IAM Identity Center 自体には追加料金はかかりません。<br>
 このサービスは、AWS アカウントの利用料金に含まれています。</p>
 <ul>
-<li><strong>無料</strong>: IAM Identity Center サービス自体は無料で使用できます。</li>
-<li><strong>関連サービスの料金</strong>: AWS リソースへのアクセス時に、関連サービスの利用料金が発生する場合があります（例: EC2、S3 など）。</li>
+<li><strong>無料</strong>: IAM Identity Center サービス自体は無料で使用できる。</li>
+<li><strong>関連サービスの料金</strong>: AWS リソースへのアクセス時に、関連サービスの利用料金が発生する場合がある（例: EC2、S3 など）。</li>
 </ul>
 <h3 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h3>
 <p>一般的なパターンは以下の通りです:</p>
@@ -7462,9 +7462,9 @@ AWS マネージドポリシーやカスタムポリシーを使用し、きめ�
 <hr>
 <h2 id="amazon-cognito">Amazon Cognito<a class="headerlink" href="#amazon-cognito" title="Permanent link">¶</a></h2>
 <h3 id="1_1">1. サービス概要<a class="headerlink" href="#1_1" title="Permanent link">¶</a></h3>
-<p>Amazon Cognito は、Web アプリケーションやモバイルアプリケーションに、ユーザー認証、認可、およびユーザー管理機能を簡単に追加できるサービスです。<br>
-ユーザーは、独自のユーザープールを管理したり、Facebook、Google、Amazon などのソーシャル ID プロバイダーを通じてユーザーを認証できます。<br>
-Cognito は、認証プロセスの複雑さを軽減し、アプリケーションのセキュリティを向上させるための包括的なソリューションを提供します。</p>
+<p>Amazon Cognito は、Web アプリケーションやモバイルアプリケーションに、ユーザー認証、認可、およびユーザー管理機能を簡単に追加できるサービスである。<br>
+ユーザーは、独自のユーザープールを管理したり、Facebook、Google、Amazon などのソーシャル ID プロバイダーを通じてユーザーを認証できる。<br>
+Cognito は、認証プロセスの複雑さを軽減し、アプリケーションのセキュリティを向上させるための包括的なソリューションを提供する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>Web アプリケーションの認証・認可</li>
@@ -7474,29 +7474,29 @@ Cognito は、認証プロセスの複雑さを軽減し、アプリケーショ
 <li>ユーザーデータ管理</li>
 </ul>
 <p>などが挙げられます。<br>
-Amazon Cognito は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+Amazon Cognito は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_1">2. 主な特徴と機能<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h3>
 <h4 id="21">2.1 ユーザープール<a class="headerlink" href="#21" title="Permanent link">¶</a></h4>
-<p>ユーザープールは、アプリケーションのユーザーディレクトリとして機能します。<br>
-ユーザーは、ユーザープールに登録し、認証情報を管理できます。</p>
+<p>ユーザープールは、アプリケーションのユーザーディレクトリとして機能する。<br>
+ユーザーは、ユーザープールに登録し、認証情報を管理できる。</p>
 <h4 id="22-id">2.2 ID プール<a class="headerlink" href="#22-id" title="Permanent link">¶</a></h4>
-<p>ID プールは、アプリケーションのユーザーに、AWS リソースへのアクセス権限を付与するための機能を提供します。<br>
-ユーザーは、ID プールを通じて、一時的な AWS 認証情報を取得できます。</p>
+<p>ID プールは、アプリケーションのユーザーに、AWS リソースへのアクセス権限を付与するための機能を提供する。<br>
+ユーザーは、ID プールを通じて、一時的な AWS 認証情報を取得できる。</p>
 <h4 id="23">2.3 ソーシャルログイン<a class="headerlink" href="#23" title="Permanent link">¶</a></h4>
-<p>Facebook, Google, Amazon, Apple などのソーシャル ID プロバイダーを利用して、ユーザーを認証できます。<br>
-これにより、ユーザーは既存のアカウントでアプリケーションに簡単にログインできます。</p>
+<p>Facebook, Google, Amazon, Apple などのソーシャル ID プロバイダーを利用して、ユーザーを認証できる。<br>
+これにより、ユーザーは既存のアカウントでアプリケーションに簡単にログインできる。</p>
 <h4 id="24-mfa">2.4 多要素認証 (MFA)<a class="headerlink" href="#24-mfa" title="Permanent link">¶</a></h4>
-<p>SMS、TOTP などの多要素認証（MFA）をサポートし、セキュリティを強化できます。<br>
-これにより、ユーザーアカウントへの不正アクセスを防止できます。</p>
+<p>SMS、TOTP などの多要素認証（MFA）をサポートし、セキュリティを強化できる。<br>
+これにより、ユーザーアカウントへの不正アクセスを防止できる。</p>
 <h4 id="25-ui">2.5 カスタマイズ可能な UI<a class="headerlink" href="#25-ui" title="Permanent link">¶</a></h4>
-<p>サインアップ、ログイン、パスワードリセットなどのユーザーインターフェースをカスタマイズできます。<br>
-これにより、アプリケーションのデザインに合わせた認証画面を作成できます。</p>
+<p>サインアップ、ログイン、パスワードリセットなどのユーザーインターフェースをカスタマイズできる。<br>
+これにより、アプリケーションのデザインに合わせた認証画面を作成できる。</p>
 <h4 id="26_1">2.6 ユーザーデータ管理<a class="headerlink" href="#26_1" title="Permanent link">¶</a></h4>
-<p>ユーザー属性、グループ、ロールなどのユーザーデータを管理できます。<br>
-API を通じて、ユーザーデータを取得したり、更新したりできます。</p>
+<p>ユーザー属性、グループ、ロールなどのユーザーデータを管理できる。<br>
+API を通じて、ユーザーデータを取得したり、更新したりできる。</p>
 <h4 id="27">2.7 統合性と拡張性<a class="headerlink" href="#27" title="Permanent link">¶</a></h4>
 <p>Amazon Cognito は、API Gateway, Lambda, S3, DynamoDB などの AWS の他のサービスと密接に統合されています。<br>
-また、OAuth 2.0 や SAML 2.0 などの業界標準プロトコルをサポートしており、他のシステムとの連携も容易です。</p>
+また、OAuth 2.0 や SAML 2.0 などの業界標準プロトコルをサポートしており、他のシステムとの連携も容易である。</p>
 <h3 id="3_1">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_1" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、アプリケーションから Cognito にサインアップまたはログインリクエストを送信。</li>
@@ -7505,18 +7505,18 @@ API を通じて、ユーザーデータを取得したり、更新したりで�
 <li>必要に応じて、ID プールを利用して、AWS 認証情報を取得。</li>
 <li>Cognito は、ユーザーデータを管理し、認証ステータスを維持。</li>
 </ol>
-<p>Amazon Cognito は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供します。<br>
+<p>Amazon Cognito は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
 認証やユーザー管理は AWS が行うため、ユーザーはインフラの管理を意識する必要はありません。</p>
 <h3 id="4_1">4. セキュリティと認証・認可<a class="headerlink" href="#4_1" title="Permanent link">¶</a></h3>
-<p>Amazon Cognito は、アプリケーションのセキュリティを確保するために、以下の機能を提供します:</p>
+<p>Amazon Cognito は、アプリケーションのセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
 <li><strong>ユーザー認証</strong>: パスワード、多要素認証 (MFA)、ソーシャルログインなど、様々な認証方式をサポート。</li>
 <li><strong>ID トークンとアクセストークン</strong>: JWT (JSON Web Token) を使用し、セキュアなトークンベース認証。</li>
 <li><strong>AWS リソースへのアクセス制御</strong>: ID プールを使用して、一時的な AWS 認証情報を付与し、リソースへのアクセスを制御。</li>
-<li><strong>データ保護</strong>: ユーザーデータは転送中および保存時に暗号化されます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、Cognito へのアクセス権限を詳細に制御できます。</li>
+<li><strong>データ保護</strong>: ユーザーデータは転送中および保存時に暗号化される。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、Cognito へのアクセス権限を詳細に制御できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、アプリケーションへの不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、アプリケーションへの不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_1">5. 料金形態<a class="headerlink" href="#5_1" title="Permanent link">¶</a></h3>
 <p>Amazon Cognito の料金は主に以下に基づきます:</p>
 <ul>
@@ -7526,7 +7526,7 @@ API を通じて、ユーザーデータを取得したり、更新したりで�
 <li><strong>多要素認証 (MFA)</strong>: MFA を利用した場合の SMS 送信などに応じて課金。</li>
 </ul>
 <h3 id="6_1">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_1" title="Permanent link">¶</a></h3>
-<p>Amazon Cognito は、様々なアプリケーションの認証と認可に利用できます。<br>
+<p>Amazon Cognito は、様々なアプリケーションの認証と認可に利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>Web アプリケーションの認証・認可</strong>: Web アプリケーションのユーザー認証、認可を Cognito で処理し、API Gateway と連携して API へのアクセスを制御。</li>
@@ -7583,22 +7583,22 @@ API を通じて、ユーザーデータを取得したり、更新したりで�
 <h4 id="87_1">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon Cognito は何を提供するサービスですか？</li>
-<li>A: Web アプリケーションやモバイルアプリケーションに、ユーザー認証、認可、およびユーザー管理機能を追加できるサービスです。</li>
-<li>Q: Amazon Cognito のユーザープールは何を管理しますか？</li>
-<li>A: アプリケーションのユーザーディレクトリとして機能し、ユーザーの認証情報を管理します。</li>
-<li>Q: Amazon Cognito の ID プールは何に使用しますか？</li>
-<li>A: アプリケーションのユーザーに AWS リソースへのアクセス権限を付与するために使用します。</li>
-<li>Q: Amazon Cognito でソーシャルログインを利用するには、どのような設定が必要ですか？</li>
-<li>A: Facebook, Google, Amazon, Apple などのソーシャル ID プロバイダーを設定する必要があります。</li>
-<li>Q: Amazon Cognito の料金はどのように計算されますか？</li>
-<li>A: ユーザープールに登録された月間のアクティブユーザー数、認証の回数、ID プールの利用、MFA などに基づいて計算されます。</li>
+<li>A: Web アプリケーションやモバイルアプリケーションに、ユーザー認証、認可、およびユーザー管理機能を追加できるサービスである。</li>
+<li>Q: Amazon Cognito のユーザープールは何を管理するか？</li>
+<li>A: アプリケーションのユーザーディレクトリとして機能し、ユーザーの認証情報を管理する。</li>
+<li>Q: Amazon Cognito の ID プールは何に使用するか？</li>
+<li>A: アプリケーションのユーザーに AWS リソースへのアクセス権限を付与するために使用する。</li>
+<li>Q: Amazon Cognito でソーシャルログインを利用するには、どのような設定が必要であるか？</li>
+<li>A: Facebook, Google, Amazon, Apple などのソーシャル ID プロバイダーを設定する必要がある。</li>
+<li>Q: Amazon Cognito の料金はどのように計算されるか？</li>
+<li>A: ユーザープールに登録された月間のアクティブユーザー数、認証の回数、ID プールの利用、MFA などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="amazon-detective">Amazon Detective<a class="headerlink" href="#amazon-detective" title="Permanent link">¶</a></h2>
 <h3 id="1_2">1. サービス概要<a class="headerlink" href="#1_2" title="Permanent link">¶</a></h3>
-<p>Amazon Detective は、AWS 環境におけるセキュリティ調査を効率化するためのサービスです。<br>
-ユーザーは、AWS リソースのログデータやアクティビティデータを自動的に収集、分析し、潜在的なセキュリティ問題を検出、調査、解決できます。<br>
-Detective は、セキュリティインシデントの根本原因を特定し、脅威を迅速に特定、調査するための視覚的な分析ツールを提供します。</p>
+<p>Amazon Detective は、AWS 環境におけるセキュリティ調査を効率化するためのサービスである。<br>
+ユーザーは、AWS リソースのログデータやアクティビティデータを自動的に収集、分析し、潜在的なセキュリティ問題を検出、調査、解決できる。<br>
+Detective は、セキュリティインシデントの根本原因を特定し、脅威を迅速に特定、調査するための視覚的な分析ツールを提供する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>セキュリティインシデントの調査</li>
@@ -7608,29 +7608,29 @@ Detective は、セキュリティインシデントの根本原因を特定し�
 <li>コンプライアンス遵守</li>
 </ul>
 <p>などが挙げられます。<br>
-Amazon Detective は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+Amazon Detective は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_2">2. 主な特徴と機能<a class="headerlink" href="#2_2" title="Permanent link">¶</a></h3>
 <h4 id="21_1">2.1 セキュリティデータの自動収集<a class="headerlink" href="#21_1" title="Permanent link">¶</a></h4>
-<p>Detective は、AWS CloudTrail、VPC Flow Logs、GuardDuty などの AWS セキュリティサービスから、ログデータやアクティビティデータを自動的に収集します。<br>
+<p>Detective は、AWS CloudTrail、VPC Flow Logs、GuardDuty などの AWS セキュリティサービスから、ログデータやアクティビティデータを自動的に収集する。<br>
 これにより、ユーザーは手動でログを収集、管理する必要がなくなります。</p>
 <h4 id="22_1">2.2 グラフデータベース<a class="headerlink" href="#22_1" title="Permanent link">¶</a></h4>
-<p>収集されたデータは、グラフデータベースに格納されます。<br>
+<p>収集されたデータは、グラフデータベースに格納される。<br>
 グラフデータベースは、エンティティ（ユーザー、IP アドレス、リソースなど）間の関係性を分析するのに適しており、セキュリティインシデントの根本原因を特定するのに役立ちます。</p>
 <h4 id="23_1">2.3 視覚的な分析ツール<a class="headerlink" href="#23_1" title="Permanent link">¶</a></h4>
-<p>Detective は、視覚的な分析ツールを提供します。<br>
-ユーザーは、グラフやタイムラインを使用して、セキュリティデータをインタラクティブに調査し、異常なアクティビティを検出できます。</p>
+<p>Detective は、視覚的な分析ツールを提供する。<br>
+ユーザーは、グラフやタイムラインを使用して、セキュリティデータをインタラクティブに調査し、異常なアクティビティを検出できる。</p>
 <h4 id="24_1">2.4 行動分析<a class="headerlink" href="#24_1" title="Permanent link">¶</a></h4>
-<p>機械学習を利用して、ユーザーやリソースの行動パターンを分析し、異常なアクティビティを検出します。<br>
-これにより、潜在的な脅威を早期に特定できます。</p>
+<p>機械学習を利用して、ユーザーやリソースの行動パターンを分析し、異常なアクティビティを検出する。<br>
+これにより、潜在的な脅威を早期に特定できる。</p>
 <h4 id="25">2.5 脅威のハンティング<a class="headerlink" href="#25" title="Permanent link">¶</a></h4>
-<p>Detective は、セキュリティアナリストが能動的に脅威を探索するための機能を提供します。<br>
-ユーザーは、特定のエンティティやアクティビティに関するクエリを実行し、潜在的な脅威を検出できます。</p>
+<p>Detective は、セキュリティアナリストが能動的に脅威を探索するための機能を提供する。<br>
+ユーザーは、特定のエンティティやアクティビティに関するクエリを実行し、潜在的な脅威を検出できる。</p>
 <h4 id="26-aws">2.6 他の AWS サービスとの統合<a class="headerlink" href="#26-aws" title="Permanent link">¶</a></h4>
-<p>Detective は、AWS Security Hub, Amazon GuardDuty, Amazon CloudWatch Logs などの他の AWS セキュリティサービスと統合できます。<br>
-これにより、AWS 環境全体のセキュリティ状況を把握し、連携して対応できます。</p>
+<p>Detective は、AWS Security Hub, Amazon GuardDuty, Amazon CloudWatch Logs などの他の AWS セキュリティサービスと統合できる。<br>
+これにより、AWS 環境全体のセキュリティ状況を把握し、連携して対応できる。</p>
 <h4 id="27_1">2.7 統合性と拡張性<a class="headerlink" href="#27_1" title="Permanent link">¶</a></h4>
-<p>AWS Detective は、AWS Organizations と統合し、組織全体のアカウントのセキュリティデータを分析できます。<br>
-また、API を利用して、データの取得や分析を自動化することもできます。</p>
+<p>AWS Detective は、AWS Organizations と統合し、組織全体のアカウントのセキュリティデータを分析できる。<br>
+また、API を利用して、データの取得や分析を自動化することもできる。</p>
 <h3 id="3_2">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_2" title="Permanent link">¶</a></h3>
 <ol>
 <li>Detective は、AWS CloudTrail、VPC Flow Logs、GuardDuty などの AWS サービスからログデータを収集。</li>
@@ -7639,18 +7639,18 @@ Amazon Detective は、これらのユースケースに対応するための様
 <li>機械学習を利用して、異常なアクティビティを検出。</li>
 <li>ユーザーは、検出された脅威を調査し、対策を講じる。</li>
 </ol>
-<p>Amazon Detective は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供します。<br>
+<p>Amazon Detective は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
 セキュリティデータの収集や分析は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
 <h3 id="4_2">4. セキュリティと認証・認可<a class="headerlink" href="#4_2" title="Permanent link">¶</a></h3>
-<p>Amazon Detective は、セキュリティデータのセキュリティを確保するために、以下の機能を提供します:</p>
+<p>Amazon Detective は、セキュリティデータのセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Detective へのアクセスを制御します。</li>
-<li><strong>データ暗号化</strong>: セキュリティデータは転送中および保存時に暗号化されます。</li>
-<li><strong>VPC エンドポイント</strong>: VPC 内から Detective にアクセスする際に、インターネットを経由せずにアクセスできます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Detective の操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、Detective の利用状況を監査できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Detective へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: セキュリティデータは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から Detective にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Detective の操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、Detective の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、セキュリティデータへの不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、セキュリティデータへの不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_2">5. 料金形態<a class="headerlink" href="#5_2" title="Permanent link">¶</a></h3>
 <p>Amazon Detective の料金は主に以下に基づきます:</p>
 <ul>
@@ -7658,7 +7658,7 @@ Amazon Detective は、これらのユースケースに対応するための様
 <li><strong>データ保存</strong>: 収集されたデータを保存するストレージ容量に応じて課金。</li>
 </ul>
 <h3 id="6_2">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_2" title="Permanent link">¶</a></h3>
-<p>Amazon Detective は、様々なセキュリティ調査に利用できます。<br>
+<p>Amazon Detective は、様々なセキュリティ調査に利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>セキュリティインシデントの調査</strong>: セキュリティインシデントが発生した場合に、Detective を利用して根本原因を特定。</li>
@@ -7715,21 +7715,21 @@ Amazon Detective は、これらのユースケースに対応するための様
 <h4 id="87_2">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_2" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon Detective は何を提供するサービスですか？</li>
-<li>A: AWS 環境におけるセキュリティ調査を効率化するためのサービスです。</li>
-<li>Q: Amazon Detective は、どのようなデータを自動的に収集しますか？</li>
-<li>A: AWS CloudTrail、VPC Flow Logs、GuardDuty などの AWS セキュリティサービスからログデータやアクティビティデータを収集します。</li>
-<li>Q: Amazon Detective は、収集したデータをどのように分析しますか？</li>
-<li>A: グラフデータベースにデータを格納し、視覚的な分析ツールや機械学習を利用して分析します。</li>
-<li>Q: Amazon Detective の料金はどのように計算されますか？</li>
-<li>A: 分析対象となるイベントの量、収集されたデータを保存するストレージ容量に基づいて計算されます。</li>
+<li>A: AWS 環境におけるセキュリティ調査を効率化するためのサービスである。</li>
+<li>Q: Amazon Detective は、どのようなデータを自動的に収集するか？</li>
+<li>A: AWS CloudTrail、VPC Flow Logs、GuardDuty などの AWS セキュリティサービスからログデータやアクティビティデータを収集する。</li>
+<li>Q: Amazon Detective は、収集したデータをどのように分析するか？</li>
+<li>A: グラフデータベースにデータを格納し、視覚的な分析ツールや機械学習を利用して分析する。</li>
+<li>Q: Amazon Detective の料金はどのように計算されるか？</li>
+<li>A: 分析対象となるイベントの量、収集されたデータを保存するストレージ容量に基づいて計算される。</li>
 <li>Q: Amazon Detective は、どのようなセキュリティ上の脅威を検出し、調査するのに役立ちますか？</li>
 <li>A: セキュリティインシデント、異常なアクティビティ、アカウント乗っ取りなどを検出し、調査するのに役立ちます。</li>
 </ul>
 <hr>
 <h2 id="amazon-guardduty">Amazon GuardDuty<a class="headerlink" href="#amazon-guardduty" title="Permanent link">¶</a></h2>
 <h3 id="1_3">1. サービス概要<a class="headerlink" href="#1_3" title="Permanent link">¶</a></h3>
-<p>Amazon GuardDuty は、AWS アカウントやワークロードを継続的に監視し、異常な振る舞いや不正アクセスの兆候を検知するマネージド型の脅威検出サービスです。<br>
-機械学習や脅威インテリジェンス（Threat Intelligence）を活用することで、セキュリティ運用の高度化および検知精度の向上を実現します。</p>
+<p>Amazon GuardDuty は、AWS アカウントやワークロードを継続的に監視し、異常な振る舞いや不正アクセスの兆候を検知するマネージド型の脅威検出サービスである。<br>
+機械学習や脅威インテリジェンス（Threat Intelligence）を活用することで、セキュリティ運用の高度化および検知精度の向上を実現する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>外部からの不正アクセスや内部的なアカウント乱用の検知</li>
@@ -7740,29 +7740,29 @@ Amazon Detective は、これらのユースケースに対応するための様
 これらは、ログやイベントを自動的に分析し、重要度に基づいてアラートを上げることで迅速な対処が可能になります。</p>
 <h3 id="2_3">2. 主な特徴と機能<a class="headerlink" href="#2_3" title="Permanent link">¶</a></h3>
 <h4 id="21_2">2.1 脅威インテリジェンスを活用した検知<a class="headerlink" href="#21_2" title="Permanent link">¶</a></h4>
-<p>GuardDuty では、AWS が統合している AWS Security や外部機関の脅威インテリジェンス情報（悪意ある IP アドレス、ドメイン、ボットネットなど）を活用して、攻撃が疑われる通信を自動的に検知します。<br>
-これにより、既知の不審活動や新種の脅威を大幅に早期発見できます。</p>
+<p>GuardDuty では、AWS が統合している AWS Security や外部機関の脅威インテリジェンス情報（悪意ある IP アドレス、ドメイン、ボットネットなど）を活用して、攻撃が疑われる通信を自動的に検知する。<br>
+これにより、既知の不審活動や新種の脅威を大幅に早期発見できる。</p>
 <ul>
 <li><strong>Amazon 独自の脅威フィード</strong>: 常にアップデートされる最新の脅威情報を反映</li>
 <li><strong>サードパーティとの連携</strong>: Threat Intel（例: Proofpoint、CrowdStrike 等）を利用</li>
 </ul>
 <h4 id="22-ml">2.2 機械学習(ML)ベースの異常検知<a class="headerlink" href="#22-ml" title="Permanent link">¶</a></h4>
-<p>GuardDuty は機械学習を用いて、通常とは異なるアクティビティや挙動（異常行動）を検出する機能を提供します。<br>
-例えば、普段は使用しないリージョンからの急激な API コール増加や、アクセス履歴のないサービスでの大規模操作などを捉えて通知します。</p>
+<p>GuardDuty は機械学習を用いて、通常とは異なるアクティビティや挙動（異常行動）を検出する機能を提供する。<br>
+例えば、普段は使用しないリージョンからの急激な API コール増加や、アクセス履歴のないサービスでの大規模操作などを捉えて通知する。</p>
 <h4 id="23-cloudtrail-vpc-flow-logs-dns-logs">2.3 データソース(CloudTrail, VPC Flow Logs, DNS Logs)<a class="headerlink" href="#23-cloudtrail-vpc-flow-logs-dns-logs" title="Permanent link">¶</a></h4>
-<p>GuardDuty は以下のログを収集・分析することで、脅威ハンティングや異常検知を実現します:</p>
+<p>GuardDuty は以下のログを収集・分析することで、脅威ハンティングや異常検知を実現する:</p>
 <ul>
 <li><strong>Amazon CloudTrail イベントログ</strong>: AWS アカウントでの API コール履歴</li>
 <li><strong>VPC Flow Logs</strong>: VPC 内部/外部へのネットワークトラフィックパターン</li>
 <li><strong>DNS Logs</strong>: Route 53 Resolver DNS クエリのログ</li>
 </ul>
-<p>これらを継続的にモニタリングし、不審なアクセスや通信パターンを素早く検知します。</p>
+<p>これらを継続的にモニタリングし、不審なアクセスや通信パターンを素早く検知する。</p>
 <h4 id="24-finding">2.4 検出結果(Finding)とアラート<a class="headerlink" href="#24-finding" title="Permanent link">¶</a></h4>
-<p>GuardDuty が脅威または疑わしい挙動を検知すると、Finding として結果を表示します。<br>
-検出内容には重要度（Severity）が付与され、どのようなアクティビティが検知されたのかを詳細に確認できます。</p>
+<p>GuardDuty が脅威または疑わしい挙動を検知すると、Finding として結果を表示する。<br>
+検出内容には重要度（Severity）が付与され、どのようなアクティビティが検知されたのかを詳細に確認できる。</p>
 <h4 id="25-aws">2.5 他 AWS サービスとの連携<a class="headerlink" href="#25-aws" title="Permanent link">¶</a></h4>
-<p>GuardDuty は AWS Security Hub や Amazon EventBridge（旧 CloudWatch Events）などと連携することで、自動的な修復フローやチケット発行、メール通知などを実現できます。<br>
-また、AWS Organizations を利用したマルチアカウント管理にも対応しているため、大規模環境でもセキュリティを一括管理できます。</p>
+<p>GuardDuty は AWS Security Hub や Amazon EventBridge（旧 CloudWatch Events）などと連携することで、自動的な修復フローやチケット発行、メール通知などを実現できる。<br>
+また、AWS Organizations を利用したマルチアカウント管理にも対応しているため、大規模環境でもセキュリティを一括管理できる。</p>
 <h3 id="3_3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_3" title="Permanent link">¶</a></h3>
 <ol>
 <li>GuardDuty は、AWS 内部のログストリーミング基盤を通じて CloudTrail や VPC Flow Logs、DNS Logs を受け取り。</li>
@@ -7772,9 +7772,9 @@ Amazon Detective は、これらのユースケースに対応するための様
 </ol>
 <p>これらのコンポーネントは AWS がフルマネージドで提供しており、ユーザーは検知精度を維持しつつ、複雑なログ解析基盤を自前で構築する必要がありません。</p>
 <h3 id="4_3">4. セキュリティと認証・認可<a class="headerlink" href="#4_3" title="Permanent link">¶</a></h3>
-<p>GuardDuty 自体はセキュリティサービスですが、サービスを利用するにあたっては以下のポイントが重要です:</p>
+<p>GuardDuty 自体はセキュリティサービスですが、サービスを利用するにあたっては以下のポイントが重要である:</p>
 <ul>
-<li><strong>IAM ロールによる権限付与</strong>: GuardDuty を有効化する際、ログへの読み取り権限（CloudTrail、VPC Flow Logs など）を付与するための IAM ロールが使用されます。</li>
+<li><strong>IAM ロールによる権限付与</strong>: GuardDuty を有効化する際、ログへの読み取り権限（CloudTrail、VPC Flow Logs など）を付与するための IAM ロールが使用される。</li>
 <li><strong>データ機密性の保持</strong>: GuardDuty はログの内容を分析するが、TLS や暗号化された安全な通信を用い、処理は AWS 内部で完結。</li>
 <li><strong>マルチアカウントのアクセス制御</strong>: AWS Organizations などを活用し、各メンバーアカウントのガバナンスを集中管理可能。</li>
 </ul>
@@ -7785,7 +7785,7 @@ Amazon Detective は、これらのユースケースに対応するための様
 <li><strong>サイジング</strong>: アクティブなアカウント数や分析対象リージョン数により、全体のコストが変動。</li>
 </ul>
 <h3 id="6_3">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_3" title="Permanent link">¶</a></h3>
-<p>GuardDuty は脅威検知サービスですが、運用においては他サービスとの連携が鍵となります。<br>
+<p>GuardDuty は脅威検知サービスですが、運用においては他サービスとの連携が鍵となる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>Security Hub 連携</strong>: GuardDuty の Finding を Security Hub で一元管理し、他のセキュリティサービス（Macie、Inspector など）との統合ビューを提供</li>
@@ -7853,8 +7853,8 @@ Amazon Detective は、これらのユースケースに対応するための様
 <hr>
 <h2 id="amazon-inspector">Amazon Inspector<a class="headerlink" href="#amazon-inspector" title="Permanent link">¶</a></h2>
 <h3 id="1_4">1. サービス概要<a class="headerlink" href="#1_4" title="Permanent link">¶</a></h3>
-<p>Amazon Inspector は、AWS 環境におけるセキュリティ脆弱性や設定ミスを自動的に検出するサービスです。<br>
-ユーザーは、EC2 インスタンス、コンテナイメージ、AWS Lambda 関数などのリソースを継続的にスキャンし、セキュリティの脆弱性や設定エラーを特定できます。<br>
+<p>Amazon Inspector は、AWS 環境におけるセキュリティ脆弱性や設定ミスを自動的に検出するサービスである。<br>
+ユーザーは、EC2 インスタンス、コンテナイメージ、AWS Lambda 関数などのリソースを継続的にスキャンし、セキュリティの脆弱性や設定エラーを特定できる。<br>
 Inspector は、セキュリティリスクを軽減し、アプリケーションのセキュリティ体制を強化するために役立ちます。</p>
 <p>主なユースケースとして、</p>
 <ul>
@@ -7865,29 +7865,29 @@ Inspector は、セキュリティリスクを軽減し、アプリケーショ�
 <li>セキュリティリスクの低減</li>
 </ul>
 <p>などが挙げられます。<br>
-Amazon Inspector は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+Amazon Inspector は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_4">2. 主な特徴と機能<a class="headerlink" href="#2_4" title="Permanent link">¶</a></h3>
 <h4 id="21_3">2.1 自動脆弱性スキャン<a class="headerlink" href="#21_3" title="Permanent link">¶</a></h4>
-<p>Inspector は、EC2 インスタンス、コンテナイメージ、AWS Lambda 関数などのリソースを自動的にスキャンし、セキュリティ脆弱性を検出します。<br>
-スキャンは、継続的に実行され、常に最新の脅威情報に基づいて脆弱性を評価します。</p>
+<p>Inspector は、EC2 インスタンス、コンテナイメージ、AWS Lambda 関数などのリソースを自動的にスキャンし、セキュリティ脆弱性を検出する。<br>
+スキャンは、継続的に実行され、常に最新の脅威情報に基づいて脆弱性を評価する。</p>
 <h4 id="22_2">2.2 パッケージ脆弱性の検出<a class="headerlink" href="#22_2" title="Permanent link">¶</a></h4>
-<p>オペレーティングシステムやアプリケーションのパッケージに存在する既知の脆弱性を検出します。<br>
-これにより、ソフトウェアのセキュリティリスクを特定できます。</p>
+<p>オペレーティングシステムやアプリケーションのパッケージに存在する既知の脆弱性を検出する。<br>
+これにより、ソフトウェアのセキュリティリスクを特定できる。</p>
 <h4 id="23_2">2.3 ネットワーク脆弱性の検出<a class="headerlink" href="#23_2" title="Permanent link">¶</a></h4>
-<p>EC2 インスタンスのネットワーク設定を評価し、ポートやプロトコルの設定ミスによるセキュリティリスクを検出します。<br>
-これにより、不要なポートの開放や、セキュリティグループの誤った設定を特定できます。</p>
+<p>EC2 インスタンスのネットワーク設定を評価し、ポートやプロトコルの設定ミスによるセキュリティリスクを検出する。<br>
+これにより、不要なポートの開放や、セキュリティグループの誤った設定を特定できる。</p>
 <h4 id="24_2">2.4 設定ミスの検出<a class="headerlink" href="#24_2" title="Permanent link">¶</a></h4>
-<p>AWS リソースの設定を評価し、セキュリティのベストプラクティスに準拠していない設定ミスを検出します。<br>
-これにより、S3 バケットの公開設定や IAM ポリシーの不備などを特定できます。</p>
+<p>AWS リソースの設定を評価し、セキュリティのベストプラクティスに準拠していない設定ミスを検出する。<br>
+これにより、S3 バケットの公開設定や IAM ポリシーの不備などを特定できる。</p>
 <h4 id="25_1">2.5 レポーティング<a class="headerlink" href="#25_1" title="Permanent link">¶</a></h4>
-<p>検出された脆弱性や設定ミスに関する詳細なレポートを提供します。<br>
+<p>検出された脆弱性や設定ミスに関する詳細なレポートを提供する。<br>
 レポートには、脆弱性の説明、影響度、推奨される修正策などが含まれます。</p>
 <h4 id="26-aws_1">2.6 他の AWS サービスとの統合<a class="headerlink" href="#26-aws_1" title="Permanent link">¶</a></h4>
-<p>Inspector は、AWS Security Hub、Amazon EventBridge, AWS Systems Manager などの他の AWS サービスと統合できます。<br>
-これにより、セキュリティ情報を連携し、自動的に対応策を実行できます。</p>
+<p>Inspector は、AWS Security Hub、Amazon EventBridge, AWS Systems Manager などの他の AWS サービスと統合できる。<br>
+これにより、セキュリティ情報を連携し、自動的に対応策を実行できる。</p>
 <h4 id="27_2">2.7 統合性と拡張性<a class="headerlink" href="#27_2" title="Permanent link">¶</a></h4>
-<p>AWS Inspector は、AWS Organizations と統合し、組織全体のリソースのセキュリティ状況を一元管理できます。<br>
-また、API を利用して、スキャンの実行や結果の取得を自動化することもできます。</p>
+<p>AWS Inspector は、AWS Organizations と統合し、組織全体のリソースのセキュリティ状況を一元管理できる。<br>
+また、API を利用して、スキャンの実行や結果の取得を自動化することもできる。</p>
 <h3 id="3_4">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_4" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、Inspector でスキャン対象となる AWS リソースを選択。</li>
@@ -7896,18 +7896,18 @@ Amazon Inspector は、これらのユースケースに対応するための様
 <li>必要に応じて、他の AWS サービスと連携し、自動的な対応策を実行。</li>
 <li>ユーザーは、レポートを確認し、推奨される修正策を実施。</li>
 </ol>
-<p>Amazon Inspector は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供します。<br>
+<p>Amazon Inspector は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
 リソースのスキャンや分析は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
 <h3 id="4_4">4. セキュリティと認証・認可<a class="headerlink" href="#4_4" title="Permanent link">¶</a></h3>
-<p>Amazon Inspector は、セキュリティデータを保護するために、以下の機能を提供します:</p>
+<p>Amazon Inspector は、セキュリティデータを保護するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Inspector へのアクセスを制御します。</li>
-<li><strong>データ暗号化</strong>: スキャン結果や設定データは転送中および保存時に暗号化されます。</li>
-<li><strong>VPC エンドポイント</strong>: VPC 内から Inspector にアクセスする際に、インターネットを経由せずにアクセスできます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Inspector の操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、Inspector の利用状況を監査できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Inspector へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: スキャン結果や設定データは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から Inspector にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Inspector の操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、Inspector の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、セキュリティデータへの不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、セキュリティデータへの不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_4">5. 料金形態<a class="headerlink" href="#5_4" title="Permanent link">¶</a></h3>
 <p>Amazon Inspector の料金は主に以下に基づきます:</p>
 <ul>
@@ -7916,7 +7916,7 @@ Amazon Inspector は、これらのユースケースに対応するための様
 <li><strong>AWS Lambda 関数スキャン</strong>: スキャン対象となる Lambda 関数の数に応じて課金。</li>
 </ul>
 <h3 id="6_4">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_4" title="Permanent link">¶</a></h3>
-<p>Amazon Inspector は、様々なセキュリティ評価に利用できます。<br>
+<p>Amazon Inspector は、様々なセキュリティ評価に利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>EC2 インスタンスの脆弱性スキャン</strong>: EC2 インスタンスのオペレーティングシステムやアプリケーションの脆弱性を検出。</li>
@@ -7978,22 +7978,22 @@ Amazon Inspector は、これらのユースケースに対応するための様
 <h4 id="88">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: Amazon Inspector は何を提供するサービスですか？</li>
-<li>A: AWS 環境におけるセキュリティ脆弱性や設定ミスを自動的に検出するサービスです。</li>
-<li>Q: Amazon Inspector は、どのようなリソースをスキャンできますか？</li>
-<li>A: EC2 インスタンス、コンテナイメージ、AWS Lambda 関数などのリソースをスキャンできます。</li>
-<li>Q: Amazon Inspector は、どのような脆弱性を検出できますか？</li>
-<li>A: オペレーティングシステムやアプリケーションのパッケージに存在する既知の脆弱性、EC2 インスタンスのネットワーク設定の脆弱性などを検出できます。</li>
-<li>Q: Amazon Inspector は、どのようにセキュリティ設定ミスを検出しますか？</li>
-<li>A: AWS リソースの設定を評価し、セキュリティのベストプラクティスに準拠していない設定ミスを検出します。</li>
-<li>Q: Amazon Inspector の料金はどのように計算されますか？</li>
-<li>A: スキャン対象となる EC2 インスタンス、コンテナイメージ、Lambda 関数の数に基づいて計算されます。</li>
+<li>A: AWS 環境におけるセキュリティ脆弱性や設定ミスを自動的に検出するサービスである。</li>
+<li>Q: Amazon Inspector は、どのようなリソースをスキャンできるか？</li>
+<li>A: EC2 インスタンス、コンテナイメージ、AWS Lambda 関数などのリソースをスキャンできる。</li>
+<li>Q: Amazon Inspector は、どのような脆弱性を検出できるか？</li>
+<li>A: オペレーティングシステムやアプリケーションのパッケージに存在する既知の脆弱性、EC2 インスタンスのネットワーク設定の脆弱性などを検出できる。</li>
+<li>Q: Amazon Inspector は、どのようにセキュリティ設定ミスを検出するか？</li>
+<li>A: AWS リソースの設定を評価し、セキュリティのベストプラクティスに準拠していない設定ミスを検出する。</li>
+<li>Q: Amazon Inspector の料金はどのように計算されるか？</li>
+<li>A: スキャン対象となる EC2 インスタンス、コンテナイメージ、Lambda 関数の数に基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="amazon-macie">Amazon Macie<a class="headerlink" href="#amazon-macie" title="Permanent link">¶</a></h2>
 <h3 id="1_5">1. サービス概要<a class="headerlink" href="#1_5" title="Permanent link">¶</a></h3>
-<p>Amazon Macie は、機械学習を活用して AWS 環境内の機密データを自動的に検出、分類、保護するセキュリティサービスです。<br>
-Macie は、個人識別情報（PII）や知的財産などの機密情報を識別し、データ漏洩や不正アクセスのリスクを軽減します。<br>
-これにより、企業はデータのセキュリティとコンプライアンスを強化し、情報保護のための効果的な対策を講じることができます。</p>
+<p>Amazon Macie は、機械学習を活用して AWS 環境内の機密データを自動的に検出、分類、保護するセキュリティサービスである。<br>
+Macie は、個人識別情報（PII）や知的財産などの機密情報を識別し、データ漏洩や不正アクセスのリスクを軽減する。<br>
+これにより、企業はデータのセキュリティとコンプライアンスを強化し、情報保護のための効果的な対策を講じることができる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>データの機密性の評価</li>
@@ -8004,29 +8004,29 @@ Macie は、個人識別情報（PII）や知的財産などの機密情報を�
 <p>などが挙げられます。</p>
 <h3 id="2_5">2. 主な特徴と機能<a class="headerlink" href="#2_5" title="Permanent link">¶</a></h3>
 <h4 id="21_4">2.1 機械学習によるデータ検出と分類<a class="headerlink" href="#21_4" title="Permanent link">¶</a></h4>
-<p>Macie は機械学習アルゴリズムを使用して、Amazon S3 バケット内の機密データを自動的に検出し、分類します。<br>
-これにより、手動でのデータ分類作業を削減し、高精度で機密データを識別できます。</p>
+<p>Macie は機械学習アルゴリズムを使用して、Amazon S3 バケット内の機密データを自動的に検出し、分類する。<br>
+これにより、手動でのデータ分類作業を削減し、高精度で機密データを識別できる。</p>
 <h4 id="22_3">2.2 データの可視化とダッシュボード<a class="headerlink" href="#22_3" title="Permanent link">¶</a></h4>
-<p>Macie のダッシュボードは、データの機密性やセキュリティリスクの概要を視覚的に表示します。<br>
-ユーザーはリアルタイムでデータの状況を把握し、必要な対策を迅速に講じることができます。</p>
+<p>Macie のダッシュボードは、データの機密性やセキュリティリスクの概要を視覚的に表示する。<br>
+ユーザーはリアルタイムでデータの状況を把握し、必要な対策を迅速に講じることができる。</p>
 <h4 id="23_3">2.3 アラートと通知機能<a class="headerlink" href="#23_3" title="Permanent link">¶</a></h4>
-<p>機密データに対する不正アクセスや異常な活動が検出された場合、Macie は自動的にアラートを発行し、関連する通知を送信します。<br>
-これにより、セキュリティインシデントへの迅速な対応が可能となります。</p>
+<p>機密データに対する不正アクセスや異常な活動が検出された場合、Macie は自動的にアラートを発行し、関連する通知を送信する。<br>
+これにより、セキュリティインシデントへの迅速な対応が可能となる。</p>
 <h4 id="24_3">2.4 詳細なレポートと分析<a class="headerlink" href="#24_3" title="Permanent link">¶</a></h4>
-<p>Macie は、データの使用状況やセキュリティリスクに関する詳細なレポートを生成します。<br>
-これにより、データ保護の状況を定期的に評価し、改善点を特定することができます。</p>
+<p>Macie は、データの使用状況やセキュリティリスクに関する詳細なレポートを生成する。<br>
+これにより、データ保護の状況を定期的に評価し、改善点を特定することができる。</p>
 <h4 id="25_2">2.5 カスタムポリシーとルール<a class="headerlink" href="#25_2" title="Permanent link">¶</a></h4>
-<p>ユーザーは、自社のセキュリティポリシーやコンプライアンス要件に基づいたカスタムルールを設定できます。<br>
-これにより、特定の条件に合致するデータに対して自動的に対策を講じることが可能です。</p>
+<p>ユーザーは、自社のセキュリティポリシーやコンプライアンス要件に基づいたカスタムルールを設定できる。<br>
+これにより、特定の条件に合致するデータに対して自動的に対策を講じることが可能である。</p>
 <h4 id="26-api-sdk">2.6 API および SDK の提供<a class="headerlink" href="#26-api-sdk" title="Permanent link">¶</a></h4>
-<p>Macie は API および SDK を提供しており、他の AWS サービスやサードパーティツールと統合することができます。<br>
+<p>Macie は API および SDK を提供しており、他の AWS サービスやサードパーティツールと統合することができる。<br>
 これにより、データ保護プロセスの自動化やカスタムソリューションの構築が容易になります。</p>
 <h4 id="27_3">2.7 リアルタイムデータモニタリング<a class="headerlink" href="#27_3" title="Permanent link">¶</a></h4>
-<p>Macie はリアルタイムでデータの使用状況をモニタリングし、異常な活動を即座に検出します。<br>
-これにより、データ漏洩や不正アクセスのリスクを最小限に抑えることができます。</p>
+<p>Macie はリアルタイムでデータの使用状況をモニタリングし、異常な活動を即座に検出する。<br>
+これにより、データ漏洩や不正アクセスのリスクを最小限に抑えることができる。</p>
 <h4 id="28">2.8 連携機能<a class="headerlink" href="#28" title="Permanent link">¶</a></h4>
-<p>Macie は AWS Security Hub、Amazon GuardDuty、AWS Lambda などの他のセキュリティサービスと連携し、包括的なセキュリティ管理を実現します。<br>
-これにより、セキュリティインシデントへの統合的な対応が可能となります。</p>
+<p>Macie は AWS Security Hub、Amazon GuardDuty、AWS Lambda などの他のセキュリティサービスと連携し、包括的なセキュリティ管理を実現する。<br>
+これにより、セキュリティインシデントへの統合的な対応が可能となる。</p>
 <h3 id="3_5">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_5" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは AWS Management Console、AWS CLI、または AWS SDK を使用して Amazon Macie を設定。</li>
@@ -8039,9 +8039,9 @@ Macie は、個人識別情報（PII）や知的財産などの機密情報を�
 <li>必要に応じて、IAM ポリシーを設定し、Macie へのアクセスを制御。</li>
 </ol>
 <p>Amazon Macie のアーキテクチャは、AWS の各種サービスとシームレスに統合されており、高い可用性とスケーラビリティを備えています。<br>
-機械学習を活用したデータ検出とリアルタイムのモニタリングにより、ユーザーは常に最適なデータ保護状態を維持できます。</p>
+機械学習を活用したデータ検出とリアルタイムのモニタリングにより、ユーザーは常に最適なデータ保護状態を維持できる。</p>
 <h3 id="4_5">4. セキュリティと認証・認可<a class="headerlink" href="#4_5" title="Permanent link">¶</a></h3>
-<p>Amazon Macie は、データの機密性とセキュリティを確保するために、以下のセキュリティ機能を提供しています：</p>
+<p>Amazon Macie は、データの機密性とセキュリティを確保するために、以下のセキュリティ機能を提供している：</p>
 <ul>
 <li><strong>AWS Identity and Access Management (IAM)</strong>: ユーザーやグループごとに Macie へのアクセス権限を詳細に設定。最小権限の原則に基づいたポリシー管理が可能。</li>
 <li><strong>データ暗号化</strong>: Macie によって処理されるデータは、転送中および保存時に暗号化され、データの機密性を確保。</li>
@@ -8052,7 +8052,7 @@ Macie は、個人識別情報（PII）や知的財産などの機密情報を�
 <li>**リアルタイムモニタリング: データアクセスや操作をリアルタイムで監視し、不正な活動を迅速に検出。</li>
 <li>**セキュリティインシデント対応: 異常なデータアクセスが検出された際に、自動的に対応プロセスをトリガー。</li>
 </ul>
-<p>これらのセキュリティ機能により、Amazon Macie は組織のデータ保護ポリシーやコンプライアンス要件を満たし、安全かつ信頼性の高いデータ管理を実現します。</p>
+<p>これらのセキュリティ機能により、Amazon Macie は組織のデータ保護ポリシーやコンプライアンス要件を満たし、安全かつ信頼性の高いデータ管理を実現する。</p>
 <h3 id="5_5">5. 料金形態<a class="headerlink" href="#5_5" title="Permanent link">¶</a></h3>
 <p>Amazon Macie の料金は、以下の要素に基づいています：</p>
 <ul>
@@ -8061,7 +8061,7 @@ Macie は、個人識別情報（PII）や知的財産などの機密情報を�
 <li><strong>レポート生成</strong>: 詳細なレポートや分析を生成する際の料金。</li>
 <li><strong>カスタムルールの設定</strong>: カスタムルールを設定してデータを分類・保護する際の料金。</li>
 <li><strong>API リクエスト</strong>: Macie の API を使用してデータを取得・管理する際の料金。</li>
-<li><strong>サポートプラン</strong>: AWS サポートプラン（Developer、Business、Enterprise）に応じて、追加のサポートや機能が提供されます。</li>
+<li><strong>サポートプラン</strong>: AWS サポートプラン（Developer、Business、Enterprise）に応じて、追加のサポートや機能が提供される。</li>
 <li><strong>データ転送費用</strong>: S3 バケット間やリージョン間のデータ転送に対する料金。</li>
 </ul>
 <h3 id="6_5">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_5" title="Permanent link">¶</a></h3>
@@ -8102,7 +8102,7 @@ Macie は、個人識別情報（PII）や知的財産などの機密情報を�
 <li>必要に応じて、追加のセキュリティポリシーやガードレールを適用。</li>
 <li>定期的なセキュリティ評価を実施し、データ保護の継続的な改善を図る。</li>
 </ol>
-<p>このハンズオン例では、Amazon Macie の基本的な設定からデータスキャン、アラート設定、セキュリティインシデント対応の自動化までの一連の手順を通じて、Macie の主要機能を実際に体験できます。</p>
+<p>このハンズオン例では、Amazon Macie の基本的な設定からデータスキャン、アラート設定、セキュリティインシデント対応の自動化までの一連の手順を通じて、Macie の主要機能を実際に体験できる。</p>
 <h3 id="8_5">8. 試験で問われやすいポイント<a class="headerlink" href="#8_5" title="Permanent link">¶</a></h3>
 <h4 id="81-macie">8.1 Macie の基本概念<a class="headerlink" href="#81-macie" title="Permanent link">¶</a></h4>
 <ul>
@@ -8180,9 +8180,9 @@ Macie は、個人識別情報（PII）や知的財産などの機密情報を�
 <hr>
 <h2 id="aws-artifact">AWS Artifact<a class="headerlink" href="#aws-artifact" title="Permanent link">¶</a></h2>
 <h3 id="1_6">1. サービス概要<a class="headerlink" href="#1_6" title="Permanent link">¶</a></h3>
-<p>AWS Artifact は、AWS のセキュリティおよびコンプライアンスに関するドキュメントを提供するサービスです。<br>
-ユーザーは、AWS の監査レポート、認定証、契約書などをダウンロードし、自社のコンプライアンス要件を満たすために利用できます。<br>
-AWS Artifact は、透明性と信頼性を提供し、AWS の利用に関するセキュリティとコンプライアンスに関する情報を容易に入手できるようにします。</p>
+<p>AWS Artifact は、AWS のセキュリティおよびコンプライアンスに関するドキュメントを提供するサービスである。<br>
+ユーザーは、AWS の監査レポート、認定証、契約書などをダウンロードし、自社のコンプライアンス要件を満たすために利用できる。<br>
+AWS Artifact は、透明性と信頼性を提供し、AWS の利用に関するセキュリティとコンプライアンスに関する情報を容易に入手できるようにする。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>AWS のセキュリティ監査への対応</li>
@@ -8191,29 +8191,29 @@ AWS Artifact は、透明性と信頼性を提供し、AWS の利用に関する
 <li>AWS のセキュリティ体制の把握</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS Artifact は、これらのユースケースに対応するための様々なドキュメントと、AWS の他のサービスとの連携を提供します。</p>
+AWS Artifact は、これらのユースケースに対応するための様々なドキュメントと、AWS の他のサービスとの連携を提供する。</p>
 <h3 id="2_6">2. 主な特徴と機能<a class="headerlink" href="#2_6" title="Permanent link">¶</a></h3>
 <h4 id="21_5">2.1 オンデマンドドキュメントへのアクセス<a class="headerlink" href="#21_5" title="Permanent link">¶</a></h4>
-<p>AWS Artifact は、AWS のセキュリティとコンプライアンスに関するドキュメントをオンデマンドで提供します。<br>
-ユーザーは、必要な時にいつでも最新のドキュメントにアクセスできます。</p>
+<p>AWS Artifact は、AWS のセキュリティとコンプライアンスに関するドキュメントをオンデマンドで提供する。<br>
+ユーザーは、必要な時にいつでも最新のドキュメントにアクセスできる。</p>
 <h4 id="22_4">2.2 監査レポート<a class="headerlink" href="#22_4" title="Permanent link">¶</a></h4>
-<p>AWS のセキュリティとコンプライアンスに関する監査レポート（SOC 1, SOC 2, SOC 3, PCI DSS など）を提供します。<br>
-これらのレポートは、AWS がセキュリティとコンプライアンスの基準を満たしていることを証明するものです。</p>
+<p>AWS のセキュリティとコンプライアンスに関する監査レポート（SOC 1, SOC 2, SOC 3, PCI DSS など）を提供する。<br>
+これらのレポートは、AWS がセキュリティとコンプライアンスの基準を満たしていることを証明するものである。</p>
 <h4 id="23_4">2.3 認定証<a class="headerlink" href="#23_4" title="Permanent link">¶</a></h4>
-<p>ISO 27001, FedRAMP, HIPAA などの業界標準や規制に準拠した AWS の認定証を提供します。<br>
+<p>ISO 27001, FedRAMP, HIPAA などの業界標準や規制に準拠した AWS の認定証を提供する。<br>
 これにより、ユーザーは AWS のセキュリティ体制を評価しやすくなります。</p>
 <h4 id="24_4">2.4 契約書<a class="headerlink" href="#24_4" title="Permanent link">¶</a></h4>
-<p>AWS のサービスに関する契約書（ビジネスアソシエイト契約など）を提供します。<br>
-これにより、AWS との契約内容を確認し、ビジネス要件を満たすことを保証できます。</p>
+<p>AWS のサービスに関する契約書（ビジネスアソシエイト契約など）を提供する。<br>
+これにより、AWS との契約内容を確認し、ビジネス要件を満たすことを保証できる。</p>
 <h4 id="25_3">2.5 セキュリティガイドライン<a class="headerlink" href="#25_3" title="Permanent link">¶</a></h4>
-<p>AWS のセキュリティに関するベストプラクティスやガイドラインを提供します。<br>
-これにより、AWS のセキュリティ設定を適切に行うことができます。</p>
+<p>AWS のセキュリティに関するベストプラクティスやガイドラインを提供する。<br>
+これにより、AWS のセキュリティ設定を適切に行うことができる。</p>
 <h4 id="26_2">2.6 アクセス制御<a class="headerlink" href="#26_2" title="Permanent link">¶</a></h4>
-<p>IAM ポリシーを利用して、AWS Artifact へのアクセスを制御できます。<br>
-特定のユーザーやグループに対して、ドキュメントの閲覧やダウンロードの権限を付与できます。</p>
+<p>IAM ポリシーを利用して、AWS Artifact へのアクセスを制御できる。<br>
+特定のユーザーやグループに対して、ドキュメントの閲覧やダウンロードの権限を付与できる。</p>
 <h4 id="27_4">2.7 統合性と拡張性<a class="headerlink" href="#27_4" title="Permanent link">¶</a></h4>
-<p>AWS Artifact は、AWS Organizations と統合し、組織全体のアカウントのドキュメントにアクセスできます。<br>
-また、API を利用して、ドキュメントの取得を自動化することもできます。</p>
+<p>AWS Artifact は、AWS Organizations と統合し、組織全体のアカウントのドキュメントにアクセスできる。<br>
+また、API を利用して、ドキュメントの取得を自動化することもできる。</p>
 <h3 id="3_6">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_6" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS マネジメントコンソールまたは API を通じて、AWS Artifact にアクセス。</li>
@@ -8221,20 +8221,20 @@ AWS Artifact は、これらのユースケースに対応するための様々�
 <li>ユーザーは、必要なドキュメントを検索し、閲覧またはダウンロード。</li>
 <li>アクセス制御は、IAM ポリシーによって管理。</li>
 </ol>
-<p>AWS Artifact は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供します。<br>
+<p>AWS Artifact は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供する。<br>
 ドキュメントの管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
 <h3 id="4_6">4. セキュリティと認証・認可<a class="headerlink" href="#4_6" title="Permanent link">¶</a></h3>
-<p>AWS Artifact は、ドキュメントのセキュリティを確保するために、以下の機能を提供します:</p>
+<p>AWS Artifact は、ドキュメントのセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS Artifact へのアクセスを制御します。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、ドキュメントの閲覧やダウンロードの権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、AWS Artifact の利用状況を監査できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS Artifact へのアクセスを制御する。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、ドキュメントの閲覧やダウンロードの権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、AWS Artifact の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、ドキュメントへの不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、ドキュメントへの不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_6">5. 料金形態<a class="headerlink" href="#5_6" title="Permanent link">¶</a></h3>
-<p>AWS Artifact は、無料で利用できるサービスです。</p>
+<p>AWS Artifact は、無料で利用できるサービスである。</p>
 <h3 id="6_6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_6" title="Permanent link">¶</a></h3>
-<p>AWS Artifact は、様々なコンプライアンスやセキュリティニーズに対応するために利用できます。<br>
+<p>AWS Artifact は、様々なコンプライアンスやセキュリティニーズに対応するために利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>AWS のセキュリティ監査への対応</strong>: 監査機関への提出が必要な AWS の監査レポートを AWS Artifact から入手。</li>
@@ -8289,48 +8289,48 @@ AWS Artifact は、これらのユースケースに対応するための様々�
 <h4 id="87_6">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_6" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Artifact は何を提供するサービスですか？</li>
-<li>A: AWS のセキュリティおよびコンプライアンスに関するドキュメントを提供するサービスです。</li>
-<li>Q: AWS Artifact で提供される監査レポートには、どのような種類がありますか？</li>
-<li>A: SOC 1, SOC 2, SOC 3, PCI DSS などの監査レポートを提供します。</li>
-<li>Q: AWS Artifact で提供される認定証には、どのような種類がありますか？</li>
-<li>A: ISO 27001, FedRAMP, HIPAA などの業界標準や規制に準拠した認定証を提供します。</li>
-<li>Q: AWS Artifact で提供される契約書には、どのようなものがありますか？</li>
-<li>A: AWS のサービスに関する契約書（ビジネスアソシエイト契約など）を提供します。</li>
+<li>A: AWS のセキュリティおよびコンプライアンスに関するドキュメントを提供するサービスである。</li>
+<li>Q: AWS Artifact で提供される監査レポートには、どのような種類があるか？</li>
+<li>A: SOC 1, SOC 2, SOC 3, PCI DSS などの監査レポートを提供する。</li>
+<li>Q: AWS Artifact で提供される認定証には、どのような種類があるか？</li>
+<li>A: ISO 27001, FedRAMP, HIPAA などの業界標準や規制に準拠した認定証を提供する。</li>
+<li>Q: AWS Artifact で提供される契約書には、どのようなものがあるか？</li>
+<li>A: AWS のサービスに関する契約書（ビジネスアソシエイト契約など）を提供する。</li>
 <li>Q: AWS Artifact の利用料金は？</li>
-<li>A: 無料で利用できます。</li>
+<li>A: 無料で利用できる。</li>
 </ul>
 <hr>
 <h2 id="aws-audit-manager">AWS Audit Manager<a class="headerlink" href="#aws-audit-manager" title="Permanent link">¶</a></h2>
 <h3 id="1_7">1. サービス概要<a class="headerlink" href="#1_7" title="Permanent link">¶</a></h3>
-<p>AWS Audit Manager は、AWS 上で運用するシステムやアプリケーションの監査プロセスを自動化・効率化するサービスです。<br>
-フレームワーク別（例: ISO、PCI DSS、SOC2 など）の監査要件に沿ったコントロールの設計と証跡収集を自動化し、監査レポート作成を簡素化できる点が大きな特徴です。</p>
+<p>AWS Audit Manager は、AWS 上で運用するシステムやアプリケーションの監査プロセスを自動化・効率化するサービスである。<br>
+フレームワーク別（例: ISO、PCI DSS、SOC2 など）の監査要件に沿ったコントロールの設計と証跡収集を自動化し、監査レポート作成を簡素化できる点が大きな特徴である。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>コンプライアンスや内部統制が必要な組織での継続的監査管理</li>
 <li>外部監査対応時の証跡・レポート提出</li>
 </ul>
-<p>に活用されます。<br>
-Audit Manager により、オンプレミス中心の従来型監査プロセスを大幅に省力化でき、AWS アカウント横断の監査も効率的に行えます。</p>
+<p>に活用される。<br>
+Audit Manager により、オンプレミス中心の従来型監査プロセスを大幅に省力化でき、AWS アカウント横断の監査も効率的に行える。</p>
 <h3 id="2_7">2. 主な特徴と機能<a class="headerlink" href="#2_7" title="Permanent link">¶</a></h3>
 <h4 id="21_6">2.1 フレームワークベースのコントロールライブラリ<a class="headerlink" href="#21_6" title="Permanent link">¶</a></h4>
-<p>PCI DSS、ISO、SOC、HIPAA などの主要フレームワークに対応したテンプレートが用意されており、これらが提供する監査要件（コントロール）に対して自動的に関連する AWS の設定や利用状況をマッピングします。<br>
-既存テンプレートをベースに、独自の基準や社内ルールを加えたカスタムフレームワークの作成も可能です。</p>
+<p>PCI DSS、ISO、SOC、HIPAA などの主要フレームワークに対応したテンプレートが用意されており、これらが提供する監査要件（コントロール）に対して自動的に関連する AWS の設定や利用状況をマッピングする。<br>
+既存テンプレートをベースに、独自の基準や社内ルールを加えたカスタムフレームワークの作成も可能である。</p>
 <ul>
 <li><strong>テンプレートの活用</strong>: グローバル標準の監査項目を網羅し、監査計画の立ち上げがスムーズ</li>
 <li><strong>カスタムフレームワーク</strong>: 企業独自の要件や法規制を組み込み可能</li>
 </ul>
 <h4 id="22-aws-config-cloudtrail">2.2 自動証跡収集(AWS Config, CloudTrail 連携)<a class="headerlink" href="#22-aws-config-cloudtrail" title="Permanent link">¶</a></h4>
-<p>Audit Manager は AWS リソースの設定変更ログ(AWS Config)や API コールログ(CloudTrail)などを自動収集し、各コントロールへの適合性を検証するエビデンス（証跡）として格納します。<br>
-これにより、手動でのログ収集やスクリーンショット取得を最小化し、継続的な監査準備を実現します。</p>
+<p>Audit Manager は AWS リソースの設定変更ログ(AWS Config)や API コールログ(CloudTrail)などを自動収集し、各コントロールへの適合性を検証するエビデンス（証跡）として格納する。<br>
+これにより、手動でのログ収集やスクリーンショット取得を最小化し、継続的な監査準備を実現する。</p>
 <h4 id="23_5">2.3 リアルタイム評価とステータス管理<a class="headerlink" href="#23_5" title="Permanent link">¶</a></h4>
-<p>有効化したフレームワークに対し、AWS アカウントを継続的にモニタリングすることで、コンプライアンス状態のリアルタイム評価が可能です。<br>
-ダッシュボードから不足している証跡や、要改善のコントロールを把握し、早期に対応が行えます。</p>
+<p>有効化したフレームワークに対し、AWS アカウントを継続的にモニタリングすることで、コンプライアンス状態のリアルタイム評価が可能である。<br>
+ダッシュボードから不足している証跡や、要改善のコントロールを把握し、早期に対応が行える。</p>
 <h4 id="24_5">2.4 監査レポート作成<a class="headerlink" href="#24_5" title="Permanent link">¶</a></h4>
-<p>収集したエビデンスをもとに、監査用レポートを自動生成します。<br>
-レポートは特定フレームワークへの適合状況をまとめて提出できるため、外部監査人とのコミュニケーションを容易にし、監査プロセス全体を効率化します。</p>
+<p>収集したエビデンスをもとに、監査用レポートを自動生成する。<br>
+レポートは特定フレームワークへの適合状況をまとめて提出できるため、外部監査人とのコミュニケーションを容易にし、監査プロセス全体を効率化する。</p>
 <h4 id="25-security-hub">2.5 マルチアカウント管理と Security Hub 連携<a class="headerlink" href="#25-security-hub" title="Permanent link">¶</a></h4>
-<p>AWS Organizations と連携して、複数の AWS アカウントをまとめて監査フレームワークのスコープに含めることができます。<br>
-また、AWS Security Hub の脆弱性情報などをエビデンスとして組み込むことで、セキュリティ面を含めた監査の包括的評価を行えます。</p>
+<p>AWS Organizations と連携して、複数の AWS アカウントをまとめて監査フレームワークのスコープに含めることができる。<br>
+また、AWS Security Hub の脆弱性情報などをエビデンスとして組み込むことで、セキュリティ面を含めた監査の包括的評価を行える。</p>
 <h3 id="3_7">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_7" title="Permanent link">¶</a></h3>
 <ol>
 <li>監査対象フレームワークを選択（PCI DSS/ISO/SOC2 など）</li>
@@ -8339,7 +8339,7 @@ Audit Manager により、オンプレミス中心の従来型監査プロセス
 <li>各コントロールの適合状況を Audit Manager ダッシュボードで可視化</li>
 <li>最終的にレポートを生成し、エビデンスを外部監査人へ提出</li>
 </ol>
-<p>これらの収集および評価プロセスはフルマネージドで行われ、ユーザーの手動作業を大幅に削減します。</p>
+<p>これらの収集および評価プロセスはフルマネージドで行われ、ユーザーの手動作業を大幅に削減する。</p>
 <h3 id="4_7">4. セキュリティと認証・認可<a class="headerlink" href="#4_7" title="Permanent link">¶</a></h3>
 <p>Audit Manager の利用にあたり重要なポイントは以下の通りです:</p>
 <ul>
@@ -8355,7 +8355,7 @@ Audit Manager により、オンプレミス中心の従来型監査プロセス
 <li><strong>レポート生成</strong>: エビデンス容量やレポートの生成頻度に左右される可能性あり</li>
 </ul>
 <h3 id="6_7">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_7" title="Permanent link">¶</a></h3>
-<p>Audit Manager を導入することで、監査作業やコンプライアンス確保が大幅に効率化されます。<br>
+<p>Audit Manager を導入することで、監査作業やコンプライアンス確保が大幅に効率化される。<br>
 一般的な活用パターンは以下の通りです:</p>
 <ul>
 <li><strong>コンプライアンス強化</strong>: PCI DSS、ISO27001、SOC2 などの国際規格要件を常に満たすため、継続的モニタリングと定期レポート発行を自動化</li>
@@ -8424,9 +8424,9 @@ Audit Manager により、オンプレミス中心の従来型監査プロセス
 <hr>
 <h2 id="aws-certificate-manager-acm">AWS Certificate Manager (ACM)<a class="headerlink" href="#aws-certificate-manager-acm" title="Permanent link">¶</a></h2>
 <h3 id="1_8">1. サービス概要<a class="headerlink" href="#1_8" title="Permanent link">¶</a></h3>
-<p>AWS Certificate Manager (ACM) は、AWS のサービスおよびプライベートネットワークで使用する SSL/TLS 証明書のプロビジョニング、管理、デプロイを容易にするサービスです。<br>
-ユーザーは、証明書の取得、更新、管理を自動化し、アプリケーションのセキュリティを強化できます。<br>
-ACM は、証明書のライフサイクル全体を管理し、手動での証明書管理に伴う複雑さを軽減します。</p>
+<p>AWS Certificate Manager (ACM) は、AWS のサービスおよびプライベートネットワークで使用する SSL/TLS 証明書のプロビジョニング、管理、デプロイを容易にするサービスである。<br>
+ユーザーは、証明書の取得、更新、管理を自動化し、アプリケーションのセキュリティを強化できる。<br>
+ACM は、証明書のライフサイクル全体を管理し、手動での証明書管理に伴う複雑さを軽減する。</p>
 <p>主なユースケースとして、</p>
 <p>Web サイトの HTTPS 化
 API Gateway の HTTPS エンドポイント設定
@@ -8434,29 +8434,29 @@ API Gateway の HTTPS エンドポイント設定
 CloudFront ディストリビューションの HTTPS 設定
 プライベート CA の運用</p>
 <p>などが挙げられます。<br>
-AWS Certificate Manager は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS Certificate Manager は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_8">2. 主な特徴と機能<a class="headerlink" href="#2_8" title="Permanent link">¶</a></h3>
 <h4 id="21-ssltls">2.1 パブリック SSL/TLS 証明書<a class="headerlink" href="#21-ssltls" title="Permanent link">¶</a></h4>
-<p>ACM は、AWS のサービス（ELB, CloudFront, API Gateway など）で使用するパブリック SSL/TLS 証明書を無料でプロビジョニング、管理できます。<br>
-証明書の取得、更新、デプロイを自動化し、手動での作業を削減できます。</p>
+<p>ACM は、AWS のサービス（ELB, CloudFront, API Gateway など）で使用するパブリック SSL/TLS 証明書を無料でプロビジョニング、管理できる。<br>
+証明書の取得、更新、デプロイを自動化し、手動での作業を削減できる。</p>
 <h4 id="22-ssltls">2.2 プライベート SSL/TLS 証明書<a class="headerlink" href="#22-ssltls" title="Permanent link">¶</a></h4>
-<p>AWS Private CA と連携して、プライベートネットワークで使用するプライベート SSL/TLS 証明書を発行できます。<br>
-これにより、企業内のシステムやアプリケーション間の通信を安全に保護できます。</p>
+<p>AWS Private CA と連携して、プライベートネットワークで使用するプライベート SSL/TLS 証明書を発行できる。<br>
+これにより、企業内のシステムやアプリケーション間の通信を安全に保護できる。</p>
 <h4 id="23_6">2.3 自動更新<a class="headerlink" href="#23_6" title="Permanent link">¶</a></h4>
 <p>ACM は、パブリック SSL/TLS 証明書の更新を自動的に行います。<br>
-これにより、証明書の有効期限切れによるサービスの停止を防ぎ、証明書の管理負担を軽減できます。</p>
+これにより、証明書の有効期限切れによるサービスの停止を防ぎ、証明書の管理負担を軽減できる。</p>
 <h4 id="24_6">2.4 証明書のインポート<a class="headerlink" href="#24_6" title="Permanent link">¶</a></h4>
-<p>他の認証局で取得した SSL/TLS 証明書を ACM にインポートして利用できます。<br>
-これにより、既存の証明書を AWS 環境で再利用できます。</p>
+<p>他の認証局で取得した SSL/TLS 証明書を ACM にインポートして利用できる。<br>
+これにより、既存の証明書を AWS 環境で再利用できる。</p>
 <h4 id="25_4">2.5 証明書のデプロイ<a class="headerlink" href="#25_4" title="Permanent link">¶</a></h4>
-<p>ACM でプロビジョニングした証明書を、ロードバランサー、CloudFront ディストリビューション、API Gateway などの AWS サービスに簡単にデプロイできます。<br>
-証明書のデプロイは、数クリックで完了します。</p>
+<p>ACM でプロビジョニングした証明書を、ロードバランサー、CloudFront ディストリビューション、API Gateway などの AWS サービスに簡単にデプロイできる。<br>
+証明書のデプロイは、数クリックで完了する。</p>
 <h4 id="26_3">2.6 検証方法<a class="headerlink" href="#26_3" title="Permanent link">¶</a></h4>
-<p>ACM は、DNS 検証とメール検証という 2 つの証明書検証方法をサポートしています。<br>
-DNS 検証は、CNAME レコードを追加することで証明書を検証する方法であり、メール検証は、指定したメールアドレスに送信されるメールを確認することで証明書を検証する方法です。</p>
+<p>ACM は、DNS 検証とメール検証という 2 つの証明書検証方法をサポートしている。<br>
+DNS 検証は、CNAME レコードを追加することで証明書を検証する方法であり、メール検証は、指定したメールアドレスに送信されるメールを確認することで証明書を検証する方法である。</p>
 <h4 id="27_5">2.7 統合性と拡張性<a class="headerlink" href="#27_5" title="Permanent link">¶</a></h4>
 <p>AWS ACM は、Elastic Load Balancer (ELB), Amazon CloudFront, Amazon API Gateway, AWS Elastic Beanstalk などの AWS の他のサービスと密接に統合されています。<br>
-また、API を利用して、証明書の管理を自動化することもできます。</p>
+また、API を利用して、証明書の管理を自動化することもできる。</p>
 <h3 id="3_8">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_8" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS マネジメントコンソールまたは API を通じて、ACM に証明書をリクエスト。</li>
@@ -8464,22 +8464,22 @@ DNS 検証は、CNAME レコードを追加することで証明書を検証す�
 <li>ACM は、プロビジョニングした証明書を、ロードバランサー、CloudFront、API Gateway などの AWS サービスにデプロイ。</li>
 <li>証明書は、自動的に更新され、可用性とセキュリティを確保。</li>
 </ol>
-<p>AWS ACM は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供します。<br>
+<p>AWS ACM は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供する。<br>
 証明書のプロビジョニング、管理、デプロイは AWS が行うため、ユーザーは手動で証明書を管理する必要はありません。</p>
 <h3 id="4_8">4. セキュリティと認証・認可<a class="headerlink" href="#4_8" title="Permanent link">¶</a></h3>
-<p>AWS Certificate Manager は、証明書と鍵のセキュリティを確保するために、以下の機能を提供します:</p>
+<p>AWS Certificate Manager は、証明書と鍵のセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、ACM へのアクセスを制御します。</li>
-<li><strong>データ暗号化</strong>: 秘密鍵は、ハードウェアセキュリティモジュール（HSM）で保護され、暗号化されます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、ACM の操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、ACM の利用状況を監査できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、ACM へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: 秘密鍵は、ハードウェアセキュリティモジュール（HSM）で保護され、暗号化される。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、ACM の操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、ACM の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、証明書とその鍵を安全に保護し、アプリケーションのセキュリティを確保します。</p>
+<p>これらのセキュリティ対策により、証明書とその鍵を安全に保護し、アプリケーションのセキュリティを確保する。</p>
 <h3 id="5_8">5. 料金形態<a class="headerlink" href="#5_8" title="Permanent link">¶</a></h3>
-<p>AWS Certificate Manager (ACM) は、パブリック SSL/TLS 証明書のプロビジョニング、管理、デプロイを、無料で利用できます。</p>
-<p>ただし、AWS Private CA を利用してプライベート SSL/TLS 証明書を発行する場合は、AWS Private CA の利用料金が発生します。</p>
+<p>AWS Certificate Manager (ACM) は、パブリック SSL/TLS 証明書のプロビジョニング、管理、デプロイを、無料で利用できる。</p>
+<p>ただし、AWS Private CA を利用してプライベート SSL/TLS 証明書を発行する場合は、AWS Private CA の利用料金が発生する。</p>
 <h3 id="6_8">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_8" title="Permanent link">¶</a></h3>
-<p>AWS Certificate Manager は、様々なセキュリティ要件に対応するために利用できます。一般的なパターンは以下の通りです:</p>
+<p>AWS Certificate Manager は、様々なセキュリティ要件に対応するために利用できる。一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>Web サイトの HTTPS 化</strong>: ロードバランサーや CloudFront と連携し、Web サイトを HTTPS で安全に提供。</li>
 <li><strong>API Gateway の HTTPS エンドポイント設定</strong>: API Gateway のエンドポイントを HTTPS で保護。</li>
@@ -8540,49 +8540,49 @@ DNS 検証は、CNAME レコードを追加することで証明書を検証す�
 <h4 id="88_2">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_2" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Certificate Manager (ACM) は何を提供するサービスですか？</li>
-<li>A: AWS のサービスおよびプライベートネットワークで使用する SSL/TLS 証明書のプロビジョニング、管理、デプロイを容易にするサービスです。</li>
-<li>Q: AWS Certificate Manager でプロビジョニングできる SSL/TLS 証明書には、どのような種類がありますか？</li>
-<li>A: パブリック SSL/TLS 証明書とプライベート SSL/TLS 証明書の 2 種類があります。</li>
-<li>Q: AWS Certificate Manager は、どのようにパブリック SSL/TLS 証明書を更新しますか？</li>
+<li>A: AWS のサービスおよびプライベートネットワークで使用する SSL/TLS 証明書のプロビジョニング、管理、デプロイを容易にするサービスである。</li>
+<li>Q: AWS Certificate Manager でプロビジョニングできる SSL/TLS 証明書には、どのような種類があるか？</li>
+<li>A: パブリック SSL/TLS 証明書とプライベート SSL/TLS 証明書の 2 種類がある。</li>
+<li>Q: AWS Certificate Manager は、どのようにパブリック SSL/TLS 証明書を更新するか？</li>
 <li>A: 証明書の更新を自動的に行います。</li>
 <li>Q: AWS Certificate Manager で証明書をデプロイできる AWS サービスは何ですか？</li>
-<li>A: ロードバランサー、CloudFront ディストリビューション、API Gateway などのサービスにデプロイできます。</li>
+<li>A: ロードバランサー、CloudFront ディストリビューション、API Gateway などのサービスにデプロイできる。</li>
 <li>Q: AWS Certificate Manager の料金体系は？</li>
-<li>A: パブリック SSL/TLS 証明書のプロビジョニング、管理、デプロイは無料で利用できます。</li>
+<li>A: パブリック SSL/TLS 証明書のプロビジョニング、管理、デプロイは無料で利用できる。</li>
 </ul>
 <hr>
 <h2 id="aws-cloudhsm">AWS CloudHSM<a class="headerlink" href="#aws-cloudhsm" title="Permanent link">¶</a></h2>
 <h3 id="1_9">1. サービス概要<a class="headerlink" href="#1_9" title="Permanent link">¶</a></h3>
-<p>AWS CloudHSM は、ハードウェアセキュリティモジュール(HSM)を AWS 上で専用に利用できるようにした、クラウドベースのハードウェア暗号化サービスです。<br>
-従来のオンプレミスでの HSM 運用に近い形で鍵を管理・保持できるため、高いセキュリティ要件や規制準拠（PCI DSS、FIPS 140-2 レベル 3 など）に対応する用途に活用されます。</p>
+<p>AWS CloudHSM は、ハードウェアセキュリティモジュール(HSM)を AWS 上で専用に利用できるようにした、クラウドベースのハードウェア暗号化サービスである。<br>
+従来のオンプレミスでの HSM 運用に近い形で鍵を管理・保持できるため、高いセキュリティ要件や規制準拠（PCI DSS、FIPS 140-2 レベル 3 など）に対応する用途に活用される。</p>
 <p>主なユースケースとしては、</p>
 <ul>
 <li>金融や保険</li>
 <li>公共機関などの厳格な規制下にある機関での鍵管理</li>
 <li>大規模な暗号処理（証明書発行、鍵生成、TLS/SSL セッションの終端処理など）</li>
 </ul>
-<p>があります。<br>
-ユーザーが鍵を完全に所有し、AWS 側でも読み出しできない点が特徴です。</p>
+<p>がある。<br>
+ユーザーが鍵を完全に所有し、AWS 側でも読み出しできない点が特徴である。</p>
 <h3 id="2_9">2. 主な特徴と機能<a class="headerlink" href="#2_9" title="Permanent link">¶</a></h3>
 <h4 id="21_7">2.1 専用ハードウェアによる強固な鍵管理<a class="headerlink" href="#21_7" title="Permanent link">¶</a></h4>
 <p>CloudHSM は AWS が提供する物理的な HSM アプライアンスをユーザー専用に割り当てます。<br>
-これにより、共用基盤ではなく専有環境で鍵を保持できるため、シングルテナントかつ高いセキュリティ隔離を実現します。</p>
+これにより、共用基盤ではなく専有環境で鍵を保持できるため、シングルテナントかつ高いセキュリティ隔離を実現する。</p>
 <ul>
 <li><strong>完全な鍵管理</strong>: HSM 内の鍵はユーザーのみが制御し、AWS はアクセス不可</li>
 <li><strong>高速暗号処理</strong>: 専用ハードウェアが暗号演算を高速かつ安全に実行</li>
 </ul>
 <h4 id="22-fips-140-2">2.2 FIPS 140-2 準拠<a class="headerlink" href="#22-fips-140-2" title="Permanent link">¶</a></h4>
-<p>CloudHSM は FIPS 140-2 レベル 3 に準拠しており、高度な暗号鍵管理やハードウェアセキュリティを要する業界向けの要件を満たします。<br>
-カード決済業界の PCI DSS 要件など、厳格なコンプライアンスにも対応可能です。</p>
+<p>CloudHSM は FIPS 140-2 レベル 3 に準拠しており、高度な暗号鍵管理やハードウェアセキュリティを要する業界向けの要件を満たする。<br>
+カード決済業界の PCI DSS 要件など、厳格なコンプライアンスにも対応可能である。</p>
 <h4 id="23_7">2.3 スケーラビリティと可用性<a class="headerlink" href="#23_7" title="Permanent link">¶</a></h4>
-<p>必要に応じてクラスタを構成し、複数の CloudHSM インスタンスを展開することで、高可用性と負荷分散を実現できます。<br>
-フェイルオーバー時にも鍵が失われないように自動レプリケーションされ、ダウンタイムの短縮に貢献します。</p>
+<p>必要に応じてクラスタを構成し、複数の CloudHSM インスタンスを展開することで、高可用性と負荷分散を実現できる。<br>
+フェイルオーバー時にも鍵が失われないように自動レプリケーションされ、ダウンタイムの短縮に貢献する。</p>
 <h4 id="24-api">2.4 柔軟な API サポート<a class="headerlink" href="#24-api" title="Permanent link">¶</a></h4>
-<p>PKCS#11 や JCE(Java Cryptography Extensions)、OpenSSL エンジンなど、業界標準の暗号 API をサポートしており、既存のアプリケーションとの統合が容易です。<br>
-これによりオンプレミスからクラウドへの移行時や、カスタム暗号ロジックの実装がスムーズに行えます。</p>
+<p>PKCS#11 や JCE(Java Cryptography Extensions)、OpenSSL エンジンなど、業界標準の暗号 API をサポートしており、既存のアプリケーションとの統合が容易である。<br>
+これによりオンプレミスからクラウドへの移行時や、カスタム暗号ロジックの実装がスムーズに行える。</p>
 <h4 id="25-aws-key-management-serviceaws-kms">2.5 AWS Key Management Service(AWS KMS)との比較<a class="headerlink" href="#25-aws-key-management-serviceaws-kms" title="Permanent link">¶</a></h4>
-<p>CloudHSM はユーザーが鍵を完全に制御する一方、KMS は AWS によるフルマネージドでの鍵管理が可能です。<br>
-クラウドネイティブな運用性を求めるなら KMS、より厳格な鍵所有を求めるなら CloudHSM、と使い分けるケースが一般的です。</p>
+<p>CloudHSM はユーザーが鍵を完全に制御する一方、KMS は AWS によるフルマネージドでの鍵管理が可能である。<br>
+クラウドネイティブな運用性を求めるなら KMS、より厳格な鍵所有を求めるなら CloudHSM、と使い分けるケースが一般的である。</p>
 <h3 id="3_9">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_9" title="Permanent link">¶</a></h3>
 <ol>
 <li>CloudHSM クラスタを作成し、VPC のサブネットに専用 HSM アプライアンスを配置</li>
@@ -8592,7 +8592,7 @@ DNS 検証は、CNAME レコードを追加することで証明書を検証す�
 </ol>
 <p>クライアントソフトウェア(AWS CloudHSM Client)を利用することで、アプリケーションはクラウド上の HSM をローカルの HSM と同様に扱えます。</p>
 <h3 id="4_9">4. セキュリティと認証・認可<a class="headerlink" href="#4_9" title="Permanent link">¶</a></h3>
-<p>CloudHSM はハードウェアレベルでのセキュリティ保護を提供します:</p>
+<p>CloudHSM はハードウェアレベルでのセキュリティ保護を提供する:</p>
 <ul>
 <li><strong>ハードウェア要塞化</strong>: 物理的に改ざんされると自動的に鍵を破棄する仕組み</li>
 <li><strong>アクセスコントロール</strong>: CloudHSM 内の鍵操作はユーザーが作成するトークン認証(PKCS#11 の PIN など)を利用</li>
@@ -8668,9 +8668,9 @@ DNS 検証は、CNAME レコードを追加することで証明書を検証す�
 <hr>
 <h2 id="aws-directory-service">AWS Directory Service<a class="headerlink" href="#aws-directory-service" title="Permanent link">¶</a></h2>
 <h3 id="1_10">1. サービス概要<a class="headerlink" href="#1_10" title="Permanent link">¶</a></h3>
-<p>AWS Directory Service は、AWS クラウド環境で、Microsoft Active Directory (AD) やその他のディレクトリサービスを簡単に利用できるようにするサービスです。<br>
-ユーザーは、既存の AD 環境を AWS クラウドに拡張したり、AWS Managed Microsoft AD のようなフルマネージドの AD を新たに作成したりできます。<br>
-これにより、ユーザー認証、アクセス制御、グループポリシーなどを集中管理し、AWS 環境とオンプレミス環境の連携を容易にできます。</p>
+<p>AWS Directory Service は、AWS クラウド環境で、Microsoft Active Directory (AD) やその他のディレクトリサービスを簡単に利用できるようにするサービスである。<br>
+ユーザーは、既存の AD 環境を AWS クラウドに拡張したり、AWS Managed Microsoft AD のようなフルマネージドの AD を新たに作成したりできる。<br>
+これにより、ユーザー認証、アクセス制御、グループポリシーなどを集中管理し、AWS 環境とオンプレミス環境の連携を容易にできる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>EC2 インスタンスのドメイン参加</li>
@@ -8680,29 +8680,29 @@ DNS 検証は、CNAME レコードを追加することで証明書を検証す�
 <li>SharePoint などのエンタープライズアプリケーションの利用</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS Directory Service は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS Directory Service は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_10">2. 主な特徴と機能<a class="headerlink" href="#2_10" title="Permanent link">¶</a></h3>
 <h4 id="21-aws-managed-microsoft-ad">2.1 AWS Managed Microsoft AD<a class="headerlink" href="#21-aws-managed-microsoft-ad" title="Permanent link">¶</a></h4>
-<p>AWS が管理するフルマネージドの Microsoft Active Directory を提供します。<br>
-ユーザーは、AD インフラの構築や管理を行うことなく、AD の機能を利用できます。</p>
+<p>AWS が管理するフルマネージドの Microsoft Active Directory を提供する。<br>
+ユーザーは、AD インフラの構築や管理を行うことなく、AD の機能を利用できる。</p>
 <h4 id="22-ad-connector">2.2 AD Connector<a class="headerlink" href="#22-ad-connector" title="Permanent link">¶</a></h4>
-<p>既存のオンプレミス AD と AWS 環境を接続するためのプロキシとして機能します。<br>
-ユーザーは、オンプレミスの AD 認証情報を利用して、AWS リソースにアクセスできます。</p>
+<p>既存のオンプレミス AD と AWS 環境を接続するためのプロキシとして機能する。<br>
+ユーザーは、オンプレミスの AD 認証情報を利用して、AWS リソースにアクセスできる。</p>
 <h4 id="23-simple-ad">2.3 Simple AD<a class="headerlink" href="#23-simple-ad" title="Permanent link">¶</a></h4>
-<p>AWS クラウド環境で、シンプルなスタンドアロンの AD を提供します。<br>
-ユーザーは、小規模な環境や開発環境で、AD 機能を簡単に利用できます。</p>
+<p>AWS クラウド環境で、シンプルなスタンドアロンの AD を提供する。<br>
+ユーザーは、小規模な環境や開発環境で、AD 機能を簡単に利用できる。</p>
 <h4 id="24-ad">2.4 AD 対応アプリケーションの利用<a class="headerlink" href="#24-ad" title="Permanent link">¶</a></h4>
-<p>AD に対応した様々な AWS サービス（例：WorkSpaces, Amazon RDS for SQL Server など）やアプリケーションを、AD 環境で利用できます。<br>
-これにより、既存の AD 環境を AWS クラウドに拡張し、エンタープライズアプリケーションを容易に利用できます。</p>
+<p>AD に対応した様々な AWS サービス（例：WorkSpaces, Amazon RDS for SQL Server など）やアプリケーションを、AD 環境で利用できる。<br>
+これにより、既存の AD 環境を AWS クラウドに拡張し、エンタープライズアプリケーションを容易に利用できる。</p>
 <h4 id="25_5">2.5 信頼関係<a class="headerlink" href="#25_5" title="Permanent link">¶</a></h4>
-<p>AWS Managed Microsoft AD とオンプレミス AD との間に、双方向の信頼関係を設定できます。<br>
-これにより、オンプレミスと AWS の両方のリソースに、同じ認証情報でアクセスできます。</p>
+<p>AWS Managed Microsoft AD とオンプレミス AD との間に、双方向の信頼関係を設定できる。<br>
+これにより、オンプレミスと AWS の両方のリソースに、同じ認証情報でアクセスできる。</p>
 <h4 id="26_4">2.6 グループポリシー<a class="headerlink" href="#26_4" title="Permanent link">¶</a></h4>
-<p>グループポリシーを利用して、ユーザーやコンピューターの設定を集中管理できます。<br>
-これにより、AWS 環境全体で一貫した設定を適用できます。</p>
+<p>グループポリシーを利用して、ユーザーやコンピューターの設定を集中管理できる。<br>
+これにより、AWS 環境全体で一貫した設定を適用できる。</p>
 <h4 id="27_6">2.7 統合性と拡張性<a class="headerlink" href="#27_6" title="Permanent link">¶</a></h4>
 <p>AWS Directory Service は、Amazon EC2, Amazon RDS, Amazon WorkSpaces, AWS IAM などの AWS の他のサービスと密接に統合されています。<br>
-また、API を利用して、ディレクトリサービスの管理を自動化することもできます。</p>
+また、API を利用して、ディレクトリサービスの管理を自動化することもできる。</p>
 <h3 id="3_10">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_10" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS Directory Service で AWS Managed Microsoft AD、AD Connector、または Simple AD を作成。</li>
@@ -8710,18 +8710,18 @@ AWS Directory Service は、これらのユースケースに対応するため�
 <li>ユーザーは、ディレクトリサービスで認証を行い、AWS リソースにアクセス。</li>
 <li>必要に応じて、オンプレミス AD と AWS Managed Microsoft AD の間で信頼関係を確立。</li>
 </ol>
-<p>AWS Directory Service は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供します。<br>
+<p>AWS Directory Service は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供する。<br>
 ディレクトリサービスのプロビジョニングや管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
 <h4 id="4_10">4. セキュリティと認証・認可<a class="headerlink" href="#4_10" title="Permanent link">¶</a></h4>
-<p>AWS Directory Service は、ディレクトリサービスのセキュリティを確保するために、以下の機能を提供します:</p>
+<p>AWS Directory Service は、ディレクトリサービスのセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS Directory Service へのアクセスを制御します。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、AWS Directory Service へのアクセスを制御する。</li>
 <li><strong>VPC 内での実行</strong>: ディレクトリサービスは Virtual Private Cloud (VPC) 内で実行され、ネットワーク隔離を実現。</li>
-<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化されます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、AWS Directory Service の操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、AWS Directory Service の利用状況を監査できます。</li>
+<li><strong>データ暗号化</strong>: データは転送中および保存時に暗号化される。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、AWS Directory Service の操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、AWS Directory Service の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、ディレクトリサービスとそのデータを安全に保護します。</p>
+<p>これらのセキュリティ対策により、ディレクトリサービスとそのデータを安全に保護する。</p>
 <h3 id="5_10">5. 料金形態<a class="headerlink" href="#5_10" title="Permanent link">¶</a></h3>
 <p>AWS Directory Service の料金は主に以下に基づきます:</p>
 <ul>
@@ -8730,7 +8730,7 @@ AWS Directory Service は、これらのユースケースに対応するため�
 <li><strong>Simple AD</strong>: 1 か月あたりに利用した時間に応じた料金と、ストレージ容量に応じた料金。</li>
 </ul>
 <h3 id="6_10">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_10" title="Permanent link">¶</a></h3>
-<p>AWS Directory Service は、様々な AWS 環境で利用できます。<br>
+<p>AWS Directory Service は、様々な AWS 環境で利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>EC2 インスタンスのドメイン参加</strong>: EC2 インスタンスを AWS Managed Microsoft AD に参加させ、AD 認証を利用。</li>
@@ -8800,21 +8800,21 @@ AWS Directory Service は、これらのユースケースに対応するため�
 <h4 id="89_1">8.9 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#89_1" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Directory Service は何を提供するサービスですか？</li>
-<li>A: AWS クラウド環境で、Microsoft Active Directory (AD) やその他のディレクトリサービスを簡単に利用できるようにするサービスです。</li>
-<li>Q: AWS Directory Service には、どのような種類のディレクトリサービスがありますか？</li>
-<li>A: AWS Managed Microsoft AD、AD Connector、Simple AD の 3 つの種類があります。</li>
+<li>A: AWS クラウド環境で、Microsoft Active Directory (AD) やその他のディレクトリサービスを簡単に利用できるようにするサービスである。</li>
+<li>Q: AWS Directory Service には、どのような種類のディレクトリサービスがあるか？</li>
+<li>A: AWS Managed Microsoft AD、AD Connector、Simple AD の 3 つの種類がある。</li>
 <li>Q: AWS Managed Microsoft AD は、どのような特徴を持っていますか？</li>
-<li>A: AWS が管理するフルマネージドの Microsoft Active Directory を提供します。</li>
-<li>Q: AWS Directory Service の AD Connector は、どのような役割を果たしますか？</li>
-<li>A: 既存のオンプレミス AD と AWS 環境を接続するためのプロキシとして機能します。</li>
-<li>Q: AWS Directory Service の料金はどのように計算されますか？</li>
-<li>A: AWS Managed Microsoft AD、AD Connector、Simple AD の利用時間、ストレージ容量などに基づいて計算されます。</li>
+<li>A: AWS が管理するフルマネージドの Microsoft Active Directory を提供する。</li>
+<li>Q: AWS Directory Service の AD Connector は、どのような役割を果たするか？</li>
+<li>A: 既存のオンプレミス AD と AWS 環境を接続するためのプロキシとして機能する。</li>
+<li>Q: AWS Directory Service の料金はどのように計算されるか？</li>
+<li>A: AWS Managed Microsoft AD、AD Connector、Simple AD の利用時間、ストレージ容量などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="aws-firewall-manager">AWS Firewall Manager<a class="headerlink" href="#aws-firewall-manager" title="Permanent link">¶</a></h2>
 <h3 id="1_11">1. サービス概要<a class="headerlink" href="#1_11" title="Permanent link">¶</a></h3>
-<p>AWS Firewall Manager は、AWS WAF や AWS Shield などのセキュリティルールを一元管理し、複数の AWS アカウントやアプリケーションにわたってセキュリティポリシーを適用・保守するためのマネージドサービスです。<br>
-これにより、全アカウント・複数リージョンにおけるファイアウォール設定の整合性を保ち、脅威からの保護を統一的に運用できます。</p>
+<p>AWS Firewall Manager は、AWS WAF や AWS Shield などのセキュリティルールを一元管理し、複数の AWS アカウントやアプリケーションにわたってセキュリティポリシーを適用・保守するためのマネージドサービスである。<br>
+これにより、全アカウント・複数リージョンにおけるファイアウォール設定の整合性を保ち、脅威からの保護を統一的に運用できる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>AWS Organizations を活用したマルチアカウント環境でのセキュリティポリシー統制</li>
@@ -8824,21 +8824,21 @@ AWS Directory Service は、これらのユースケースに対応するため�
 <p>などが挙げられます。</p>
 <h3 id="2_11">2. 主な特徴と機能<a class="headerlink" href="#2_11" title="Permanent link">¶</a></h3>
 <h4 id="21_8">2.1 一元管理によるポリシー適用<a class="headerlink" href="#21_8" title="Permanent link">¶</a></h4>
-<p>Firewall Manager を使用すると、AWS WAF で定義したルールや、AWS Shield Advanced を有効化する設定を中心化して管理できます。<br>
-組織全体で共通のセキュリティポリシーを簡単に適用することで、設定のばらつきや誤ったルール構成を防止します。</p>
+<p>Firewall Manager を使用すると、AWS WAF で定義したルールや、AWS Shield Advanced を有効化する設定を中心化して管理できる。<br>
+組織全体で共通のセキュリティポリシーを簡単に適用することで、設定のばらつきや誤ったルール構成を防止する。</p>
 <ul>
 <li><strong>ポリシー自動適用</strong>: 新規に作成されたリソース（ALB、CloudFront など）にも自動的に WAF/Shield ルールを適用</li>
 <li><strong>ドリフト防止</strong>: 手動の変更でルール構成が壊れるのを防ぎ、監査性を確保</li>
 </ul>
 <h4 id="22-aws-organizations">2.2 AWS Organizations 連携<a class="headerlink" href="#22-aws-organizations" title="Permanent link">¶</a></h4>
-<p>Firewall Manager は AWS Organizations における管理アカウント(Management Account)を通じて、メンバーアカウントのリソース全体をカバーします。<br>
-数十〜数百といった大規模なマルチアカウント環境でも、集中管理によりコストと運用負荷を大幅に削減できます。</p>
+<p>Firewall Manager は AWS Organizations における管理アカウント(Management Account)を通じて、メンバーアカウントのリソース全体をカバーする。<br>
+数十〜数百といった大規模なマルチアカウント環境でも、集中管理によりコストと運用負荷を大幅に削減できる。</p>
 <h4 id="23-aws-shield-advanced">2.3 AWS Shield Advanced サポート<a class="headerlink" href="#23-aws-shield-advanced" title="Permanent link">¶</a></h4>
 <p>Firewall Manager は、有料版の DDoS 対策サービスである AWS Shield Advanced とも統合されています。<br>
-例えば特定のロードバランサや CloudFront ディストリビューションを Shield Advanced で保護対象とするポリシーを一括設定し、DDoS 対策の抜け漏れを最小化できます。</p>
+例えば特定のロードバランサや CloudFront ディストリビューションを Shield Advanced で保護対象とするポリシーを一括設定し、DDoS 対策の抜け漏れを最小化できる。</p>
 <h4 id="24_7">2.4 セキュリティポリシーの包括的制御<a class="headerlink" href="#24_7" title="Permanent link">¶</a></h4>
-<p>Firewall Manager は AWS WAF ルールの他にも、複数サービスのセキュリティ設定を一括管理できます。<br>
-これにより、異なるプロジェクトやアカウントのリソースに対しても、共通ルールを迅速に展開できます。</p>
+<p>Firewall Manager は AWS WAF ルールの他にも、複数サービスのセキュリティ設定を一括管理できる。<br>
+これにより、異なるプロジェクトやアカウントのリソースに対しても、共通ルールを迅速に展開できる。</p>
 <h3 id="3_11">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_11" title="Permanent link">¶</a></h3>
 <ol>
 <li>AWS Organizations でマルチアカウント構成を管理し、Firewall Manager の管理者(Administrator)アカウントを指定</li>
@@ -8846,23 +8846,23 @@ AWS Directory Service は、これらのユースケースに対応するため�
 <li>組織内のメンバーアカウントが作成・保有するリソース(CloudFront, ALB, API Gateway 等)に対して、自動的にポリシーが適用</li>
 <li>ポリシー違反がある場合、警告やレポートを表示して修正を促す</li>
 </ol>
-<p>Firewall Manager は AWS WAF、Shield Advanced、VPC Security Group などの設定と連携し、ユーザーは管理対象を選択するだけで一括制御を実現します。</p>
+<p>Firewall Manager は AWS WAF、Shield Advanced、VPC Security Group などの設定と連携し、ユーザーは管理対象を選択するだけで一括制御を実現する。</p>
 <h3 id="4_11">4. セキュリティと認証・認可<a class="headerlink" href="#4_11" title="Permanent link">¶</a></h3>
-<p>Firewall Manager の利用にあたっては、次のようなセキュリティ面が重要です:</p>
+<p>Firewall Manager の利用にあたっては、次のようなセキュリティ面が重要である:</p>
 <ul>
 <li><strong>IAM ロール</strong>: Firewall Manager がメンバーアカウントのリソース情報や WAF ルールを変更するために必要な権限を付与</li>
 <li><strong>Organizations 管理</strong>: AWS Organizations の Administrator/Member アカウントの設定に基づき、ポリシーを強制適用</li>
 <li><strong>暗号化・監査ログ</strong>: Firewall Manager 自体がカスタマイズ可能なアクセスログは持たないが、AWS WAF ログや CloudTrail を利用し運用状況を監査</li>
 </ul>
 <h3 id="5_11">5. 料金形態<a class="headerlink" href="#5_11" title="Permanent link">¶</a></h3>
-<p>AWS Firewall Manager の料金は以下の要素で構成されます:</p>
+<p>AWS Firewall Manager の料金は以下の要素で構成される:</p>
 <ul>
 <li><strong>Firewall Manager 月額</strong>: アクティブなポリシー数に基づく月額料金（AWS 公式ページを参照）</li>
 <li><strong>AWS WAF/Shield Advanced 利用料</strong>: Firewall Manager とは別に、利用する WAF ルール数や Shield Advanced 料金が発生</li>
 <li><strong>その他</strong>: VPC セキュリティグループ管理ポリシーを利用する場合は追加コストが発生する場合あり</li>
 </ul>
 <h3 id="6_11">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_11" title="Permanent link">¶</a></h3>
-<p>Firewall Manager の導入で典型的なパターンには以下があります:</p>
+<p>Firewall Manager の導入で典型的なパターンには以下がある:</p>
 <ul>
 <li><strong>Web アプリ防御の標準化</strong>: 全アカウントの ALB や CloudFront に対して共通の WAF ルールセットを適用</li>
 <li><strong>DDoS プロテクション統合</strong>: AWS Shield Advanced を組織全体に導入し、DDoS 対策を一元管理</li>
@@ -8924,9 +8924,9 @@ AWS Directory Service は、これらのユースケースに対応するため�
 <hr>
 <h2 id="aws-identity-and-access-management-aws-iam">AWS Identity and Access Management (AWS IAM)<a class="headerlink" href="#aws-identity-and-access-management-aws-iam" title="Permanent link">¶</a></h2>
 <h3 id="1_12">1. サービス概要<a class="headerlink" href="#1_12" title="Permanent link">¶</a></h3>
-<p>AWS Identity and Access Management (IAM) は、AWS リソースへのアクセスを安全に制御するためのサービスです。<br>
-ユーザーは、IAM ユーザー、IAM グループ、IAM ロールなどの ID を作成し、それぞれに AWS リソースへのアクセス権限を付与できます。<br>
-IAM は、AWS 環境におけるセキュリティの基本であり、最小権限の原則に基づいて、アクセス制御を行うことを推奨します。</p>
+<p>AWS Identity and Access Management (IAM) は、AWS リソースへのアクセスを安全に制御するためのサービスである。<br>
+ユーザーは、IAM ユーザー、IAM グループ、IAM ロールなどの ID を作成し、それぞれに AWS リソースへのアクセス権限を付与できる。<br>
+IAM は、AWS 環境におけるセキュリティの基本であり、最小権限の原則に基づいて、アクセス制御を行うことを推奨する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>AWS アカウントへのアクセス制御</li>
@@ -8936,30 +8936,30 @@ IAM は、AWS 環境におけるセキュリティの基本であり、最小権
 <li>クロスアカウントアクセス</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS IAM は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS IAM は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_12">2. 主な特徴と機能<a class="headerlink" href="#2_12" title="Permanent link">¶</a></h3>
 <h4 id="21-iam">2.1 IAM ユーザー<a class="headerlink" href="#21-iam" title="Permanent link">¶</a></h4>
-<p>IAM ユーザーは、AWS へのアクセスに使用する個人またはアプリケーション用の ID です。<br>
-IAM ユーザーには、パスワード、アクセスキーなどの認証情報を設定できます。</p>
+<p>IAM ユーザーは、AWS へのアクセスに使用する個人またはアプリケーション用の ID である。<br>
+IAM ユーザーには、パスワード、アクセスキーなどの認証情報を設定できる。</p>
 <h4 id="22-iam">2.2 IAM グループ<a class="headerlink" href="#22-iam" title="Permanent link">¶</a></h4>
-<p>IAM グループは、複数の IAM ユーザーをまとめて管理するためのグループです。<br>
-グループにポリシーを適用することで、複数のユーザーに同じ権限を簡単に付与できます。</p>
+<p>IAM グループは、複数の IAM ユーザーをまとめて管理するためのグループである。<br>
+グループにポリシーを適用することで、複数のユーザーに同じ権限を簡単に付与できる。</p>
 <h4 id="23-iam">2.3 IAM ロール<a class="headerlink" href="#23-iam" title="Permanent link">¶</a></h4>
-<p>IAM ロールは、AWS リソースに一時的なアクセス権限を付与するための ID です。<br>
+<p>IAM ロールは、AWS リソースに一時的なアクセス権限を付与するための ID である。<br>
 EC2 インスタンス、Lambda 関数などの AWS リソースに IAM ロールを割り当てることで、リソースが他の AWS リソースに安全にアクセスできるようになります。</p>
 <h4 id="24-iam">2.4 IAM ポリシー<a class="headerlink" href="#24-iam" title="Permanent link">¶</a></h4>
-<p>IAM ポリシーは、AWS リソースへのアクセス権限を定義するドキュメントです。<br>
-IAM ポリシーは、IAM ユーザー、IAM グループ、IAM ロールにアタッチできます。<br>
-ポリシーは、JSON 形式で記述され、許可または拒否するアクション、リソース、条件などを指定できます。</p>
+<p>IAM ポリシーは、AWS リソースへのアクセス権限を定義するドキュメントである。<br>
+IAM ポリシーは、IAM ユーザー、IAM グループ、IAM ロールにアタッチできる。<br>
+ポリシーは、JSON 形式で記述され、許可または拒否するアクション、リソース、条件などを指定できる。</p>
 <h4 id="25-mfa_1">2.5 多要素認証 (MFA)<a class="headerlink" href="#25-mfa_1" title="Permanent link">¶</a></h4>
-<p>IAM ユーザーに対して、多要素認証（MFA）を有効にできます。<br>
-これにより、パスワードだけでなく、追加の認証要素を要求することで、セキュリティを強化できます。</p>
+<p>IAM ユーザーに対して、多要素認証（MFA）を有効にできる。<br>
+これにより、パスワードだけでなく、追加の認証要素を要求することで、セキュリティを強化できる。</p>
 <h4 id="26_5">2.6 認証情報の管理<a class="headerlink" href="#26_5" title="Permanent link">¶</a></h4>
-<p>IAM は、アクセスキー、パスワード、MFA デバイスなどの認証情報を管理するための機能を提供します。<br>
-ユーザーは、これらの認証情報を安全に管理し、AWS リソースへのアクセスを制御できます。</p>
+<p>IAM は、アクセスキー、パスワード、MFA デバイスなどの認証情報を管理するための機能を提供する。<br>
+ユーザーは、これらの認証情報を安全に管理し、AWS リソースへのアクセスを制御できる。</p>
 <h4 id="27_7">2.7 統合性と拡張性<a class="headerlink" href="#27_7" title="Permanent link">¶</a></h4>
-<p>AWS IAM は、AWS の他のサービス（EC2、S3、RDS、Lambda など）と密接に統合されており、AWS 環境全体のリソースへのアクセス制御を一元的に管理できます。<br>
-また、API を利用して、IAM の管理を自動化することもできます。</p>
+<p>AWS IAM は、AWS の他のサービス（EC2、S3、RDS、Lambda など）と密接に統合されており、AWS 環境全体のリソースへのアクセス制御を一元的に管理できる。<br>
+また、API を利用して、IAM の管理を自動化することもできる。</p>
 <h3 id="3_12">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_12" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS マネジメントコンソールまたは API を通じて、IAM ユーザー、IAM グループ、IAM ロールなどの ID を作成。</li>
@@ -8968,7 +8968,7 @@ IAM ポリシーは、IAM ユーザー、IAM グループ、IAM ロールにア�
 <li>AWS リソースへのアクセスリクエストは、IAM によって認証、認可。</li>
 <li>リクエストされたリソースへのアクセスが許可されると、アクセス可能。</li>
 </ol>
-<p>AWS IAM は、AWS のグローバルインフラストラクチャの一部であり、高い可用性とスケーラビリティを提供します。<br>
+<p>AWS IAM は、AWS のグローバルインフラストラクチャの一部であり、高い可用性とスケーラビリティを提供する。<br>
 認証、認可などのアクセス制御は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
 <h3 id="4_12">4. セキュリティと認証・認可<a class="headerlink" href="#4_12" title="Permanent link">¶</a></h3>
 <p>AWS IAM は、AWS 環境のセキュリティを確保するための基盤となるサービスです:</p>
@@ -8979,12 +8979,12 @@ IAM ポリシーは、IAM ユーザー、IAM グループ、IAM ロールにア�
 <li><strong>アクセスキーのローテーション</strong>: 定期的にアクセスキーをローテーションして、セキュリティリスクを低減。</li>
 <li><strong>IAM ポリシーの管理</strong>: IAM ポリシーを適切に管理し、アクセス権限を制御。</li>
 </ul>
-<p>これらのセキュリティ対策により、AWS 環境への不正アクセスを防止し、機密情報を保護できます。</p>
+<p>これらのセキュリティ対策により、AWS 環境への不正アクセスを防止し、機密情報を保護できる。</p>
 <h3 id="5_12">5. 料金形態<a class="headerlink" href="#5_12" title="Permanent link">¶</a></h3>
-<p>AWS Identity and Access Management (IAM) は、無料で利用できるサービスです。</p>
-<p>ただし、IAM と連携する他の AWS サービス（EC2、S3、RDS など）の利用料金は発生します。</p>
+<p>AWS Identity and Access Management (IAM) は、無料で利用できるサービスである。</p>
+<p>ただし、IAM と連携する他の AWS サービス（EC2、S3、RDS など）の利用料金は発生する。</p>
 <h3 id="6_12">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_12" title="Permanent link">¶</a></h3>
-<p>AWS IAM は、様々なアクセス制御シナリオで利用できます。<br>
+<p>AWS IAM は、様々なアクセス制御シナリオで利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>AWS アカウントへのアクセス制御</strong>: AWS アカウントへのログイン認証とアクセス権限を IAM ユーザーで制御。</li>
@@ -9047,21 +9047,21 @@ IAM ポリシーは、IAM ユーザー、IAM グループ、IAM ロールにア�
 <h4 id="88_4">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88_4" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Identity and Access Management (IAM) は何を提供するサービスですか？</li>
-<li>A: AWS リソースへのアクセスを安全に制御するためのサービスです。</li>
+<li>A: AWS リソースへのアクセスを安全に制御するためのサービスである。</li>
 <li>Q: IAM ユーザーとは何ですか？</li>
-<li>A: AWS へのアクセスに使用する個人またはアプリケーション用の ID です。</li>
-<li>Q: IAM ロールは何に使用しますか？</li>
-<li>A: AWS リソースに一時的なアクセス権限を付与するために使用します。</li>
+<li>A: AWS へのアクセスに使用する個人またはアプリケーション用の ID である。</li>
+<li>Q: IAM ロールは何に使用するか？</li>
+<li>A: AWS リソースに一時的なアクセス権限を付与するために使用する。</li>
 <li>Q: IAM ポリシーとは何ですか？</li>
-<li>A: AWS リソースへのアクセス権限を定義するドキュメントです。</li>
+<li>A: AWS リソースへのアクセス権限を定義するドキュメントである。</li>
 <li>Q: AWS IAM の料金は？</li>
-<li>A: 無料で利用できます。</li>
+<li>A: 無料で利用できる。</li>
 </ul>
 <hr>
 <h2 id="aws-key-management-service-aws-kms">AWS Key Management Service (AWS KMS)<a class="headerlink" href="#aws-key-management-service-aws-kms" title="Permanent link">¶</a></h2>
 <h3 id="1_13">1. サービス概要<a class="headerlink" href="#1_13" title="Permanent link">¶</a></h3>
-<p>AWS Key Management Service (AWS KMS)は、データの暗号化およびキー管理を安全かつ簡単に行うためのフルマネージドサービスです。<br>
-暗号鍵の作成・保持・ローテーション・廃棄まで一貫して管理し、多くの AWS サービス（Amazon S3、Amazon EBS、AWS Lambda など）とネイティブに連携することで、安全な暗号化機能を提供します。</p>
+<p>AWS Key Management Service (AWS KMS)は、データの暗号化およびキー管理を安全かつ簡単に行うためのフルマネージドサービスである。<br>
+暗号鍵の作成・保持・ローテーション・廃棄まで一貫して管理し、多くの AWS サービス（Amazon S3、Amazon EBS、AWS Lambda など）とネイティブに連携することで、安全な暗号化機能を提供する。</p>
 <p>主なユースケースには、</p>
 <ul>
 <li>データ暗号化の規制・コンプライアンス対応</li>
@@ -9071,30 +9071,30 @@ IAM ポリシーは、IAM ユーザー、IAM グループ、IAM ロールにア�
 <p>などが挙げられます。</p>
 <h3 id="2_13">2. 主な特徴と機能<a class="headerlink" href="#2_13" title="Permanent link">¶</a></h3>
 <h4 id="21_9">2.1 フルマネージド型の暗号鍵管理<a class="headerlink" href="#21_9" title="Permanent link">¶</a></h4>
-<p>KMS は暗号鍵（Customer Master Key, CMK）のライフサイクルを AWS が管理・運用し、耐障害性や冗長化も自動で担保します。<br>
-ユーザーはキーポリシーを設定するだけで、煩雑なハードウェア保守やソフトウェアパッチ適用から解放されます。</p>
+<p>KMS は暗号鍵（Customer Master Key, CMK）のライフサイクルを AWS が管理・運用し、耐障害性や冗長化も自動で担保する。<br>
+ユーザーはキーポリシーを設定するだけで、煩雑なハードウェア保守やソフトウェアパッチ適用から解放される。</p>
 <ul>
 <li><strong>CMK の作成・削除</strong>: 数クリックで鍵を作成し、不要になれば安全に削除</li>
 <li><strong>自動ローテーション</strong>: 任意の期間（例: 1 年）で CMK を自動ローテーション可</li>
 </ul>
 <h4 id="22_5">2.2 多様な暗号化モードをサポート<a class="headerlink" href="#22_5" title="Permanent link">¶</a></h4>
-<p>AWS KMS では、用途に応じて主に以下の暗号化モードを提供しています:</p>
+<p>AWS KMS では、用途に応じて主に以下の暗号化モードを提供している:</p>
 <ul>
 <li><strong>SSE-KMS</strong>: S3 や EBS など AWS サービスと連携し、サーバサイド暗号化を KMS 管理の鍵で実行</li>
 <li><strong>Client-Side Encryption</strong>: SDK などを用いてクライアント側でデータを暗号化し、その鍵を KMS で保護</li>
 <li><strong>Data Keys</strong>: KMS がデータ暗号化用の一時鍵（データキー）を生成し、アプリケーションレイヤーでの暗号化を実現</li>
 </ul>
 <h4 id="23-aws">2.3 AWS サービスとのシームレスな統合<a class="headerlink" href="#23-aws" title="Permanent link">¶</a></h4>
-<p>S3、EBS、RDS、Secrets Manager など、多くの AWS サービスが KMS を暗号化エンジンとして利用可能です。<br>
-これにより、暗号化のコード実装を最小限に抑えながら、一貫したセキュリティポリシーを組織全体で適用できます。</p>
+<p>S3、EBS、RDS、Secrets Manager など、多くの AWS サービスが KMS を暗号化エンジンとして利用可能である。<br>
+これにより、暗号化のコード実装を最小限に抑えながら、一貫したセキュリティポリシーを組織全体で適用できる。</p>
 <h4 id="24_8">2.4 キーポリシーとアクセス制御<a class="headerlink" href="#24_8" title="Permanent link">¶</a></h4>
-<p>KMS では「キーポリシー」を通じて詳細なアクセス権限を設定できます。<br>
-これにより、特定の IAM ユーザーやロールにだけ鍵操作を許可し、暗号化/復号化の範囲を厳密に制御できます。<br>
-また、グラント(Grant)機能で一時的なアクセス権限を付与することも可能です。</p>
+<p>KMS では「キーポリシー」を通じて詳細なアクセス権限を設定できる。<br>
+これにより、特定の IAM ユーザーやロールにだけ鍵操作を許可し、暗号化/復号化の範囲を厳密に制御できる。<br>
+また、グラント(Grant)機能で一時的なアクセス権限を付与することも可能である。</p>
 <h4 id="25-cloudhsm">2.5 CloudHSM 統合(カスタマー管理キーストア)<a class="headerlink" href="#25-cloudhsm" title="Permanent link">¶</a></h4>
-<p>必要に応じて、CloudHSM を使った Custom Key Store 機能も利用可能です。<br>
+<p>必要に応じて、CloudHSM を使った Custom Key Store 機能も利用可能である。<br>
 これにより、専用 HSM で管理する鍵を KMS から呼び出す構成が組めます。<br>
-FIPS 140-2 など厳格なコンプライアンス要件を満たす環境での鍵管理に適しています。</p>
+FIPS 140-2 など厳格なコンプライアンス要件を満たす環境での鍵管理に適している。</p>
 <h3 id="3_13">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_13" title="Permanent link">¶</a></h3>
 <ol>
 <li>CMK を作成し、キーポリシーでアクセス可能なプリンシパル(IAM ユーザー/ロール)を指定</li>
@@ -9104,7 +9104,7 @@ FIPS 140-2 など厳格なコンプライアンス要件を満たす環境での
 <li>KMS へのすべてのリクエストは AWS CloudTrail で監査ログが残されるため、セキュリティとトレーサビリティが高まります。</li>
 </ol>
 <h3 id="4_13">4. セキュリティと認証・認可<a class="headerlink" href="#4_13" title="Permanent link">¶</a></h3>
-<p>AWS KMS を利用する際、特に以下のセキュリティ面が重要です:</p>
+<p>AWS KMS を利用する際、特に以下のセキュリティ面が重要である:</p>
 <ul>
 <li><strong>キーポリシーの最小権限</strong>: CMK に対する暗号化/復号化権限を必要最小限に絞る</li>
 <li><strong>IAM との連携</strong>: キーポリシーと IAM ポリシーを組み合わせて、厳密なアクセス制御を実現</li>
@@ -9112,7 +9112,7 @@ FIPS 140-2 など厳格なコンプライアンス要件を満たす環境での
 <li><strong>Custom Key Store(CloudHSM)</strong>: さらに高い管理要件を必要とする場合に専用 HSM でのキーストアを利用</li>
 </ul>
 <h3 id="5_13">5. 料金形態<a class="headerlink" href="#5_13" title="Permanent link">¶</a></h3>
-<p>AWS KMS の料金は以下の要素で構成されます:</p>
+<p>AWS KMS の料金は以下の要素で構成される:</p>
 <ul>
 <li><strong>キー管理</strong>: CMK（カスタマーマネージドキー）の作成数やキー保管料は地域や使用量に応じて変動</li>
 <li><strong>API リクエスト</strong>: 暗号化や復号化、キー生成リクエストなど 1 リクエストあたり従量課金</li>
@@ -9181,9 +9181,9 @@ FIPS 140-2 など厳格なコンプライアンス要件を満たす環境での
 <hr>
 <h2 id="aws-network-firewall">AWS Network Firewall<a class="headerlink" href="#aws-network-firewall" title="Permanent link">¶</a></h2>
 <h3 id="1_14">1. サービス概要<a class="headerlink" href="#1_14" title="Permanent link">¶</a></h3>
-<p>AWS Network Firewall は、AWS 環境でネットワークトラフィックを保護するための、フルマネージドでスケーラブルなネットワークファイアウォールサービスです。<br>
-ユーザーは、VPC（Virtual Private Cloud）内のトラフィックを詳細に制御し、不正なアクセスや悪意のあるトラフィックをブロックできます。<br>
-Network Firewall は、高度な脅威対策、柔軟なルール設定、AWS 環境との統合を提供し、セキュリティ体制を強化します。</p>
+<p>AWS Network Firewall は、AWS 環境でネットワークトラフィックを保護するための、フルマネージドでスケーラブルなネットワークファイアウォールサービスである。<br>
+ユーザーは、VPC（Virtual Private Cloud）内のトラフィックを詳細に制御し、不正なアクセスや悪意のあるトラフィックをブロックできる。<br>
+Network Firewall は、高度な脅威対策、柔軟なルール設定、AWS 環境との統合を提供し、セキュリティ体制を強化する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>VPC 境界の保護</li>
@@ -9193,28 +9193,28 @@ Network Firewall は、高度な脅威対策、柔軟なルール設定、AWS �
 <li>カスタム脅威インテリジェンスの利用</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS Network Firewall は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS Network Firewall は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_14">2. 主な特徴と機能<a class="headerlink" href="#2_14" title="Permanent link">¶</a></h3>
 <h4 id="21_10">2.1 ステートフルファイアウォール<a class="headerlink" href="#21_10" title="Permanent link">¶</a></h4>
-<p>Network Firewall は、ステートフルなパケット検査を行い、トラフィックを詳細に制御できます。<br>
-これにより、コネクションの状態を追跡し、双方向の通信を許可または拒否できます。</p>
+<p>Network Firewall は、ステートフルなパケット検査を行い、トラフィックを詳細に制御できる。<br>
+これにより、コネクションの状態を追跡し、双方向の通信を許可または拒否できる。</p>
 <h4 id="22_6">2.2 柔軟なルール設定<a class="headerlink" href="#22_6" title="Permanent link">¶</a></h4>
-<p>Suricata 互換のルールエンジンを使用し、カスタムルールを定義できます。<br>
-ユーザーは、IP アドレス、ポート、プロトコルなどの様々な条件に基づいてルールを作成し、ネットワークトラフィックを詳細に制御できます。</p>
+<p>Suricata 互換のルールエンジンを使用し、カスタムルールを定義できる。<br>
+ユーザーは、IP アドレス、ポート、プロトコルなどの様々な条件に基づいてルールを作成し、ネットワークトラフィックを詳細に制御できる。</p>
 <h4 id="23-ips">2.3 侵入防止システム (IPS)<a class="headerlink" href="#23-ips" title="Permanent link">¶</a></h4>
-<p>悪意のあるネットワークトラフィックを検出し、自動的にブロックできます。<br>
-これにより、既知の攻撃パターンや脆弱性を悪用した攻撃からネットワークを保護できます。</p>
+<p>悪意のあるネットワークトラフィックを検出し、自動的にブロックできる。<br>
+これにより、既知の攻撃パターンや脆弱性を悪用した攻撃からネットワークを保護できる。</p>
 <h4 id="24_9">2.4 可視性<a class="headerlink" href="#24_9" title="Permanent link">¶</a></h4>
-<p>ファイアウォールのログを CloudWatch Logs に送信し、ネットワークトラフィックを監視できます。<br>
-これにより、ネットワークアクティビティの可視性を高め、セキュリティインシデントの分析を容易にできます。</p>
+<p>ファイアウォールのログを CloudWatch Logs に送信し、ネットワークトラフィックを監視できる。<br>
+これにより、ネットワークアクティビティの可視性を高め、セキュリティインシデントの分析を容易にできる。</p>
 <h4 id="25-aws_1">2.5 AWS 環境との統合<a class="headerlink" href="#25-aws_1" title="Permanent link">¶</a></h4>
-<p>Network Firewall は、VPC, Route 53 Resolver, AWS Firewall Manager などの AWS の他のサービスと密接に統合されており、AWS 環境全体のセキュリティを強化できます。</p>
+<p>Network Firewall は、VPC, Route 53 Resolver, AWS Firewall Manager などの AWS の他のサービスと密接に統合されており、AWS 環境全体のセキュリティを強化できる。</p>
 <h4 id="26_6">2.6 スケーラビリティ<a class="headerlink" href="#26_6" title="Permanent link">¶</a></h4>
-<p>Network Firewall は、AWS のインフラ上で動作し、トラフィックの増加に応じて自動的にスケールします。<br>
-これにより、トラフィックの変動に対応し、安定したネットワークパフォーマンスを維持できます。</p>
+<p>Network Firewall は、AWS のインフラ上で動作し、トラフィックの増加に応じて自動的にスケールする。<br>
+これにより、トラフィックの変動に対応し、安定したネットワークパフォーマンスを維持できる。</p>
 <h4 id="27_8">2.7 フルマネージドサービス<a class="headerlink" href="#27_8" title="Permanent link">¶</a></h4>
 <p>Network Firewall は、フルマネージドサービスであり、ハードウェアの管理やソフトウェアの更新は AWS が行います。<br>
-ユーザーは、インフラストラクチャの管理を行う必要はなく、セキュリティポリシーの設定に集中できます。</p>
+ユーザーは、インフラストラクチャの管理を行う必要はなく、セキュリティポリシーの設定に集中できる。</p>
 <h3 id="3_14">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_14" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、Network Firewall エンドポイントを VPC 内に作成。</li>
@@ -9223,18 +9223,18 @@ AWS Network Firewall は、これらのユースケースに対応するため�
 <li>Network Firewall は、ログを CloudWatch Logs に送信。</li>
 <li>AWS Firewall Manager と連携し、組織全体のファイアウォールポリシーを一元的に管理。</li>
 </ol>
-<p>AWS Network Firewall は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供します。<br>
+<p>AWS Network Firewall は、AWS のインフラ上に構築されており、高い可用性とスケーラビリティを提供する。<br>
 ファイアウォールの管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
 <h3 id="4_14">4. セキュリティと認証・認可<a class="headerlink" href="#4_14" title="Permanent link">¶</a></h3>
-<p>AWS Network Firewall は、ネットワークトラフィックを安全に保護するために、以下の機能を提供します:</p>
+<p>AWS Network Firewall は、ネットワークトラフィックを安全に保護するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Network Firewall へのアクセスを制御します。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Network Firewall へのアクセスを制御する。</li>
 <li><strong>VPC 内での実行</strong>: Network Firewall は Virtual Private Cloud (VPC) 内で実行され、ネットワーク隔離を実現。</li>
-<li><strong>データ暗号化</strong>: Network Firewall のログデータや設定データは暗号化されます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Network Firewall の操作権限を詳細に制御できます。</li>
+<li><strong>データ暗号化</strong>: Network Firewall のログデータや設定データは暗号化される。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Network Firewall の操作権限を詳細に制御できる。</li>
 <li><strong>ステートフルインスペクション</strong>: ネットワークトラフィックを双方向に検査し、セキュリティを確保。</li>
 </ul>
-<p>これらのセキュリティ対策により、VPC 内のネットワークトラフィックを安全に保護し、不正アクセスや攻撃から保護します。</p>
+<p>これらのセキュリティ対策により、VPC 内のネットワークトラフィックを安全に保護し、不正アクセスや攻撃から保護する。</p>
 <h3 id="5_14">5. 料金形態<a class="headerlink" href="#5_14" title="Permanent link">¶</a></h3>
 <p>AWS Network Firewall の料金は主に以下に基づきます:</p>
 <ul>
@@ -9243,7 +9243,7 @@ AWS Network Firewall は、これらのユースケースに対応するため�
 <li><strong>ルール評価</strong>: 設定されたルール数やルール評価の回数に応じて課金。</li>
 </ul>
 <h3 id="6_14">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_14" title="Permanent link">¶</a></h3>
-<p>AWS Network Firewall は、様々なネットワークセキュリティのユースケースに対応できます。<br>
+<p>AWS Network Firewall は、様々なネットワークセキュリティのユースケースに対応できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>VPC 境界の保護</strong>: VPC とインターネット間のトラフィックを検査し、不正なアクセスや攻撃をブロック。</li>
@@ -9300,21 +9300,21 @@ AWS Network Firewall は、これらのユースケースに対応するため�
 <h4 id="87_11">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_11" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Network Firewall は何を提供するサービスですか？</li>
-<li>A: AWS 環境でネットワークトラフィックを保護するための、フルマネージドでスケーラブルなネットワークファイアウォールサービスです。</li>
-<li>Q: AWS Network Firewall は、どのようなトラフィックを制御できますか？</li>
-<li>A: VPC 内のトラフィックを詳細に制御し、不正なアクセスや悪意のあるトラフィックをブロックできます。</li>
-<li>Q: AWS Network Firewall のルールは、どのように設定できますか？</li>
-<li>A: Suricata 互換のルールエンジンを使用して、カスタムルールを定義できます。</li>
-<li>Q: AWS Network Firewall のログは、どこに送信されますか？</li>
-<li>A: CloudWatch Logs に送信されます。</li>
-<li>Q: AWS Network Firewall の料金はどのように計算されますか？</li>
-<li>A: ファイアウォールエンドポイントの利用時間、処理されたトラフィック量、ルール評価などに基づいて計算されます。</li>
+<li>A: AWS 環境でネットワークトラフィックを保護するための、フルマネージドでスケーラブルなネットワークファイアウォールサービスである。</li>
+<li>Q: AWS Network Firewall は、どのようなトラフィックを制御できるか？</li>
+<li>A: VPC 内のトラフィックを詳細に制御し、不正なアクセスや悪意のあるトラフィックをブロックできる。</li>
+<li>Q: AWS Network Firewall のルールは、どのように設定できるか？</li>
+<li>A: Suricata 互換のルールエンジンを使用して、カスタムルールを定義できる。</li>
+<li>Q: AWS Network Firewall のログは、どこに送信されるか？</li>
+<li>A: CloudWatch Logs に送信される。</li>
+<li>Q: AWS Network Firewall の料金はどのように計算されるか？</li>
+<li>A: ファイアウォールエンドポイントの利用時間、処理されたトラフィック量、ルール評価などに基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="aws-resource-access-manager-aws-ram">AWS Resource Access Manager (AWS RAM)<a class="headerlink" href="#aws-resource-access-manager-aws-ram" title="Permanent link">¶</a></h2>
 <h3 id="1_15">1. サービス概要<a class="headerlink" href="#1_15" title="Permanent link">¶</a></h3>
-<p>AWS Resource Access Manager (AWS RAM)は、複数の AWS アカウント間でリソースを安全に共有するためのサービスです。<br>
-AWS Organizations を用いたマルチアカウント構成や、外部アカウントとの共有においても、RAM を使うことで信頼できる方法でリソースをシームレスに共有できます。</p>
+<p>AWS Resource Access Manager (AWS RAM)は、複数の AWS アカウント間でリソースを安全に共有するためのサービスである。<br>
+AWS Organizations を用いたマルチアカウント構成や、外部アカウントとの共有においても、RAM を使うことで信頼できる方法でリソースをシームレスに共有できる。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>VPC サブネットや Transit Gateway の共有</li>
@@ -9325,16 +9325,16 @@ AWS Organizations を用いたマルチアカウント構成や、外部アカ�
 <p>などが挙げられます。</p>
 <h3 id="2_15">2. 主な特徴と機能<a class="headerlink" href="#2_15" title="Permanent link">¶</a></h3>
 <h4 id="21_11">2.1 中央集約的なリソース共有<a class="headerlink" href="#21_11" title="Permanent link">¶</a></h4>
-<p>RAM を利用すると、メインとなるアカウントが VPC やサブネットといったリソースを「リソース共有」として定義し、他のアカウントがそれを使えるようにする仕組みを提供します。</p>
+<p>RAM を利用すると、メインとなるアカウントが VPC やサブネットといったリソースを「リソース共有」として定義し、他のアカウントがそれを使えるようにする仕組みを提供する。</p>
 <ul>
 <li><strong>一元管理</strong>: リソース共有を一括で設定し、組織全体に波及</li>
 <li><strong>重複コストの削減</strong>: リソースを使い回すことで、同等機能を再作成する必要性を低減</li>
 </ul>
 <h4 id="22-aws-organizations_1">2.2 AWS Organizations とのシームレス連携<a class="headerlink" href="#22-aws-organizations_1" title="Permanent link">¶</a></h4>
-<p>AWS Organizations を用いたマルチアカウント構成では、組織単位(OU)や特定のメンバーアカウントを選択し、その範囲で RAM の共有設定を容易に行えます。<br>
-これにより、大規模環境でもスケーラブルかつセキュアにリソースを分配できます。</p>
+<p>AWS Organizations を用いたマルチアカウント構成では、組織単位(OU)や特定のメンバーアカウントを選択し、その範囲で RAM の共有設定を容易に行える。<br>
+これにより、大規模環境でもスケーラブルかつセキュアにリソースを分配できる。</p>
 <h4 id="23_8">2.3 多種多様なリソースタイプをサポート<a class="headerlink" href="#23_8" title="Permanent link">¶</a></h4>
-<p>AWS RAM は以下を含む複数のリソースを共有可能です:</p>
+<p>AWS RAM は以下を含む複数のリソースを共有可能である:</p>
 <ul>
 <li><strong>VPC サブネット</strong>: 他アカウントの EC2 インスタンスが同一 VPC 内で稼働するよう設定</li>
 <li><strong>AWS Transit Gateway</strong>: マルチアカウントでのネットワークハブを効率的に共有</li>
@@ -9342,10 +9342,10 @@ AWS Organizations を用いたマルチアカウント構成や、外部アカ�
 <li><strong>License Manager</strong>: ソフトウェアライセンスの利用枠を組織横断で割り当て</li>
 </ul>
 <h4 id="24_10">2.4 アクセスコントロールとポリシー<a class="headerlink" href="#24_10" title="Permanent link">¶</a></h4>
-<p>リソース共有はリソースシェアポリシーによって管理され、共有先のアカウントがどのようにリソースを使用できるかを定義します。<br>
-AWS Organizations との連携で、組織全体に自動適用することも可能です。</p>
+<p>リソース共有はリソースシェアポリシーによって管理され、共有先のアカウントがどのようにリソースを使用できるかを定義する。<br>
+AWS Organizations との連携で、組織全体に自動適用することも可能である。</p>
 <h4 id="25_6">2.5 外部アカウント共有にも対応<a class="headerlink" href="#25_6" title="Permanent link">¶</a></h4>
-<p>同じ組織外の AWS アカウントともリソースを共有できるため、共同開発やパートナー企業との連携など、組織の垣根を越えた連携が必要な場合にも対応できます。</p>
+<p>同じ組織外の AWS アカウントともリソースを共有できるため、共同開発やパートナー企業との連携など、組織の垣根を越えた連携が必要な場合にも対応できる。</p>
 <h3 id="3_15">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_15" title="Permanent link">¶</a></h3>
 <ol>
 <li>リソース所有者アカウントが「Resource Share」を作成し、対象リソース（例: サブネット）を選択</li>
@@ -9353,9 +9353,9 @@ AWS Organizations との連携で、組織全体に自動適用することも�
 <li>共有先アカウント側では、共有リソースを利用した VPC 設定やインスタンス起動などが可能</li>
 <li>不要になったらリソースシェアを削除、または共有範囲を変更することでアクセスを制御</li>
 </ol>
-<p>RAM は IAM ポリシーや Organizations 設定と連携し、共有先を動的に管理できるため、大規模運用でも柔軟なアーキテクチャを構築できます。</p>
+<p>RAM は IAM ポリシーや Organizations 設定と連携し、共有先を動的に管理できるため、大規模運用でも柔軟なアーキテクチャを構築できる。</p>
 <h3 id="4_15">4. セキュリティと認証・認可<a class="headerlink" href="#4_15" title="Permanent link">¶</a></h3>
-<p>リソース共有をセキュアに行うため、以下の観点が重要です:</p>
+<p>リソース共有をセキュアに行うため、以下の観点が重要である:</p>
 <ul>
 <li><strong>IAM ポリシー</strong>: RAM の「CreateResourceShare」「AssociateResourceShare」などの操作を許可するユーザーやロールを限定</li>
 <li><strong>Organizations 連携</strong>: 承認されたメンバーアカウントだけがリソースを利用できるように制御</li>
@@ -9363,9 +9363,9 @@ AWS Organizations との連携で、組織全体に自動適用することも�
 <li><strong>監査ログ</strong>: AWS CloudTrail を用いてリソース共有の操作履歴を常に記録</li>
 </ul>
 <h3 id="5_15">5. 料金形態<a class="headerlink" href="#5_15" title="Permanent link">¶</a></h3>
-<p>AWS Resource Access Manager 自体には利用料金はなく、無料で使用可能です。<br>
-ただし、共有するリソースそのものの利用料金（VPC や EC2 など）は通常どおり発生します。<br>
-例えば、共有先が EC2 インスタンスを立ち上げると、そのインスタンス料金は起動したアカウント側に課金されます。</p>
+<p>AWS Resource Access Manager 自体には利用料金はなく、無料で使用可能である。<br>
+ただし、共有するリソースそのものの利用料金（VPC や EC2 など）は通常どおり発生する。<br>
+例えば、共有先が EC2 インスタンスを立ち上げると、そのインスタンス料金は起動したアカウント側に課金される。</p>
 <h3 id="6_15">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_15" title="Permanent link">¶</a></h3>
 <p>RAM の代表的な活用パターンは以下の通りです:</p>
 <ul>
@@ -9428,9 +9428,9 @@ A: 無料。ただし共有されるリソースの利用料金は通常どお�
 <hr>
 <h2 id="aws-secrets-manager">AWS Secrets Manager<a class="headerlink" href="#aws-secrets-manager" title="Permanent link">¶</a></h2>
 <h3 id="1_16">1. サービス概要<a class="headerlink" href="#1_16" title="Permanent link">¶</a></h3>
-<p>AWS Secrets Manager は、データベース認証情報、API キー、その他の機密情報を安全に保存、ローテーション、管理するためのサービスです。<br>
-ユーザーは、アプリケーションコードに機密情報を埋め込むことなく、Secrets Manager からセキュアに機密情報を取得できます。<br>
-Secrets Manager は、機密情報の管理を簡素化し、アプリケーションのセキュリティを向上させるための集中管理ソリューションを提供します。</p>
+<p>AWS Secrets Manager は、データベース認証情報、API キー、その他の機密情報を安全に保存、ローテーション、管理するためのサービスである。<br>
+ユーザーは、アプリケーションコードに機密情報を埋め込むことなく、Secrets Manager からセキュアに機密情報を取得できる。<br>
+Secrets Manager は、機密情報の管理を簡素化し、アプリケーションのセキュリティを向上させるための集中管理ソリューションを提供する。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>データベース認証情報の管理</li>
@@ -9440,29 +9440,29 @@ Secrets Manager は、機密情報の管理を簡素化し、アプリケーシ�
 <li>アプリケーション設定の安全な保存</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS Secrets Manager は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS Secrets Manager は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_16">2. 主な特徴と機能<a class="headerlink" href="#2_16" title="Permanent link">¶</a></h3>
 <h4 id="21_12">2.1 機密情報の保存と管理<a class="headerlink" href="#21_12" title="Permanent link">¶</a></h4>
-<p>Secrets Manager は、データベースの認証情報、API キー、その他の機密情報を安全に保存し、管理できます。<br>
-機密情報は、暗号化され、アクセス制御が適用されます。</p>
+<p>Secrets Manager は、データベースの認証情報、API キー、その他の機密情報を安全に保存し、管理できる。<br>
+機密情報は、暗号化され、アクセス制御が適用される。</p>
 <h4 id="22_7">2.2 自動ローテーション<a class="headerlink" href="#22_7" title="Permanent link">¶</a></h4>
-<p>データベースの認証情報や API キーなどの機密情報を自動的にローテーションできます。<br>
-これにより、機密情報の漏洩リスクを低減し、セキュリティを強化できます。</p>
+<p>データベースの認証情報や API キーなどの機密情報を自動的にローテーションできる。<br>
+これにより、機密情報の漏洩リスクを低減し、セキュリティを強化できる。</p>
 <h4 id="23_9">2.3 細粒度なアクセス制御<a class="headerlink" href="#23_9" title="Permanent link">¶</a></h4>
-<p>IAM ポリシーを使用して、機密情報へのアクセスを詳細に制御できます。<br>
-特定のユーザーやグループに対して、機密情報の閲覧、ローテーション、削除などの権限を付与できます。</p>
+<p>IAM ポリシーを使用して、機密情報へのアクセスを詳細に制御できる。<br>
+特定のユーザーやグループに対して、機密情報の閲覧、ローテーション、削除などの権限を付与できる。</p>
 <h4 id="24_11">2.4 バージョン管理<a class="headerlink" href="#24_11" title="Permanent link">¶</a></h4>
-<p>機密情報のバージョンを管理できます。<br>
-これにより、過去のバージョンの機密情報を復元したり、変更履歴を確認したりできます。</p>
+<p>機密情報のバージョンを管理できる。<br>
+これにより、過去のバージョンの機密情報を復元したり、変更履歴を確認したりできる。</p>
 <h4 id="25_7">2.5 統合されたサービス<a class="headerlink" href="#25_7" title="Permanent link">¶</a></h4>
 <p>Secrets Manager は、RDS, EC2, Lambda, ECS, EKS など、AWS の他のサービスと統合されています。<br>
-これにより、アプリケーションは Secrets Manager から機密情報を安全に取得できます。</p>
+これにより、アプリケーションは Secrets Manager から機密情報を安全に取得できる。</p>
 <h4 id="26-api">2.6 API アクセス<a class="headerlink" href="#26-api" title="Permanent link">¶</a></h4>
-<p>API を通じて、機密情報の取得、更新、削除などの操作を自動化できます。<br>
-これにより、CI/CD パイプラインと連携して、機密情報を安全に管理できます。</p>
+<p>API を通じて、機密情報の取得、更新、削除などの操作を自動化できる。<br>
+これにより、CI/CD パイプラインと連携して、機密情報を安全に管理できる。</p>
 <h4 id="27_9">2.7 拡張性とスケーラビリティ<a class="headerlink" href="#27_9" title="Permanent link">¶</a></h4>
-<p>AWS Secrets Manager は、AWS のインフラ上で動作し、需要に応じて自動的にスケーリングします。<br>
-これにより、大量の機密情報を管理する場合でも、安定したパフォーマンスを維持できます。</p>
+<p>AWS Secrets Manager は、AWS のインフラ上で動作し、需要に応じて自動的にスケーリングする。<br>
+これにより、大量の機密情報を管理する場合でも、安定したパフォーマンスを維持できる。</p>
 <h4 id="3_16">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_16" title="Permanent link">¶</a></h4>
 <ol>
 <li>ユーザーは、Secrets Manager に機密情報を保存。</li>
@@ -9470,18 +9470,18 @@ AWS Secrets Manager は、これらのユースケースに対応するための
 <li>Secrets Manager は、IAM 認証に基づいてアクセスを許可し、機密情報を暗号化された状態で提供。</li>
 <li>必要に応じて、機密情報を自動的にローテーション。</li>
 </ol>
-<p>AWS Secrets Manager は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供します。<br>
+<p>AWS Secrets Manager は、AWS のインフラ上に構築されており、高い可用性と信頼性を提供する。<br>
 機密情報の保存や管理は AWS が行うため、ユーザーはインフラの管理を行う必要はありません。</p>
 <h3 id="4_16">4. セキュリティと認証・認可<a class="headerlink" href="#4_16" title="Permanent link">¶</a></h3>
-<p>AWS Secrets Manager は、機密情報のセキュリティを確保するために、以下の機能を提供します:</p>
+<p>AWS Secrets Manager は、機密情報のセキュリティを確保するために、以下の機能を提供する:</p>
 <ul>
-<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Secrets Manager へのアクセスを制御します。</li>
-<li><strong>データ暗号化</strong>: 機密情報は転送中および保存時に暗号化されます。</li>
-<li><strong>VPC エンドポイント</strong>: VPC 内から Secrets Manager にアクセスする際に、インターネットを経由せずにアクセスできます。</li>
-<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、機密情報の操作権限を詳細に制御できます。</li>
-<li><strong>監査ログ</strong>: CloudTrail を通じて、Secrets Manager の利用状況を監査できます。</li>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Secrets Manager へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: 機密情報は転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から Secrets Manager にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、機密情報の操作権限を詳細に制御できる。</li>
+<li><strong>監査ログ</strong>: CloudTrail を通じて、Secrets Manager の利用状況を監査できる。</li>
 </ul>
-<p>これらのセキュリティ対策により、機密情報への不正アクセスを防止し、機密データを安全に保護できます。</p>
+<p>これらのセキュリティ対策により、機密情報への不正アクセスを防止し、機密データを安全に保護できる。</p>
 <h3 id="5_16">5. 料金形態<a class="headerlink" href="#5_16" title="Permanent link">¶</a></h3>
 <p>AWS Secrets Manager の料金は主に以下に基づきます:</p>
 <ul>
@@ -9490,7 +9490,7 @@ AWS Secrets Manager は、これらのユースケースに対応するための
 <li><strong>ローテーション</strong>: 自動ローテーション機能を利用した場合、ローテーション回数に応じて課金。</li>
 </ul>
 <h3 id="6_16">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_16" title="Permanent link">¶</a></h3>
-<p>AWS Secrets Manager は、様々なアプリケーションで利用できます。<br>
+<p>AWS Secrets Manager は、様々なアプリケーションで利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>データベース認証情報の管理</strong>: アプリケーションがデータベースに接続するための認証情報を Secrets Manager に保存し、ローテーションを自動化。</li>
@@ -9546,21 +9546,21 @@ AWS Secrets Manager は、これらのユースケースに対応するための
 <h4 id="87_12">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_12" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Secrets Manager は何を提供するサービスですか？</li>
-<li>A: データベース認証情報、API キー、その他の機密情報を安全に保存、ローテーション、管理するためのサービスです。</li>
-<li>Q: AWS Secrets Manager では、どのような機密情報を管理できますか？</li>
-<li>A: データベースの認証情報、API キー、OAuth トークン、証明書などを管理できます。</li>
+<li>A: データベース認証情報、API キー、その他の機密情報を安全に保存、ローテーション、管理するためのサービスである。</li>
+<li>Q: AWS Secrets Manager では、どのような機密情報を管理できるか？</li>
+<li>A: データベースの認証情報、API キー、OAuth トークン、証明書などを管理できる。</li>
 <li>Q: AWS Secrets Manager で、機密情報をローテーションするメリットは何ですか？</li>
-<li>A: 機密情報の漏洩リスクを低減し、セキュリティを強化できます。</li>
-<li>Q: AWS Secrets Manager へのアクセスは、どのように制御しますか？</li>
-<li>A: IAM ポリシーを使用して、機密情報へのアクセスを詳細に制御できます。</li>
-<li>Q: AWS Secrets Manager の料金はどのように計算されますか？</li>
-<li>A: Secrets Manager に保存されたシークレット数、API リクエスト数、自動ローテーション機能の利用回数に基づいて計算されます。</li>
+<li>A: 機密情報の漏洩リスクを低減し、セキュリティを強化できる。</li>
+<li>Q: AWS Secrets Manager へのアクセスは、どのように制御するか？</li>
+<li>A: IAM ポリシーを使用して、機密情報へのアクセスを詳細に制御できる。</li>
+<li>Q: AWS Secrets Manager の料金はどのように計算されるか？</li>
+<li>A: Secrets Manager に保存されたシークレット数、API リクエスト数、自動ローテーション機能の利用回数に基づいて計算される。</li>
 </ul>
 <hr>
 <h2 id="aws-security-hub">AWS Security Hub<a class="headerlink" href="#aws-security-hub" title="Permanent link">¶</a></h2>
 <h3 id="1_17">1. サービス概要<a class="headerlink" href="#1_17" title="Permanent link">¶</a></h3>
-<p>AWS Security Hub は、複数の AWS セキュリティサービスやパートナー製品の検出結果（Findings）を一元的に集約・管理するサービスです。<br>
-GuardDuty、Amazon Macie、AWS Firewall Manager、AWS Identity and Access Management (IAM) Access Analyzer、Inspector などの検出結果を統合し、脅威・脆弱性の可視化やコンプライアンス準拠度のモニタリングを容易にします。</p>
+<p>AWS Security Hub は、複数の AWS セキュリティサービスやパートナー製品の検出結果（Findings）を一元的に集約・管理するサービスである。<br>
+GuardDuty、Amazon Macie、AWS Firewall Manager、AWS Identity and Access Management (IAM) Access Analyzer、Inspector などの検出結果を統合し、脅威・脆弱性の可視化やコンプライアンス準拠度のモニタリングを容易にする。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>クラウド全体のセキュリティステータスの包括的な把握</li>
@@ -9568,29 +9568,29 @@ GuardDuty、Amazon Macie、AWS Firewall Manager、AWS Identity and Access Manage
 <li>レポーティングの効率化</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS Organizations との連携により、複数アカウント環境でのセキュリティ運用を集中管理することも可能です。</p>
+AWS Organizations との連携により、複数アカウント環境でのセキュリティ運用を集中管理することも可能である。</p>
 <h3 id="2_17">2. 主な特徴と機能<a class="headerlink" href="#2_17" title="Permanent link">¶</a></h3>
 <h4 id="21-findings">2.1 複数ソースからの Findings 統合<a class="headerlink" href="#21-findings" title="Permanent link">¶</a></h4>
-<p>Security Hub は、AWS のセキュリティサービス（GuardDuty、Macie、Inspector、IAM Access Analyzer など）やサードパーティパートナー製品からの脅威検出結果（Findings）を一括して可視化します。<br>
-各サービスごとに個別対応する手間を削減し、単一ダッシュボードで全体状況を把握できます。</p>
+<p>Security Hub は、AWS のセキュリティサービス（GuardDuty、Macie、Inspector、IAM Access Analyzer など）やサードパーティパートナー製品からの脅威検出結果（Findings）を一括して可視化する。<br>
+各サービスごとに個別対応する手間を削減し、単一ダッシュボードで全体状況を把握できる。</p>
 <ul>
 <li><strong>GuardDuty</strong>: ネットワークトラフィックやログを監視し、不審なアクティビティを検知</li>
 <li><strong>Amazon Macie</strong>: S3 内の機密データ検知やアクセス状況の監査結果を取得</li>
 <li><strong>Inspector</strong>: EC2 インスタンスやコンテナの脆弱性スキャン結果を統合</li>
 </ul>
 <h4 id="22-best-practice">2.2 コンプライアンスチェックと Best Practice の評価<a class="headerlink" href="#22-best-practice" title="Permanent link">¶</a></h4>
-<p>Security Hub は、AWS Foundational Security Best Practices や各種規格（CIS AWS Foundations Benchmark など）に基づいたベストプラクティスチェックを実行し、準拠度スコアや推奨事項を提示します。<br>
-定期的にチェックし、設定の誤りやセキュリティリスクを早期に把握できます。</p>
+<p>Security Hub は、AWS Foundational Security Best Practices や各種規格（CIS AWS Foundations Benchmark など）に基づいたベストプラクティスチェックを実行し、準拠度スコアや推奨事項を提示する。<br>
+定期的にチェックし、設定の誤りやセキュリティリスクを早期に把握できる。</p>
 <h4 id="23_10">2.3 統合ダッシュボードでの優先度付け<a class="headerlink" href="#23_10" title="Permanent link">¶</a></h4>
-<p>異なるサービスから集約された Findings には Severity が付与されており、重要度に基づいた優先度付けが可能です。<br>
+<p>異なるサービスから集約された Findings には Severity が付与されており、重要度に基づいた優先度付けが可能である。<br>
 重大な問題（高 Severity）を先に対応し、全体のセキュリティリスクを低減する運用が容易になります。</p>
 <h4 id="24_12">2.4 カスタムアクションと自動化<a class="headerlink" href="#24_12" title="Permanent link">¶</a></h4>
-<p>Security Hub は Amazon EventBridge と連携し、Findings をトリガーとして Lambda などのアクションを自動実行できます。<br>
-例えば、脆弱性が見つかったら対象の EC2 インスタンスを隔離する、自動チケットを発行する、SNS で通知するといったワークフローを構築可能です。</p>
+<p>Security Hub は Amazon EventBridge と連携し、Findings をトリガーとして Lambda などのアクションを自動実行できる。<br>
+例えば、脆弱性が見つかったら対象の EC2 インスタンスを隔離する、自動チケットを発行する、SNS で通知するといったワークフローを構築可能である。</p>
 <h4 id="25_8">2.5 マルチアカウント管理<a class="headerlink" href="#25_8" title="Permanent link">¶</a></h4>
-<p>AWS Organizations を活用して、複数 AWS アカウントの Security Hub を一元管理できます。<br>
-管理アカウント（Administrator Account）が全アカウントの Findings を集約し、集中監視やレポート生成を行えます。<br>
-大規模環境での運用を効率化し、セキュリティ体制を強化します。</p>
+<p>AWS Organizations を活用して、複数 AWS アカウントの Security Hub を一元管理できる。<br>
+管理アカウント（Administrator Account）が全アカウントの Findings を集約し、集中監視やレポート生成を行える。<br>
+大規模環境での運用を効率化し、セキュリティ体制を強化する。</p>
 <h3 id="3_17">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_17" title="Permanent link">¶</a></h3>
 <ol>
 <li>Security Hub を有効化し、集約したいサービス（GuardDuty、Macie、Inspector など）やパートナー製品との連携を設定</li>
@@ -9599,7 +9599,7 @@ AWS Organizations との連携により、複数アカウント環境でのセ�
 <li>コンプライアンスチェックやベストプラクティス評価を定期的に実施</li>
 <li>EventBridge ルールで自動化フローを構築（SNS 通知、Lambda 起動など）</li>
 </ol>
-<p>これにより、複数のセキュリティツールを横断する形で Findings を一元管理し、即時対応と継続的改善が実現できます。</p>
+<p>これにより、複数のセキュリティツールを横断する形で Findings を一元管理し、即時対応と継続的改善が実現できる。</p>
 <h3 id="4_17">4. セキュリティと認証・認可<a class="headerlink" href="#4_17" title="Permanent link">¶</a></h3>
 <p>Security Hub は、他の AWS サービス同様に IAM を活用して認証・認可を行います:</p>
 <ul>
@@ -9607,7 +9607,7 @@ AWS Organizations との連携により、複数アカウント環境でのセ�
 <li><strong>Cross-Account Access</strong>: マルチアカウントで管理アカウントとメンバーアカウントを紐づける</li>
 <li><strong>CloudTrail 監査</strong>: Security Hub API 呼び出しも CloudTrail に記録され、追跡可能</li>
 </ul>
-<p>各セキュリティサービス自体が Findings を Security Hub に送信するために必要なポリシーやロールも適切に設定する必要があります。</p>
+<p>各セキュリティサービス自体が Findings を Security Hub に送信するために必要なポリシーやロールも適切に設定する必要がある。</p>
 <h3 id="5_17">5. 料金形態<a class="headerlink" href="#5_17" title="Permanent link">¶</a></h3>
 <p>AWS Security Hub の料金は、主に以下の要素に基づきます:</p>
 <ul>
@@ -9677,8 +9677,8 @@ AWS Organizations との連携により、複数アカウント環境でのセ�
 <hr>
 <h2 id="aws-shield">AWS Shield<a class="headerlink" href="#aws-shield" title="Permanent link">¶</a></h2>
 <h3 id="1_18">1. サービス概要<a class="headerlink" href="#1_18" title="Permanent link">¶</a></h3>
-<p>AWS Shield は、AWS で実行される Web アプリケーションやサービスを、DDoS（分散型サービス妨害）攻撃から保護するマネージドサービスです。<br>
-ユーザーは、インフラストラクチャの変更や追加のハードウェアの導入なしに、自動的に DDoS 攻撃から保護されます。<br>
+<p>AWS Shield は、AWS で実行される Web アプリケーションやサービスを、DDoS（分散型サービス妨害）攻撃から保護するマネージドサービスである。<br>
+ユーザーは、インフラストラクチャの変更や追加のハードウェアの導入なしに、自動的に DDoS 攻撃から保護される。<br>
 AWS Shield は、アプリケーションの可用性とパフォーマンスを維持し、ビジネス継続性を確保するのに役立ちます。</p>
 <p>主なユースケースとして、</p>
 <ul>
@@ -9689,28 +9689,28 @@ AWS Shield は、アプリケーションの可用性とパフォーマンスを
 <li>ネットワークレイヤーでの DDoS 攻撃防御</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS Shield は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供します。</p>
+AWS Shield は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
 <h3 id="2_18">2. 主な特徴と機能<a class="headerlink" href="#2_18" title="Permanent link">¶</a></h3>
 <h4 id="21-always-on-detection-and-mitigation">2.1 Always-On Detection and Mitigation<a class="headerlink" href="#21-always-on-detection-and-mitigation" title="Permanent link">¶</a></h4>
-<p>AWS Shield は、DDoS 攻撃を常時監視し、自動的に緩和措置を適用します。<br>
-これにより、攻撃の兆候を早期に検出し、アプリケーションへの影響を最小限に抑えることができます。</p>
+<p>AWS Shield は、DDoS 攻撃を常時監視し、自動的に緩和措置を適用する。<br>
+これにより、攻撃の兆候を早期に検出し、アプリケーションへの影響を最小限に抑えることができる。</p>
 <h4 id="22_8">2.2 ネットワークレイヤー保護<a class="headerlink" href="#22_8" title="Permanent link">¶</a></h4>
-<p>Shield は、ネットワークレイヤー（レイヤー 3 および 4）での DDoS 攻撃を防御します。<br>
-これにより、TCP SYN フラッド、UDP フラッドなどの攻撃からインフラを保護できます。</p>
+<p>Shield は、ネットワークレイヤー（レイヤー 3 および 4）での DDoS 攻撃を防御する。<br>
+これにより、TCP SYN フラッド、UDP フラッドなどの攻撃からインフラを保護できる。</p>
 <h4 id="23_11">2.3 アプリケーションレイヤー保護<a class="headerlink" href="#23_11" title="Permanent link">¶</a></h4>
-<p>Shield Advanced は、アプリケーションレイヤー（レイヤー 7）での DDoS 攻撃を防御します。<br>
-これにより、HTTP フラッド、SQL インジェクションなどの攻撃からアプリケーションを保護できます。</p>
+<p>Shield Advanced は、アプリケーションレイヤー（レイヤー 7）での DDoS 攻撃を防御する。<br>
+これにより、HTTP フラッド、SQL インジェクションなどの攻撃からアプリケーションを保護できる。</p>
 <h4 id="24_13">2.4 攻撃の可視性<a class="headerlink" href="#24_13" title="Permanent link">¶</a></h4>
-<p>Shield は、攻撃に関する詳細な情報を提供します。<br>
-ユーザーは、攻撃の種類、規模、発生時間などを確認し、セキュリティインシデントの分析に利用できます。</p>
+<p>Shield は、攻撃に関する詳細な情報を提供する。<br>
+ユーザーは、攻撃の種類、規模、発生時間などを確認し、セキュリティインシデントの分析に利用できる。</p>
 <h4 id="25_9">2.5 統合されたサービス<a class="headerlink" href="#25_9" title="Permanent link">¶</a></h4>
-<p>Shield は、CloudFront, Elastic Load Balancing (ELB), Route 53 などの AWS の他のサービスと統合されており、これらのサービスを DDoS 攻撃から保護します。</p>
+<p>Shield は、CloudFront, Elastic Load Balancing (ELB), Route 53 などの AWS の他のサービスと統合されており、これらのサービスを DDoS 攻撃から保護する。</p>
 <h4 id="26_7">2.6 カスタマイズ可能な保護<a class="headerlink" href="#26_7" title="Permanent link">¶</a></h4>
-<p>Shield Advanced では、カスタムルールを作成し、特定のアプリケーションのニーズに合わせた保護を構成できます。<br>
-これにより、特定の攻撃パターンに対する防御を強化できます。</p>
+<p>Shield Advanced では、カスタムルールを作成し、特定のアプリケーションのニーズに合わせた保護を構成できる。<br>
+これにより、特定の攻撃パターンに対する防御を強化できる。</p>
 <h4 id="27-ddos-response-team">2.7 DDoS Response Team<a class="headerlink" href="#27-ddos-response-team" title="Permanent link">¶</a></h4>
-<p>Shield Advanced のユーザーは、DDoS 攻撃が発生した場合に、AWS の DDoS 対応チームからサポートを受けることができます。<br>
-これにより、大規模な DDoS 攻撃に迅速に対応し、アプリケーションの可用性を維持できます。</p>
+<p>Shield Advanced のユーザーは、DDoS 攻撃が発生した場合に、AWS の DDoS 対応チームからサポートを受けることができる。<br>
+これにより、大規模な DDoS 攻撃に迅速に対応し、アプリケーションの可用性を維持できる。</p>
 <h3 id="3_18">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_18" title="Permanent link">¶</a></h3>
 <ol>
 <li>ユーザーは、AWS リソース（CloudFront, ELB, Route 53 など）を AWS Shield で保護。</li>
@@ -9719,27 +9719,27 @@ AWS Shield は、これらのユースケースに対応するための様々な
 <li>攻撃に関する情報は、CloudWatch メトリクスやログとして提供。</li>
 <li>Shield Advanced のユーザーは、DDoS Response Team のサポートを受けることができる。</li>
 </ol>
-<p>AWS Shield は、AWS のグローバルインフラストラクチャの一部であり、高い可用性とスケーラビリティを提供します。<br>
+<p>AWS Shield は、AWS のグローバルインフラストラクチャの一部であり、高い可用性とスケーラビリティを提供する。<br>
 DDoS 攻撃の検出と緩和は AWS が行うため、ユーザーはインフラの管理を意識する必要はありません。</p>
 <h3 id="4_18">4. セキュリティと認証・認可<a class="headerlink" href="#4_18" title="Permanent link">¶</a></h3>
-<p>AWS Shield は、DDoS 攻撃から AWS リソースを保護するためのセキュリティ機能を提供します:</p>
+<p>AWS Shield は、DDoS 攻撃から AWS リソースを保護するためのセキュリティ機能を提供する:</p>
 <ul>
 <li><strong>ネットワークレイヤー保護</strong>: TCP SYN フラッド、UDP フラッドなどのネットワークレイヤーの攻撃を防御。</li>
 <li><strong>アプリケーションレイヤー保護</strong>: HTTP フラッド、SQL インジェクションなどのアプリケーションレイヤーの攻撃を防御 (Shield Advanced)。</li>
 <li><strong>トラフィック分析</strong>: ネットワークトラフィックを継続的に分析し、DDoS 攻撃を検出し、緩和。</li>
 <li><strong>アクセス制御</strong>: IAM ポリシーを使用して、AWS Shield へのアクセスを制御。</li>
-<li><strong>データ保護</strong>: Shield のログデータや設定データは暗号化されます。</li>
+<li><strong>データ保護</strong>: Shield のログデータや設定データは暗号化される。</li>
 </ul>
-<p>これらのセキュリティ対策により、AWS リソースを DDoS 攻撃から保護し、可用性と信頼性を確保します。</p>
+<p>これらのセキュリティ対策により、AWS リソースを DDoS 攻撃から保護し、可用性と信頼性を確保する。</p>
 <h3 id="5_18">5. 料金形態<a class="headerlink" href="#5_18" title="Permanent link">¶</a></h3>
 <p>AWS Shield には、Standard と Advanced という 2 つのレベルがあり、料金体系が異なります。</p>
 <ul>
-<li><strong>AWS Shield Standard</strong>: AWS Shield Standard は、追加料金なしで利用できます。</li>
-<li><strong>AWS Shield Advanced</strong>: 月額料金と、保護対象のリソースの使用量に応じた料金が発生します。</li>
+<li><strong>AWS Shield Standard</strong>: AWS Shield Standard は、追加料金なしで利用できる。</li>
+<li><strong>AWS Shield Advanced</strong>: 月額料金と、保護対象のリソースの使用量に応じた料金が発生する。</li>
 <li><strong>データ転送</strong>: Shield Advanced で保護されたリソースに対するデータ転送量に応じて課金。</li>
 </ul>
 <h3 id="6_18">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6_18" title="Permanent link">¶</a></h3>
-<p>AWS Shield は、様々なアプリケーションの DDoS 攻撃防御に利用できます。<br>
+<p>AWS Shield は、様々なアプリケーションの DDoS 攻撃防御に利用できる。<br>
 一般的なパターンは以下の通りです:</p>
 <ul>
 <li><strong>Web サイトの保護</strong>: Web サイトを CloudFront や ELB で保護し、DDoS 攻撃から可用性を確保。</li>
@@ -9794,21 +9794,21 @@ DDoS 攻撃の検出と緩和は AWS が行うため、ユーザーはインフ�
 <h4 id="87_13">8.7 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#87_13" title="Permanent link">¶</a></h4>
 <ul>
 <li>Q: AWS Shield は何を提供するサービスですか？</li>
-<li>A: AWS で実行される Web アプリケーションやサービスを、DDoS（分散型サービス妨害）攻撃から保護するマネージドサービスです。</li>
+<li>A: AWS で実行される Web アプリケーションやサービスを、DDoS（分散型サービス妨害）攻撃から保護するマネージドサービスである。</li>
 <li>Q: AWS Shield Standard と AWS Shield Advanced の違いは何ですか？</li>
-<li>A: Shield Standard は基本的な DDoS 攻撃保護を提供し、Shield Advanced はアプリケーションレイヤーでの保護、DDoS Response Team のサポートなど、より高度な機能を提供します。</li>
-<li>Q: AWS Shield は、どのような種類の DDoS 攻撃から保護できますか？</li>
-<li>A: ネットワークレイヤー（レイヤー 3 および 4）およびアプリケーションレイヤー（レイヤー 7）での DDoS 攻撃から保護できます。</li>
+<li>A: Shield Standard は基本的な DDoS 攻撃保護を提供し、Shield Advanced はアプリケーションレイヤーでの保護、DDoS Response Team のサポートなど、より高度な機能を提供する。</li>
+<li>Q: AWS Shield は、どのような種類の DDoS 攻撃から保護できるか？</li>
+<li>A: ネットワークレイヤー（レイヤー 3 および 4）およびアプリケーションレイヤー（レイヤー 7）での DDoS 攻撃から保護できる。</li>
 <li>Q: AWS Shield は、どのような AWS サービスと統合されていますか？</li>
 <li>A: CloudFront, Elastic Load Balancing (ELB), Route 53 などのサービスと統合されています。</li>
 <li>Q: AWS Shield の料金体系は？</li>
-<li>A: AWS Shield Standard は無料、AWS Shield Advanced は月額料金とリソース使用量に応じた料金が発生します。</li>
+<li>A: AWS Shield Standard は無料、AWS Shield Advanced は月額料金とリソース使用量に応じた料金が発生する。</li>
 </ul>
 <hr>
 <h2 id="aws-waf">AWS WAF<a class="headerlink" href="#aws-waf" title="Permanent link">¶</a></h2>
 <h3 id="1_19">1. サービス概要<a class="headerlink" href="#1_19" title="Permanent link">¶</a></h3>
-<p>AWS WAF（Web Application Firewall）は、Web アプリケーション層への攻撃を防御するためのサービスで、SQL インジェクションやクロスサイトスクリプティング（XSS）など、よくある脆弱性パターンから保護します。<br>
-CloudFront や Application Load Balancer(ALB)、Amazon API Gateway、AppSync などとの統合ができ、ルールを柔軟に定義してアクセスを制御可能です。</p>
+<p>AWS WAF（Web Application Firewall）は、Web アプリケーション層への攻撃を防御するためのサービスで、SQL インジェクションやクロスサイトスクリプティング（XSS）など、よくある脆弱性パターンから保護する。<br>
+CloudFront や Application Load Balancer(ALB)、Amazon API Gateway、AppSync などとの統合ができ、ルールを柔軟に定義してアクセスを制御可能である。</p>
 <p>主なユースケースとして、</p>
 <ul>
 <li>不正リクエストのブロックや Bot 対策</li>
@@ -9816,10 +9816,10 @@ CloudFront や Application Load Balancer(ALB)、Amazon API Gateway、AppSync な
 <li>IP レピュテーションリストの参照</li>
 </ul>
 <p>などが挙げられます。<br>
-AWS WAF を活用することで、Web アプリケーションレイヤーの攻撃を低コストかつスケーラブルに防御することが可能です。</p>
+AWS WAF を活用することで、Web アプリケーションレイヤーの攻撃を低コストかつスケーラブルに防御することが可能である。</p>
 <h3 id="2_19">2. 主な特徴と機能<a class="headerlink" href="#2_19" title="Permanent link">¶</a></h3>
 <h4 id="21_13">2.1 ルールベースのフィルタリング<a class="headerlink" href="#21_13" title="Permanent link">¶</a></h4>
-<p>WAF は以下のような種類のルールで不正アクセスをフィルタリングします:</p>
+<p>WAF は以下のような種類のルールで不正アクセスをフィルタリングする:</p>
 <ul>
 <li><strong>IP マッチ条件</strong>: 指定したソース IP アドレスや IP レンジからのリクエストを許可/ブロック</li>
 <li><strong>String マッチ/正規表現マッチ</strong>: HTTP ヘッダや URI パスに特定文字列や正規表現が含まれる場合にアクションを実行</li>
@@ -9827,22 +9827,22 @@ AWS WAF を活用することで、Web アプリケーションレイヤーの�
 <li><strong>SQL インジェクション/XSS 検知</strong>: 代表的な攻撃パターンを自動検知してブロック</li>
 </ul>
 <h4 id="22_9">2.2 マネージドルールとカスタムルール<a class="headerlink" href="#22_9" title="Permanent link">¶</a></h4>
-<p>AWS WAF では、事前定義されたマネージドルール（AWS やサードパーティが提供）を導入することで、OWASP Top 10 をはじめとする一般的な攻撃への対策を簡単に設定可能です。<br>
-また、カスタムルールを使って独自のビジネスロジックを反映した防御を行うこともできます。</p>
+<p>AWS WAF では、事前定義されたマネージドルール（AWS やサードパーティが提供）を導入することで、OWASP Top 10 をはじめとする一般的な攻撃への対策を簡単に設定可能である。<br>
+また、カスタムルールを使って独自のビジネスロジックを反映した防御を行うこともできる。</p>
 <h4 id="23-bot-control">2.3 Bot Control/レートベースルール<a class="headerlink" href="#23-bot-control" title="Permanent link">¶</a></h4>
-<p>最近の AWS WAF には Bot Control 機能が追加され、クローラーやスクレイピングなどのボットトラフィックを制御できます。<br>
-また、レートベースルールを利用すると、一定時間内に大量アクセスしている IP を自動的にブロックすることが可能です。</p>
+<p>最近の AWS WAF には Bot Control 機能が追加され、クローラーやスクレイピングなどのボットトラフィックを制御できる。<br>
+また、レートベースルールを利用すると、一定時間内に大量アクセスしている IP を自動的にブロックすることが可能である。</p>
 <h4 id="24_14">2.4 可視化とアナリティクス<a class="headerlink" href="#24_14" title="Permanent link">¶</a></h4>
-<p>WAF では、CloudWatch メトリクスやログ（WAF ログ）と連携することで、トラフィックの可視化や分析が可能です。<br>
-不正なリクエストの種類や発生元 IP を把握し、継続的なルール最適化を行うことができます。</p>
+<p>WAF では、CloudWatch メトリクスやログ（WAF ログ）と連携することで、トラフィックの可視化や分析が可能である。<br>
+不正なリクエストの種類や発生元 IP を把握し、継続的なルール最適化を行うことができる。</p>
 <h4 id="25-cloudfrontalbapi-gateway">2.5 CloudFront/ALB/API Gateway との統合<a class="headerlink" href="#25-cloudfrontalbapi-gateway" title="Permanent link">¶</a></h4>
-<p>WAF は主に以下のサービスと統合できます:</p>
+<p>WAF は主に以下のサービスと統合できる:</p>
 <ul>
 <li><strong>Amazon CloudFront</strong>: CDN で配信するコンテンツを WAF で保護</li>
 <li><strong>Application Load Balancer</strong>: ALB 経由でアクセスされる Web アプリケーションを保護</li>
 <li><strong>Amazon API Gateway/AppSync</strong>: API エンドポイントや GraphQL エンドポイントへの不正アクセスをフィルタ</li>
 </ul>
-<p>このように、様々なエントリーポイントをカバーしており、複数サービス間で一貫したルール設定が可能です。</p>
+<p>このように、様々なエントリーポイントをカバーしており、複数サービス間で一貫したルール設定が可能である。</p>
 <h3 id="3_19">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3_19" title="Permanent link">¶</a></h3>
 <ol>
 <li>WAF ポリシー（WebACL）を作成し、使用するルールを定義</li>
@@ -9850,16 +9850,16 @@ AWS WAF を活用することで、Web アプリケーションレイヤーの�
 <li>WAF は受信リクエストをルールの順番に従って評価し、マッチしたアクション（Allow/Block/Count/Captcha）を実行</li>
 <li>ルール実行結果は CloudWatch メトリクスや WAF ログとして蓄積され、可視化・分析が可能</li>
 </ol>
-<p>これにより、アプリケーション層に到達する前に攻撃トラフィックをブロックし、セキュリティ強度を高めるアーキテクチャを構築できます。</p>
+<p>これにより、アプリケーション層に到達する前に攻撃トラフィックをブロックし、セキュリティ強度を高めるアーキテクチャを構築できる。</p>
 <h3 id="4_19">4. セキュリティと認証・認可<a class="headerlink" href="#4_19" title="Permanent link">¶</a></h3>
-<p>AWS WAF 自体はマネージドサービスであり、AWS IAM を活用して WAF ポリシーを操作できるユーザーやロールを制御します:</p>
+<p>AWS WAF 自体はマネージドサービスであり、AWS IAM を活用して WAF ポリシーを操作できるユーザーやロールを制御する:</p>
 <ul>
 <li><strong>IAM ポリシー</strong>: 「waf:*」などの API コールを許可/拒否する形で操作権限を管理</li>
 <li><strong>運用監査</strong>: AWS CloudTrail を通じて WAF のルール変更やポリシー適用などの操作履歴を追跡可能</li>
 <li><strong>Shield Advanced 連携</strong>: DDoS 対策サービスとの併用で攻撃を多層防御</li>
 </ul>
 <h3 id="5_19">5. 料金形態<a class="headerlink" href="#5_19" title="Permanent link">¶</a></h3>
-<p>AWS WAF の料金は以下の要素で構成されます:</p>
+<p>AWS WAF の料金は以下の要素で構成される:</p>
 <ul>
 <li><strong>Web ACL 数</strong>: 作成した Web ACL（WAF ポリシー）ごとに月額料金が発生</li>
 <li><strong>ルール数</strong>: Web ACL に紐づくルール数に応じた月額料金</li>
@@ -9945,7 +9945,7 @@ AWS WAF を活用することで、Web アプリケーションレイヤーの�
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月6日 11:34:35 UTC">2026年1月6日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月6日 11:36:05 UTC">2026年1月6日</span>
   </span>
 
     
