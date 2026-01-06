@@ -71,6 +71,7 @@ plugins:
       redirect_maps:
         certifications/aws-saa/Analytics.md: certifications/aws-saa/analytics/index.md
         certifications/aws-saa/ApplicationIntegration.md: certifications/aws-saa/application-integration/index.md
+        certifications/aws-saa/ArchitectureStrategy.md: certifications/aws-saa/architecture-strategy/index.md
   - git-revision-date-localized:
       fallback_to_build_date: true
       locale: ja
