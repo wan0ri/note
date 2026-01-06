@@ -9,34 +9,30 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/analytics/Athena/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../../devops/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>AWS SAA 試験領域 - wan0ri Note</title>
+        <title>Amazon Athena - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="og:title" content="Amazon Athena - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/analytics/Athena.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/analytics/Athena/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="twitter:title" content="Amazon Athena - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/analytics/Athena.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -105,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -141,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS SAA 試験領域
+              Amazon Athena
             
           </span>
         </div>
@@ -246,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -267,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -287,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -307,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,13 +319,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -349,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -369,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -389,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -409,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -429,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -469,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -499,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -580,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -608,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -690,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -718,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -746,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -774,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -802,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -838,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -866,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -955,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -983,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1011,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1039,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1067,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1156,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1184,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1212,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1240,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1272,31 +1266,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1314,7 +1305,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1332,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1357,35 +1348,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS-SAA 項目一覧
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1401,35 +1367,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        トピック一覧
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1503,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1531,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1559,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1587,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1615,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1704,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1793,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1821,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1910,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1938,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1966,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -2055,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2108,13 +2045,267 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        トピック一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 サーバーレス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 SQL クエリ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 様々なデータ形式をサポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-jdbcodbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 JDBC/ODBC 接続
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 スキーマ定義
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 統合されたサービス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 拡張性とスケーラビリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 サーバーレス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 SQL クエリ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 様々なデータ形式をサポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-jdbcodbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 JDBC/ODBC 接続
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 スキーマ定義
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2136,46 +2327,6 @@
   
 
 
-  <nav class="md-path" aria-label="ナビゲーション">
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Certifications
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -2186,27 +2337,143 @@
   
 
 
-<h1 id="aws-saa">AWS ソリューションアーキテクト – アソシエイト（SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)で出題が想定されるサービス内容と出題ポイントを掲載しています。</p>
-<h2 id="_1">トピック一覧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+  <h1>Amazon Athena</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>Amazon Athena は、S3 に保存されたデータを標準 SQL を使って直接分析できるサーバーレスなクエリサービスである。<br>
+ユーザーは、データベースやデータウェアハウスを用意することなく、S3 上のデータを直接クエリし、結果を取得できる。<br>
+Athena は、大規模なデータを高速かつ簡単に分析するための、コスト効率の高いソリューションを提供する。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="ApplicationIntegration/">アプリケーション統合</a></li>
-<li><a href="ArchitectureStrategy/">アーキテクチャ戦略</a></li>
-<li><a href="WebAndMobileFrontEnd/">ウェブとモバイルのフロントエンド</a></li>
-<li><a href="CloudFinancialManagement/">クラウド財務管理</a></li>
-<li><a href="Containers/">コンテナ</a></li>
-<li><a href="Compute/">コンピューティング</a></li>
-<li><a href="Storage/">ストレージ</a></li>
-<li><a href="SecurityIdentityAndCompliance/">セキュリティ、アイデンティティ、コンプライアンス</a></li>
-<li><a href="DeveloperTools/">デベロッパーツール</a></li>
-<li><a href="Database/">データベース</a></li>
-<li><a href="NetworkingAndContentDelivery/">ネットワーキングとコンテンツ配信</a></li>
-<li><a href="Blockchain/">ブロックチェーン</a></li>
-<li><a href="MediaServices/">メディアサービス</a></li>
-<li><a href="analytics/">分析</a></li>
-<li><a href="MachineLearning/">機械学習</a></li>
-<li><a href="MigrationAndTransfer/">移行と転送</a></li>
-<li><a href="ManagementAndGovernance/">管理とガバナンス</a></li>
+<li>アドホックなデータ分析</li>
+<li>ログ分析</li>
+<li>データ探索</li>
+<li>ビジネスインテリジェンス（BI）</li>
+<li>レポート作成</li>
+<li>データ変換</li>
+</ul>
+<p>などが挙げられる。<br>
+Amazon Athena は、これらのユースケースに対応するための様々な機能と、AWS の他のサービスとの統合を提供する。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21">2.1 サーバーレス<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
+<p>Athena は、サーバーレスなクエリサービスであり、ユーザーはインフラのプロビジョニングや管理を行う必要はない。<br>
+AWS が、クエリの実行に必要なリソースを自動的に管理する。</p>
+<h3 id="22-sql">2.2 SQL クエリ<a class="headerlink" href="#22-sql" title="Permanent link">¶</a></h3>
+<p>Athena は、標準 SQL をサポートしており、ユーザーは使い慣れた SQL クエリを使ってデータを分析できる。<br>
+これにより、特別なスキルや学習を必要とせずに、データ分析を始められる。</p>
+<h3 id="23">2.3 様々なデータ形式をサポート<a class="headerlink" href="#23" title="Permanent link">¶</a></h3>
+<p>JSON, CSV, Parquet, ORC などの様々なデータ形式をサポートしている。<br>
+これにより、多様なデータソースに対応でき、柔軟なデータ分析が可能である。</p>
+<h3 id="24-jdbcodbc">2.4 JDBC/ODBC 接続<a class="headerlink" href="#24-jdbcodbc" title="Permanent link">¶</a></h3>
+<p>JDBC/ODBC ドライバーを提供しており、Tableau, Power BI などの BI ツールから、Athena に接続し、S3 上のデータを分析できる。<br>
+これにより、データの可視化と分析が容易になる。</p>
+<h3 id="25">2.5 スキーマ定義<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
+<p>AWS Glue Data Catalog と連携することで、S3 上のデータに対してスキーマを定義できる。<br>
+これにより、データの型や構造を明示的に定義し、クエリの実行を効率化できる。</p>
+<h3 id="26">2.6 統合されたサービス<a class="headerlink" href="#26" title="Permanent link">¶</a></h3>
+<p>Athena は、AWS Glue Data Catalog, Amazon S3, AWS Lake Formation などの AWS の他のサービスと統合されている。<br>
+これにより、データの探索、変換、分析をシームレスに行える。</p>
+<h3 id="27">2.7 拡張性とスケーラビリティ<a class="headerlink" href="#27" title="Permanent link">¶</a></h3>
+<p>Amazon Athena は、大量のデータでも高速にクエリを実行できるように設計されており、スケーラビリティに優れている。<br>
+ユーザーは、ペタバイト規模のデータに対して、高速に分析を実行できる。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>ユーザーは、AWS マネジメントコンソール、API、または JDBC/ODBC ドライバーを通じて、Athena にクエリを送信。</li>
+<li>Athena は、S3 上のデータを読み込み、クエリを分析。</li>
+<li>クエリは、並列処理され、結果が返却。</li>
+<li>必要に応じて、AWS Glue Data Catalog を使用して、スキーマを定義。</li>
+</ol>
+<p>Amazon Athena は、サーバーレスアーキテクチャに基づいており、クエリ実行に必要なコンピューティングリソースを AWS が管理する。<br>
+ユーザーはインフラの管理を意識する必要はなく、クエリの実行に集中できる。</p>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<p>Amazon Athena は、データセキュリティを確保するために、以下の機能を提供する:</p>
+<ul>
+<li><strong>IAM 統合</strong>: AWS Identity and Access Management (IAM) を利用して、Athena へのアクセスを制御する。</li>
+<li><strong>データ暗号化</strong>: S3 に保存されたデータは転送中および保存時に暗号化される。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内から Athena にアクセスする際に、インターネットを経由せずにアクセスできる。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーを通じて、ユーザーやグループごとに、Athena の操作権限を詳細に制御できる。</li>
+<li><strong>データアクセスコントロール</strong>: AWS Lake Formation と連携して、S3 上のデータに対するアクセス制御を詳細に管理できる。</li>
+</ul>
+<p>これらのセキュリティ対策により、S3 上のデータへの不正アクセスを防止し、機密情報を保護できる。</p>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>Amazon Athena の料金は主に以下に基づく:</p>
+<ul>
+<li><strong>クエリ実行</strong>: スキャンされたデータ量に応じて課金。</li>
+<li><strong>データ操作</strong>: DML クエリ（INSERT, UPDATE, DELETE など）を実行した場合、データ操作量に応じて課金。</li>
+<li><strong>データカタログ</strong>: AWS Glue Data Catalog を利用する場合、別途料金が発生。</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<p>Amazon Athena は、様々なデータ分析に利用できる。一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>アドホックなデータ分析</strong>: S3 に保存されたデータを一時的に分析し、データ探索や検証。</li>
+<li><strong>ログ分析</strong>: S3 に保存されたアプリケーションログやアクセスログを分析し、問題の特定やセキュリティ分析。</li>
+<li><strong>データ探索</strong>: 大量のデータを探索し、データの傾向やパターンを把握。</li>
+<li><strong>ビジネスインテリジェンス (BI)</strong>: S3 上のデータを BI ツールで分析し、ビジネスインサイトを抽出。</li>
+<li><strong>レポート作成</strong>: S3 上のデータからレポートを作成し、ビジネスの状況を把握。</li>
+<li><strong>データ変換</strong>: S3 上のデータを変換し、他のストレージに保存。</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>AWS マネジメントコンソールから Amazon Athena を開き、クエリエディタを開く。</li>
+<li>S3 バケットとデータ形式を指定し、テーブルを作成。</li>
+<li>SQL クエリを記述し、実行。</li>
+<li>クエリ結果を確認し、必要に応じて可視化。</li>
+<li>必要に応じて、AWS Glue Data Catalog を使用してスキーマを定義。</li>
+</ol>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81">8.1 サーバーレス<a class="headerlink" href="#81" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>特徴</strong>: サーバーのプロビジョニングや管理が不要。</li>
+<li><strong>利点</strong>: インフラ管理なしでクエリを実行可能。</li>
+<li><strong>試験対策</strong>: サーバーレスのメリット、管理範囲が問われる。</li>
+</ul>
+<h3 id="82-sql">8.2 SQL クエリ<a class="headerlink" href="#82-sql" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>対応</strong>: 標準 SQL。</li>
+<li><strong>利用</strong>: 使い慣れた SQL でデータを分析。</li>
+<li><strong>試験対策</strong>: SQL クエリの実行方法、利用できる関数が問われる。</li>
+</ul>
+<h3 id="83">8.3 様々なデータ形式をサポート<a class="headerlink" href="#83" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>サポート対象</strong>: JSON, CSV, Parquet, ORC など。</li>
+<li><strong>利用</strong>: 多様なデータソースに対応可能。</li>
+<li><strong>試験対策</strong>: 各データ形式の特徴、利用シーンが問われる。</li>
+</ul>
+<h3 id="84-jdbcodbc">8.4 JDBC/ODBC 接続<a class="headerlink" href="#84-jdbcodbc" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>提供</strong>: JDBC/ODBC ドライバーを提供。</li>
+<li><strong>利用</strong>: Tableau, Power BI などの BI ツールから接続可能。</li>
+<li><strong>試験対策</strong>: 各ツールとの連携方法、利用シナリオが問われる。</li>
+</ul>
+<h3 id="85">8.5 スキーマ定義<a class="headerlink" href="#85" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>連携</strong>: AWS Glue Data Catalog。</li>
+<li><strong>目的</strong>: データの型や構造を明示的に定義。</li>
+<li><strong>試験対策</strong>: スキーマ定義の重要性、Glue との連携が問われる。</li>
+</ul>
+<h3 id="86">8.6 料金体系<a class="headerlink" href="#86" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>課金対象</strong>: スキャンされたデータ量、DML クエリのデータ操作量、Glue Data Catalog 利用料。</li>
+<li><strong>最適化</strong>: クエリの最適化、データ形式の適切な選択がコスト削減に有効。</li>
+<li><strong>試験対策</strong>: 料金体系、課金対象が問われる。</li>
+</ul>
+<h3 id="87">8.7 類似・関連サービスとの比較<a class="headerlink" href="#87" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Amazon Redshift</strong>: データウェアハウスサービス。Athena は S3 上のデータ分析に特化。</li>
+<li><strong>AWS Glue</strong>: データ統合サービス。Athena は Glue で定義されたスキーマを利用可能。</li>
+</ul>
+<h3 id="88">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: Amazon Athena は何を提供するサービスですか？</li>
+<li>A: S3 に保存されたデータを標準 SQL を使って直接分析できるサーバーレスなクエリサービスである。</li>
+<li>Q: Amazon Athena は、どのようなデータ形式をサポートしていますか？</li>
+<li>A: JSON, CSV, Parquet, ORC などの様々なデータ形式をサポートしている。</li>
+<li>Q: Amazon Athena は、どのように他の BI ツールと連携しますか？</li>
+<li>A: JDBC/ODBC ドライバーを提供しており、Tableau, Power BI などの BI ツールから接続できる。</li>
+<li>Q: Amazon Athena のスキーマ定義には、どのようなサービスを利用できますか？</li>
+<li>A: AWS Glue Data Catalog を利用して、S3 上のデータに対してスキーマを定義できる。</li>
+<li>Q: Amazon Athena の料金はどのように計算されますか？</li>
+<li>A: スキャンされたデータ量、DML クエリのデータ操作量、AWS Glue Data Catalog の利用料に基づいて計算される。</li>
 </ul>
 
 
@@ -2352,10 +2619,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
