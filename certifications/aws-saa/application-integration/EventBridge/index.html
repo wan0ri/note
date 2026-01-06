@@ -9,34 +9,30 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/application-integration/EventBridge/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../../devops/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>AWS SAA 試験領域 - wan0ri Note</title>
+        <title>Amazon EventBridge - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="og:title" content="Amazon EventBridge - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/application-integration/EventBridge.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/application-integration/EventBridge/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="twitter:title" content="Amazon EventBridge - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/application-integration/EventBridge.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -105,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -141,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS SAA 試験領域
+              Amazon EventBridge
             
           </span>
         </div>
@@ -246,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -267,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -287,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -307,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,13 +319,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -349,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -369,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -389,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -409,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -429,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -469,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -499,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -580,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -608,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -690,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -718,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -746,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -774,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -802,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -838,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -866,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -955,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -983,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1011,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1039,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1067,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1156,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1184,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1212,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1240,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1272,31 +1266,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1314,7 +1305,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1332,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1357,35 +1348,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS-SAA 項目一覧
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1401,35 +1367,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        トピック一覧
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1503,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1531,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1559,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1587,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1615,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1704,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1793,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1821,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1910,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1938,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1966,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -2055,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2108,13 +2045,234 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        トピック一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-event-bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 イベントバス(Event Bus)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 イベントルール(Rules)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 ターゲット(Targets)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 スキーマレジストリとディスカバリー
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 イベントバスの種類と用途
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 イベントパターンとルール
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 ターゲットとその特性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 スキーマレジストリとディスカバリー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 セキュリティモデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 コストモデルと最適化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2136,46 +2294,6 @@
   
 
 
-  <nav class="md-path" aria-label="ナビゲーション">
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Certifications
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -2186,27 +2304,144 @@
   
 
 
-<h1 id="aws-saa">AWS ソリューションアーキテクト – アソシエイト（SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)で出題が想定されるサービス内容と出題ポイントを掲載しています。</p>
-<h2 id="_1">トピック一覧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+  <h1>Amazon EventBridge</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>Amazon EventBridge は、AWS サービス、SaaS アプリケーション、独自アプリケーションから発生するイベントをストリームとして受け取り、それらを他のターゲットサービスへとルーティングするサーバーレスのイベントバスサービス。<br>
+これにより、複雑なイベント駆動型アーキテクチャをシンプルかつスケーラブルに実装可能になり、疎結合で拡張しやすいシステムを構築できる。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="application-integration/">アプリケーション統合</a></li>
-<li><a href="ArchitectureStrategy/">アーキテクチャ戦略</a></li>
-<li><a href="WebAndMobileFrontEnd/">ウェブとモバイルのフロントエンド</a></li>
-<li><a href="CloudFinancialManagement/">クラウド財務管理</a></li>
-<li><a href="Containers/">コンテナ</a></li>
-<li><a href="Compute/">コンピューティング</a></li>
-<li><a href="Storage/">ストレージ</a></li>
-<li><a href="SecurityIdentityAndCompliance/">セキュリティ、アイデンティティ、コンプライアンス</a></li>
-<li><a href="DeveloperTools/">デベロッパーツール</a></li>
-<li><a href="Database/">データベース</a></li>
-<li><a href="NetworkingAndContentDelivery/">ネットワーキングとコンテンツ配信</a></li>
-<li><a href="Blockchain/">ブロックチェーン</a></li>
-<li><a href="MediaServices/">メディアサービス</a></li>
-<li><a href="analytics/">分析</a></li>
-<li><a href="MachineLearning/">機械学習</a></li>
-<li><a href="MigrationAndTransfer/">移行と転送</a></li>
-<li><a href="ManagementAndGovernance/">管理とガバナンス</a></li>
+<li>マイクロサービス間通信</li>
+<li>SaaS アプリとのインテグレーション</li>
+<li>リアルタイムなイベント処理</li>
+<li>ワークフローオーケストレーション</li>
+</ul>
+<p>が挙げられる。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21-event-bus">2.1 イベントバス(Event Bus)<a class="headerlink" href="#21-event-bus" title="Permanent link">¶</a></h3>
+<p>EventBridge は、イベントを流通させるためのイベントバスを提供する。</p>
+<ul>
+<li><strong>デフォルトイベントバス</strong>: AWS アカウント標準のイベントバス</li>
+<li><strong>カスタムイベントバス</strong>: アプリケーション固有のイベント受け取り用</li>
+<li><strong>パートナーイベントバス</strong>: SaaS アプリケーションや外部サービスからのイベントを受け取る</li>
+</ul>
+<h3 id="22-rules">2.2 イベントルール(Rules)<a class="headerlink" href="#22-rules" title="Permanent link">¶</a></h3>
+<p>ルールはイベントパターンや条件に基づいて、受け取ったイベントを特定のターゲットへルーティングする。<br>
+ルールはフィルタリング機能を持ち、JSON 形式のイベントペイロードに対して特定のフィールド条件を指定可能。</p>
+<h3 id="23-targets">2.3 ターゲット(Targets)<a class="headerlink" href="#23-targets" title="Permanent link">¶</a></h3>
+<p>ルールにマッチしたイベントは、</p>
+<ul>
+<li>AWS Lambda</li>
+<li>Amazon SQS</li>
+<li>Amazon SNS</li>
+<li>Amazon Kinesis Streams</li>
+<li>Amazon ECS</li>
+<li>API Destinations</li>
+<li>Step Functions</li>
+</ul>
+<p>など、様々なターゲットに送信できる。<br>
+これにより、イベントをトリガーとして自動処理や非同期ワークフローを実現できる。</p>
+<h3 id="24">2.4 スキーマレジストリとディスカバリー<a class="headerlink" href="#24" title="Permanent link">¶</a></h3>
+<p>EventBridge はイベントスキーマをレジストリで管理し、スキーマディスカバリー機能を利用して、実際に流れるイベントからスキーマを自動的に推論・登録可能。<br>
+これにより、開発者はイベント駆動アプリケーションのスキーマ管理を容易に行える。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>様々なソース（AWS サービスイベント、独自アプリからの PutEvents API、SaaS 連携等）からイベントバスへイベントが投入される。</li>
+<li>イベントルールが、イベントペイロードに基づいてフィルタリングを行う。</li>
+<li>マッチしたイベントは、ターゲット（Lambda や SQS、Step Functions など）へ自動的にルーティングされる。</li>
+<li>スキーマレジストリでイベントスキーマを管理し、開発者はスキーマに基づく型安全なコード生成が可能。</li>
+</ol>
+<p>すべてがサーバーレスで、柔軟かつ拡張性の高いイベント駆動アーキテクチャを構築できる。</p>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<p>EventBridge では、IAM ポリシーとリソースポリシーにより、イベントバスへの PutEvents やルールへのアクセスを制御する。<br>
+また、API Destinations 機能を利用する場合には、コネクションを作成し、認証情報(例えば OAuth、API キー等)を安全に扱うことが可能。</p>
+<ul>
+<li><strong>IAM ポリシー</strong>: ユーザやロールが EventBridge API（PutRule、PutTargets、PutEvents など）を実行できるか制御。</li>
+<li><strong>リソースベースポリシー</strong>: 特定のイベントバスやルールに対するクロスアカウントアクセスを制御。</li>
+<li><strong>暗号化</strong>: イベントは基本的に、暗号化された通信（TLS）上でやりとりされ、センシティブ情報はターゲット先での暗号化や IAM 制御で保護。</li>
+</ul>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>Amazon EventBridge の料金は主にイベント数に基づく従量課金モデル。</p>
+<ul>
+<li><strong>イベント挿入数</strong>: PutEvents API で送信されたイベント数や、AWS サービスから発生するイベント数に応じて課金。</li>
+<li><strong>スキーマディスカバリー</strong>: スキーマレジストリへの登録やスキーマディスカバリーには一定の無料枠があるが、超過すると課金対象。</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>マイクロサービス間通信</strong>: 個別サービス間を疎結合に保つため、EventBridge にイベントを送信し、別のマイクロサービスがそれをトリガーに動作。</li>
+<li><strong>システム統合</strong>: SaaS アプリ（Salesforce、Zendesk など）からのイベントを EventBridge で受け取り、自社アプリへ連動。</li>
+<li><strong>ワークフローオーケストレーション</strong>: イベント発生に応じて Step Functions を起動し、複雑なビジネスフローを非同期で実行。</li>
+<li><strong>イベント駆動 CI/CD</strong>: コードコミットイベントや ECR イメージプッシュイベントをトリガーにパイプラインを起動。</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>Amazon EventBridge コンソールで新規ルールを作成。</li>
+<li>ルールにイベントパターン（例：<code>{"source": ["aws.ec2"]}</code>）を定義し、特定のイベントのみマッチさせる。</li>
+<li>ターゲットとして Lambda 関数を指定。</li>
+<li>EC2 で特定の状態変化イベント（インスタンス起動など）が発生すると、そのイベントが EventBridge により Lambda へ転送。</li>
+<li>Lambda でイベントペイロードを処理し、ログ出力や通知送信などを実行。</li>
+</ol>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81">8.1 イベントバスの種類と用途<a class="headerlink" href="#81" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>デフォルトイベントバス</strong>: 同一アカウント内で AWS サービスイベントを受け取る標準バス。</li>
+<li><strong>カスタムイベントバス</strong>: アプリケーション独自イベントを分類・整理可能。マルチテナント環境や分離が必要なケースで有効。</li>
+<li><strong>パートナーイベントバス</strong>: SaaS アプリケーションや外部サービスのイベントを直接受け取るためのイベントバス。</li>
+</ul>
+<h3 id="82">8.2 イベントパターンとルール<a class="headerlink" href="#82" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>イベントパターン</strong>: イベントの <code>source</code> 、 <code>detail-type</code> 、 <code>detail</code> フィールドを条件にフィルタリング。</li>
+<li><strong>ルール</strong>: 一つのルールで複数ターゲットを指定可能。マッチしたイベントを並列に複数のターゲットへ送信。</li>
+<li><strong>注意点</strong>: ルールにはステートレスで、イベントを変換（InputTransformer）したり、一部フィールドのみ抽出したりできる。</li>
+</ul>
+<h3 id="83">8.3 ターゲットとその特性<a class="headerlink" href="#83" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Lambda</strong>: コード実行でイベント処理。サーバーレスで柔軟な処理が可能。</li>
+<li><strong>SQS</strong>: 非同期キューイングでイベントをバッファリング。消費者側で後処理。</li>
+<li><strong>SNS</strong>: Pub/Sub 型の分配。メール、SMS、HTTP エンドポイントなどへの通知。</li>
+<li><strong>Step Functions</strong>: 複雑なワークフロー駆動。イベントをトリガーに状態機械を実行。</li>
+<li><strong>API Destinations</strong>: 外部 API への安全な呼び出し（コネクション認証管理付き）。</li>
+</ul>
+<h3 id="84">8.4 スキーマレジストリとディスカバリー<a class="headerlink" href="#84" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>スキーマレジストリ</strong>: イベント構造を管理し、スキーマとして保持。 Java、Python、TypeScript などで自動コード生成可能。</li>
+<li><strong>スキーマディスカバリー</strong>: 実際に流れるイベントを監視し、自動でスキーマを特定・登録。</li>
+</ul>
+<p>試験では</p>
+<ul>
+<li><strong>「スキーマを自動取得する方法は？」</strong></li>
+<li><strong>「スキーマ管理でコード生成ができるか？」</strong></li>
+</ul>
+<p>などが問われる。</p>
+<h3 id="85">8.5 セキュリティモデル<a class="headerlink" href="#85" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>IAM ポリシー</strong>: EventBridge API へのアクセス制御（ルール作成、削除、PutEvents など）。</li>
+<li><strong>リソースポリシー</strong>: クロスアカウントアクセスで、他アカウントからイベントバスへイベントを送信可能にする。</li>
+<li><strong>API Destinations 認証</strong>: OAuth や API キー認証情報を安全に保管。</li>
+</ul>
+<h3 id="86">8.6 コストモデルと最適化<a class="headerlink" href="#86" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>イベント数管理</strong>: 不必要なイベント送信を控え、コスト削減。</li>
+<li><strong>フィルタリングの徹底</strong>: ルールで不要なイベントを除外し、ターゲットの呼び出し回数を減らす。</li>
+</ul>
+<h3 id="87">8.7 類似・関連サービスとの比較<a class="headerlink" href="#87" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Amazon SNS との違い</strong>: SNS は Pub/Sub モデルでトピック購読、EventBridge は構造化されたイベントバスとフィルタリングが強力。</li>
+<li><strong>Amazon CloudWatch Events との関係</strong>: EventBridge は CloudWatch Events の拡張版であり、SaaS 統合やスキーマ管理が追加されている。</li>
+<li><strong>Amazon SQS との役割分担</strong>: EventBridge はイベントルーティング、SQS はキューイング。EventBridge でフィルタリングして SQS へ送れば柔軟なアーキテクチャを構築可能。</li>
+</ul>
+<h3 id="88">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: EventBridge で SaaS アプリからのイベントを受け取るには？</li>
+<li>A: パートナーイベントバスを使用する。</li>
+<li>Q: クロスアカウントでイベントを受け取るには？</li>
+<li>A: イベントバスにリソースポリシーを設定して他アカウントからのアクセスを許可。</li>
+<li>Q: スキーマディスカバリーの役割は？</li>
+<li>A: フローするイベントから自動でスキーマを推論・登録する。</li>
+<li>Q: ターゲットに Lambda と SQS を同時に設定できるか？</li>
+<li>A: 可能。1 ルールで複数ターゲットを設定できる。</li>
+<li>Q: CloudWatch Events と EventBridge の違いは？</li>
+<li>A: EventBridge は CloudWatch Events の拡張版。SaaS 統合やスキーマ管理があり、より包括的。</li>
 </ul>
 
 
@@ -2352,10 +2587,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   

@@ -9,34 +9,30 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/application-integration/SQS/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../../devops/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>AWS SAA 試験領域 - wan0ri Note</title>
+        <title>Amazon Simple Queue Service (SQS) - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="og:title" content="Amazon Simple Queue Service (SQS) - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/application-integration/SQS.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/application-integration/SQS/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="twitter:title" content="Amazon Simple Queue Service (SQS) - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/application-integration/SQS.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -105,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -141,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS SAA 試験領域
+              Amazon Simple Queue Service (SQS)
             
           </span>
         </div>
@@ -246,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -267,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -287,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -307,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,13 +319,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -349,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -369,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -389,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -409,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -429,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -469,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -499,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -580,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -608,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -690,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -718,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -746,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -774,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -802,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -838,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -866,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -955,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -983,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1011,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1039,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1067,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1156,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1184,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1212,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1240,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1272,31 +1266,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1314,7 +1305,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1332,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1357,35 +1348,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS-SAA 項目一覧
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1401,35 +1367,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        トピック一覧
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1503,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1531,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1559,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1587,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1615,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1704,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1793,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1821,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1910,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1938,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1966,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -2055,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2108,13 +2045,245 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        トピック一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-fifo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 スタンダードキューと FIFO キュー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-visibility-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 可視性タイムアウト (Visibility Timeout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-dead-letter-queue-dlq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 デッドレタキュー (Dead-Letter Queue: DLQ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-long-polling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 長いポーリング (Long Polling)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 メッセージ属性とバッチ操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-fifo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 スタンダードキューと FIFO キュー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 可視性タイムアウト
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-dlq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 デッドレタキュー（DLQ）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-long-polling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Long Polling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 セキュリティと暗号化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 コストモデルと無料枠
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-lambda-sns-step-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 他サービス連携（Lambda, SNS, Step Functions など）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2136,46 +2305,6 @@
   
 
 
-  <nav class="md-path" aria-label="ナビゲーション">
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Certifications
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -2186,27 +2315,116 @@
   
 
 
-<h1 id="aws-saa">AWS ソリューションアーキテクト – アソシエイト（SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)で出題が想定されるサービス内容と出題ポイントを掲載しています。</p>
-<h2 id="_1">トピック一覧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+  <h1>Amazon Simple Queue Service (SQS)</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>Amazon Simple Queue Service (SQS) は、分散アプリケーション間の非同期メッセージキューイングを提供するフルマネージドサービス。<br>
+送信側(Producer)と受信側(Consumer)を疎結合にし、メッセージを一時的にキューに蓄積することで、システム全体の耐障害性・スケーラビリティを向上させる。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="application-integration/">アプリケーション統合</a></li>
-<li><a href="ArchitectureStrategy/">アーキテクチャ戦略</a></li>
-<li><a href="WebAndMobileFrontEnd/">ウェブとモバイルのフロントエンド</a></li>
-<li><a href="CloudFinancialManagement/">クラウド財務管理</a></li>
-<li><a href="Containers/">コンテナ</a></li>
-<li><a href="Compute/">コンピューティング</a></li>
-<li><a href="Storage/">ストレージ</a></li>
-<li><a href="SecurityIdentityAndCompliance/">セキュリティ、アイデンティティ、コンプライアンス</a></li>
-<li><a href="DeveloperTools/">デベロッパーツール</a></li>
-<li><a href="Database/">データベース</a></li>
-<li><a href="NetworkingAndContentDelivery/">ネットワーキングとコンテンツ配信</a></li>
-<li><a href="Blockchain/">ブロックチェーン</a></li>
-<li><a href="MediaServices/">メディアサービス</a></li>
-<li><a href="analytics/">分析</a></li>
-<li><a href="MachineLearning/">機械学習</a></li>
-<li><a href="MigrationAndTransfer/">移行と転送</a></li>
-<li><a href="ManagementAndGovernance/">管理とガバナンス</a></li>
+<li>Microservices 間の非同期処理</li>
+<li>ピーク負荷対策</li>
+<li>デカップリング</li>
+<li>バックログ処理</li>
+<li>非同期ワークフローの構築</li>
+</ul>
+<p>などが挙げられる。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21-fifo">2.1 スタンダードキューと FIFO キュー<a class="headerlink" href="#21-fifo" title="Permanent link">¶</a></h3>
+<p>SQS には 2 種類のキュータイプがある。</p>
+<ul>
+<li><strong>スタンダードキュー</strong>: 高スループット、少量の重複や順序の崩れが許容される。</li>
+<li><strong>FIFO キュー</strong>: First-In-First-Out を保証し、重複排除、厳密なメッセージ順序が必要な場合に使用。</li>
+</ul>
+<h3 id="22-visibility-timeout">2.2 可視性タイムアウト (Visibility Timeout)<a class="headerlink" href="#22-visibility-timeout" title="Permanent link">¶</a></h3>
+<p>コンシューマーがメッセージを受信した後、一定時間(可視性タイムアウト)そのメッセージは他のコンシューマーから見えなくなる。<br>
+コンシューマーが処理を完了し DeleteMessage する前にタイムアウトが切れると、同じメッセージが再度配信され、処理失敗時の再試行を可能にする。</p>
+<h3 id="23-dead-letter-queue-dlq">2.3 デッドレタキュー (Dead-Letter Queue: DLQ)<a class="headerlink" href="#23-dead-letter-queue-dlq" title="Permanent link">¶</a></h3>
+<p>処理失敗を繰り返すメッセージを別のキュー（DLQ）に隔離することで、問題あるメッセージを後から分析・再処理しやすくする。<br>
+DLQ を用いることで、正常なメッセージ処理を妨げないアーキテクチャを実現できる。</p>
+<h3 id="24-long-polling">2.4 長いポーリング (Long Polling)<a class="headerlink" href="#24-long-polling" title="Permanent link">¶</a></h3>
+<p>コンシューマーがキューからメッセージを取得する際に、すぐにメッセージがなければ一定時間待機できる機能。<br>
+これにより、空のレスポンスを減らし、コスト・レイテンシ削減が可能。</p>
+<h3 id="25">2.5 メッセージ属性とバッチ操作<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
+<p>メッセージには属性（キー・バリュー）を付与可能。<br>
+また、複数メッセージをまとめて送受信・削除（最大 10 件）できるバッチ操作でパフォーマンス向上が可能。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>Producer が SQS キューにメッセージを <code>SendMessage</code> または <code>SendMessageBatch</code> で送信。</li>
+<li>Consumer は ReceiveMessage でキューからメッセージを取得、処理後 <code>DeleteMessage</code> で削除。</li>
+<li>必要に応じて FIFO キューで順序の保証、DLQ で失敗メッセージ隔離、Long Polling で効率的なメッセージ取得を活用。</li>
+<li>IAM ポリシーやキューポリシー、KMS による暗号化でセキュリティ・アクセス制御を実施</li>
+</ol>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>IAM ポリシー</strong>: 誰が SQS API（SendMessage、ReceiveMessage など）を実行できるか制御。</li>
+<li><strong>キューポリシー</strong>: 特定アカウントや条件に基づいてキューへの操作許可・拒否が設定可能。</li>
+<li><strong>SSE-KMS 暗号化</strong>: キューへ送信されるメッセージを KMS で暗号化し、メッセージ機密性を確保。</li>
+<li><strong>VPC エンドポイント</strong>: VPC 内からインターネット経由せずに SQS へアクセス可能。</li>
+</ul>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>SQS は次の項目で主に課金される:</p>
+<ul>
+<li><strong>リクエスト数</strong>: メッセージ送信・受信・削除リクエストごとに課金。（スタンダードキューは月 100 万リクエストまで無料枠あり）</li>
+<li><strong>SSE-KMS 暗号化</strong>: KMS API コールコストが追加。</li>
+<li><strong>データ転送料</strong>: 同一リージョン内への転送は無料だが、クロスリージョン転送には料金発生。</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>非同期処理キュー</strong>: Web アプリから非同期ジョブを SQS キューに送信、バックエンドの Worker が処理。</li>
+<li><strong>キューと Lambda 連携</strong>: SQS キューを Lambda トリガーに設定し、メッセージ到着時に自動処理。</li>
+<li><strong>キュー間連携と DLQ</strong>: メインキュー → 処理失敗 →DLQ へ移送し、後から再処理や分析。</li>
+<li><strong>Fan-out パターン(併用)</strong>: SNS トピック →SQS キュー複数へ配信し、並列処理を実現。</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>SQS コンソールで新規キュー作成（Standard または FIFO、キュー名、属性を設定）。</li>
+<li>必要に応じてキューポリシーや SSE-KMS 暗号化を有効化。</li>
+<li>Producer は AWS CLI、SDK またはコンソールから SendMessage でメッセージ送信。</li>
+<li>Consumer は <code>ReceiveMessage</code> でメッセージ取得後、処理完了時に <code>DeleteMessage</code> 。</li>
+<li>DLQ や Long Polling 設定、Visibility Timeout 調整で可用性・再処理性を最適化。</li>
+</ol>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81-fifo">8.1 スタンダードキューと FIFO キュー<a class="headerlink" href="#81-fifo" title="Permanent link">¶</a></h3>
+<ul>
+<li>スタンダードは無制限スループットと多少のメッセージ順序崩れ許容、FIFO は順序厳密維持と重複排除。</li>
+</ul>
+<h3 id="82">8.2 可視性タイムアウト<a class="headerlink" href="#82" title="Permanent link">¶</a></h3>
+<ul>
+<li>コンシューマー処理中に同じメッセージが他から見えないようにするための時間。</li>
+</ul>
+<h3 id="83-dlq">8.3 デッドレタキュー（DLQ）<a class="headerlink" href="#83-dlq" title="Permanent link">¶</a></h3>
+<ul>
+<li>処理失敗したメッセージを隔離し、再処理やデバッグを容易にする。</li>
+</ul>
+<h3 id="84-long-polling">8.4 Long Polling<a class="headerlink" href="#84-long-polling" title="Permanent link">¶</a></h3>
+<ul>
+<li>空のレスポンスを減らし、コストを抑えつつリアルタイム性向上。</li>
+</ul>
+<h3 id="85">8.5 セキュリティと暗号化<a class="headerlink" href="#85" title="Permanent link">¶</a></h3>
+<ul>
+<li>IAM ポリシー、キューポリシー、SSE-KMS で制御と暗号化。</li>
+</ul>
+<h3 id="86">8.6 コストモデルと無料枠<a class="headerlink" href="#86" title="Permanent link">¶</a></h3>
+<ul>
+<li>標準キューには一定の無料枠、バッチ操作でリクエスト数低減。</li>
+</ul>
+<h3 id="87-lambda-sns-step-functions">8.7 他サービス連携（Lambda, SNS, Step Functions など）<a class="headerlink" href="#87-lambda-sns-step-functions" title="Permanent link">¶</a></h3>
+<ul>
+<li>SQS→Lambda 連携でイベント駆動処理、SNS→SQS 連携で Fan-out パターン、Step Functions ワークフロー内での待機状態としても活用。</li>
+</ul>
+<h3 id="88">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: SQS のスタンダードキューと FIFO キューの違いは？</li>
+<li>A: スタンダードは高スループットだが順序保証なし、FIFO は順序と重複排除を保証するがスループット制限あり。</li>
+<li>Q: 可視性タイムアウトは何のためにある？</li>
+<li>A: メッセージ処理中に同じメッセージが他のコンシューマーに見えないようにし、重複処理を防ぐため。</li>
+<li>Q: デッドレタキューはどのように利用する？</li>
+<li>A: 処理に何度も失敗したメッセージを DLQ に隔離し、後から分析や再処理を行うため。</li>
+<li>Q: Long Polling を有効にすると何が得られる？</li>
+<li>A: キューが空の場合でも一定時間待機することで、空レスポンスを減らしコスト削減と低レイテンシ取得を実現できる。</li>
+<li>Q: SQS と Lambda を連携するとどのような利点がある？</li>
+<li>A: SQS キュー到着メッセージを自動トリガーとして Lambda が処理することで、サーバーレスかつ非同期なワークフローを構築できる。</li>
 </ul>
 
 
@@ -2352,10 +2570,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   

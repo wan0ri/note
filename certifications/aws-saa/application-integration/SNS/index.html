@@ -9,34 +9,30 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/application-integration/SNS/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../../devops/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>AWS SAA 試験領域 - wan0ri Note</title>
+        <title>Amazon Simple Notification Service (SNS) - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="og:title" content="Amazon Simple Notification Service (SNS) - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/application-integration/SNS.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/application-integration/SNS/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="twitter:title" content="Amazon Simple Notification Service (SNS) - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/application-integration/SNS.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -105,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -141,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS SAA 試験領域
+              Amazon Simple Notification Service (SNS)
             
           </span>
         </div>
@@ -246,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -267,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -287,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -307,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,13 +319,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -349,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -369,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -389,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -409,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -429,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -469,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -499,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -580,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -608,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -690,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -718,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -746,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -774,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -802,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -838,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -866,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -955,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -983,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1011,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1039,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1067,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1156,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1184,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1212,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1240,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1272,31 +1266,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1314,7 +1305,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1332,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1357,35 +1348,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS-SAA 項目一覧
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1401,35 +1367,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        トピック一覧
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1503,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1531,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1559,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1587,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1615,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1704,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1793,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1821,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1910,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1938,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1966,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -2055,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2108,13 +2045,234 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        トピック一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 トピックとサブスクライバー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 メッセージ配信方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 メッセージ属性とフィルタポリシー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 メッセージ暗号化とセキュリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 トピック、サブスクリプション、エンドポイント
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 フィルタポリシー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 暗号化とアクセス制御
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 料金モデルとコスト最適化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 サブスクライバーの種類
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 冗長性と再試行戦略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 他サービスとの統合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2136,46 +2294,6 @@
   
 
 
-  <nav class="md-path" aria-label="ナビゲーション">
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Certifications
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -2186,27 +2304,121 @@
   
 
 
-<h1 id="aws-saa">AWS ソリューションアーキテクト – アソシエイト（SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)で出題が想定されるサービス内容と出題ポイントを掲載しています。</p>
-<h2 id="_1">トピック一覧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+  <h1>Amazon Simple Notification Service (SNS)</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>Amazon Simple Notification Service (SNS) は、Publisher/Subscriber(Pub/Sub)モデルに基づくフルマネージドなメッセージングサービス。<br>
+トピックを介してメッセージを受信者（Subscriber）へ配信することで、マイクロサービスや分散アプリケーション間の疎結合化、リアルタイムな通知・イベント通知、アラート通知などを実現する。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="application-integration/">アプリケーション統合</a></li>
-<li><a href="ArchitectureStrategy/">アーキテクチャ戦略</a></li>
-<li><a href="WebAndMobileFrontEnd/">ウェブとモバイルのフロントエンド</a></li>
-<li><a href="CloudFinancialManagement/">クラウド財務管理</a></li>
-<li><a href="Containers/">コンテナ</a></li>
-<li><a href="Compute/">コンピューティング</a></li>
-<li><a href="Storage/">ストレージ</a></li>
-<li><a href="SecurityIdentityAndCompliance/">セキュリティ、アイデンティティ、コンプライアンス</a></li>
-<li><a href="DeveloperTools/">デベロッパーツール</a></li>
-<li><a href="Database/">データベース</a></li>
-<li><a href="NetworkingAndContentDelivery/">ネットワーキングとコンテンツ配信</a></li>
-<li><a href="Blockchain/">ブロックチェーン</a></li>
-<li><a href="MediaServices/">メディアサービス</a></li>
-<li><a href="analytics/">分析</a></li>
-<li><a href="MachineLearning/">機械学習</a></li>
-<li><a href="MigrationAndTransfer/">移行と転送</a></li>
-<li><a href="ManagementAndGovernance/">管理とガバナンス</a></li>
+<li>アラート・通知システム(メール、SMS、HTTP エンドポイント)</li>
+<li>分散アプリ間連携</li>
+<li>イベントドリブンアーキテクチャの中継</li>
+<li>モバイルプッシュ通知</li>
+</ul>
+<p>などが挙げられる。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21">2.1 トピックとサブスクライバー<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
+<p>SNS は「トピック」を中心にメッセージを配信する。Publisher はトピックにメッセージを発行し、Subscriber はトピックにサブスクライブすることでメッセージを受け取る。<br>
+サブスクライバーとして、</p>
+<ul>
+<li>HTTP(S)エンドポイント</li>
+<li>E メール</li>
+<li>SMS</li>
+<li>SQS キュー</li>
+<li>Lambda 関数</li>
+<li>モバイルプッシュ通知</li>
+</ul>
+<p>など、多彩なエンドポイントが指定可能。</p>
+<h3 id="22">2.2 メッセージ配信方式<a class="headerlink" href="#22" title="Permanent link">¶</a></h3>
+<p>SNS は Push 型でメッセージを配信する。<br>
+つまり Subscriber が Pull する必要なく、トピックに新規メッセージが投稿されると即座にサブスクライバーへ通知される。<br>
+冗長性を確保し、送信失敗時には再試行（リトライ）戦略をとる。</p>
+<h3 id="23">2.3 メッセージ属性とフィルタポリシー<a class="headerlink" href="#23" title="Permanent link">¶</a></h3>
+<p>SNS メッセージには属性を付与でき、Subscriber 側でフィルタポリシーを設定することで受信するメッセージを選別可能。<br>
+これにより、1 つのトピックで異なる種類のイベントを扱いつつ、サブスクライバーごとに特定属性のメッセージだけを受け取ることができる。</p>
+<h3 id="24">2.4 メッセージ暗号化とセキュリティ<a class="headerlink" href="#24" title="Permanent link">¶</a></h3>
+<p>サーバー側暗号化(SSE)を用いて、SNS トピックで転送されるメッセージを AWS KMS キーで暗号化可能。<br>
+IAM ポリシーやトピックポリシーを使って、特定アカウント、ロール、IP アドレス範囲からのみ Publish や Subscribe を許可するなど、アクセス制御が可能。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>Publisher がトピックにメッセージを Publish。</li>
+<li>SNS はサブスクライバー(HTTP、Lambda、SQS、E メール、SMS 等)へメッセージを Push 配信。</li>
+<li>フィルタポリシーにより、属性に応じたメッセージを特定サブスクライバーのみに送付可能。</li>
+<li>SSE や IAM/トピックポリシーでセキュリティを強化。</li>
+</ol>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>IAM ポリシー</strong>: 誰が SNS トピックに Publish/Subscribe 可能かを制御。</li>
+<li><strong>トピックポリシー</strong>: バケットポリシー同様、トピックリソースに対するアクセス制御を JSON ポリシーで定義。</li>
+<li><strong>SSE-KMS 暗号化</strong>: トピックへのメッセージを KMS 鍵で暗号化し、メッセージセキュリティを強化。</li>
+<li><strong>VPC エンドポイント（PrivateLink）</strong>: パブリックインターネット経由せずに VPC 内から SNS へアクセス可能。</li>
+</ul>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>SNS は主に次の項目で課金される:</p>
+<ul>
+<li><strong>Publish リクエスト数</strong>: トピックへメッセージを送信する度にリクエストとしてカウント。</li>
+<li><strong>配信先ごとの料金</strong>: E メールは無料枠あり、SMS はメッセージ数/国別料金、HTTP/HTTPS はリクエスト数など。</li>
+<li><strong>フィルタポリシー適用コスト</strong>: 通常は追加料金なし。</li>
+<li><strong>SSE-KMS 利用</strong>: KMS API コールコストが発生する可能性。</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>マイクロサービス間通信</strong>: SNS トピック経由で非同期にイベント通知し、SQS や Lambda へ配信して処理を連結。</li>
+<li><strong>アラート通知</strong>: CloudWatch アラームや EventBridge ルールから SNS へメッセージを送り、E メール/SMS で運用担当へリアルタイム通知。</li>
+<li><strong>Fan-out パターン</strong>: 1 つのメッセージを複数サブスクライバーへ同時配信して並列処理を促進。</li>
+<li><strong>モバイルプッシュ通知</strong>: SNS と Mobile Push トピックを使い、iOS/Android 端末へ直接通知配信。</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>SNS コンソールで新規トピックを作成（トピック名、アクセス制御設定）。</li>
+<li>サブスクリプションを作成（E メールアドレスや SQS キュー ARN などを指定）。</li>
+<li>Publish テストメッセージを送信し、サブスクライバーに届くことを確認。</li>
+<li>必要に応じて、SSE-KMS 暗号化を有効化し、IAM ロールを割り当ててセキュリティ強化。</li>
+<li>フィルタポリシーでサブスクライバー毎に受信メッセージを制御。</li>
+</ol>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81">8.1 トピック、サブスクリプション、エンドポイント<a class="headerlink" href="#81" title="Permanent link">¶</a></h3>
+<ul>
+<li>Pub/Sub モデル、複数エンドポイントへの同時配信。</li>
+</ul>
+<h3 id="82">8.2 フィルタポリシー<a class="headerlink" href="#82" title="Permanent link">¶</a></h3>
+<ul>
+<li>メッセージ属性に基づく受信メッセージの選別。</li>
+</ul>
+<h3 id="83">8.3 暗号化とアクセス制御<a class="headerlink" href="#83" title="Permanent link">¶</a></h3>
+<ul>
+<li>IAM ポリシー、トピックポリシーでのアクセス権限管理。</li>
+<li>SSE-KMS でメッセージを暗号化。</li>
+</ul>
+<h3 id="84">8.4 料金モデルとコスト最適化<a class="headerlink" href="#84" title="Permanent link">¶</a></h3>
+<ul>
+<li>無料枠の活用（E メール通知）、SMS コスト、HTTP(S)配信コストの理解。</li>
+</ul>
+<h3 id="85">8.5 サブスクライバーの種類<a class="headerlink" href="#85" title="Permanent link">¶</a></h3>
+<ul>
+<li>SQS、Lambda、HTTP(S)、E メール、SMS、Mobile Push など豊富なターゲット。</li>
+</ul>
+<h3 id="86">8.6 冗長性と再試行戦略<a class="headerlink" href="#86" title="Permanent link">¶</a></h3>
+<ul>
+<li>HTTP エンドポイントへの配信失敗時に一定のリトライ戦略あり。</li>
+</ul>
+<h3 id="87">8.7 他サービスとの統合<a class="headerlink" href="#87" title="Permanent link">¶</a></h3>
+<ul>
+<li>CloudWatch、EventBridge、S3、Lambda、SQS との連携で分散アーキテクチャを構築。</li>
+</ul>
+<h3 id="88">8.8 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#88" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: SNS はどのようなモデルでメッセージ配信を行うか？</li>
+<li>A: Pub/Sub モデルでトピック経由の非同期メッセージ配信を行う。</li>
+<li>Q: フィルタポリシーを使うと何ができるか？</li>
+<li>A: メッセージ属性に応じて、サブスクライバーごとに受け取るメッセージを選別可能になる。</li>
+<li>Q: SSE-KMS は何に使用するか？</li>
+<li>A: SNS トピック上で転送されるメッセージを KMS キーで暗号化するために使用。</li>
+<li>Q: サブスクライバーを Lambda にした場合の利点は？</li>
+<li>A: メッセージ受信をトリガーにコード実行が可能になり、イベント駆動の処理フローを実現できる。</li>
+<li>Q: SNS を用いた Fan-out パターンとは何か？</li>
+<li>A: 1 つのメッセージを複数のターゲット（SQS、Lambda、E メールなど）へ同時に配信することで並列処理を実現する手法。</li>
 </ul>
 
 
@@ -2352,10 +2564,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
