@@ -67,7 +67,9 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
-  - redirects
+  - redirects:
+      redirect_maps:
+        certifications/aws-saa/Analytics.md: certifications/aws-saa/analytics/index.md
   - git-revision-date-localized:
       fallback_to_build_date: true
       locale: ja

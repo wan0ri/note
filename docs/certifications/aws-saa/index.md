@@ -21,7 +21,7 @@ AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)�
 - [ネットワーキングとコンテンツ配信](NetworkingAndContentDelivery.md)
 - [ブロックチェーン](Blockchain.md)
 - [メディアサービス](MediaServices.md)
-- [分析](Analytics.md)
+- [分析](analytics/index.md)
 - [機械学習](MachineLearning.md)
 - [移行と転送](MigrationAndTransfer.md)
 - [管理とガバナンス](ManagementAndGovernance.md)
