@@ -9,34 +9,30 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Macie/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../../devops/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>AWS SAA 試験領域 - wan0ri Note</title>
+        <title>Amazon Macie - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="og:title" content="Amazon Macie - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/security-identity-and-compliance/Macie.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Macie/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="twitter:title" content="Amazon Macie - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/security-identity-and-compliance/Macie.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -105,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -141,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS SAA 試験領域
+              Amazon Macie
             
           </span>
         </div>
@@ -246,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -267,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -287,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -307,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,13 +319,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -349,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -369,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -389,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -409,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -429,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -469,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -499,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -580,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -608,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -690,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -718,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -746,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -774,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -802,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -838,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -866,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -955,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -983,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1011,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1039,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1067,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1156,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1184,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1212,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1240,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1272,31 +1266,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1314,7 +1305,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1332,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1357,35 +1348,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS-SAA 項目一覧
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1401,35 +1367,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        トピック一覧
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1503,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1531,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1559,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1587,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1615,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1704,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1793,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1821,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1910,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1938,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1966,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -2055,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2108,13 +2045,289 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        トピック一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 機械学習によるデータ検出と分類
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 データの可視化とダッシュボード
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 アラートと通知機能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 詳細なレポートと分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 カスタムポリシーとルール
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-api-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 API および SDK の提供
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 リアルタイムデータモニタリング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 連携機能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-macie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Macie の基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 データスキャンと分類
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 アラートと通知
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 セキュリティポリシーの適用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 コンプライアンスと規制遵守
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 API と自動化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 レポートとダッシュボードの活用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 セキュリティインシデント対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2136,46 +2349,6 @@
   
 
 
-  <nav class="md-path" aria-label="ナビゲーション">
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Certifications
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -2186,27 +2359,194 @@
   
 
 
-<h1 id="aws-saa">AWS ソリューションアーキテクト – アソシエイト（SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)で出題が想定されるサービス内容と出題ポイントを掲載しています。</p>
-<h2 id="_1">トピック一覧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+  <h1>Amazon Macie</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>Amazon Macie は、機械学習を活用して AWS 環境内の機密データを自動的に検出、分類、保護するセキュリティサービスである。<br>
+Macie は、個人識別情報（PII）や知的財産などの機密情報を識別し、データ漏洩や不正アクセスのリスクを軽減する。<br>
+これにより、企業はデータのセキュリティとコンプライアンスを強化し、情報保護のための効果的な対策を講じることができる。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="application-integration/">アプリケーション統合</a></li>
-<li><a href="architecture-strategy/">アーキテクチャ戦略</a></li>
-<li><a href="WebAndMobileFrontEnd/">ウェブとモバイルのフロントエンド</a></li>
-<li><a href="CloudFinancialManagement/">クラウド財務管理</a></li>
-<li><a href="Containers/">コンテナ</a></li>
-<li><a href="Compute/">コンピューティング</a></li>
-<li><a href="Storage/">ストレージ</a></li>
-<li><a href="security-identity-and-compliance/">セキュリティ、アイデンティティ、コンプライアンス</a></li>
-<li><a href="DeveloperTools/">デベロッパーツール</a></li>
-<li><a href="Database/">データベース</a></li>
-<li><a href="NetworkingAndContentDelivery/">ネットワーキングとコンテンツ配信</a></li>
-<li><a href="Blockchain/">ブロックチェーン</a></li>
-<li><a href="MediaServices/">メディアサービス</a></li>
-<li><a href="analytics/">分析</a></li>
-<li><a href="MachineLearning/">機械学習</a></li>
-<li><a href="MigrationAndTransfer/">移行と転送</a></li>
-<li><a href="ManagementAndGovernance/">管理とガバナンス</a></li>
+<li>データの機密性の評価</li>
+<li>コンプライアンス遵守の支援</li>
+<li>セキュリティインシデントの早期検出</li>
+<li>データアクセスの監視と制御</li>
+</ul>
+<p>などが挙げられます。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21">2.1 機械学習によるデータ検出と分類<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
+<p>Macie は機械学習アルゴリズムを使用して、Amazon S3 バケット内の機密データを自動的に検出し、分類する。<br>
+これにより、手動でのデータ分類作業を削減し、高精度で機密データを識別できる。</p>
+<h3 id="22">2.2 データの可視化とダッシュボード<a class="headerlink" href="#22" title="Permanent link">¶</a></h3>
+<p>Macie のダッシュボードは、データの機密性やセキュリティリスクの概要を視覚的に表示する。<br>
+ユーザーはリアルタイムでデータの状況を把握し、必要な対策を迅速に講じることができる。</p>
+<h3 id="23">2.3 アラートと通知機能<a class="headerlink" href="#23" title="Permanent link">¶</a></h3>
+<p>機密データに対する不正アクセスや異常な活動が検出された場合、Macie は自動的にアラートを発行し、関連する通知を送信する。<br>
+これにより、セキュリティインシデントへの迅速な対応が可能となる。</p>
+<h3 id="24">2.4 詳細なレポートと分析<a class="headerlink" href="#24" title="Permanent link">¶</a></h3>
+<p>Macie は、データの使用状況やセキュリティリスクに関する詳細なレポートを生成する。<br>
+これにより、データ保護の状況を定期的に評価し、改善点を特定することができる。</p>
+<h3 id="25">2.5 カスタムポリシーとルール<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
+<p>ユーザーは、自社のセキュリティポリシーやコンプライアンス要件に基づいたカスタムルールを設定できる。<br>
+これにより、特定の条件に合致するデータに対して自動的に対策を講じることが可能である。</p>
+<h3 id="26-api-sdk">2.6 API および SDK の提供<a class="headerlink" href="#26-api-sdk" title="Permanent link">¶</a></h3>
+<p>Macie は API および SDK を提供しており、他の AWS サービスやサードパーティツールと統合することができる。<br>
+これにより、データ保護プロセスの自動化やカスタムソリューションの構築が容易になります。</p>
+<h3 id="27">2.7 リアルタイムデータモニタリング<a class="headerlink" href="#27" title="Permanent link">¶</a></h3>
+<p>Macie はリアルタイムでデータの使用状況をモニタリングし、異常な活動を即座に検出する。<br>
+これにより、データ漏洩や不正アクセスのリスクを最小限に抑えることができる。</p>
+<h3 id="28">2.8 連携機能<a class="headerlink" href="#28" title="Permanent link">¶</a></h3>
+<p>Macie は AWS Security Hub、Amazon GuardDuty、AWS Lambda などの他のセキュリティサービスと連携し、包括的なセキュリティ管理を実現する。<br>
+これにより、セキュリティインシデントへの統合的な対応が可能となる。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>ユーザーは AWS Management Console、AWS CLI、または AWS SDK を使用して Amazon Macie を設定。</li>
+<li>Macie は Amazon S3 バケットをスキャンし、機密データを検出・分類。</li>
+<li>機密データの検出結果は Macie ダッシュボードに表示され、ユーザーに可視化される。</li>
+<li>異常なデータアクセスやセキュリティリスクが検出された場合、アラートが発行され、通知が送信される。</li>
+<li>CloudWatch や SNS と連携して、リアルタイムのアラートや通知を設定。</li>
+<li>API を介して他のセキュリティツールやカスタムアプリケーションと統合し、自動化された対応プロセスを構築。</li>
+<li>レポート機能を使用して、定期的なデータ保護状況の分析と評価を実施。</li>
+<li>必要に応じて、IAM ポリシーを設定し、Macie へのアクセスを制御。</li>
+</ol>
+<p>Amazon Macie のアーキテクチャは、AWS の各種サービスとシームレスに統合されており、高い可用性とスケーラビリティを備えています。<br>
+機械学習を活用したデータ検出とリアルタイムのモニタリングにより、ユーザーは常に最適なデータ保護状態を維持できる。</p>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<p>Amazon Macie は、データの機密性とセキュリティを確保するために、以下のセキュリティ機能を提供している：</p>
+<ul>
+<li><strong>AWS Identity and Access Management (IAM)</strong>: ユーザーやグループごとに Macie へのアクセス権限を詳細に設定。最小権限の原則に基づいたポリシー管理が可能。</li>
+<li><strong>データ暗号化</strong>: Macie によって処理されるデータは、転送中および保存時に暗号化され、データの機密性を確保。</li>
+<li><strong>監査ログ</strong>: AWS CloudTrail と連携し、Macie へのアクセスや操作を詳細に記録。監査やセキュリティ分析に利用。</li>
+<li><strong>多要素認証 (MFA)</strong>: Macie 管理コンソールへのアクセスに MFA を要求し、アカウントのセキュリティを強化。</li>
+<li><strong>セキュリティポリシーの適用</strong>: ユーザーやグループに対してセキュリティポリシーを適用し、一貫性のあるセキュリティ管理を実現。</li>
+<li><strong>コンプライアンス対応</strong>: HIPAA、PCI DSS、GDPR などの業界標準に準拠したデータ保護機能を提供。</li>
+<li><strong>リアルタイムモニタリング</strong>: データアクセスや操作をリアルタイムで監視し、不正な活動を迅速に検出。</li>
+<li><strong>セキュリティインシデント対応</strong>: 異常なデータアクセスが検出された際に、自動的に対応プロセスをトリガー。</li>
+</ul>
+<p>これらのセキュリティ機能により、Amazon Macie は組織のデータ保護ポリシーやコンプライアンス要件を満たし、安全かつ信頼性の高いデータ管理を実現する。</p>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>Amazon Macie の料金は、以下の要素に基づいています：</p>
+<ul>
+<li><strong>データスキャン量</strong>: Amazon S3 バケット内のデータをスキャンした量に基づく従量課金。</li>
+<li><strong>機密データ検出</strong>: 機密データを検出した際の追加料金。</li>
+<li><strong>レポート生成</strong>: 詳細なレポートや分析を生成する際の料金。</li>
+<li><strong>カスタムルールの設定</strong>: カスタムルールを設定してデータを分類・保護する際の料金。</li>
+<li><strong>API リクエスト</strong>: Macie の API を使用してデータを取得・管理する際の料金。</li>
+<li><strong>サポートプラン</strong>: AWS サポートプラン（Developer、Business、Enterprise）に応じて、追加のサポートや機能が提供される。</li>
+<li><strong>データ転送費用</strong>: S3 バケット間やリージョン間のデータ転送に対する料金。</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<p>一般的なパターンは以下の通りです：</p>
+<ul>
+<li><strong>機密データの自動検出と分類</strong>: Macie を使用して S3 バケット内の機密データを自動的に検出し、分類する。</li>
+<li><strong>リアルタイムセキュリティモニタリング</strong>: Macie のアラート機能を活用して、リアルタイムでデータアクセスの異常を検出・対応。</li>
+<li><strong>コンプライアンス遵守の支援</strong>: GDPR や HIPAA などの規制要件を満たすために、Macie のレポート機能を活用。</li>
+<li><strong>データ漏洩防止（DLP）</strong>: Macie を DLP ツールとして使用し、機密データの不正なアクセスや転送を防止。</li>
+<li><strong>統合セキュリティ管理</strong>: AWS Security Hub や Amazon GuardDuty と連携し、統合的なセキュリティ管理を実現。</li>
+<li><strong>自動化された対応プロセス</strong>: AWS Lambda や Step Functions と連携し、セキュリティインシデントに対する自動化された対応プロセスを構築。</li>
+<li><strong>マルチリージョンデータ保護</strong>: 複数の AWS リージョンにわたるデータを Macie で保護し、統一されたセキュリティポリシーを適用。</li>
+<li><strong>カスタムルールの活用</strong>: 特定のビジネス要件に基づいたカスタムルールを設定し、データ保護を強化。</li>
+<li><strong>ユーザーセルフサービスポータル</strong>: ユーザーが自身のデータ保護状況を確認し、必要な設定をセルフサービスで行えるようにする。</li>
+<li><strong>継続的なセキュリティ評価</strong>: 定期的なセキュリティチェックを実施し、データ保護の継続的な改善を図る。</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>AWS Management Console にログインし、Amazon Macie を開く。</li>
+<li>初回セットアップウィザードに従い、Macie を有効化する。</li>
+<li>Amazon S3 バケットを選択し、Macie によるデータスキャンを設定。</li>
+<li>スキャンするデータの種類（例: PII、知的財産）を選択し、カスタムルールを設定。</li>
+<li>スキャンのスケジュールを設定し、定期的なデータスキャンを自動化。</li>
+<li>CloudWatch や SNS と連携し、スキャン結果やアラートの通知先を設定。</li>
+<li>IAM ポリシーを設定し、Macie へのアクセス権限を管理。</li>
+<li>機密データが検出された際の対応プロセスを定義し、Lambda 関数を作成。</li>
+<li>Step Functions を使用して、セキュリティインシデントに対するワークフローを構築。</li>
+<li>Macie ダッシュボードでスキャン結果を確認し、必要な対策を実施。</li>
+<li>詳細なレポートを生成し、データ保護状況を評価。</li>
+<li>セキュリティポリシーに基づいて、アクセス権限やデータ分類を調整。</li>
+<li>API を使用して、Macie のデータをカスタムアプリケーションと統合。</li>
+<li>ユーザーセルフサービス機能を有効化し、ユーザーが自身のデータ保護状況を確認できるように設定。</li>
+<li>監査ログを CloudTrail に送信し、アクセス活動を記録。</li>
+<li>セキュリティインシデント対応の自動化スクリプトをテストし、正しく動作することを確認。</li>
+<li>リソースのバックアップとリカバリプロセスを設定。</li>
+<li>Macie の設定を定期的にレビューし、最新のセキュリティ要件に合わせて調整。</li>
+<li>チーム内で Macie の使用方法とベストプラクティスを共有。</li>
+<li>必要に応じて、追加のセキュリティポリシーやガードレールを適用。</li>
+<li>定期的なセキュリティ評価を実施し、データ保護の継続的な改善を図る。</li>
+</ol>
+<p>このハンズオン例では、Amazon Macie の基本的な設定からデータスキャン、アラート設定、セキュリティインシデント対応の自動化までの一連の手順を通じて、Macie の主要機能を実際に体験できる。</p>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81-macie">8.1 Macie の基本概念<a class="headerlink" href="#81-macie" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>データ検出と分類</strong>: Macie が S3 バケット内の機密データを自動的に検出・分類する仕組み。</li>
+<li><strong>ベストプラクティス</strong>: Macie が提供するデータ保護のベストプラクティス。</li>
+<li><strong>試験例</strong>: 「Macie の主な機能は何か？」、「データ分類のプロセスは？」など。</li>
+</ul>
+<h3 id="82">8.2 データスキャンと分類<a class="headerlink" href="#82" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>S3 バケットのスキャン</strong>: Macie が S3 バケットをスキャンして機密データを検出する方法。</li>
+<li><strong>カスタムルールの設定</strong>: 特定のビジネス要件に基づいたデータ分類ルールの設定方法。</li>
+<li><strong>試験例</strong>: 「Macie で S3 バケットをスキャンする手順は？」、「カスタムルールを設定する方法は？」など。</li>
+</ul>
+<h3 id="83">8.3 アラートと通知<a class="headerlink" href="#83" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>アラートの設定</strong>: 機密データに対する異常なアクセスが検出された際にアラートを発行する方法。</li>
+<li><strong>通知の連携</strong>: SNS や Lambda と連携してアラートを通知する方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「アラートを設定する手順は？」</li>
+<li>「SNS と連携する利点は？」...など。</li>
+</ul>
+<h3 id="84">8.4 セキュリティポリシーの適用<a class="headerlink" href="#84" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>ポリシーの作成</strong>: Macie でデータ保護ポリシーを作成し、適用する方法。</li>
+<li><strong>最小権限の原則</strong>: ユーザーやグループに必要最低限のアクセス権限を付与する方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「セキュリティポリシーを作成する手順は？」</li>
+<li>「最小権限の原則を適用する方法は？」...など。</li>
+</ul>
+<h3 id="85">8.5 コンプライアンスと規制遵守<a class="headerlink" href="#85" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>規制要件の遵守</strong>: HIPAA、PCI DSS、GDPR などの規制要件を満たすために Macie を活用する方法。</li>
+<li><strong>レポート機能</strong>: コンプライアンスレポートを生成し、監査に対応する方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「Macie を使用して GDPR に準拠する方法は？」</li>
+<li>「コンプライアンスレポートを生成する手順は？」...など。</li>
+</ul>
+<h3 id="86-api">8.6 API と自動化<a class="headerlink" href="#86-api" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Macie API の利用</strong>: Macie の API を使用してデータ検出結果を取得・管理する方法。</li>
+<li><strong>自動化された対応プロセス</strong>: Lambda や Step Functions と連携して、セキュリティインシデントに対する自動対応を構築する方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「Macie API を使用してデータ検出結果を取得する方法は？」</li>
+<li>「Lambda と連携して自動対応プロセスを構築する手順は？」...など。</li>
+</ul>
+<h3 id="87">8.7 レポートとダッシュボードの活用<a class="headerlink" href="#87" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>ダッシュボードのカスタマイズ</strong>: Macie ダッシュボードをカスタマイズして、必要な情報を表示する方法。</li>
+<li><strong>詳細レポートの生成</strong>: データ保護状況に関する詳細なレポートを生成し、分析する方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「Macie ダッシュボードをカスタマイズする方法は？」</li>
+<li>「詳細レポートを生成する手順は？」...など。</li>
+</ul>
+<h3 id="88">8.8 セキュリティインシデント対応<a class="headerlink" href="#88" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>インシデント対応プロセスの構築</strong>: Macie のアラートを基に、セキュリティインシデント対応プロセスを構築する方法。</li>
+<li><strong>自動対応の実装</strong>: Lambda 関数や Step Functions を使用して、インシデント発生時に自動的に対応する方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「インシデント対応プロセスを構築する手順は？」</li>
+<li>「自動対応を実装する方法は？」...など。</li>
+</ul>
+<h3 id="89">8.9 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#89" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: Amazon Macie の主な目的は何か？</li>
+<li>A: AWS 環境内の機密データを自動的に検出・分類し、データ漏洩や不正アクセスのリスクを軽減すること。</li>
+<li>Q: Macie が機密データを検出する方法は？</li>
+<li>A: 機械学習アルゴリズムを使用して、S3 バケット内のデータをスキャンし、機密データを自動的に検出・分類する。</li>
+<li>Q: Macie と CloudTrail の連携の利点は何か？</li>
+<li>A: Macie が検出したデータアクセスのログを CloudTrail に記録することで、監査やセキュリティ分析が容易になる。</li>
+<li>Q: Macie でカスタムルールを設定する方法は？</li>
+<li>A: Macie の設定画面でカスタムルールを作成し、特定のデータパターンや条件に基づいてデータを分類・保護する。</li>
+<li>Q: Macie のレポート機能を活用する方法は？</li>
+<li>A: Macie ダッシュボードからレポートを生成し、データ保護状況やセキュリティリスクに関する詳細な分析を実施する。</li>
 </ul>
 
 
@@ -2352,10 +2692,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   

@@ -61,10 +61,6 @@
          <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://wan0ri.github.io/note/certifications/aws-saa/SecurityIdentityAndCompliance/</loc>
-         <lastmod>2026-01-06</lastmod>
-    </url>
-    <url>
          <loc>https://wan0ri.github.io/note/certifications/aws-saa/Storage/</loc>
          <lastmod>2026-01-06</lastmod>
     </url>
@@ -150,6 +146,90 @@
     </url>
     <url>
          <loc>https://wan0ri.github.io/note/certifications/aws-saa/architecture-strategy/WellArchitectedTool/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/ACM/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Artifact/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/AuditManager/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/CloudHSM/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Cognito/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Detective/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/DirectoryService/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/FirewallManager/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/GuardDuty/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/IAMIdentityCenter/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/IdentityandAccessManagement/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Inspector/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/KeyManagementService/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Macie/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/NetworkFirewall/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/ResourceAccessManager/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/SecretsManager/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/SecurityHub/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/Shield/</loc>
+         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+         <loc>https://wan0ri.github.io/note/certifications/aws-saa/security-identity-and-compliance/WAF/</loc>
          <lastmod>2026-01-06</lastmod>
     </url>
     <url>
