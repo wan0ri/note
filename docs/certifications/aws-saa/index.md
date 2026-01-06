@@ -8,7 +8,7 @@ AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)�
 
 ## トピック一覧
 
-- [アプリケーション統合](ApplicationIntegration.md)
+- [アプリケーション統合](application-integration/index.md)
 - [アーキテクチャ戦略](ArchitectureStrategy.md)
 - [ウェブとモバイルのフロントエンド](WebAndMobileFrontEnd.md)
 - [クラウド財務管理](CloudFinancialManagement.md)

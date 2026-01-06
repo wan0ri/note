@@ -70,6 +70,7 @@ plugins:
   - redirects:
       redirect_maps:
         certifications/aws-saa/Analytics.md: certifications/aws-saa/analytics/index.md
+        certifications/aws-saa/ApplicationIntegration.md: certifications/aws-saa/application-integration/index.md
   - git-revision-date-localized:
       fallback_to_build_date: true
       locale: ja
