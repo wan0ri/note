@@ -4,6 +4,8 @@ title: コンテナ
 
 # コンテナ
 
+このセクションではサービス別ページを掲載する。
+
 ## サービス一覧
 
 - [Elastic Container Registry (ECR)](./ElasticContainerRegistry.md)

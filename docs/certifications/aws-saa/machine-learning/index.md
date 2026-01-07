@@ -4,6 +4,8 @@ title: 機械学習
 
 # 機械学習
 
+このセクションではサービス別ページを掲載する。
+
 ## サービス一覧
 
 - [Amazon Comprehend](./Comprehend.md)

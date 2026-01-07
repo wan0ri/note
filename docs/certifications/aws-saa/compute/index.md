@@ -4,6 +4,8 @@ title: コンピューティング
 
 # コンピューティング
 
+このセクションではサービス別ページを掲載する。
+
 ## サービス一覧
 
 - [Amazon EC2（Amazon Elastic Compute Cloud）](./EC2.md)

@@ -4,6 +4,8 @@ title: ストレージ
 
 # ストレージ
 
+このセクションではサービス別ページを掲載する。
+
 ## サービス一覧
 
 - [Elastic Block Store (EBS)](./ElasticBlockStore.md)
