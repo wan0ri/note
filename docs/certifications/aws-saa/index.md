@@ -24,4 +24,4 @@ AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)�
 - [分析](analytics/index.md)
 - [機械学習](machine-learning/index.md)
 - [移行](MigrationAndTransfer.md)
-- [管理・ガバナンス](ManagementAndGovernance.md)
+- [管理・ガバナンス](ManagementAndGovernance/index.md)

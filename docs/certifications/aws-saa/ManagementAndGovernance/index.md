@@ -14,7 +14,7 @@ title: 管理・ガバナンス
 - [AWS CloudFormation](./CloudFormation.md)
 - [AWS CloudTrail](./CloudTrail.md)
 - [AWS Config](./Config.md)
-- [AWS Control Tower](./ControlTower.mds)
+- [AWS Control Tower](./ControlTower.md)
 - [AWS License Manager](./LicenseManager.md)
 - [AWS Organizations](./Organizations.md)
 - [AWS Health Dashboard](./HealthDashboard.md)
