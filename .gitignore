@@ -30,3 +30,6 @@ htmlcov/
 *~
 *.bak
 *.colon
+
+# --- Temporary files
+.codex-tmp

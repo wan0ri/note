@@ -72,7 +72,6 @@ plugins:
         certifications/aws-saa/Analytics.md: certifications/aws-saa/analytics/index.md
         certifications/aws-saa/ApplicationIntegration.md: certifications/aws-saa/application-integration/index.md
         certifications/aws-saa/ArchitectureStrategy.md: certifications/aws-saa/architecture-strategy/index.md
-        certifications/aws-saa/SecurityIdentityAndCompliance.md: certifications/aws-saa/security-identity-and-compliance/index.md
         certifications/aws-saa/Blockchain.md: certifications/aws-saa/blockchain/index.md
         certifications/aws-saa/CloudFinancialManagement.md: certifications/aws-saa/cloud-financial-management/index.md
         certifications/aws-saa/Compute.md: certifications/aws-saa/compute/index.md
@@ -80,6 +79,11 @@ plugins:
         certifications/aws-saa/Database.md: certifications/aws-saa/database/index.md
         certifications/aws-saa/DeveloperTools.md: certifications/aws-saa/developer-tools/index.md
         certifications/aws-saa/MachineLearning.md: certifications/aws-saa/machine-learning/index.md
+        certifications/aws-saa/ManagementAndGovernance.md: certifications/aws-saa/management-and-governance/index.md
+        certifications/aws-saa/MediaServices.md: certifications/aws-saa/media-services/index.md
+        certifications/aws-saa/MigrationAndTransfer.md: certifications/aws-saa/migration-and-transfer/index.md
+        certifications/aws-saa/Networking.md: certifications/aws-saa/networking-and-content-delivery/index.md
+        certifications/aws-saa/SecurityIdentityAndCompliance.md: certifications/aws-saa/security-identity-and-compliance/index.md
         certifications/aws-saa/Storage.md: certifications/aws-saa/storage/index.md
         certifications/aws-saa/WebAndMobileFrontEnd.md: certifications/aws-saa/web-and-mobile-front-end/index.md
   - git-revision-date-localized:
