@@ -9,7 +9,7 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/TransitGateway/">
       
       
       
@@ -17,22 +17,22 @@
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>ネットワーキング・コンテンツ配信 - wan0ri Note</title>
+        <title>AWS Transit Gateway - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="ネットワーキング・コンテンツ配信 - wan0ri Note">
+<meta property="og:title" content="AWS Transit Gateway - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/TransitGateway.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/TransitGateway/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="ネットワーキング・コンテンツ配信 - wan0ri Note">
+<meta property="twitter:title" content="AWS Transit Gateway - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/index.png">
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/TransitGateway.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_2" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -117,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ネットワーキング・コンテンツ配信
+              AWS Transit Gateway
             
           </span>
         </div>
@@ -242,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -263,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -303,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -343,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -363,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -383,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -403,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -423,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -463,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -493,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -602,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -740,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -768,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -796,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -832,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -860,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -949,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -977,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1005,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1033,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1061,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1150,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1178,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1206,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1234,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1323,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1351,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1440,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1468,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1496,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1524,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1552,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1641,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1730,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1758,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1847,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1875,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1903,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -1992,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2045,13 +2045,256 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        サービス一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 ネットワークのハブ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-vpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 VPC 接続の簡素化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 オンプレミス接続のサポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 リージョン間接続
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 ルーティングの制御
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 共有サービスへのアクセス制御
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 セキュリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 統合性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順 (ハンズオン例)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 ネットワークのハブ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-vpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 VPC 接続の簡素化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 オンプレミス接続サポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 料金体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2083,19 +2326,132 @@
   
 
 
-<h1 id="_1">ネットワーキング・コンテンツ配信<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>このセクションではサービス別ページを掲載する。</p>
-<h2 id="_2">サービス一覧<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+  <h1>AWS Transit Gateway</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>AWS Transit Gateway は、AWS が提供するフルマネージドサービスで、複数の VPC (Virtual Private Cloud) やオンプレミスネットワークを接続するためのハブとして機能する。<br>
+このサービスを利用することで、複雑なネットワーク接続を簡素化し、スケーラブルで柔軟なネットワークアーキテクチャを構築できる。<br>
+Transit Gateway は、リージョン内およびリージョン間でネットワークを接続し、トラフィックを効率的にルーティングする。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="CloudFront/">Amazon CloudFront</a></li>
-<li><a href="Route53/">Amazon Route 53</a></li>
-<li><a href="VPC/">Amazon VPC</a></li>
-<li><a href="DirectConnect/">AWS Direct Connect</a></li>
-<li><a href="GlobalAccelerator/">AWS Global Accelerator</a></li>
-<li><a href="PrivateLink/">AWS PrivateLink</a></li>
-<li><a href="TransitGateway/">AWS Transit Gateway</a></li>
-<li><a href="VPN/">AWS VPN</a></li>
-<li><a href="ELB/">Elastic Load Balancing (ELB)</a></li>
+<li>複数の VPC を接続するハブ</li>
+<li>オンプレミスネットワークと AWS 間の接続</li>
+<li>異なる AWS リージョン間の接続</li>
+<li>グローバルネットワークの構築</li>
+</ul>
+<p>などが挙げられる。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21">2.1 ネットワークのハブ<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
+<p>Transit Gateway は、複数の VPC やオンプレミスネットワークを接続するためのハブとして機能する。<br>
+これにより、複雑なネットワーク構成を簡素化し、一元的に管理できる。</p>
+<h3 id="22-vpc">2.2 VPC 接続の簡素化<a class="headerlink" href="#22-vpc" title="Permanent link">¶</a></h3>
+<p>複数の VPC を相互接続する際に、VPC ピアリングの複雑な設定を回避できる。<br>
+Transit Gateway は、すべての VPC を接続する中央ハブとして機能する。</p>
+<h3 id="23">2.3 オンプレミス接続のサポート<a class="headerlink" href="#23" title="Permanent link">¶</a></h3>
+<p>AWS Direct Connect または VPN を使用して、オンプレミスネットワークを Transit Gateway に接続できる。<br>
+これにより、ハイブリッド環境でのシームレスなネットワーク接続を確立できる。</p>
+<h3 id="24">2.4 リージョン間接続<a class="headerlink" href="#24" title="Permanent link">¶</a></h3>
+<p>Transit Gateway は、異なる AWS リージョンにまたがる VPC を接続できる。<br>
+これにより、グローバルなネットワークを構築できる。</p>
+<h3 id="25">2.5 ルーティングの制御<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
+<p>Transit Gateway は、ルーティングテーブルを使用して、トラフィックの転送方法を細かく制御できる。<br>
+これにより、ネットワークトポロジを柔軟に設定できる。</p>
+<h3 id="26">2.6 共有サービスへのアクセス制御<a class="headerlink" href="#26" title="Permanent link">¶</a></h3>
+<p>VPC に共有サービス (DNS サーバー、セキュリティツールなど) をデプロイし、Transit Gateway を介して複数の VPC からアクセスできる。<br>
+これにより、共有サービスの集中管理が容易となる。</p>
+<h3 id="27">2.7 セキュリティ<a class="headerlink" href="#27" title="Permanent link">¶</a></h3>
+<p>Transit Gateway は、VPC セキュリティグループ、ネットワーク ACL など、VPC のセキュリティ機能を活用できる。<br>
+これにより、ネットワークセキュリティを強化できる。</p>
+<h3 id="28">2.8 統合性<a class="headerlink" href="#28" title="Permanent link">¶</a></h3>
+<p>Transit Gateway は、AWS の他のサービス (AWS Direct Connect, Amazon VPC, AWS Network Manager, AWS Resource Access Manager など) と統合されており、ネットワーク管理を効率化できる。<br>
+CloudWatch と連携してモニタリングを行うことができる。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>ユーザーは、AWS Transit Gateway を作成。</li>
+<li>VPC またはオンプレミスネットワークを、Transit Gateway にアタッチ。</li>
+<li>Transit Gateway は、ルーティングテーブルを使用して、トラフィックを適切な宛先に転送。</li>
+<li>必要に応じて、異なるリージョン間の Transit Gateway ピアリングを設定。</li>
+<li>CloudWatch でネットワークのパフォーマンスを監視。</li>
+</ol>
+<p>Transit Gateway は、フルマネージドサービスとして提供され、高い可用性、スケーラビリティ、セキュリティを内包している。<br>
+ネットワーク接続の複雑さを抽象化し、ユーザーはネットワークの設計と運用に集中できる。</p>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<p>セキュリティは Transit Gateway の重要な要素である:</p>
+<ul>
+<li><strong>IAM によるアクセス制御</strong>: AWS IAM を利用して、Transit Gateway リソースへのアクセスを制御し、権限を管理。</li>
+<li><strong>VPC セキュリティグループ</strong>: VPC セキュリティグループを利用して、VPC エンドポイントへのトラフィックを制御。</li>
+<li><strong>ネットワーク ACL</strong>: ネットワーク ACL を利用して、サブネットレベルでのアクセス制御を設定。</li>
+<li><strong>暗号化</strong>: Transit Gateway を通過するデータは、必要に応じて暗号化を有効化。</li>
+<li><strong>監査ログ</strong>: AWS CloudTrail を利用して、API 呼び出しやリソース変更を記録。</li>
+</ul>
+<p>これにより、ネットワークの安全性とコンプライアンスを確保できる。</p>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>AWS Transit Gateway の料金は主に以下に基づく:</p>
+<ul>
+<li><strong>アタッチメント時間</strong>: Transit Gateway に VPC や Direct Connect ゲートウェイがアタッチされている時間に応じた課金。</li>
+<li><strong>データ処理量</strong>: Transit Gateway を介して転送されるデータ量に応じた課金。</li>
+<li><strong>リージョン間ピアリング</strong>: リージョン間のピアリング接続時間に応じた課金。</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<p>一般的なパターンは以下の通りである:</p>
+<ul>
+<li><strong>複数の VPC を接続するハブ</strong>: 複数の VPC を Transit Gateway に接続し、VPC 間の通信を簡素化。</li>
+<li><strong>オンプレミスネットワークと AWS 間の接続</strong>: AWS Direct Connect または VPN を使用して、オンプレミスネットワークを Transit Gateway に接続し、ハイブリッド環境を構築。</li>
+<li><strong>異なる AWS リージョン間の接続</strong>: 異なるリージョンに存在する VPC を Transit Gateway ピアリングで接続し、グローバルネットワークを構築。</li>
+<li><strong>共有サービスへのアクセス</strong>: 複数の VPC から、Transit Gateway を介して共有サービス (DNS サーバーなど) に安全にアクセス。</li>
+<li><strong>複雑なネットワークトポロジの簡素化</strong>: 大規模で複雑なネットワークトポロジを、Transit Gateway を中心に構成し、管理を簡素化。</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順 (ハンズオン例)<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>AWS コンソールで Transit Gateway を作成。</li>
+<li>VPC を Transit Gateway にアタッチ。</li>
+<li>オンプレミス環境を Direct Connect または VPN 経由で Transit Gateway に接続。</li>
+<li>ルーティングテーブルを設定し、トラフィックの転送方法を定義。</li>
+<li>CloudWatch でネットワークのパフォーマンスを監視。</li>
+</ol>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81">8.1 ネットワークのハブ<a class="headerlink" href="#81" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>接続ポイント</strong>: 複数の VPC やオンプレミスネットワークを接続するための中央ハブであることを理解。</li>
+<li><strong>管理簡素化</strong>: 複雑なネットワーク構成を簡素化し、一元的に管理できることを理解。</li>
+</ul>
+<h3 id="82-vpc">8.2 VPC 接続の簡素化<a class="headerlink" href="#82-vpc" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>VPC ピアリング回避</strong>: VPC ピアリングの複雑な設定を回避できることを理解。</li>
+<li><strong>中央ハブ</strong>: すべての VPC を接続する中央ハブとして機能することを理解。</li>
+</ul>
+<h3 id="83">8.3 オンプレミス接続サポート<a class="headerlink" href="#83" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Direct Connect/VPN</strong>: Direct Connect または VPN を使用してオンプレミスネットワークを接続できることを理解。</li>
+<li><strong>ハイブリッド環境</strong>: ハイブリッド環境でのシームレスなネットワーク接続を確立できることを理解。</li>
+</ul>
+<h3 id="84">8.4 料金体系<a class="headerlink" href="#84" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>アタッチメント時間</strong>: Transit Gateway に VPC や Direct Connect ゲートウェイがアタッチされている時間による課金を理解。</li>
+<li><strong>データ処理量</strong>: Transit Gateway を介して転送されるデータ量による課金を理解。</li>
+<li><strong>リージョン間ピアリング</strong>: リージョン間のピアリング接続時間による課金を理解。</li>
+</ul>
+<h3 id="85">8.5 類似・関連サービスとの比較<a class="headerlink" href="#85" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>VPC Peering</strong>: VPC 間を直接接続。Transit Gateway は複数 VPC、オンプレミス接続に対応。</li>
+<li><strong>AWS Direct Connect</strong>: オンプレミスと AWS 間の専用線。Transit Gateway は複数接続を統合。</li>
+</ul>
+<h3 id="86">8.6 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#86" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: AWS Transit Gateway の主な用途は？</li>
+<li>A: 複数の VPC やオンプレミスネットワークを接続するハブとして機能すること。</li>
+<li>Q: Transit Gateway は VPC ピアリングとどう違う？</li>
+<li>A: Transit Gateway は複数の VPC を接続するためのハブ、VPC ピアリングは一対一接続。</li>
+<li>Q: Transit Gateway はオンプレミス環境と接続できる？</li>
+<li>A: AWS Direct Connect または VPN 経由で可能。</li>
+<li>Q: Transit Gateway は異なるリージョンの VPC を接続できる？</li>
+<li>A: リージョン間ピアリングを設定すれば可能。</li>
+<li>Q: Transit Gateway のセキュリティ対策は？</li>
+<li>A: VPC セキュリティグループ、ネットワーク ACL など。</li>
+<li>Q: Transit Gateway の料金体系は？</li>
+<li>A: アタッチメント時間、データ処理量、リージョン間ピアリング時間による課金。</li>
+<li>Q: Transit Gateway と VPC Peering の違いは？</li>
+<li>A: VPC Peering は VPC 間を直接接続、Transit Gateway は複数 VPC のハブとなる。</li>
 </ul>
 
 
@@ -2241,10 +2597,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   

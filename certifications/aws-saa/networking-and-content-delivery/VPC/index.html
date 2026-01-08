@@ -9,7 +9,7 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/VPC/">
       
       
       
@@ -17,22 +17,22 @@
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>ネットワーキング・コンテンツ配信 - wan0ri Note</title>
+        <title>Amazon VPC - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="ネットワーキング・コンテンツ配信 - wan0ri Note">
+<meta property="og:title" content="Amazon VPC - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/VPC.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/networking-and-content-delivery/VPC/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="ネットワーキング・コンテンツ配信 - wan0ri Note">
+<meta property="twitter:title" content="Amazon VPC - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/index.png">
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/networking-and-content-delivery/VPC.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_2" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -117,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ネットワーキング・コンテンツ配信
+              Amazon VPC
             
           </span>
         </div>
@@ -242,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -263,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -303,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -343,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -363,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -383,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -403,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -423,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -463,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -493,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -602,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -740,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -768,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -796,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -832,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -860,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -949,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -977,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1005,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1033,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1061,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1150,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1178,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1206,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1234,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1323,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1351,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1440,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1468,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1496,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1524,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1552,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1641,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1730,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1758,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1847,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1875,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1903,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -1992,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2045,13 +2045,223 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        サービス一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 カスタム IP アドレス範囲
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-publicprivate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 サブネット (Public/Private)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 ルーティングとゲートウェイ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-acl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 セキュリティグループとネットワーク ACL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 柔軟な拡張性と統合
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順 (ハンズオン例)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-public-private" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Public サブネットと Private サブネットの違い
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-nat-nat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 NAT ゲートウェイと NAT インスタンス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-vs-acl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 セキュリティグループ vs. ネットワーク ACL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-vpc-peering-transit-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 VPC Peering と Transit Gateway
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-vpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 VPC エンドポイント
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2083,19 +2293,122 @@
   
 
 
-<h1 id="_1">ネットワーキング・コンテンツ配信<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>このセクションではサービス別ページを掲載する。</p>
-<h2 id="_2">サービス一覧<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+  <h1>Amazon VPC</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>Amazon VPC (Amazon Virtual Private Cloud) は、仮想ネットワーク環境を AWS 上に作成するサービスで、ユーザーが自由にネットワーク構成 (IP アドレス範囲、サブネット、ルーティングなど) を定義できる点が特徴である。<br>
+オンプレミスのように細かなルールでセキュリティや接続構成を管理したい場合でも、VPC で独立したネットワーク空間を構築し、プライベート通信を実現できる。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="CloudFront/">Amazon CloudFront</a></li>
-<li><a href="Route53/">Amazon Route 53</a></li>
-<li><a href="VPC/">Amazon VPC</a></li>
-<li><a href="DirectConnect/">AWS Direct Connect</a></li>
-<li><a href="GlobalAccelerator/">AWS Global Accelerator</a></li>
-<li><a href="PrivateLink/">AWS PrivateLink</a></li>
-<li><a href="TransitGateway/">AWS Transit Gateway</a></li>
-<li><a href="VPN/">AWS VPN</a></li>
-<li><a href="ELB/">Elastic Load Balancing (ELB)</a></li>
+<li>社内システムをクラウドへ移行する際の安全なネットワーク環境構築</li>
+<li>Web サーバと DB サーバを異なるサブネットに分離してセキュリティを高める設計</li>
+<li>VPC Peering/Transit Gateway を使った複数 VPC 間通信</li>
+</ul>
+<p>などが挙げられる。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21-ip">2.1 カスタム IP アドレス範囲<a class="headerlink" href="#21-ip" title="Permanent link">¶</a></h3>
+<p>VPC 作成時にプライベート IP アドレス範囲 (CIDR ブロック) を指定でき、10.0.0.0/16 のようにオンプレミスとの重複を回避しつつ柔軟に構成できる。<br>
+必要に応じてサブネットに分割し、AZ ごとに高可用性を確保できる。</p>
+<h3 id="22-publicprivate">2.2 サブネット (Public/Private)<a class="headerlink" href="#22-publicprivate" title="Permanent link">¶</a></h3>
+<p>VPC 内のサブネットは、インターネットゲートウェイへのルートがある場合“Public サブネット”になり、外部からアクセス可能である。<br>
+一方、ゲートウェイを持たない“Private サブネット”は閉じた環境で、EC2 インスタンスなどをセキュアに運用できる。</p>
+<h3 id="23">2.3 ルーティングとゲートウェイ<a class="headerlink" href="#23" title="Permanent link">¶</a></h3>
+<p>インターネットゲートウェイ (IGW) をアタッチすることで、Public サブネットから外部ネットワークへ通信できるようとなる。<br>
+また、NAT ゲートウェイを用いて Private サブネットのリソースからインターネットへアウトバウンド接続することが可能。<br>
+さらに、Virtual Private Gateway や、Transit Gateway を利用すれば、オンプレミスとの VPN 接続や VPC 間通信を簡単に構築できる。</p>
+<h3 id="24-acl">2.4 セキュリティグループとネットワーク ACL<a class="headerlink" href="#24-acl" title="Permanent link">¶</a></h3>
+<p>セキュリティグループはステートフルな仮想ファイアウォールとして機能し、インスタンスごとにポートやプロトコルを制御。<br>
+ネットワーク ACL はサブネット単位のステートレスルールで、細かい許可・拒否を設定できる。両方を組み合わせることで多層防御が可能である。</p>
+<h3 id="25">2.5 柔軟な拡張性と統合<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
+<p>VPC は他の AWS サービス (EC2、RDS、ECS、Lambda (VPC エンドポイント) など) と密接に連携する。<br>
+スケーラビリティの高いネットワーク設計を実現しながら、S3 や DynamoDB などに対してもプライベートリンクを使った安全なアクセスが可能である。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>VPC 作成時に CIDR ブロックを指定 (例: 10.0.0.0/16)</li>
+<li>複数 AZ に跨ってサブネットを作成 (Public サブネットと Private サブネットを分離)</li>
+<li>IGW を VPC にアタッチし、ルートテーブルでインターネット経路を設定 (Public サブネット)</li>
+<li>NAT ゲートウェイを配置し、Private サブネットのアウトバウンド通信をサポート</li>
+<li>セキュリティグループ/ネットワーク ACL で通信制御</li>
+<li>必要に応じて VPC Peering や VPN/Direct Connect で外部ネットワークと接続</li>
+</ol>
+<p>このように、論理的なネットワークセグメントを自由に設計することで、オンプレ同様のセキュアかつ拡張性の高いネットワークを AWS 上で構築できる。</p>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<p>VPC のセキュリティを確保するためには以下のポイントが重要である:</p>
+<ul>
+<li><strong>ネットワーク分割</strong>: Public/Private サブネットを適切に分離し、公開が必要なリソースのみパブリック側に配置</li>
+<li><strong>セキュリティグループ</strong>: ステートフルなインバウンド/アウトバウンドルールでインスタンス単位の通信を制御</li>
+<li><strong>ネットワーク ACL</strong>: サブネット単位のステートレスフィルタとして、より詳細な IP/ポート制限を追加</li>
+<li><strong>VPC エンドポイント</strong>: S3 や DynamoDB 等へインターネット経由ではなくプライベート接続でアクセスし、セキュリティを強化</li>
+<li><strong>監査ログ</strong>: VPC Flow Logs を活用してトラフィックログを取得し、CloudWatch Logs などで分析</li>
+</ul>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>VPC 自体の作成や利用に対しては追加料金はありません。<br>
+ただし、以下の場合はコストが発生する:</p>
+<ul>
+<li><strong>NAT ゲートウェイ</strong>: 時間単位とデータ処理量に応じた課金</li>
+<li><strong>VPC エンドポイント</strong>: ゲートウェイ/インターフェイスエンドポイントの時間単位課金（インターフェイスエンドポイントの場合）</li>
+<li><strong>VPN 接続</strong>: Site-to-Site VPN でトンネル維持費用が時間従量で発生</li>
+<li><strong>Transit Gateway</strong>: アタッチやデータ転送量に応じた課金</li>
+<li><strong>VPC Flow Logs</strong>: CloudWatch Logs や S3 へのログ保存コスト</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<p>VPC は基盤となるサービスのため、さまざまなパターンがある。<br>
+代表例は以下の通り:</p>
+<ul>
+<li><strong>Public/Private サブネット分割</strong>: Web サーバを Public サブネット、DB サーバを Private サブネットに配置する基本構成</li>
+<li><strong>VPC Peering</strong>: 複数 VPC 間を直接接続し、アプリケーション間通信を安全に行う</li>
+<li><strong>Transit Gateway</strong>: 大規模環境で多 VPC・オンプレミスネットワークを一括接続してガバナンスを効率化</li>
+<li><strong>セキュアな S3 アクセス</strong>: S3 VPC エンドポイントでデータ転送をプライベートに行う</li>
+<li><strong>Site-to-Site VPN や Direct Connect</strong>: オンプレミスとのハイブリッドクラウド実装</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順 (ハンズオン例)<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>AWS コンソールで「VPC」を検索し、「VPC の作成」をクリック</li>
+<li>CIDR ブロック（例: 10.0.0.0/16）を指定し、VPC 名を入力して作成</li>
+<li>「サブネットの作成」で複数の AZ に対し、Public/Private サブネットを設定</li>
+<li>「インターネットゲートウェイ」を作成し、VPC へアタッチ。Public サブネットのルートテーブルに 0.0.0.0/0 → IGW ルートを追加</li>
+<li>Private サブネットで NAT ゲートウェイ利用なら、NAT ゲートウェイを作成し、Private サブネットルートテーブルに 0.0.0.0/0 → NAT ルートを設定</li>
+<li>セキュリティグループやネットワーク ACL を調整し、EC2 インスタンスを起動して動作確認</li>
+</ol>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81-public-private">8.1 Public サブネットと Private サブネットの違い<a class="headerlink" href="#81-public-private" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Public サブネット</strong>: IGW へルートがあるサブネットで、インターネットからアクセス可能</li>
+<li><strong>Private サブネット</strong>: IGW へルートがなく、NAT ゲートウェイや VPN 等を経由しないと外部通信できない</li>
+</ul>
+<h3 id="82-nat-nat">8.2 NAT ゲートウェイと NAT インスタンス<a class="headerlink" href="#82-nat-nat" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>NAT ゲートウェイ</strong>: 高可用性かつスケーラブルな AWS マネージド NAT</li>
+<li><strong>NAT インスタンス</strong>: 自己管理が必要で、スケーリングも手動。NAT ゲートウェイへの移行が推奨される</li>
+</ul>
+<h3 id="83-vs-acl">8.3 セキュリティグループ vs. ネットワーク ACL<a class="headerlink" href="#83-vs-acl" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>セキュリティグループ</strong>: インスタンス単位、ステートフル</li>
+<li><strong>ネットワーク ACL</strong>: サブネット単位、ステートレス</li>
+<li><strong>使い分け</strong>: SG で主要制御し、さらに NACL で補強する二重防御</li>
+</ul>
+<h3 id="84-vpc-peering-transit-gateway">8.4 VPC Peering と Transit Gateway<a class="headerlink" href="#84-vpc-peering-transit-gateway" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>VPC Peering</strong>: 1 対 1 の接続、トランジットできない</li>
+<li><strong>Transit Gateway</strong>: 多数の VPC/オンプレ接続を集中管理、トランジットが可能</li>
+</ul>
+<h3 id="85-vpc">8.5 VPC エンドポイント<a class="headerlink" href="#85-vpc" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>ゲートウェイ型</strong>: S3 や DynamoDB へのプライベートアクセスに使用</li>
+<li><strong>インターフェイス型</strong>: 他の AWS サービス（EC2 API、SNS など）への VPC 内プライベート接続</li>
+</ul>
+<h3 id="86">8.6 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#86" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: Public サブネットの要件は？</li>
+<li>A: ルートテーブルにデフォルトルート(0.0.0.0/0)が IGW を指している。</li>
+<li>Q: Private サブネットの EC2 からインターネットにアクセスする方法は？</li>
+<li>A: NAT ゲートウェイ（または NAT インスタンス）を介し、Private サブネットのルートを NAT へ向ける。</li>
+<li>Q: セキュリティグループでステートフルとは？</li>
+<li>A: インバウンドが許可されると、対応するアウトバウンドは自動的に許可される仕組み。</li>
+<li>Q: VPC 同士を接続したいがトランジットも必要な場合は？</li>
+<li>A: Transit Gateway を使用し、複数 VPC・オンプレを一元管理。</li>
+<li>Q: S3 とプライベート通信をしたいがインターネットに出したくない。方法は？</li>
+<li>A: S3 ゲートウェイエンドポイントを作成し、VPC 内から直接 S3 へプライベート接続する。</li>
 </ul>
 
 
@@ -2241,10 +2554,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
