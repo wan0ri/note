@@ -32,4 +32,4 @@ htmlcov/
 *.colon
 
 # --- Temporary files
-.codex-tmp
+*.codex-tmp/*
