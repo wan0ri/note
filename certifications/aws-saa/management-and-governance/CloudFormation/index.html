@@ -9,34 +9,30 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/management-and-governance/CloudFormation/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../../devops/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>AWS SAA 試験領域 - wan0ri Note</title>
+        <title>AWS CloudFormation - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="og:title" content="AWS CloudFormation - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/management-and-governance/CloudFormation.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/management-and-governance/CloudFormation/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="AWS SAA 試験領域 - wan0ri Note">
+<meta property="twitter:title" content="AWS CloudFormation - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/index.png">
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/management-and-governance/CloudFormation.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -105,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -121,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -141,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS SAA 試験領域
+              AWS CloudFormation
             
           </span>
         </div>
@@ -246,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -267,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -287,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -307,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,13 +319,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -349,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -369,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -389,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -409,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -429,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -469,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -499,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -580,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -608,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -690,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -718,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -746,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -774,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -802,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -838,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -866,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -955,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -983,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1011,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1039,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1067,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1156,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1184,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1212,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1240,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1272,31 +1266,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1314,7 +1305,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1332,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1357,35 +1348,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS-SAA 項目一覧
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1401,35 +1367,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        トピック一覧
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1503,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1531,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1559,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1587,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1615,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1704,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1793,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1821,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1910,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1938,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1966,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -2055,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2108,13 +2045,278 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        トピック一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 テンプレートベースの定義
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 スタック管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 インフラストラクチャのバージョン管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 依存関係の自動管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 カスタムリソース
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-change-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Change Sets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-drift-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Drift Detection（ドリフト検出）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 テンプレートの構造と要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 スタックの管理と操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 ドリフト検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 条件とマッピング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 IAM ロールと権限管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 再利用可能なテンプレートとモジュール化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 エラーとトラブルシューティング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 類似・関連サービスとの比較
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2136,46 +2338,6 @@
   
 
 
-  <nav class="md-path" aria-label="ナビゲーション">
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Certifications
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -2186,27 +2348,174 @@
   
 
 
-<h1 id="aws-saa">AWS ソリューションアーキテクト – アソシエイト（SAA）<a class="headerlink" href="#aws-saa" title="Permanent link">¶</a></h1>
-<p>AWS 認定資格ソリューションアーキテクト-アソシエイト(SAA)で出題が想定されるサービス内容と出題ポイントを掲載しています。</p>
-<h2 id="_1">トピック一覧<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+  <h1>AWS CloudFormation</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>AWS CloudFormation は、AWS リソースのプロビジョニングと管理を自動化するためのサービスである。<br>
+インフラストラクチャをコードとして定義し、テンプレートを使用して AWS リソースを一貫性を持ってデプロイ、更新、削除することができる。<br>
+これにより、手動による設定ミスを防ぎ、インフラの再現性とスケーラビリティを向上させる。</p>
+<p>主なユースケースとして、</p>
 <ul>
-<li><a href="application-integration/">アプリケーション統合</a></li>
-<li><a href="architecture-strategy/">アーキテクチャ戦略</a></li>
-<li><a href="web-and-mobile-front-end/">ウェブとモバイルのフロントエンド</a></li>
-<li><a href="cloud-financial-management/">クラウド財務管理</a></li>
-<li><a href="containers/">コンテナ</a></li>
-<li><a href="compute/">コンピューティング</a></li>
-<li><a href="storage/">ストレージ</a></li>
-<li><a href="security-identity-and-compliance/">セキュリティ・アイデンティティ・コンプライアンス</a></li>
-<li><a href="developer-tools/">デベロッパーツール</a></li>
-<li><a href="database/">データベース</a></li>
-<li><a href="NetworkingAndContentDelivery.md">ネットワーキング・コンテンツ配信</a></li>
-<li><a href="blockchain/">ブロックチェーン</a></li>
-<li><a href="MediaServices.md">メディアサービス</a></li>
-<li><a href="analytics/">分析</a></li>
-<li><a href="machine-learning/">機械学習</a></li>
-<li><a href="MigrationAndTransfer.md">移行</a></li>
-<li><a href="ManagementAndGovernance/index.md">管理・ガバナンス</a></li>
+<li>複雑なインフラ環境の一括デプロイ</li>
+<li>インフラのバージョン管理</li>
+<li>自動化された環境設定</li>
+<li>テスト環境の迅速な構築</li>
+<li>本番環境の安定運用</li>
+</ul>
+<p>などが挙げられる。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21">2.1 テンプレートベースの定義<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
+<p>CloudFormation では、JSON または YAML 形式のテンプレートを使用して、AWS リソースの構成を宣言的に定義する。<br>
+テンプレートには、リソース、パラメータ、マッピング、条件、出力などのセクションを含めることができる。</p>
+<h3 id="22">2.2 スタック管理<a class="headerlink" href="#22" title="Permanent link">¶</a></h3>
+<p>テンプレートを基に作成される CloudFormation の単位を「スタック」と呼ぶ。<br>
+スタックはリソースの集合体であり、スタック単位でデプロイ、更新、削除を管理できる。<br>
+これにより、関連するリソースを一括して操作することが可能である。</p>
+<h3 id="23">2.3 インフラストラクチャのバージョン管理<a class="headerlink" href="#23" title="Permanent link">¶</a></h3>
+<p>CloudFormation では、テンプレートのバージョン管理を行うことで、インフラの変更履歴を追跡できる。<br>
+これにより、特定のバージョンにロールバックすることも容易になる。</p>
+<h3 id="24">2.4 依存関係の自動管理<a class="headerlink" href="#24" title="Permanent link">¶</a></h3>
+<p>リソース間の依存関係を自動的に解決し、正しい順序でリソースをプロビジョニングする。<br>
+これにより、手動での依存関係管理の手間を省き、エラーを減少させる。</p>
+<h3 id="25">2.5 カスタムリソース<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
+<p>標準の AWS リソースに加えて、カスタムリソースを使用して独自のリソースを定義できる。<br>
+これにより、特定のビジネスロジックや外部サービスとの統合が可能になる。</p>
+<h3 id="26-change-sets">2.6 Change Sets<a class="headerlink" href="#26-change-sets" title="Permanent link">¶</a></h3>
+<p>Change Sets を使用すると、スタックに対する変更を事前に確認できる。<br>
+これにより、実際に変更を適用する前に影響範囲を把握し、予期しない変更を防止できる。</p>
+<h3 id="27-drift-detection">2.7 Drift Detection（ドリフト検出）<a class="headerlink" href="#27-drift-detection" title="Permanent link">¶</a></h3>
+<p>Drift Detection 機能により、スタックの現在の状態がテンプレートと一致しているかを確認できる。<br>
+テンプレートから外れた変更が検出された場合、アラートを受け取ることができる。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>ユーザーは AWS Management Console、AWS CLI、または AWS SDK を使用して CloudFormation テンプレートをアップロードまたは指定。</li>
+<li>CloudFormation はテンプレートを解析し、必要な AWS リソースを特定。</li>
+<li>テンプレート内のリソース間の依存関係を評価し、適切な順序でリソースをプロビジョニング。</li>
+<li>プロビジョニングされたリソースはスタックとして管理され、更新や削除もスタック単位で実行。</li>
+<li>ユーザーは Change Sets や Drift Detection を利用してスタックの変更状況を監視。</li>
+</ol>
+<p>CloudFormation のアーキテクチャはスケーラブルで高可用性を備えており、AWS の各種サービスとシームレスに統合されている。<br>
+テンプレートの再利用性やモジュール化により、複雑なインフラ構成も効率的に管理可能である。</p>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<p>CloudFormation では、セキュリティを確保するために以下の機能を提供しています：</p>
+<ul>
+<li><strong>AWS Identity and Access Management (IAM)</strong>: CloudFormation スタックの作成、更新、削除に対するアクセス権限を細かく制御。</li>
+<li><strong>テンプレートのセキュリティ</strong>: テンプレート内に機密情報（パスワードやキー）を含めないようにするベストプラクティスを推奨。</li>
+<li><strong>Stack Policies</strong>: スタック内の特定のリソースに対する変更を制限するポリシーを設定可能。</li>
+<li><strong>Secure Parameter Store Integration</strong>: AWS Systems Manager Parameter Store と連携し、機密情報を安全に管理。</li>
+<li><strong>サービスロールの使用</strong>: CloudFormation がリソースをプロビジョニングする際に使用する IAM ロールを指定。</li>
+</ul>
+<p>これらのセキュリティ機能により、CloudFormation を通じたインフラ管理が安全かつコンプライアンスに準拠した形で実施できる。</p>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>AWS CloudFormation 自体は無料で利用できる。<br>
+ただし、テンプレートを使用して作成・管理する AWS リソースに対しては、通常の料金が適用される。以下は主な料金要素です：</p>
+<ul>
+<li><strong>CloudFormation サービス</strong>: テンプレートの作成、スタックの管理は無料。</li>
+<li><strong>AWS リソース</strong>: CloudFormation を使用してプロビジョニングする AWS リソース（EC2 インスタンス、S3 バケット、RDS データベースなど）の利用料金が適用。</li>
+<li><strong>追加機能</strong>: CloudFormation StackSets や Drift Detection などの一部機能には追加料金が発生する場合がある。</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<p>一般的なパターンは以下の通りです：</p>
+<ul>
+<li><strong>インフラストラクチャ・アズ・コード (IaC)</strong>: コードベースでインフラを定義し、バージョン管理と自動デプロイを実現。</li>
+<li><strong>マルチアカウント・管理</strong>: 複数の AWS アカウントに跨るリソースを一元管理。</li>
+<li><strong>パラメータ化されたテンプレート</strong>: 再利用性の高いテンプレートを作成し、環境ごとにパラメータを変更。</li>
+<li><strong>モジュール化とスタック分割</strong>: 大規模なテンプレートを小さなモジュールに分割し、管理を容易に。</li>
+<li><strong>CI/CD パイプラインとの統合</strong>: 継続的インテグレーションとデリバリーのパイプラインに CloudFormation を組み込み、自動デプロイを実現。</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>AWS Management Console にログインし、AWS CloudFormation を開く。</li>
+<li>「スタックの作成」ボタンをクリックし、「新しいリソースを使用 (標準)」を選択。</li>
+<li>テンプレートの指定方法を選択（例: ファイルのアップロード、S3 バケットからの指定、サンプルテンプレートの利用）。</li>
+<li>テンプレートファイル（JSON または YAML）をアップロードし、「次へ」をクリック。</li>
+<li>スタック名を入力し、必要に応じてパラメータ（例: インスタンスタイプ、VPC ID）を指定。</li>
+<li>オプション設定（タグ、IAM ロール、通知オプションなど）を行い、「次へ」をクリック。</li>
+<li>設定内容を確認し、「スタックの作成」をクリックしてデプロイを開始。</li>
+<li>スタックの進捗状況を「イベント」タブで監視し、リソースが正常に作成されることを確認。</li>
+<li>スタックが「CREATE_COMPLETE」となったら、リソースが正常にデプロイされたことを確認。</li>
+<li>必要に応じてテンプレートを更新し、「スタックの更新」を実行。</li>
+<li>不要になったスタックを削除する場合は、「スタックの削除」を選択。</li>
+</ol>
+<p>このハンズオン例では、基本的な CloudFormation スタックの作成からデプロイ、更新、削除までの一連の手順を通じて、CloudFormation の主要機能を実際に体験できる。</p>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81">8.1 テンプレートの構造と要素<a class="headerlink" href="#81" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>基本構造</strong>: AWSTemplateFormatVersion、Description、Parameters、Mappings、Conditions、Resources、Outputs。</li>
+<li><strong>主要セクション</strong>: Resources セクションでリソースを定義、Parameters で入力パラメータを設定。</li>
+<li><strong>試験例</strong>:</li>
+<li>「CloudFormation テンプレートの主要なセクションは何か？」</li>
+<li>「Parameters セクションの用途は？」...など。</li>
+</ul>
+<h3 id="82">8.2 スタックの管理と操作<a class="headerlink" href="#82" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>スタックの作成・更新・削除</strong>: 各操作の手順と影響。</li>
+<li><strong>Change Sets</strong>: 変更のプレビューと影響範囲の確認方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「スタックの更新時に Change Sets を使用する利点は？」</li>
+<li>「スタック削除時に注意すべき点は？」...など。</li>
+</ul>
+<h3 id="83">8.3 ドリフト検出<a class="headerlink" href="#83" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>概念</strong>: テンプレートとスタックの現在の状態との差異を検出。</li>
+<li><strong>用途</strong>: 不正な変更や手動でのリソース変更の検出。</li>
+<li><strong>試験例</strong>:</li>
+<li>「ドリフト検出の目的は？」</li>
+<li>「ドリフトが検出された場合の対処方法は？」...など。</li>
+</ul>
+<h3 id="84">8.4 条件とマッピング<a class="headerlink" href="#84" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Conditions</strong>: 特定の条件に基づいてリソースの作成を制御。</li>
+<li><strong>Mappings</strong>: 固定のキーと値のペアを定義し、テンプレート内で参照。</li>
+<li><strong>試験例</strong>:</li>
+<li>「Conditions を使用するメリットは？」</li>
+<li>「Mappings の使用例は？」...など。</li>
+</ul>
+<h3 id="85-iam">8.5 IAM ロールと権限管理<a class="headerlink" href="#85-iam" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>サービスロール</strong>: CloudFormation がリソースをプロビジョニングする際に使用する IAM ロール。</li>
+<li><strong>ポリシー設定</strong>: 最小権限の原則に基づくポリシー設定方法。</li>
+<li><strong>試験例</strong>:</li>
+<li>「CloudFormation でサービスロールを設定する理由は？」</li>
+<li>「適切な IAM ポリシーの設定方法は？」...など。</li>
+</ul>
+<h3 id="86">8.6 再利用可能なテンプレートとモジュール化<a class="headerlink" href="#86" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Nested Stacks</strong>: スタック内に他のスタックを含めることで、テンプレートをモジュール化。</li>
+<li><strong>Macros</strong>: テンプレートを動的に変換・拡張する機能。</li>
+<li><strong>試験例</strong>:</li>
+<li>「Nested Stacks の利点は？」</li>
+<li>「Macros を使用するシナリオは？」...など。</li>
+</ul>
+<h3 id="87">8.7 エラーとトラブルシューティング<a class="headerlink" href="#87" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>一般的なエラー</strong>: リソースの競合、パラメータの不一致、依存関係の問題。</li>
+<li><strong>ログの活用</strong>: CloudFormation イベントログや CloudWatch Logs を使用したトラブルシューティング。</li>
+<li><strong>試験例</strong>:</li>
+<li>「スタック作成時にリソースの競合エラーが発生した場合の対処方法は？」</li>
+<li>「トラブルシューティングに役立つ CloudFormation の機能は？」...など。</li>
+</ul>
+<h3 id="88">8.8 類似・関連サービスとの比較<a class="headerlink" href="#88" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>AWS CDK (Cloud Development Kit)</strong>: プログラミング言語を使用してインフラを定義。</li>
+<li><strong>AWS Elastic Beanstalk</strong>: アプリケーションのデプロイと管理に特化。</li>
+<li><strong>AWS OpsWorks</strong>: Chef や Puppet を使用した構成管理。</li>
+<li><strong>試験例</strong>:</li>
+<li>「CloudFormation と CDK の違いは？」</li>
+<li>「CloudFormation と OpsWorks の適用シナリオは？」...など。</li>
+</ul>
+<h3 id="89">8.9 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#89" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: AWS CloudFormation の主な目的は何か？</li>
+<li>A: AWS リソースのプロビジョニングと管理を自動化し、インフラストラクチャをコードとして定義すること。</li>
+<li>Q: CloudFormation テンプレートでリソースの依存関係をどのように管理するか？</li>
+<li>A: デフォルトでリソース間の依存関係を自動的に解決するが、必要に応じて DependsOn 属性を使用して明示的に指定できる。</li>
+<li>Q: Change Sets の主な利点は何か？</li>
+<li>A: スタックに対する変更を事前に確認し、影響範囲を把握してから実際に変更を適用できる。</li>
+<li>Q: Drift Detection の目的は何か？</li>
+<li>A: スタックの現在の状態がテンプレートと一致しているかを検出し、不整合を特定する。</li>
+<li>Q: CloudFormation と AWS CDK の違いは何か？</li>
+<li>A: CloudFormation は JSON/YAML テンプレートを使用してインフラを定義するのに対し、CDK はプログラミング言語を使用してインフラを定義・管理する。</li>
 </ul>
 
 
@@ -2228,7 +2537,7 @@
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月7日 22:37:43 UTC">2026年1月7日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月7日 22:25:50 UTC">2026年1月7日</span>
   </span>
 
     
@@ -2352,10 +2661,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
