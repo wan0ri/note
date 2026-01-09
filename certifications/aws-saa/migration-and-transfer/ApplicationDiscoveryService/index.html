@@ -9,7 +9,7 @@
         <meta name="author" content="wan0ri">
       
       
-        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/migration-and-transfer/">
+        <link rel="canonical" href="https://wan0ri.github.io/note/certifications/aws-saa/migration-and-transfer/ApplicationDiscoveryService/">
       
       
       
@@ -17,22 +17,22 @@
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="新しいページのRSSフィード" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="更新されたページのRSSフィード" href="../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>移行 - wan0ri Note</title>
+        <title>AWS Application Discovery Service - wan0ri Note</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,18 +61,18 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="移行 - wan0ri Note">
+<meta property="og:title" content="AWS Application Discovery Service - wan0ri Note">
 <meta property="og:description" content="個人用テックノート">
-<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/migration-and-transfer/index.png">
+<meta property="og:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/migration-and-transfer/ApplicationDiscoveryService.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/migration-and-transfer/">
+<meta property="og:url" content="https://wan0ri.github.io/note/certifications/aws-saa/migration-and-transfer/ApplicationDiscoveryService/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="移行 - wan0ri Note">
+<meta property="twitter:title" content="AWS Application Discovery Service - wan0ri Note">
 <meta property="twitter:description" content="個人用テックノート">
-<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/migration-and-transfer/index.png">
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+<meta property="twitter:image" content="https://wan0ri.github.io/note/assets/images/social/certifications/aws-saa/migration-and-transfer/ApplicationDiscoveryService.png">
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_2" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -117,7 +117,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-header__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              移行
+              AWS Application Discovery Service
             
           </span>
         </div>
@@ -242,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -263,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../platform/" class="md-tabs__link">
+        <a href="../../../../platform/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../infra-base/" class="md-tabs__link">
+        <a href="../../../../infra-base/" class="md-tabs__link">
           
   
   
@@ -303,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../cloud/" class="md-tabs__link">
+        <a href="../../../../cloud/" class="md-tabs__link">
           
   
   
@@ -323,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -343,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../devops/" class="md-tabs__link">
+        <a href="../../../../devops/" class="md-tabs__link">
           
   
   
@@ -363,7 +363,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../middleware/" class="md-tabs__link">
+        <a href="../../../../middleware/" class="md-tabs__link">
           
   
   
@@ -383,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../language/" class="md-tabs__link">
+        <a href="../../../../language/" class="md-tabs__link">
           
   
   
@@ -403,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../errors/" class="md-tabs__link">
+        <a href="../../../../errors/" class="md-tabs__link">
           
   
   
@@ -423,7 +423,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../404/" class="md-tabs__link">
+        <a href="../../../../404/" class="md-tabs__link">
           
   
   
@@ -463,7 +463,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
+    <a href="../../../.." title="wan0ri Note" class="md-nav__button md-logo" aria-label="wan0ri Note" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -493,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/" class="md-nav__link">
+      <a href="../../../../platform/" class="md-nav__link">
         
   
   
@@ -602,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/k8s/" class="md-nav__link">
+      <a href="../../../../platform/k8s/" class="md-nav__link">
         
   
   
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/" class="md-nav__link">
+      <a href="../../../../platform/containers/" class="md-nav__link">
         
   
   
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/docker-commands/" class="md-nav__link">
+      <a href="../../../../platform/containers/docker-commands/" class="md-nav__link">
         
   
   
@@ -740,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/image-build/" class="md-nav__link">
+      <a href="../../../../platform/containers/image-build/" class="md-nav__link">
         
   
   
@@ -768,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/containers/compose/" class="md-nav__link">
+      <a href="../../../../platform/containers/compose/" class="md-nav__link">
         
   
   
@@ -796,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra/docker/" class="md-nav__link">
+      <a href="../../../../infra/docker/" class="md-nav__link">
         
   
   
@@ -832,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../platform/virtualization/" class="md-nav__link">
+      <a href="../../../../platform/virtualization/" class="md-nav__link">
         
   
   
@@ -860,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra/" class="md-nav__link">
+      <a href="../../../../infra/" class="md-nav__link">
         
   
   
@@ -949,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/" class="md-nav__link">
+      <a href="../../../../infra-base/" class="md-nav__link">
         
   
   
@@ -977,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/os/" class="md-nav__link">
+      <a href="../../../../infra-base/os/" class="md-nav__link">
         
   
   
@@ -1005,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/network/" class="md-nav__link">
+      <a href="../../../../infra-base/network/" class="md-nav__link">
         
   
   
@@ -1033,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/security/" class="md-nav__link">
+      <a href="../../../../infra-base/security/" class="md-nav__link">
         
   
   
@@ -1061,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../infra-base/hardware/" class="md-nav__link">
+      <a href="../../../../infra-base/hardware/" class="md-nav__link">
         
   
   
@@ -1150,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/" class="md-nav__link">
+      <a href="../../../../cloud/" class="md-nav__link">
         
   
   
@@ -1178,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/three-clouds/" class="md-nav__link">
+      <a href="../../../../cloud/three-clouds/" class="md-nav__link">
         
   
   
@@ -1206,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/iac/" class="md-nav__link">
+      <a href="../../../../cloud/iac/" class="md-nav__link">
         
   
   
@@ -1234,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud/observability/" class="md-nav__link">
+      <a href="../../../../cloud/observability/" class="md-nav__link">
         
   
   
@@ -1323,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1351,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1440,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/" class="md-nav__link">
+      <a href="../../../../devops/" class="md-nav__link">
         
   
   
@@ -1468,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/cicd/" class="md-nav__link">
+      <a href="../../../../devops/cicd/" class="md-nav__link">
         
   
   
@@ -1496,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devops/methodology/" class="md-nav__link">
+      <a href="../../../../devops/methodology/" class="md-nav__link">
         
   
   
@@ -1524,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/" class="md-nav__link">
+      <a href="../../../../tools/" class="md-nav__link">
         
   
   
@@ -1552,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/git/" class="md-nav__link">
+      <a href="../../../../tools/git/" class="md-nav__link">
         
   
   
@@ -1641,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../middleware/" class="md-nav__link">
+      <a href="../../../../middleware/" class="md-nav__link">
         
   
   
@@ -1730,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../language/" class="md-nav__link">
+      <a href="../../../../language/" class="md-nav__link">
         
   
   
@@ -1758,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../language/python/" class="md-nav__link">
+      <a href="../../../../language/python/" class="md-nav__link">
         
   
   
@@ -1847,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/" class="md-nav__link">
+      <a href="../../../../errors/" class="md-nav__link">
         
   
   
@@ -1875,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/terraform/" class="md-nav__link">
+      <a href="../../../../errors/terraform/" class="md-nav__link">
         
   
   
@@ -1903,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../errors/cli/" class="md-nav__link">
+      <a href="../../../../errors/cli/" class="md-nav__link">
         
   
   
@@ -1992,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../404/" class="md-nav__link">
+      <a href="../../../../404/" class="md-nav__link">
         
   
   
@@ -2045,13 +2045,218 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        サービス一覧
+        1. サービス概要
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 主な特徴と機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 主な特徴と機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 エージェントおよびエージェントレスのデータ収集
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 アプリケーション依存関係の解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 アプリケーション依存関係の解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#23-migration-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 データエクスポートと Migration Hub 連携
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 トラフィックパターンとリソース使用状況の可視化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 シンプルなエージェント展開
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. アーキテクチャおよび技術要素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. セキュリティと認証・認可
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 料金形態
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. よくあるアーキテクチャ・設計パターン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 設定・デプロイ手順（ハンズオン例）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 試験で問われやすいポイント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 試験で問われやすいポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 エージェント型 vs. エージェントレス型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-migration-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 データ活用と Migration Hub
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 セキュリティ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 コストモデル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 試験で頻出となる具体的な問われ方と答え
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2083,16 +2288,111 @@
   
 
 
-<h1 id="_1">移行<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>本セクションはサービス別ページを掲載する。</p>
-<h2 id="_2">サービス一覧<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+  <h1>AWS Application Discovery Service</h1>
+
+<h2 id="1">1. サービス概要<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>AWS Application Discovery Service は、オンプレミス環境 (サーバや仮想マシン) で稼働するアプリケーションや依存関係、リソース使用状況を分析し、AWS への移行計画に必要なデータを提供するサービスである。<br>
+既存のインフラ構成や稼働アプリケーションを可視化することで、クラウド移行のリスクを低減し、最適化された移行プランを策定しやすい。</p>
+<p>主なユースケースは次の通り。</p>
 <ul>
-<li><a href="MGN/">AWS Application Migration Service</a></li>
-<li><a href="ApplicationDiscoveryService/">AWS Application Discovery Service</a></li>
-<li><a href="DMS/">AWS Database Migration Service (AWS DMS)</a></li>
-<li><a href="DataSync/">AWS DataSync</a></li>
-<li><a href="MigrationHub/">AWS Migration Hub</a></li>
-<li><a href="TransferFamily/">AWS Transfer Family</a></li>
+<li>オンプレミスから AWS への移行 (リフト＆シフトやリファクタリング) を検討する際の現状調査</li>
+<li>障害・性能ボトルネックを可視化するアプリケーション依存関係の解析</li>
+</ul>
+<p>などが挙げられる。</p>
+<h2 id="2">2. 主な特徴と機能<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21">2.1 エージェントおよびエージェントレスのデータ収集<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
+<p>Application Discovery Service は、エージェント型とエージェントレス型の両方の手法を提供する。</p>
+<ul>
+<li><strong>エージェント型</strong>: OS 上にエージェントをインストールし、プロセスやネットワークポートなどの詳細な情報を取得</li>
+<li><strong>エージェントレス型</strong>: VMware 仮想環境に対してハイパーバイザレベルで情報収集し、OS に変更を加えずに基本情報を得る</li>
+</ul>
+<h2 id="22">2.2 アプリケーション依存関係の解析<a class="headerlink" href="#22" title="Permanent link">¶</a></h2>
+<p>収集したメタデータ (プロセス、ネットワーク通信、CPU/メモリ使用状況など) をもとに、どのサーバがどのサーバへ通信しているかを自動的に可視化する。<br>
+これにより、移行対象アプリケーションの内部依存関係を明確化でき、段階的な移行計画を立てやすい。</p>
+<h3 id="23-migration-hub">2.3 データエクスポートと Migration Hub 連携<a class="headerlink" href="#23-migration-hub" title="Permanent link">¶</a></h3>
+<p>分析結果は Amazon Athena や Amazon QuickSight などで可視化可能な形式でエクスポートでき、AWS Migration Hub と連携することで移行プロジェクト全体を統合管理できる。<br>
+移行対象サーバ/アプリケーションを Migration Hub でトラッキングし、ステータスを一元管理できる。</p>
+<h3 id="24">2.4 トラフィックパターンとリソース使用状況の可視化<a class="headerlink" href="#24" title="Permanent link">¶</a></h3>
+<p>各サーバの CPU・メモリ使用率やストレージ IO、ネットワーク通信量を時間軸で把握できるため、ピーク負荷やボトルネックを洗い出して適切な AWS インスタンスタイプを選定できる。</p>
+<h3 id="25">2.5 シンプルなエージェント展開<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
+<p>Agent-based で詳細なデータが必要な場合は、各サーバ (Windows/Linux) に軽量なエージェントを導入する。<br>
+導入や設定変更はスクリプトや Chef、Ansible などの構成管理ツールと組み合わせることで、多数サーバへの展開を容易化できる。</p>
+<h2 id="3">3. アーキテクチャおよび技術要素<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<ol>
+<li>エージェント型あるいはエージェントレス型 Discovery を設定し、オンプレミスまたは仮想環境の情報を収集</li>
+<li>収集データ（ネットワーク通信、プロセス、CPU 使用状況など）が暗号化され、AWS に送信</li>
+<li>AWS 上でデータが分析・可視化され、アプリケーション依存関係やリソース使用状況をレポート</li>
+<li>データを Migration Hub や Athena などにエクスポートし、移行計画や詳細分析に活用</li>
+<li>移行実施後も状況をモニタリングし、段階的にオンプレから AWS へのワークロード移行を最適化</li>
+</ol>
+<p>このように、Discovery Service で現状を可視化し、Migration Hub で移行を管理する流れが典型的なアーキテクチャとなる。</p>
+<h2 id="4">4. セキュリティと認証・認可<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<p>AWS Application Discovery Service におけるセキュリティ面は以下の通り。</p>
+<ul>
+<li><strong>データ暗号化</strong>: エージェント/エージェントレスが収集する情報は TLS で AWS へ送信</li>
+<li><strong>IAM ロール</strong>: Discovery Service が必要とする API 呼び出し用の権限を最小限に抑える</li>
+<li><strong>オンプレ接続</strong>: セキュアな VPN または Direct Connect 上で Discovery データを送信可能</li>
+<li><strong>監査ログ</strong>: CloudTrail でエージェントのインストールや API 操作履歴を追跡可能</li>
+</ul>
+<h2 id="5">5. 料金形態<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>通常、AWS Application Discovery Service 自体に追加コストはなく、エージェントのデータ送信やデータ保存に対して標準の AWS 利用料 (S3 や Athena など) が発生する。<br>
+具体的には以下に留意する。</p>
+<ul>
+<li><strong>エージェント</strong>: 無料で利用可能だが、稼働する EC2 やオンプレサーバリソースのコスト</li>
+<li><strong>データ保存と分析</strong>: S3 へのログ保管や Athena クエリなどの従量課金が適用</li>
+<li><strong>AWS Migration Hub</strong>: 無料で使用できるが、関連サービス（SMS, DMS など）利用時のコスト</li>
+</ul>
+<h2 id="6">6. よくあるアーキテクチャ・設計パターン<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
+<p>AWS Application Discovery Service を活用する代表的なパターンは以下の通り。</p>
+<ul>
+<li><strong>エージェント型で詳細分析</strong>: アプリケーション依存関係を正確に把握し、移行対象の優先度やプランを作成</li>
+<li><strong>VMware 環境でエージェントレス</strong>: ハイパーバイザレベルからゲスト OS やネットワーク通信を可視化し、大規模移行を効率化</li>
+<li><strong>AWS Migration Hub 連携</strong>: 収集結果を Migration Hub で一元管理し、Server Migration Service (SMS) や Database Migration Service (DMS)などと組み合わせ</li>
+<li><strong>Cost Explorer/EC2 Right Sizing との併用</strong>: リソース使用状況をもとに最適な EC2 インスタンスタイプを選定し、コスト削減を狙う</li>
+</ul>
+<h2 id="7">7. 設定・デプロイ手順（ハンズオン例）<a class="headerlink" href="#7" title="Permanent link">¶</a></h2>
+<ol>
+<li>AWS コンソールで「AWS Application Discovery Service」を検索し、Discovery のセットアップを開始</li>
+<li>「エージェント型」または「エージェントレス型」を選択し、手順に従ってオンプレ環境へエージェント導入、または VMware 環境へ OVA をデプロイ</li>
+<li>データ収集を開始し、数時間〜数日でアプリケーション依存関係やリソース使用状況が集積</li>
+<li>コンソールまたは Migration Hub で収集データを確認し、サーバリストや通信経路を可視化</li>
+<li>結果を CSV/JSON などでエクスポートし、Athena や QuickSight で詳細分析</li>
+<li>分析結果をもとに、AWS 移行戦略 (リホスト、リファクター、再構築など) を検討</li>
+</ol>
+<h2 id="8">8. 試験で問われやすいポイント<a class="headerlink" href="#8" title="Permanent link">¶</a></h2>
+<h3 id="81-vs">8.1 エージェント型 vs. エージェントレス型<a class="headerlink" href="#81-vs" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>エージェント型</strong>: OS 上のプロセスや詳細メトリクスを収集、ネットワークトラフィックも詳細把握</li>
+<li><strong>エージェントレス</strong>: VMware ハイパーバイザ経由、OS に触れずに基本情報を取得</li>
+<li><strong>選択基準</strong>: 詳細度合いと運用負担のトレードオフ。VMware 環境ではエージェントレスが容易</li>
+</ul>
+<h3 id="82-migration-hub">8.2 データ活用と Migration Hub<a class="headerlink" href="#82-migration-hub" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Migration Hub 連携</strong>: サーバやアプリの移行ステータスを統合管理</li>
+<li><strong>分析ツール</strong>: Athena/QuickSight で依存関係の可視化や使用リソースレポートを作成</li>
+</ul>
+<h3 id="83">8.3 セキュリティ<a class="headerlink" href="#83" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>TLS 暗号化</strong>: データ転送の暗号化</li>
+<li><strong>IAM ロール</strong>: Discovery Service が利用する API を最小権限で許可</li>
+</ul>
+<h3 id="84">8.4 コストモデル<a class="headerlink" href="#84" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Discovery 自体は無料</strong>: ただしデータ保存先 (S3 等) や分析 (Athena など) は従量課金</li>
+<li><strong>大規模環境</strong>: S3 ストレージ費や Athena クエリコストを見積もる</li>
+</ul>
+<h3 id="85">8.5 試験で頻出となる具体的な問われ方と答え<a class="headerlink" href="#85" title="Permanent link">¶</a></h3>
+<ul>
+<li>Q: 既存のオンプレ環境のアプリ依存関係を把握したい。どのサービスを使う？</li>
+<li>A: AWS Application Discovery Service。エージェント型かエージェントレス型を導入し、依存関係や使用リソースを収集する。</li>
+<li>Q: エージェントレス型が対応する環境は？</li>
+<li>A: VMware 仮想環境でのハイパーバイザレベルのデータ収集。</li>
+<li>Q: データ解析後に移行ステータスを一元管理したい場合は？</li>
+<li>A: AWS Migration Hub と連携して、移行計画とステータスを集中管理。</li>
+<li>Q: コスト要素は？</li>
+<li>A: Discovery Service 自体に追加コストはなく、S3 や Athena など周辺サービス利用時の従量課金が発生。</li>
+<li>Q: アプリケーション移行に際し、リファクタリング必要かを判断するには？</li>
+<li>A: Application Discovery のメトリクスや依存関係を見て、アプリ要件に合う AWS サービスやインスタンスタイプを選択。</li>
 </ul>
 
 
@@ -2238,10 +2538,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
